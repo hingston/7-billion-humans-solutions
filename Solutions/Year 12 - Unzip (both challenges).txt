@@ -1,0 +1,15 @@
+-- 7 Billion Humans (2056) --
+-- 12: Unzip --
+
+pickup c
+a:
+if w == nothing:
+	step s
+	drop
+endif
+if w == nothing or
+ w == wall:
+	step n
+	drop
+endif
+jump a

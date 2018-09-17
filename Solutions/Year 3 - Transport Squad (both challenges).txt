@@ -1,0 +1,8 @@
+-- 7 Billion Humans (2056) --
+-- 3: Transport Squad --
+
+step s
+pickup c
+step s
+step s
+drop
