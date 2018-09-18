@@ -1,0 +1,23 @@
+-- 7 Billion Humans (2145) --
+-- 44: Unique Fashion Party --
+
+pickup s
+a:
+if s != wall and
+ s != hole:
+	b:
+	step s
+	c:
+	step e
+endif
+if myitem > e or
+ e == nothing:
+	jump c
+endif
+if myitem < w:
+	step w
+endif
+if myitem == w:
+	jump b
+endif
+jump a

@@ -1,0 +1,46 @@
+-- 7 Billion Humans (2145) --
+-- 52: The Mode Code --
+
+mem1 = nearest datacube
+a:
+if w != worker:
+	tell everyone go
+	jump b
+endif
+listenfor go
+mem2 = calc mem2 + 1
+jump a
+b:
+step nw
+c:
+if nw == datacube:
+	step w
+	jump c
+endif
+d:
+step n
+e:
+if c == mem2:
+	mem3 = calc mem3 + 1
+endif
+if n == datacube:
+	jump d
+endif
+step ne
+f:
+step s
+if c == mem2:
+	mem3 = calc mem3 + 1
+endif
+if s == datacube:
+	jump f
+endif
+if s == nothing and
+ e == datacube:
+	step e
+	jump e
+endif
+step mem1
+pickup c
+write mem3
+drop
