@@ -1,9 +1,0 @@
--- 7 Billion Humans (2145) --
--- 25: My First Shredding Memory --
-
-a:
-mem1 = nearest datacube
-pickup mem1
-mem1 = nearest shredder
-giveto mem1
-jump a

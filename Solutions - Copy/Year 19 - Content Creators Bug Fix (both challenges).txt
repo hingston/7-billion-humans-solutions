@@ -1,8 +1,0 @@
--- 7 Billion Humans (2056) --
--- 19: Content Creators Bug Fix --
-
-step e
-a:
-takefrom sw
-giveto se
-jump a

@@ -1,9 +1,0 @@
--- 7 Billion Humans (2145) --
--- 29: Biometric Access --
-
-mem1 = nearest shredder
-a:
-mem2 = nearest datacube
-pickup mem2
-giveto mem1
-jump a
