@@ -1,0 +1,32 @@
+-- 7 Billion Humans (2145) --
+-- 38: Seek and Destroy 3 --
+
+mem1 = set 99
+mem2 = nearest hole
+a:
+if n < mem1:
+	mem1 = set n
+endif
+step n
+if n != nothing:
+	jump a
+endif
+pickup mem1
+b:
+step s
+if s != wall and
+ sw != wall:
+	jump b
+endif
+c:
+if myitem >= w or
+ myitem > e or
+ myitem == nothing:
+	step mem2
+endif
+step w
+mem4 = nearest worker
+if mem4 == nothing:
+	giveto w
+endif
+jump c
