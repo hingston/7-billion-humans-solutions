@@ -1,0 +1,12 @@
+-- 7 Billion Humans (2144) --
+-- 25: My First Shredding Memory --
+
+mem2 = nearest shredder
+a:
+mem1 = nearest datacube
+pickup mem1
+if myitem == nothing:
+	end
+endif
+giveto mem2
+jump a
