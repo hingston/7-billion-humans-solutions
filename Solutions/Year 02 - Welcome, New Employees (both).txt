@@ -1,0 +1,6 @@
+-- 7 Billion Humans (2056) --
+-- 2: Welcome, New Employees --
+
+step s
+pickup c
+drop

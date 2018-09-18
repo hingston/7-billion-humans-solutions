@@ -1,0 +1,7 @@
+-- 7 Billion Humans (2145) --
+-- 35: Intro to Calc for Art Majors --
+
+pickup s
+mem1 = calc myitem + 1
+write mem1
+drop
