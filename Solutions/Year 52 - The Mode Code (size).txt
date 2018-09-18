@@ -1,0 +1,35 @@
+-- 7 Billion Humans (2145) --
+-- 52: The Mode Code --
+
+a:
+if e == wall or
+ s == datacube:
+	b:
+	step w
+	if s == something and
+	 mem1 < 6:
+		mem1 = calc mem1 + 1
+		jump b
+	endif
+	pickup c
+	write mem2
+	drop
+endif
+c:
+if n != wall:
+	step n
+	if c == mem1:
+		mem2 = calc mem2 + 1
+	endif
+	jump c
+endif
+d:
+if c == datacube or
+ n == wall or
+ ne != something and
+ s != wall:
+	step s
+	jump d
+endif
+step e
+jump a

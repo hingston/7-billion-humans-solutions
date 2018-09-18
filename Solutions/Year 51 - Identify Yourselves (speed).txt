@@ -1,0 +1,24 @@
+-- 7 Billion Humans (2145) --
+-- 51: Identify Yourselves --
+
+mem1 = set 11
+pickup s
+step s
+a:
+if e == nothing:
+	mem1 = calc mem1 - 1
+	b:
+	write mem1
+	drop
+endif
+if e == datacube:
+	mem1 = calc e - 1
+	jump b
+endif
+if w == nothing or
+ w == datacube:
+	mem2 = calc w + 1
+	write mem2
+	drop
+endif
+jump a

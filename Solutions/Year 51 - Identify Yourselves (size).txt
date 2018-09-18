@@ -1,0 +1,13 @@
+-- 7 Billion Humans (2145) --
+-- 51: Identify Yourselves --
+
+pickup s
+step s
+a:
+if w == datacube or
+ w == nothing:
+	mem1 = calc w + 1
+	write mem1
+	drop
+endif
+jump a

@@ -1,0 +1,25 @@
+-- 7 Billion Humans (2145) --
+-- 53: 100 Cubes on the Floor --
+
+mem1 = set 9
+a:
+if c == nothing:
+	step w
+	jump a
+endif
+if n == wall:
+	jump b
+endif
+listenfor ready
+mem1 = calc n + 10
+b:
+c:
+pickup c
+write mem1
+tell s ready
+drop
+if w != wall:
+	step w
+	mem1 = calc mem1 - 1
+	jump c
+endif
