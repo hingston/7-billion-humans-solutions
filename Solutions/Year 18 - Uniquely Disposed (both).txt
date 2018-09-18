@@ -1,0 +1,11 @@
+-- 7 Billion Humans (2056) --
+-- 18: Uniquely Disposed --
+
+pickup w
+step sw
+a:
+if s == shredder:
+	giveto s
+endif
+step se
+jump a

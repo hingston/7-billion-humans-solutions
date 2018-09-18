@@ -1,0 +1,8 @@
+-- 7 Billion Humans (2056) --
+-- 4: Long Distance Delivery --
+
+step e
+pickup c
+a:
+step e
+jump a
