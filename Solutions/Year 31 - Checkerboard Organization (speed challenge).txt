@@ -1,0 +1,15 @@
+-- 7 Billion Humans (2145) --
+-- 31: Checkerboard Organization --
+
+mem1 = nearest printer
+a:
+if myitem != datacube:
+	takefrom mem1
+	step w,n,e
+else:
+	step nw,sw,ne,se
+	if c != datacube:
+		drop
+	endif
+endif
+jump a
