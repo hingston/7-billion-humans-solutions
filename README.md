@@ -9,7 +9,9 @@ The aim is to have all the solutions for the best speed and/or size seen on the 
 Either open a [pull request](https://help.github.com/articles/about-pull-requests/) or post on the [Steam thread](https://steamcommunity.com/app/792100/discussions/0/1739968490573286109/).
 
 
-## Contributions
+## Contributors
+
+###### +99% Solutions
 
 [AlonzoTG](https://github.com/AlonzoTG)
 * Year 25 - My First Shredding Memory (speed)
@@ -22,3 +24,8 @@ Either open a [pull request](https://help.github.com/articles/about-pull-request
 
 [hingston](https://github.com/hingston/)
 * The rest
+
+###### +50% Solutions
+
+[Sp00kyFox](https://steamcommunity.com/id/Sp00kyFox)
+* Year 22 - Number Royale (speed)
