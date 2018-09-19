@@ -1,0 +1,19 @@
+-- 7 Billion Humans (2145) --
+-- 60: Understaffed Sorting --
+
+a:
+step w,e
+if w != worker and
+ e != worker and
+ s < sw:
+	pickup sw
+	drop
+	step sw
+	pickup e
+	drop
+	step e
+	pickup n
+	drop
+	step n
+endif
+jump a
