@@ -1,8 +1,8 @@
 # 7 Billion Humans Solutions
 
-My solutions for the game [7 Billion Humans](https://store.steampowered.com/app/792100/7_Billion_Humans/).
+Community solutions for the game [7 Billion Humans](https://store.steampowered.com/app/792100/7_Billion_Humans/).
 
-Currently these are just my solutions but the aim is to have all the solutions for the best speed and/or size seen on the [OCD+ challenge stat page](https://tomorrowcorporation.com/7billionhumansStats/). Please feel free to submit any improvements.
+The aim is to have all the solutions for the best speed and/or size seen on the [OCD+ challenge stat page](https://tomorrowcorporation.com/7billionhumansStats/). Please feel free to submit any improvements you find.
 
 ## Submissions
 
@@ -11,7 +11,7 @@ Either open a [pull request](https://help.github.com/articles/about-pull-request
 
 ## Contributions
 
-[AlonzoTG]()
+[AlonzoTG](https://github.com/AlonzoTG)
 * Year 25 - My First Shredding Memory (speed)
 * Year 26 - Bugdet Bragade (Speed)
 * Year 26 - Bugdet Bragade 2 (Size)
