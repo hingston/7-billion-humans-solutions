@@ -8,6 +8,19 @@ The aim is to have all the solutions for the best speed and/or size seen on the 
 
 Either open a [pull request](https://help.github.com/articles/about-pull-requests/) or post on the [Steam thread](https://steamcommunity.com/app/792100/discussions/0/1739968490573286109/).
 
+######Solutions Folders
+
+Solutions that are more than 99% successful are put in Solutions99+, if a solution is better than the one found in ***Soultions99+*** but is less than 99% and greater than or equal to 50% successful it goes in ***Solutions50+***
+
+######File Naming Rule
+
+Year `NUM` - `NAME` (`TYPE`).txt
+
+`NUM` = 02-68
+
+`NAME` = The name puzzle's name
+
+`TYPE` = Speed, Size or Both
 
 ## Contributors
 
