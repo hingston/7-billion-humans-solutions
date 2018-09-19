@@ -11,14 +11,14 @@ Either open a [pull request](https://help.github.com/articles/about-pull-request
 
 ## Contributions
 
-######[AlonzoTG]()
+[AlonzoTG]()
 * Year 25 - My First Shredding Memory (speed)
 * Year 26 - Bugdet Bragade (Speed)
 * Year 26 - Bugdet Bragade 2 (Size)
 * Year 30: Fill The Floor (speed)
 
-######[Futae Yamagawa](https://steamcommunity.com/profiles/76561197964795302)
+[Futae Yamagawa](https://steamcommunity.com/profiles/76561197964795302)
 * Year 22 - Number Royale (speed)
 
-######[hingston](https://github.com/hingston/)
+[hingston](https://github.com/hingston/)
 * The rest
