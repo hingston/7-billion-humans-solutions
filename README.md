@@ -10,7 +10,7 @@ Either open a [pull request](https://help.github.com/articles/about-pull-request
 
 ###### Solutions Folders
 
-Solutions that are more than 99% successful are put in Solutions99+, if a solution is better than the one found in ***Soultions99+*** but is less than 99% and greater than or equal to 50% successful it goes in ***Solutions50+***
+Solutions that are more than 99% successful are put in **Solutions99+**, if a solution is better than the one found in ***Soultions99+*** but is less than 99% and greater than or equal to 50% successful it goes in **Solutions50+**
 
 ###### File Naming Rule
 
