@@ -38,6 +38,9 @@ Year `NUM` - `NAME` (`TYPE`).txt
 [mrtong96](https://steamcommunity.com/profiles/76561198191650798)
 * Year 62 - The Sorting Floor (speed)
 
+[Dagnarus](https://steamcommunity.com/id/dagnarus)
+* Year 63 - Defrag Disordered (size)
+
 [hingston](https://github.com/hingston/)
 * The rest
 
