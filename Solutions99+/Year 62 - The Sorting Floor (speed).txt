@@ -1,0 +1,197 @@
+-- 7 Billion Humans (2145) --
+-- 62: The Sorting Floor --
+
+step n
+step n
+step n
+pickup n
+step s
+step s
+drop
+if n == worker or
+ nw == worker:
+	step n
+	pickup n
+	step s
+	step s
+	drop
+	step s
+else:
+	if w == worker:
+		step ne
+		step n
+		pickup n
+		step s
+		step s
+		drop
+		step sw
+		mem1 = set c
+		mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
+			if mem1 == nothing or
+			 mem2 > mem1:
+				mem1 = set mem2
+			endif
+		endfor
+		pickup mem1
+		a:
+		if e != hole:
+			step e
+			jump a
+		endif
+		b:
+		step n
+		if c == datacube or
+		 w == datacube:
+			jump b
+		endif
+		drop
+		mem4 = set c
+		step s
+		step sw
+		mem1 = set c
+		mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
+			if mem1 == nothing or
+			 mem2 > mem1:
+				mem1 = set mem2
+			endif
+		endfor
+		pickup mem1
+		step mem4
+		step w
+		drop
+		mem4 = set c
+		step s
+		step s
+		mem1 = set c
+		mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
+			if mem1 == nothing or
+			 mem2 > mem1:
+				mem1 = set mem2
+			endif
+		endfor
+		pickup mem1
+		step mem4
+		step w
+		drop
+		mem4 = set c
+		step s
+		step se
+		mem1 = set c
+		mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
+			if mem1 == nothing or
+			 mem2 > mem1:
+				mem1 = set mem2
+			endif
+		endfor
+		pickup mem1
+		step mem4
+		step e
+		step ne
+		drop
+		mem4 = set c
+		step s
+		step s
+		step sw
+		mem1 = set c
+		mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
+			if mem1 == nothing or
+			 mem2 > mem1:
+				mem1 = set mem2
+			endif
+		endfor
+		pickup mem1
+		step mem4
+		step w
+		drop
+		step se
+	else:
+		step ne
+		step w
+		step se
+		step s
+		mem1 = set c
+		mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
+			if mem1 == nothing or
+			 mem2 < mem1:
+				mem1 = set mem2
+			endif
+		endfor
+		pickup mem1
+		c:
+		if nw != hole:
+			step nw
+			jump c
+		endif
+		d:
+		if n != hole:
+			step n
+			jump d
+		endif
+		drop
+		mem4 = set c
+		step s
+		step s
+		step s
+		step se
+		mem1 = set c
+		mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
+			if mem1 == nothing or
+			 mem2 < mem1:
+				mem1 = set mem2
+			endif
+		endfor
+		pickup mem1
+		step mem4
+		step e
+		drop
+		mem4 = set c
+		step s
+		step s
+		step s
+		step s
+		mem1 = set c
+		mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
+			if mem1 == nothing or
+			 mem2 < mem1:
+				mem1 = set mem2
+			endif
+		endfor
+		pickup mem1
+		step mem4
+		step e
+		drop
+		mem4 = set c
+		step s
+		step sw
+		step s
+		step s
+		mem1 = set c
+		mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
+			if mem1 == nothing or
+			 mem2 < mem1:
+				mem1 = set mem2
+			endif
+		endfor
+		pickup mem1
+		step mem4
+		step w
+		step sw
+		drop
+		mem4 = set c
+		step s
+		step s
+		step se
+		mem1 = set c
+		mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
+			if mem1 == nothing or
+			 mem2 < mem1:
+				mem1 = set mem2
+			endif
+		endfor
+		pickup mem1
+		step mem4
+		step e
+		drop
+		step nw
+	endif
+endif
