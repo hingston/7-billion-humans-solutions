@@ -22,6 +22,9 @@ Either open a [pull request](https://help.github.com/articles/about-pull-request
 [Futae Yamagawa](https://steamcommunity.com/profiles/76561197964795302)
 * Year 22 - Number Royale (speed)
 
+[mrtong96](https://steamcommunity.com/profiles/76561198191650798)
+* Year 62 - The Sorting Floor (speed)
+
 [hingston](https://github.com/hingston/)
 * The rest
 
