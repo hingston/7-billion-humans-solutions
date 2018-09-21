@@ -1,19 +1,142 @@
--- 7 Billion Humans (2056) --
+-- 7 Billion Humans (2145) --
 -- 15: Shred Lines --
 
-a:
-b:
 step n
-if n == datacube:
+if nw == datacube and
+ n != datacube and
+ ne != datacube:
+	step n
+	step n
+	step n
+	step n
 	pickup n
-else:
-	jump b
-endif
-c:
-step s
-if s == shredder:
+	step s
+	step s
+	step s
+	step s
+	step s
 	giveto s
-else:
-	jump c
+	step n
+	step n
+	step n
+	step n
+	pickup n
+	step s
+	step s
+	step s
+	step s
+	giveto s
+	step n
+	pickup nw
+	step s
+	giveto s
+	end
 endif
-jump a
+if nw == datacube and
+ n != datacube and
+ ne == datacube:
+	step n
+	step n
+	step n
+	step n
+	pickup n
+	step s
+	step s
+	step s
+	step s
+	step s
+	giveto s
+	step n
+	step n
+	step n
+	pickup n
+	step s
+	step s
+	step s
+	giveto s
+	step n
+	step n
+	pickup n
+	step s
+	step s
+	giveto s
+	end
+endif
+if nw != datacube and
+ n == datacube and
+ ne == datacube:
+	step n
+	step n
+	step n
+	step n
+	pickup n
+	step s
+	step s
+	step s
+	step s
+	step s
+	giveto s
+	step n
+	step n
+	step n
+	pickup n
+	step s
+	step s
+	step s
+	giveto s
+	step n
+	pickup n
+	step s
+	giveto s
+	end
+endif
+if nw != datacube and
+ n == datacube and
+ ne != datacube:
+	step n
+	step n
+	step n
+	pickup n
+	step s
+	step s
+	step s
+	step s
+	giveto s
+	step n
+	step n
+	step n
+	pickup n
+	step s
+	step s
+	step s
+	giveto s
+	step n
+	pickup n
+	step s
+	giveto s
+	end
+endif
+step n
+step n
+step n
+pickup n
+step s
+step s
+step s
+step s
+giveto s
+step n
+step n
+pickup n
+step s
+step s
+giveto s
+step n
+step n
+pickup ne
+step s
+step s
+giveto s
+end
+
+
