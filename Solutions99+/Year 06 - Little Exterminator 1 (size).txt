@@ -1,0 +1,18 @@
+-- 7 Billion Humans (2145) --
+-- 6: Little Exterminator 1 --
+
+a:
+if sw != hole and
+ se == hole:
+	step sw
+endif
+if s != hole:
+	step s
+	pickup c
+endif
+if sw == hole and
+ s == hole:
+	step e
+endif
+jump a
+
