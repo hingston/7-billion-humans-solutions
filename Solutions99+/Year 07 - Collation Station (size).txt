@@ -1,10 +1,9 @@
--- 7 Billion Humans (2056) --
+-- 7 Billion Humans (2145) --
 -- 7: Collation Station --
 
 a:
 step s
-pickup c
-if s == hole:
-	drop
-endif
+pickup n
+drop
 jump a
+
