@@ -1,0 +1,30 @@
+-- Solution by main_gi, base from Trixi (but much improved) https://steamcommunity.com/sharedfiles/filedetails/?id=1492607776 --
+-- 65: Defrag Ordered --
+
+a:
+if e != hole:
+	step e
+else:
+	step sw
+	mem3 = foreachdir nw,w,sw,n,ne,e:
+		step w
+	endfor
+endif
+if c == datacube and
+ w != datacube and
+ myitem == nothing:
+	pickup c
+	mem2 = set 1
+endif
+if mem2 != 1:
+	drop
+endif
+if s == hole and
+ e == hole:
+	mem2 = foreachdir nw,w,sw,n,ne,e,se:
+		step nw
+	endfor
+endif
+jump a
+
+
