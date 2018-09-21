@@ -26,6 +26,20 @@ Year `NUM` - `NAME` (`TYPE`).txt
 
 ###### +99% Solutions
 
+[martinez8859](https://github.com/martinez8859)
+* Year 04 - Long Distance Delivery (size)
+* Year 06 - Little Exterminator 1 (size)
+* Year 07 - Collation Station (size)
+* Year 07 - Collation Station (speed)
+* Year 09 - Dynamic Angles (speed)
+* Year 10 - Emergency Escapades (size)
+* Year 10 - Emergency Escapades (speed)
+* Year 11 - Injection Sites 1 (speed)
+* Year 12 - Unzip (speed)
+* Year 13 - Injection Sites 2 (speed)
+* Year 15 - Shred Lines (size)
+* Year 15 - Shred Lines (speed)
+
 [AlonzoTG](https://github.com/AlonzoTG)
 * Year 25 - My First Shredding Memory (speed)
 * Year 26 - Bugdet Bragade (Speed)
