@@ -1,0 +1,14 @@
+-- 7 Billion Humans (2059) --
+-- 44: Unique Fashion Party --
+
+pickup s
+a:
+step nw,w,sw,n,s,ne
+if nw == myitem or
+ n == myitem or
+ w == myitem:
+	mem1 = calc 0 / 0
+endif
+jump a
+
+
