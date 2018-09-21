@@ -1,12 +1,30 @@
--- 7 Billion Humans (2056) --
+-- 7 Billion Humans (2145) --
 -- 11: Injection Sites 1 --
 
 pickup s
-a:
-if c == nothing and
- w == datacube:
+step s
+step s
+step s
+step s
+step s
+if n != datacube or
+ s != datacube:
+	if n != datacube:
+		step n
+	else:
+		step s
+	endif
 	drop
 endif
 step s
 step s
-jump a
+step s
+step s
+if n != datacube:
+	step n
+else:
+	step s
+endif
+drop
+
+
