@@ -1,0 +1,16 @@
+-- Solution "discovered by" main_gi but definitely not first to --
+-- 16: Little Exterminator 2 --
+
+a:
+if c != datacube or
+ c < 0 and
+ s != something and
+ sw != something:
+	step sw
+endif
+step e
+pickup s
+giveto se
+jump a
+
+
