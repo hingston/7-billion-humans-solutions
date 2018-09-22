@@ -6,6 +6,6 @@ mem1 = nearest printer
 takefrom mem1
 if c == nothing:
 	drop
-	step nw,w,sw,n,s,ne,e,se
 endif
+step nw,w,sw,n,s,ne,e,se
 jump a
