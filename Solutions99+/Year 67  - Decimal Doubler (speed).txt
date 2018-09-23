@@ -1,0 +1,278 @@
+-- 7 Billion Humans (2059) --
+-- 67: Decimal Doubler --
+
+step s
+if c != datacube:
+	tell everyone hi
+	step se
+	step w
+	step e
+	tell everyone hi
+	tell everyone hi
+	step w
+	step ne
+	tell everyone hi
+	step sw
+	step e
+	a:
+	tell everyone hi
+	tell everyone hi
+	step w
+	step e
+	step nw
+	step e
+	step s
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	step w
+	step e
+	jump a
+endif
+pickup c
+step s
+if myitem == 1:
+	b:
+	drop
+	pickup c
+	write 2
+	drop
+	pickup c
+	write 4
+	drop
+	pickup c
+	write 8
+	drop
+	pickup c
+	write 6
+	jump b
+endif
+comment 1
+mem2 = set e
+mem1 = calc [blank] + [blank]
+mem1 = calc [blank] + [blank]
+mem1 = calc [blank] + [blank]
+if mem2 == 8:
+	jump c
+endif
+mem1 = calc [blank] + [blank]
+mem1 = calc [blank] + [blank]
+mem1 = calc [blank] + [blank]
+if mem2 == 6:
+	jump d
+endif
+mem1 = calc [blank] + [blank]
+mem1 = calc [blank] + [blank]
+mem1 = calc [blank] + [blank]
+if mem2 == 5:
+	jump e
+endif
+mem1 = calc [blank] + [blank]
+mem1 = calc [blank] + [blank]
+mem1 = calc [blank] + [blank]
+mem1 = calc [blank] + [blank]
+if mem2 == 8:
+	jump f
+endif
+mem1 = calc [blank] + [blank]
+mem1 = calc [blank] + [blank]
+mem1 = calc [blank] + [blank]
+if mem2 == 6:
+	jump g
+endif
+mem1 = calc [blank] + [blank]
+mem1 = calc [blank] + [blank]
+mem1 = calc [blank] + [blank]
+jump h
+comment 0
+c:
+step n
+step s
+i:
+write 1
+drop
+pickup c
+write 3
+drop
+pickup c
+write 6
+drop
+pickup c
+write 2
+drop
+pickup c
+write 5
+drop
+pickup c
+write 1
+j:
+drop
+pickup c
+write 2
+drop
+pickup c
+write 4
+drop
+pickup c
+write 9
+drop
+pickup c
+write 9
+drop
+pickup c
+write 8
+drop
+pickup c
+write 6
+drop
+pickup c
+write 3
+k:
+drop
+pickup c
+write 7
+drop
+pickup c
+write 4
+drop
+pickup c
+write 8
+drop
+pickup c
+write 7
+jump l
+comment 2
+d:
+g:
+step n
+step s
+write 1
+drop
+pickup c
+write 2
+l:
+drop
+pickup c
+write 5
+drop
+pickup c
+if mem2 == 1:
+	write 0
+	drop
+	pickup c
+endif
+write 0
+drop
+pickup c
+write 0
+drop
+pickup c
+write 1
+drop
+pickup c
+write 3
+drop
+pickup c
+write 7
+drop
+pickup c
+write 5
+drop
+pickup c
+write 0
+drop
+pickup c
+write 1
+drop
+pickup c
+write 2
+drop
+pickup c
+write 5
+drop
+pickup c
+jump i
+comment 3
+h:
+e:
+step n
+step s
+write 1
+drop
+pickup c
+write 2
+drop
+pickup c
+write 4
+drop
+pickup c
+write 8
+drop
+pickup c
+write 6
+drop
+pickup c
+write 2
+drop
+pickup c
+write 5
+drop
+pickup c
+write 1
+drop
+pickup c
+write 2
+drop
+pickup c
+write 4
+drop
+pickup c
+write 8
+jump k
+comment 4
+f:
+step n
+step s
+write 1
+drop
+pickup c
+write 3
+drop
+pickup c
+write 6
+drop
+pickup c
+write 3
+drop
+pickup c
+write 6
+jump j
+
+
+DEFINE COMMENT 0
+eJztjTEKwlAQBecuuYZtGhUJIYidCjaKhWhQsHoIgqQQkZAiVQqrED2jLx7C6s8ysPsWdiNMzNBVakRj
+P33EmqmW7JlzsQUL71c0zl/sbE6tnCcnZGc6kunAmK3dMOlP6Eqim+c7Ax62dF85q8h+PzpnHanenG1L
+IBD4O18crSIQ;
+
+DEFINE COMMENT 1
+eJztxi0KwnAcgOHnGktmb2EWMUxRMBgFbyATxw+/woKISQwiY2UHMFo8mTuG4f/AC2+GyJyjZ69vY25g
+ZhxDLyN1TNSW7rFWRSjioHBUdl/Zudl6dDVRapw8XV20Vt4WPqbxlUuS5G/9APshG9g;
+
+DEFINE COMMENT 2
+eJztjr8KggAQh79Xai5oaWhyDJGKCOkPJEVQQ9ONIQ1B1CAEESEGUmFhDhHm0HN1vkKzH3xwB3f3uxIg
+VQwp46oHKpzI6WFLlwltVjTx1YgWsfaJ2CQMicXhwlR3ZrjqXGubMRYOpvQx8zOyZMAGg61m7GiIR4e9
+mnOlIzcseVLnRY2PmulsxkhSFpKwljseIb4EBJz1t1DzIo7y5kGqf3x1s6Cg4G9+PKM3rw;
+
+DEFINE COMMENT 3
+eJztjr0KwmAMRc8D+RJOLk4OIi5WKaWKVAVxcggoTraDiLOoiFTwt/0G8eG8fQfH3nAgNwlJKoDVqFuV
+vcgovE9kPWZ0WVqHg7iZR6b61/p8bKh8xNkmrMWKiDEDQkWgmaDYwQJfHY+YhiU02ahb7D7S4iL/FC/a
+IuTO1FLmpJh8Ym+25OzM6adctx+6d8XZCUepUqX+qh9g0TXI;
+
+DEFINE COMMENT 4
+eJztjTsKwmAQBudEHkKwsxBrC/kLSUBFo0RitYgvEEMKzxA1ARFJkxTWHssvnsEyAwP73haiQ5c2e/mu
+U/MZ4uHMscERy1Txwzwqm1Gx4mURGREXQta2JJSBLRhbIOd4NtGWL2u2TG2n+kH5kYGd6NmZPgmjXz/X
+r0z9m+6kxHYlsbvMdf8pa0rNlpop9LfgQ0NDw1/4AqHFNQI;
+
