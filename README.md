@@ -50,8 +50,8 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 14 | Intro to Shredding | [hingston](https://github.com/hingston/) | 5 | **2** |
 | Year 15 | Shred Lines | [martinez8859](https://github.com/martinez8859) | **8** | 25 |
 | Year 15 | Shred Lines | [martinez8859](https://github.com/martinez8859) | 125 | **12** |
-| Year 16 | Little Exterminator 2 | [hingston](https://github.com/hingston/) | **8** | 12 |
-| Year 16 | Little Exterminator 2 | [hingston](https://github.com/hingston/) | 15 | **9** |
+| Year 16 | Little Exterminator 2 | [AlexMBrennan](https://steamcommunity.com/profiles/76561198016277251) | **6** | 45 |
+| Year 16 | Little Exterminator 2 | [AlexMBrennan](https://steamcommunity.com/profiles/76561198016277251) | 24 | **7** |
 | Year 17 | Content Creators | [hingston](https://github.com/hingston/) | **1** | **2** |
 | Year 18 | Uniquely Disposed | [hingston](https://github.com/hingston/) | **6** | **12** |
 | Year 19 | Content Creators Bug Fix | [hingston](https://github.com/hingston/) | **4** | **26** |
