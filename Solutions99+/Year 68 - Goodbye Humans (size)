@@ -1,0 +1,22 @@
+-- 7 Billion Humans (2144) --
+-- 68: Goodbye, Humans! --
+
+a:
+if se != hole and
+ se != wall:
+	step se
+endif
+if sw != hole and
+ sw != wall:
+	step sw
+endif
+if w == wall and
+ e == wall:
+	if n != worker and
+	 ne != worker and
+	 nw != worker:
+		tell everyone goodbye
+	endif
+endif
+step s
+jump a
