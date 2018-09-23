@@ -1,0 +1,31 @@
+-- 7 Billion Humans (2144) --
+-- 66: Decimal Counter --
+
+step s
+pickup c
+if myitem == nothing:
+	a:
+	step s
+	step n
+	tell w morning
+	listenfor go
+	jump a
+endif
+step s
+drop
+mem4 = set c
+b:
+listenfor morning
+pickup c
+if mem4 == 9:
+	tell w morning
+	mem4 = set 0
+else:
+	mem4 = calc myitem + 1
+endif
+write mem4
+drop
+if mem4 != 0:
+	tell everyone go
+endif
+jump b
