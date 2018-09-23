@@ -1,15 +1,90 @@
--- 7 Billion Humans (2144) --
+-- 7 Billion Humans (2145) --
 -- 30: Fill the Floor --
 
 mem1 = nearest printer
-a:
 takefrom mem1
-step mem2
-b:
-if c == nothing:
-	drop
-	mem2 = nearest datacube
+step nw,w,sw,n,s,ne,e,se
+drop
+takefrom mem1
+a:
+step nw,w,sw,n,s,ne,e,se
+if c == datacube:
 	jump a
 endif
+drop
+mem2 = nearest datacube
+b:
+c:
+d:
+e:
+f:
+g:
+h:
+i:
+j:
+takefrom mem1
+step mem2
+k:
+if nw == something and
+ n == something and
+ ne == something and
+ e == something and
+ se == something and
+ s == something and
+ sw == something and
+ w == something:
+	step nw,w,sw,n,s,ne,e,se
+	jump k
+endif
+if nw != something:
+	step nw
+	drop
+	mem2 = nearest datacube
+	jump b
+endif
+if ne != something:
+	step ne
+	drop
+	mem2 = nearest datacube
+	jump c
+endif
+if n != something:
+	step n
+	drop
+	mem2 = nearest datacube
+	jump d
+endif
+if sw != something:
+	step sw
+	drop
+	mem2 = nearest datacube
+	jump e
+endif
+if se != something:
+	step se
+	drop
+	mem2 = nearest datacube
+	jump f
+endif
+if s != something:
+	step s
+	drop
+	mem2 = nearest datacube
+	jump g
+endif
+if w != something:
+	step w
+	drop
+	mem2 = nearest datacube
+	jump h
+endif
+if e != something:
+	step e
+	drop
+	mem2 = nearest datacube
+	jump i
+endif
 step nw,w,sw,n,s,ne,e,se
-jump b
+drop
+mem2 = nearest datacube
+jump j
