@@ -1,4 +1,4 @@
--- 7 Billion Humans (2144) --
+-- 7 Billion Humans (2145) --
 -- 26: Budget Brigade 2 --
 
 if s == printer:
@@ -7,7 +7,6 @@ if s == printer:
 	giveto n
 	jump a
 endif
-comment 0
 if n == worker:
 	b:
 	if myitem == datacube:
@@ -15,7 +14,6 @@ if n == worker:
 	endif
 	jump b
 endif
-comment 2
 if s == worker:
 	c:
 	if myitem == datacube:
@@ -27,7 +25,6 @@ if s == worker:
 	endif
 	jump c
 endif
-comment 1
 if s == shredder:
 	d:
 	if myitem == datacube:
@@ -35,7 +32,6 @@ if s == shredder:
 	endif
 	jump d
 endif
-comment 3
 e:
 if myitem == datacube:
 	if myitem >= 50:
