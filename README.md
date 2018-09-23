@@ -102,7 +102,8 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 47 | Automated Pleasantries | [hingston](https://github.com/hingston/) | **3** ✔ | **7** ✔ |
 | Year 48 | Community Training Day | [hingston](https://github.com/hingston/) | **6** ✔ | **7** ❌ |
 | Year 49 | Double Sided Destruction | [hingston](https://github.com/hingston/) | **7** ❌ | **14** ✔ |
-| Year 50 | Cubical Communication | [hingston](https://github.com/hingston/) | **9** ❌ | **42** ❌ |
+| Year 50 | Cubical Communication | [hingston](https://github.com/hingston/) | 9 | **42** ❌ |
+| Year 50 | Cubical Communication | [yifeixuer](https://steamcommunity.com/profiles/76561198831890282) | **6** ➕ | 49 |
 | Year 51 | Identify Yourselves | [hingston](https://github.com/hingston/) | **7** ❌ | 38 |
 | Year 51 | Identify Yourselves | [hingston](https://github.com/hingston/) | 15 | **24** ❌ |
 | Year 52 | The Mode Code | [hingston](https://github.com/hingston/) | **18** ➕ | 275 |
