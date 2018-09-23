@@ -53,7 +53,8 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 16 | Little Exterminator 2 | [AlexMBrennan](https://steamcommunity.com/profiles/76561198016277251) | **6** | 45 |
 | Year 16 | Little Exterminator 2 | [AlexMBrennan](https://steamcommunity.com/profiles/76561198016277251) | 24 | **7** |
 | Year 17 | Content Creators | [hingston](https://github.com/hingston/) | **1** | **2** |
-| Year 18 | Uniquely Disposed | [hingston](https://github.com/hingston/) | **6** | **12** |
+| Year 18 | Uniquely Disposed | [AlexMBrennan](https://steamcommunity.com/profiles/76561198016277251) | **5** | 25 |
+| Year 18 | Uniquely Disposed | [AlexMBrennan](https://steamcommunity.com/profiles/76561198016277251) |  | **** |
 | Year 19 | Content Creators Bug Fix | [hingston](https://github.com/hingston/) | **4** | **26** |
 | Year 20 | Reverse Line | [hingston](https://github.com/hingston/) | **9** | **11** |
 | Year 21 | Big Data | [hingston](https://github.com/hingston/) | **8** | **27** |
