@@ -49,6 +49,10 @@ Year `NUM` - `NAME` (`TYPE`).txt
 [Futae Yamagawa](https://steamcommunity.com/profiles/76561197964795302)
 * Year 22 - Number Royale (speed)
 
+[NotABlueWhale](https://github.com/NotABlueWhale)
+* Year 30 - Fill the Floor (size)
+* Year 53 - 100 Cubes on the Floor (speed)
+
 [mrtong96](https://steamcommunity.com/profiles/76561198191650798)
 * Year 62 - The Sorting Floor (speed)
 
