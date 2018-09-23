@@ -1,11 +1,11 @@
 -- 7 Billion Humans (2145) --
 -- 30: Fill the Floor --
 
-a:
 mem1 = nearest printer
-takefrom mem1
+a:
 if c == nothing:
 	drop
+	takefrom mem1
 endif
 step nw,w,sw,n,s,ne,e,se
 jump a
