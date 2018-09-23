@@ -18,7 +18,7 @@ Year `NUM` - `NAME` (`TYPE`).txt
 
 `NUM` = 02-68
 
-`NAME` = The name puzzle's name
+`NAME` = The puzzle's name
 
 `TYPE` = Speed, Size or Both
 
