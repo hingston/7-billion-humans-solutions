@@ -123,10 +123,13 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 60 | Understaffed Sorting | [hingston](https://github.com/hingston/) | **12** ✔ | **177** ❌ |
 | Year 62 | The Sorting Floor | [mrtong96](https://steamcommunity.com/profiles/76561198191650798) | 152 | **36** ➕ |
 | Year 63 | Defrag Disordered | [main-gi](https://github.com/main-gi) | **12** ➕ | 328 |
+| Year 64 | Binary Counter | [AlonzoTG](https://github.com/AlonzoTG) | **16** ❌ | 60 |
 | Year 64 | Binary Counter | [hingston](https://github.com/hingston/) | 60 | **17** ❌ |
 | Year 63 | Defrag Ordered | [main-gi](https://github.com/main-gi) | **15** ➕ | 1170 |
+| Year 66 | Decimal Counter | [AlonzoTG](https://github.com/AlonzoTG) | **23** ❌ | 150 |
 | Year 66 | Decimal Counter | [commonnickname](https://github.com/commonnickname) | 239 | **26** ➕ |
 | Year 67 | Decimal Doubler | [commonnickname](https://github.com/commonnickname) | 224 | **47** ➕ |
+| Year 68 | Goodbye, Humans! | [AlonzoTG](https://github.com/AlonzoTG) | **9** ❌ | 91 |
 
 ###### +50% Solutions
 
