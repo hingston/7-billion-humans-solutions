@@ -7,45 +7,42 @@ if s == printer:
 	giveto n
 	jump a
 endif
-if n == worker:
+if s == worker and
+ n != hole and
+ ne != worker:
 	b:
 	if myitem == datacube:
 		giveto n
 	endif
 	jump b
 endif
-if s == worker:
+if ne == worker:
 	c:
-	if myitem == datacube:
-		if myitem >= 50:
-			giveto e
-		else:
-			giveto w
-		endif
+	if myitem >= 50:
+		giveto ne
+	endif
+	if myitem < 50:
+		giveto nw
 	endif
 	jump c
 endif
-if s == shredder:
+if n == hole and
+ s != shredder:
 	d:
-	if myitem == datacube:
-		giveto s
+	if myitem >= 50:
+		giveto e
+	endif
+	if myitem < 50:
+		giveto w
 	endif
 	jump d
 endif
-e:
-if myitem == datacube:
-	if myitem >= 50:
-		f:
-		if myitem == datacube:
-			giveto e
-		endif
-		jump f
-	else:
-		g:
-		if myitem == datacube:
-			giveto w
-		endif
-		jump g
+if s == shredder:
+	e:
+	if myitem == datacube:
+		giveto s
 	endif
+	jump e
 endif
-jump e
+
+
