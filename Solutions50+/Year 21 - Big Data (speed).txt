@@ -9,20 +9,24 @@ takefrom s
 if myitem >= 50:
 	end
 endif
-giveto sw
+step w
+giveto s
 takefrom se
 if myitem >= 50:
 	end
 endif
-giveto sw
+step w
+giveto s
 takefrom se
 if myitem >= 50:
 	end
 endif
-giveto sw
+step w
+giveto s
 takefrom se
 if myitem >= 50:
 	end
 endif
-giveto sw
+step w
+giveto s
 takefrom se
