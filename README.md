@@ -122,8 +122,9 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 59 | Glory Hole | [hingston](https://github.com/hingston/) | 9 | **15** ❌ |
 | Year 60 | Understaffed Sorting | [hingston](https://github.com/hingston/) | **12** ✔ | **177** ❌ |
 | Year 62 | The Sorting Floor | [mrtong96](https://steamcommunity.com/profiles/76561198191650798) | 152 | **36** ➕ |
-| Year 63 | Defrag Disordered | [Dagnarus](https://steamcommunity.com/id/dagnarus) | **13** ➕ | 232 |
+| Year 63 | Defrag Disordered | [main-gi](https://github.com/main-gi) | **12** ➕ | 328 |
 | Year 64 | Binary Counter | [hingston](https://github.com/hingston/) | 60 | **17** ❌ |
+| Year 63 | Defrag Ordered | [main-gi](https://github.com/main-gi) | **15** ➕ | 1170 |
 | Year 66 | Decimal Counter | [commonnickname](https://github.com/commonnickname) | 239 | **26** ➕ |
 | Year 67 | Decimal Doubler | [commonnickname](https://github.com/commonnickname) | 224 | **47** ➕ |
 
@@ -133,3 +134,4 @@ Year `NUM` - `NAME` (`TYPE`).txt
 |---|---|---|---|---|
 | Year 13 | Injection Sites 2 | [commonnickname](https://github.com/commonnickname) | **7** ➕ | ~406 |
 | Year 22 | Number Royale | [Sp00kyFox](https://steamcommunity.com/id/Sp00kyFox) | 12 | **2** ➕ |
+| Year 38 | Seek and Destroy 3 | [main-gi](https://github.com/main-gi) | **8** ➕ | ~480 |
