@@ -1,13 +1,16 @@
--- 7 Billion Humans (2056) --
+-- 7 Billion Humans (2145) --
 -- 22: Number Royale --
 
 pickup s
 a:
-if e > myitem or
- w > myitem:
-	b:
+if myitem < w or
+ myitem < e or
+ myitem < n or
+ s == hole or
+ myitem < nw:
 	step s
-	jump b
 endif
 step e
 jump a
+
+
