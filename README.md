@@ -28,7 +28,8 @@ Year `NUM` - `NAME` (`TYPE`).txt
 
 ❌ = worse,
 ✔ = same,
-➕ = better, compared with the [OCD+ challenge stat page](https://tomorrowcorporation.com/7billionhumansStats/).
+➕ = better,
+➖ = sometimes hits speed, compared with the [OCD+ challenge stat page](https://tomorrowcorporation.com/7billionhumansStats/).
 
 | Year | Name | Creator | Size | Speed |
 |---|---|---|---|---|
@@ -61,17 +62,19 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 18 | Uniquely Disposed | [AlexMBrennan](https://steamcommunity.com/profiles/76561198016277251) | **5** ✔ | 25 |
 | Year 18 | Uniquely Disposed | [AlexMBrennan](https://steamcommunity.com/profiles/76561198016277251) | 12 | **7** ✔ |
 | Year 19 | Content Creators Bug Fix | [hingston](https://github.com/hingston/) | **4** ✔ | **26** ✔ |
-| Year 20 | Reverse Line | [hingston](https://github.com/hingston/) | **9** ✔ | **11** ❌ |
-| Year 21 | Big Data | [hingston](https://github.com/hingston/) | **8** ❌ | **27** ❌ |
-| Year 22 | Number Royale | [Futae Yamagawa](https://steamcommunity.com/profiles/76561197964795302) | **6** ❌ | 9 |
-| Year 22 | Number Royale | [hingston](https://github.com/hingston/) | 21 | **7** ✔ |
+| Year 20 | Reverse Line | [hingston](https://github.com/hingston/) | **9** ✔ | 11 |
+| Year 20 | Reverse Line | [martinez8859](https://github.com/martinez8859) | 52 | **4** ✔ |
+| Year 21 | Big Data | [martinez8859](https://github.com/martinez8859) | **6** ✔ | ~37 |
+| Year 21 | Big Data | [martinez8859](https://github.com/martinez8859) | 17 | **~21** ➖ |
+| Year 22 | Number Royale | [martinez8859](https://github.com/martinez8859) | **5** ✔ | 11 |
+| Year 22 | Number Royale | [martinez8859](https://github.com/martinez8859) | 22 | **6-7** ➕ |
 | Year 23 | Sorting Hall | [hingston](https://github.com/hingston/) | **6** ✔ | **25** ❌ |
 | Year 24 | Budget Brigade 1 | [hingston](https://github.com/hingston/) | **6** ✔ | 120 |
-| Year 24 | Budget Brigade 1 | [hingston](https://github.com/hingston/) | 12 | **49** ❌ |
+| Year 24 | Budget Brigade 1 | [martinez8859](https://github.com/martinez8859) | 12 | **47** ✔ |
 | Year 25 | My First Shredding Memory | [hingston](https://github.com/hingston/) | **5** ✔ | 139 |
-| Year 25 | My First Shredding Memory | [AlonzoTG](https://github.com/AlonzoTG) | 7 | **132** ❌ |
-| Year 26 | Bugdet Bragade 2 | [AlonzoTG](https://github.com/AlonzoTG) | **10** ❌ | 165 |
-| Year 26 | Bugdet Bragade 2 | [AlonzoTG](https://github.com/AlonzoTG) | 29 | **69** ❌ |
+| Year 25 | My First Shredding Memory | [martinez8859](https://github.com/martinez8859) | 9 | **131** ✔ |
+| Year 26 | Bugdet Bragade 2 | [martinez8859](https://github.com/martinez8859) | **8** ✔ | ~148 |
+| Year 26 | Bugdet Bragade 2 | [martinez8859](https://github.com/martinez8859) | 24 | **67** ✔ |
 | Year 28 | Neural Pathways | [hingston](https://github.com/hingston/) | **4** ✔ | **51** ✔ |
 | Year 29 | Biometric Access | [hingston](https://github.com/hingston/) | **5** ✔ | **60** ❌ |
 | Year 30 | Fill the Floor | [hingston](https://github.com/hingston/) | **6** ❌ | 303 |
