@@ -1,18 +1,19 @@
--- 7 Billion Humans (2144) --
+-- 7 Billion Humans (2145) --
 -- 26: Budget Brigade 2 --
 
 a:
-if myitem == datacube:
-	if s == shredder:
-		giveto s
-	endif
-	if myitem >= 50:
-		giveto e
-	else:
-		giveto w
-	endif
-endif
 if s != shredder:
 	takefrom s
 endif
+if s == shredder and
+ myitem == datacube or
+ w >= 50:
+	takefrom w
+	giveto s
+endif
+if myitem < 50:
+	giveto w
+endif
 jump a
+
+
