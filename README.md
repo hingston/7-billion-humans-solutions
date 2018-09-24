@@ -43,11 +43,12 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 07 | Collation Station | [martinez8859](https://github.com/martinez8859) | 23 | **4** ✔ |
 | Year 09 | Dynamic Angles | [hingston](https://github.com/hingston/) | **5** ✔ | 6 |
 | Year 09 | Dynamic Angles | [martinez8859](https://github.com/martinez8859) | 23 | **3** ✔ |
-| Year 10 | Emergency Escapades | [martinez8859](https://github.com/martinez8859) | **7** ✔ | 78 |
+| Year 10 | Emergency Escapades | [commonnickname](https://github.com/commonnickname) | **5** ➕ | ~273 |
 | Year 10 | Emergency Escapades | [martinez8859](https://github.com/martinez8859) | 39 | **12** ➕ |
 | Year 11 | Injection Sites 1 | [hingston](https://github.com/hingston/) | **5** ✔ | 10 |
 | Year 11 | Injection Sites 1 | [martinez8859](https://github.com/martinez8859) | 21 | **5** ✔ |
-| Year 12 | Unzip | [martinez8859](https://github.com/martinez8859) | **8** ✔ | **4** ✔ |
+| Year 12 | Unzip | [commonnickname](https://github.com/commonnickname) | **7** ➕ | 8 |
+| Year 12 | Unzip | [commonnickname](https://github.com/commonnickname) | 31 | **3** ➕ |
 | Year 13 | Injection Sites 2 | [hingston](https://github.com/hingston/) | **8** ➕ | 14 |
 | Year 13 | Injection Sites 2 | [martinez8859](https://github.com/martinez8859) | 20 | **5** ✔ |
 | Year 14 | Intro to Shredding | [hingston](https://github.com/hingston/) | **4** ✔ | 4 |
@@ -94,18 +95,19 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 40 | Printing Etiquette 2 | [hingston](https://github.com/hingston/) | **9** ❌ | 70 |
 | Year 40 | Printing Etiquette 2 | [hingston](https://github.com/hingston/) | 11 | **54** ❌ |
 | Year 41 | Image Decrypter | [hingston](https://github.com/hingston/) | **8** ✔ | 72 |
-| Year 41 | Image Decrypter | [hingston](https://github.com/hingston/) | 38 | **8** ❌ |
+| Year 41 | Image Decrypter | [commonnickname](https://github.com/commonnickname) | 51 | **6** ➕ |
 | Year 42 | Important Email Organization | [hingston](https://github.com/hingston/) | **14** ➕ | 596 |
 | Year 43 | Multiplication Table | [hingston](https://github.com/hingston/) | **11** ❌ | **47** ❌ |
-| Year 44 | Unique Fashion Party | [hingston](https://github.com/hingston/) | **11** ❌ | **59** ❌ |
+| Year 44 | Unique Fashion Party | [commonnickname](https://github.com/commonnickname) | **5** ➕ | ~62 |
+| Year 44 | Unique Fashion Party | [hingston](https://github.com/hingston/) | 11 | **59** ❌ |
 | Year 46 | Compulsory Office Romance | [hingston](https://github.com/hingston/) | **7** ❌ | **13** ❌ |
 | Year 47 | Automated Pleasantries | [hingston](https://github.com/hingston/) | **3** ✔ | **7** ✔ |
 | Year 48 | Community Training Day | [hingston](https://github.com/hingston/) | **6** ✔ | **7** ❌ |
-| Year 49 | Double Sided Destruction | [hingston](https://github.com/hingston/) | **7** ❌ | **14** ✔ |
-| Year 50 | Cubical Communication | [hingston](https://github.com/hingston/) | 9 | **42** ❌ |
+| Year 49 | Double Sided Destruction | [commonnickname](https://github.com/commonnickname) | **4** ➕ | **13** ➕ |
 | Year 50 | Cubical Communication | [yifeixuer](https://steamcommunity.com/profiles/76561198831890282) | **6** ➕ | 49 |
+| Year 50 | Cubical Communication | [commonnickname](https://github.com/commonnickname) | 45 | **26** ➕ |
 | Year 51 | Identify Yourselves | [hingston](https://github.com/hingston/) | **7** ❌ | 38 |
-| Year 51 | Identify Yourselves | [hingston](https://github.com/hingston/) | 15 | **24** ❌ |
+| Year 51 | Identify Yourselves | [commonnickname](https://github.com/commonnickname) | 46 | **4** ➕ |
 | Year 52 | The Mode Code | [hingston](https://github.com/hingston/) | **18** ➕ | 275 |
 | Year 52 | The Mode Code | [hingston](https://github.com/hingston/) | 29 | **154** ❌ |
 | Year 53 | 100 Cubes on the Floor | [hingston](https://github.com/hingston/) | **16** ❌ | 97 |
@@ -116,15 +118,18 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 57 | Neighborly Sweeper | [hingston](https://github.com/hingston/) | **15** ❌ | **96** ❌ |
 | Year 58 | Good Neighbors | [hingston](https://github.com/hingston/) | **8** ❌ | 277 |
 | Year 58 | Good Neighbors | [hingston](https://github.com/hingston/) | 11 | **78** ❌ |
-| Year 59 | Glory Hole | [hingston](https://github.com/hingston/) | **6** ✔ | 49 |
+| Year 59 | Glory Hole | [commonnickname](https://github.com/commonnickname) | **4** ➕ | 74 |
 | Year 59 | Glory Hole | [hingston](https://github.com/hingston/) | 9 | **15** ❌ |
 | Year 60 | Understaffed Sorting | [hingston](https://github.com/hingston/) | **12** ✔ | **177** ❌ |
 | Year 62 | The Sorting Floor | [mrtong96](https://steamcommunity.com/profiles/76561198191650798) | 152 | **36** ➕ |
 | Year 63 | Defrag Disordered | [Dagnarus](https://steamcommunity.com/id/dagnarus) | **13** ➕ | 232 |
 | Year 64 | Binary Counter | [hingston](https://github.com/hingston/) | 60 | **17** ❌ |
+| Year 66 | Decimal Counter | [commonnickname](https://github.com/commonnickname) | 239 | **26** ➕ |
+| Year 67 | Decimal Doubler | [commonnickname](https://github.com/commonnickname) | 224 | **47** ➕ |
 
 ###### +50% Solutions
 
 | Year | Name | Creator | Size | Speed |
 |---|---|---|---|---|
+| Year 13 | Injection Sites 2 | [commonnickname](https://github.com/commonnickname) | **7** ➕ | ~406 |
 | Year 22 | Number Royale | [Sp00kyFox](https://steamcommunity.com/id/Sp00kyFox) | 12 | **2** ➕ |
