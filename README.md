@@ -139,5 +139,6 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year | Name | Creator | Size | Speed |
 |---|---|---|---|---|
 | Year 13 | Injection Sites 2 | [commonnickname](https://github.com/commonnickname) | **7** ➕ | ~406 |
+| Year 21 | Big Data | [Futae Yamagawa](https://steamcommunity.com/profiles/76561197964795302) | 21 | **~19** ➕ |
 | Year 22 | Number Royale | [Sp00kyFox](https://steamcommunity.com/id/Sp00kyFox) | 12 | **2** ➕ |
 | Year 38 | Seek and Destroy 3 | [main-gi](https://github.com/main-gi) | **8** ➕ | ~480 |
