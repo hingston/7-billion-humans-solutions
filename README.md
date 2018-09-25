@@ -73,7 +73,7 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 24 | Budget Brigade 1 | [martinez8859](https://github.com/martinez8859) | 12 | **47** ✔ |
 | Year 25 | My First Shredding Memory | [hingston](https://github.com/hingston/) | **5** ✔ | 139 |
 | Year 25 | My First Shredding Memory | [martinez8859](https://github.com/martinez8859) | 9 | **131** ✔ |
-| Year 26 | Bugdet Bragade 2 | [martinez8859](https://github.com/martinez8859) | **8** ✔ | ~148 |
+| Year 26 | Bugdet Bragade 2 | [psam](https://www.twitch.tv/psam/) | **7** ➕ | ~200 |
 | Year 26 | Bugdet Bragade 2 | [n05ucc4u](https://github.com/n05ucc4u) | 76 | **61** ➕ |
 | Year 28 | Neural Pathways | [hingston](https://github.com/hingston/) | **4** ✔ | **51** ✔ |
 | Year 29 | Biometric Access | [hingston](https://github.com/hingston/) | **5** ✔ | **60** ❌ |
@@ -94,12 +94,13 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 37 | Dangerous Spreadsheeting | [hingston](https://github.com/hingston/) | 16 | **30** ❌ |
 | Year 38 | Seek and Destroy 3 | [hingston](https://github.com/hingston/) | **18** ❌ | **32** ❌ |
 | Year 39 | Printing Etiquette 1 | [hingston](https://github.com/hingston/) | **8** ❌ | 80 |
-| Year 39 | Printing Etiquette 1 | [hingston](https://github.com/hingston/) | 10 | **46** ❌ |
+| Year 39 | Printing Etiquette 1 | [commonnickname](https://github.com/commonnickname) | 173 | **35** ➕ |
 | Year 40 | Printing Etiquette 2 | [hingston](https://github.com/hingston/) | **9** ❌ | 70 |
 | Year 40 | Printing Etiquette 2 | [hingston](https://github.com/hingston/) | 11 | **54** ❌ |
 | Year 41 | Image Decrypter | [hingston](https://github.com/hingston/) | **8** ✔ | 72 |
 | Year 41 | Image Decrypter | [commonnickname](https://github.com/commonnickname) | 51 | **6** ➕ |
 | Year 42 | Important Email Organization | [hingston](https://github.com/hingston/) | **14** ➕ | 596 |
+| Year 42 | Important Email Organization | [commonnickname](https://github.com/commonnickname) | 204 | **~78** ➕ |
 | Year 43 | Multiplication Table | [hingston](https://github.com/hingston/) | **11** ❌ | **47** ❌ |
 | Year 44 | Unique Fashion Party | [commonnickname](https://github.com/commonnickname) | **5** ➕ | ~62 |
 | Year 44 | Unique Fashion Party | [hingston](https://github.com/hingston/) | 11 | **59** ❌ |
@@ -114,8 +115,9 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 52 | The Mode Code | [hingston](https://github.com/hingston/) | **18** ➕ | 275 |
 | Year 52 | The Mode Code | [hingston](https://github.com/hingston/) | 29 | **154** ❌ |
 | Year 53 | 100 Cubes on the Floor | [hingston](https://github.com/hingston/) | **16** ❌ | 97 |
-| Year 53 | 100 Cubes on the Floor | [NotABlueWhale](https://github.com/NotABlueWhale) | 25 | **60** ❌ |
+| Year 53 | 100 Cubes on the Floor | [commonnickname](https://github.com/commonnickname) | 245 | **31** ➕ |
 | Year 54 | Terrain Leveler | [hingston](https://github.com/hingston/) | **10** ➕ | 251 |
+| Year 54 | Terrain Leveler | [commonnickname](https://github.com/commonnickname) | 91 | **47** ➕ |
 | Year 55 | Data Flowers | [hingston](https://github.com/hingston/) | **8** ✔ | **25** ❌ |
 | Year 56 | Local Maximums | [hingston](https://github.com/hingston/) | **8** ✔ | **13** ✔ |
 | Year 57 | Neighborly Sweeper | [hingston](https://github.com/hingston/) | **15** ❌ | **96** ❌ |
@@ -124,10 +126,11 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 59 | Glory Hole | [commonnickname](https://github.com/commonnickname) | **4** ➕ | 74 |
 | Year 59 | Glory Hole | [hingston](https://github.com/hingston/) | 9 | **15** ❌ |
 | Year 60 | Understaffed Sorting | [hingston](https://github.com/hingston/) | **12** ✔ | **177** ❌ |
+| Year 61 | Lazy Pathways | [commonnickname](https://github.com/commonnickname) | 246 | **20** ➕ |
 | Year 62 | The Sorting Floor | [mrtong96](https://steamcommunity.com/profiles/76561198191650798) | 152 | **36** ➕ |
 | Year 63 | Defrag Disordered | [main-gi](https://github.com/main-gi) | **12** ➕ | 328 |
 | Year 64 | Binary Counter | [AlonzoTG](https://github.com/AlonzoTG) | **16** ❌ | 60 |
-| Year 64 | Binary Counter | [hingston](https://github.com/hingston/) | 60 | **17** ❌ |
+| Year 64 | Binary Counter | [commonnickname](https://github.com/commonnickname) | 209 | **9** ➕ |
 | Year 65 | Defrag Ordered | [main-gi](https://github.com/main-gi) | **15** ➕ | 1170 |
 | Year 66 | Decimal Counter | [AlonzoTG](https://github.com/AlonzoTG) | **23** ❌ | 150 |
 | Year 66 | Decimal Counter | [commonnickname](https://github.com/commonnickname) | 239 | **26** ➕ |
