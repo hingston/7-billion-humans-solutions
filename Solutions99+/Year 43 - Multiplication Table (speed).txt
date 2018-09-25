@@ -1,0 +1,19 @@
+-- 7 Billion Humans (2145) --
+-- 43: Multiplication Table --
+
+a:
+if n == 0 or
+ n == nothing or
+ s == wall:
+	step n
+	jump a
+endif
+mem1 = nearest datacube
+mem2 = set mem1
+b:
+pickup s
+step s
+write mem2
+drop
+mem2 = calc mem1 + mem2
+jump b
