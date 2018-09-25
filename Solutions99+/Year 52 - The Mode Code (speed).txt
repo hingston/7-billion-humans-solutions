@@ -1,46 +1,313 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2059) --
 -- 52: The Mode Code --
 
-mem1 = nearest datacube
+pickup s
+if w == nothing or
+ e == nothing:
+	step n
+	if se == worker:
+		step nw
+		mem2 = set 3
+	else:
+		step ne
+		write 5
+		mem2 = set 2
+	endif
+else:
+	if w == nothing or
+	 e == nothing:
+		step n
+		if se == worker:
+			step w
+			step nw
+			write 1
+			mem2 = set 4
+		else:
+			step e
+			step ne
+			write 4
+			mem2 = set 1
+		endif
+	else:
+		if ne == nothing:
+			write 2
+			mem2 = set 5
+			step w
+			step w
+			step nw
+		else:
+			write 3
+			step e
+			step e
+			step ne
+		endif
+		step n
+	endif
+endif
 a:
-if w != worker:
-	tell everyone go
-	jump b
+mem1 = nearest datacube
+if mem1 == myitem or
+ mem1 == mem2:
+	if mem1 == myitem:
+		mem3 = calc mem3 + 1
+	else:
+		mem4 = calc mem4 + 1
+	endif
 endif
-listenfor go
-mem2 = calc mem2 + 1
-jump a
-b:
-step nw
-c:
-if nw == datacube:
+if myitem < 3:
+	step e
+else:
 	step w
-	jump c
 endif
-d:
+mem1 = nearest datacube
+if mem1 == myitem or
+ mem1 == mem2:
+	if mem1 == myitem:
+		mem3 = calc mem3 + 1
+	else:
+		mem4 = calc mem4 + 1
+	endif
+endif
+if myitem < 3:
+	step e
+else:
+	step w
+endif
+mem1 = nearest datacube
+if mem1 == myitem or
+ mem1 == mem2:
+	if mem1 == myitem:
+		mem3 = calc mem3 + 1
+	else:
+		mem4 = calc mem4 + 1
+	endif
+endif
+if myitem < 3:
+	step e
+else:
+	step w
+endif
+mem1 = nearest datacube
+if mem1 == myitem or
+ mem1 == mem2:
+	if mem1 == myitem:
+		mem3 = calc mem3 + 1
+	else:
+		mem4 = calc mem4 + 1
+	endif
+endif
+if myitem < 3:
+	step ne
+else:
+	step nw
+endif
+mem1 = nearest datacube
+if mem1 == myitem or
+ mem1 == mem2:
+	if mem1 == myitem:
+		mem3 = calc mem3 + 1
+	else:
+		mem4 = calc mem4 + 1
+	endif
+endif
+if myitem < 3:
+	step e
+else:
+	step w
+endif
+mem1 = nearest datacube
+if mem1 == myitem or
+ mem1 == mem2:
+	if mem1 == myitem:
+		mem3 = calc mem3 + 1
+	else:
+		mem4 = calc mem4 + 1
+	endif
+endif
+if myitem < 3:
+	step e
+else:
+	step w
+endif
+mem1 = nearest datacube
+if mem1 == myitem or
+ mem1 == mem2:
+	if mem1 == myitem:
+		mem3 = calc mem3 + 1
+	else:
+		mem4 = calc mem4 + 1
+	endif
+endif
+if myitem < 3:
+	step e
+else:
+	step w
+endif
+mem1 = nearest datacube
+if mem1 == myitem or
+ mem1 == mem2:
+	if mem1 == myitem:
+		mem3 = calc mem3 + 1
+	else:
+		mem4 = calc mem4 + 1
+	endif
+endif
 step n
-e:
-if c == mem2:
-	mem3 = calc mem3 + 1
+mem1 = nearest datacube
+if mem1 == myitem or
+ mem1 == mem2:
+	if mem1 == myitem:
+		mem3 = calc mem3 + 1
+	else:
+		mem4 = calc mem4 + 1
+	endif
+endif
+if myitem < 3:
+	step w
+else:
+	step e
+endif
+mem1 = nearest datacube
+if mem1 == myitem or
+ mem1 == mem2:
+	if mem1 == myitem:
+		mem3 = calc mem3 + 1
+	else:
+		mem4 = calc mem4 + 1
+	endif
+endif
+if myitem < 3:
+	step w
+else:
+	step e
+endif
+mem1 = nearest datacube
+if mem1 == myitem or
+ mem1 == mem2:
+	if mem1 == myitem:
+		mem3 = calc mem3 + 1
+	else:
+		mem4 = calc mem4 + 1
+	endif
+endif
+if myitem < 3:
+	step w
+else:
+	step e
+endif
+mem1 = nearest datacube
+if mem1 == myitem or
+ mem1 == mem2:
+	if mem1 == myitem:
+		mem3 = calc mem3 + 1
+	else:
+		mem4 = calc mem4 + 1
+	endif
+endif
+if myitem < 3:
+	step nw
+else:
+	step ne
+endif
+mem1 = nearest datacube
+if mem1 == myitem or
+ mem1 == mem2:
+	if mem1 == myitem:
+		mem3 = calc mem3 + 1
+	else:
+		mem4 = calc mem4 + 1
+	endif
+endif
+if myitem < 3:
+	step w
+else:
+	step e
+endif
+mem1 = nearest datacube
+if mem1 == myitem or
+ mem1 == mem2:
+	if mem1 == myitem:
+		mem3 = calc mem3 + 1
+	else:
+		mem4 = calc mem4 + 1
+	endif
+endif
+if myitem < 3:
+	step w
+else:
+	step e
+endif
+mem1 = nearest datacube
+if mem1 == myitem or
+ mem1 == mem2:
+	if mem1 == myitem:
+		mem3 = calc mem3 + 1
+	else:
+		mem4 = calc mem4 + 1
+	endif
+endif
+if myitem < 3:
+	step w
+else:
+	step e
+endif
+mem1 = nearest datacube
+if mem1 == myitem or
+ mem1 == mem2:
+	if mem1 == myitem:
+		mem3 = calc mem3 + 1
+	else:
+		mem4 = calc mem4 + 1
+	endif
 endif
 if n == datacube:
-	jump d
+	step n
+	jump a
 endif
-step ne
-f:
+b:
 step s
-if c == mem2:
-	mem3 = calc mem3 + 1
+step s
+step s
+step s
+step s
+if s != wall:
+	jump b
 endif
-if s == datacube:
-	jump f
-endif
-if s == nothing and
- e == datacube:
+if myitem < 3:
 	step e
-	jump e
+	if myitem > 0:
+		step e
+		if myitem > 1:
+			step e
+		endif
+	endif
+else:
+	step w
+	if myitem < 5:
+		step w
+		if myitem < 4:
+			step w
+		endif
+	endif
 endif
-step mem1
-pickup c
 write mem3
 drop
+if mem2 > 2:
+	step e
+	step e
+	step ne
+else:
+	step w
+	step w
+	step nw
+endif
+c:
+if s != datacube:
+	jump c
+endif
+pickup s
+mem1 = calc myitem + mem4
+write mem1
+step s
+drop
+
