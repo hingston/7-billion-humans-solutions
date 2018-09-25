@@ -114,7 +114,7 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 51 | Identify Yourselves | [main-gi](https://github.com/main-gi) | **6** ✔ | 44 |
 | Year 51 | Identify Yourselves | [commonnickname](https://github.com/commonnickname) | 46 | **4** ➕ |
 | Year 52 | The Mode Code | [hingston](https://github.com/hingston/) | **18** ➕ | 275 |
-| Year 52 | The Mode Code | [hingston](https://github.com/hingston/) | 29 | **154** ❌ |
+| Year 52 | The Mode Code | [commonnickname](https://github.com/commonnickname) | 228 | **~65** ➕ |
 | Year 53 | 100 Cubes on the Floor | [hingston](https://github.com/hingston/) | **16** ❌ | 97 |
 | Year 53 | 100 Cubes on the Floor | [commonnickname](https://github.com/commonnickname) | 245 | **31** ➕ |
 | Year 54 | Terrain Leveler | [hingston](https://github.com/hingston/) | **10** ➕ | 251 |
