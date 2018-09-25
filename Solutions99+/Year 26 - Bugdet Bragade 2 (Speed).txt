@@ -2,23 +2,95 @@
 -- 26: Budget Brigade 2 --
 
 if s == printer:
-	a:
 	takefrom s
-	giveto n
+	a:
+	if myitem == nothing:
+		takefrom s
+	endif
 	jump a
 endif
-if s == worker and
- n != hole and
- ne != worker:
-	b:
-	if myitem == datacube:
-		giveto n
+if nw == hole and
+ n == worker:
+	if nw == nw:
+		b:
+		if myitem == myitem:
+			if myitem == myitem:
+				if myitem == myitem:
+					if myitem == myitem:
+						if myitem == myitem:
+							if myitem == myitem:
+								if myitem == myitem:
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
 	endif
-	jump b
+	if myitem == myitem:
+		if myitem == myitem:
+			if myitem == myitem:
+				if myitem == myitem:
+					if myitem == myitem:
+						if myitem == myitem:
+							if myitem == myitem:
+								if myitem == myitem:
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+	endif
+	if myitem == myitem:
+		if myitem == myitem:
+			if myitem == myitem:
+				if myitem == myitem:
+					if myitem == myitem:
+						if myitem == myitem:
+							if myitem == myitem:
+								if myitem == myitem:
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+	endif
+	if myitem == myitem:
+		if myitem == myitem:
+			if myitem == myitem:
+				if myitem == myitem:
+					if myitem == myitem:
+						if myitem == myitem:
+							if myitem == myitem:
+								if myitem == myitem:
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+	endif
+	if myitem == myitem:
+		if myitem == myitem:
+			if myitem == myitem:
+				if myitem == myitem:
+					takefrom s
+					jump b
+				endif
+			endif
+		endif
+	endif
 endif
-if ne == worker:
+if nw == worker:
 	c:
-	if myitem >= 50:
+	takefrom s
+	if myitem > 49:
 		giveto ne
 	endif
 	if myitem < 50:
@@ -26,23 +98,50 @@ if ne == worker:
 	endif
 	jump c
 endif
-if n == hole and
- s != shredder:
-	d:
-	if myitem >= 50:
-		giveto e
-	endif
-	if myitem < 50:
-		giveto w
-	endif
-	jump d
-endif
 if s == shredder:
-	e:
+	d:
 	if myitem == datacube:
 		giveto s
 	endif
-	jump e
+	jump d
 endif
+if se == worker or
+ sw == worker:
+	if sw == worker:
+		e:
+		if myitem == datacube:
+			giveto e
+		endif
+		jump e
+	else:
+		f:
+		if myitem == datacube:
+			giveto w
+		endif
+		jump f
+	endif
+endif
+g:
+if myitem == nothing:
+	jump g
+endif
+if myitem < 50:
+	giveto w
+	h:
+	if myitem == datacube:
+		giveto w
+	endif
+	jump h
+else:
+	giveto e
+	i:
+	if myitem == datacube:
+		giveto e
+	endif
+	jump i
+endif
+
+
+
 
 
