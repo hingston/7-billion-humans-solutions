@@ -1,35 +1,22 @@
--- 7 Billion Humans (2059) --
+-- Code from commonnickname; I've been tasked to compress the size. Original: 224, Now: 196; Diff: 28 --
 -- 67: Decimal Doubler --
 
 step s
 if c != datacube:
-	tell everyone hi
-	step se
-	step w
-	step e
-	tell everyone hi
-	tell everyone hi
-	step w
-	step ne
-	tell everyone hi
-	step sw
+	step s
 	step e
 	a:
-	tell everyone hi
-	tell everyone hi
-	step w
-	step e
-	step nw
-	step e
-	step s
-	mem1 = set myitem
-	mem1 = set myitem
-	mem1 = set myitem
-	mem1 = set myitem
 	mem1 = set myitem
 	mem1 = set myitem
 	step w
 	step e
+	tell everyone hi
+	tell everyone hi
+	step w
+	step e
+	tell everyone hi
+	mem1 = set myitem
+	mem1 = set e
 	jump a
 endif
 pickup c
@@ -51,6 +38,7 @@ if myitem == 1:
 	jump b
 endif
 comment 1
+mem1 = set c
 mem2 = set e
 mem1 = calc [blank] + [blank]
 mem1 = calc [blank] + [blank]
@@ -89,8 +77,6 @@ mem1 = calc [blank] + [blank]
 jump h
 comment 0
 c:
-step n
-step s
 i:
 write 1
 drop
@@ -147,8 +133,6 @@ jump l
 comment 2
 d:
 g:
-step n
-step s
 write 1
 drop
 pickup c
@@ -160,16 +144,10 @@ write 5
 drop
 pickup c
 if mem2 == 1:
-	write 0
-	drop
-	pickup c
+	mem1 = calc [blank] + [blank]
 endif
-write 0
-drop
-pickup c
-write 0
-drop
-pickup c
+mem1 = calc [blank] + [blank]
+mem1 = calc [blank] + [blank]
 write 1
 drop
 pickup c
@@ -182,9 +160,7 @@ pickup c
 write 5
 drop
 pickup c
-write 0
-drop
-pickup c
+mem1 = calc [blank] + [blank]
 write 1
 drop
 pickup c
@@ -198,8 +174,6 @@ jump i
 comment 3
 h:
 e:
-step n
-step s
 write 1
 drop
 pickup c
@@ -234,8 +208,6 @@ write 8
 jump k
 comment 4
 f:
-step n
-step s
 write 1
 drop
 pickup c
@@ -275,4 +247,3 @@ DEFINE COMMENT 4
 eJztjTsKwmAQBudEHkKwsxBrC/kLSUBFo0RitYgvEEMKzxA1ARFJkxTWHssvnsEyAwP73haiQ5c2e/mu
 U/MZ4uHMscERy1Txwzwqm1Gx4mURGREXQta2JJSBLRhbIOd4NtGWL2u2TG2n+kH5kYGd6NmZPgmjXz/X
 r0z9m+6kxHYlsbvMdf8pa0rNlpop9LfgQ0NDw1/4AqHFNQI;
-
