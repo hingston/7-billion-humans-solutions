@@ -74,7 +74,7 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 25 | My First Shredding Memory | [hingston](https://github.com/hingston/) | **5** ✔ | 139 |
 | Year 25 | My First Shredding Memory | [martinez8859](https://github.com/martinez8859) | 9 | **131** ✔ |
 | Year 26 | Bugdet Bragade 2 | [martinez8859](https://github.com/martinez8859) | **8** ✔ | ~148 |
-| Year 26 | Bugdet Bragade 2 | [martinez8859](https://github.com/martinez8859) | 24 | **67** ✔ |
+| Year 26 | Bugdet Bragade 2 | [n05ucc4u](https://github.com/n05ucc4u) | 76 | **61** ➕ |
 | Year 28 | Neural Pathways | [hingston](https://github.com/hingston/) | **4** ✔ | **51** ✔ |
 | Year 29 | Biometric Access | [hingston](https://github.com/hingston/) | **5** ✔ | **60** ❌ |
 | Year 30 | Fill the Floor | [hingston](https://github.com/hingston/) | **6** ❌ | 303 |
