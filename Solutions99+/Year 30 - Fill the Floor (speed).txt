@@ -1,4 +1,4 @@
--- 7 Billion Humans (2145) --
+-- Solution by main_gi, 111s, could be massively improved probably --
 -- 30: Fill the Floor --
 
 mem1 = nearest printer
@@ -21,9 +21,9 @@ f:
 g:
 h:
 i:
-j:
 takefrom mem1
 step mem2
+j:
 k:
 if nw == something and
  n == something and
@@ -34,7 +34,7 @@ if nw == something and
  sw == something and
  w == something:
 	step nw,w,sw,n,s,ne,e,se
-	jump k
+	jump j
 endif
 if nw != something:
 	step nw
@@ -84,7 +84,12 @@ if e != something:
 	mem2 = nearest datacube
 	jump i
 endif
-step nw,w,sw,n,s,ne,e,se
-drop
-mem2 = nearest datacube
-jump j
+step se
+step e
+step se
+step se
+step e
+step e
+step e
+step e
+jump k
