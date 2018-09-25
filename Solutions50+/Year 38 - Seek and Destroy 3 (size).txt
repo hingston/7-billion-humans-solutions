@@ -1,0 +1,17 @@
+-- Solution by main_gi, base code/idea stolen from https://steamcommunity.com/app/792100/discussions/0/1733210552680057970/ --
+-- 38: Seek and Destroy 3 --
+
+a:
+if s != wall or
+ mem1 == shredder and
+ e != wall:
+	step w,sw,n,s,ne,e
+	mem1 = nearest shredder
+	if c < mem2 or
+	 mem2 == 0:
+		mem2 = nearest datacube
+	endif
+	jump a
+endif
+pickup mem2
+giveto mem1
