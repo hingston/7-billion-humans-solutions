@@ -1,0 +1,279 @@
+-- 7 Billion Humans (2059) --
+-- 42: Important Email Organization --
+
+if e == worker or
+ w == worker:
+	step s
+	if e == worker:
+		step sw
+	else:
+		step s
+	endif
+else:
+	step se
+	if nw == worker:
+		step se
+	else:
+		step s
+		step s
+	endif
+endif
+pickup ne
+mem2 = nearest datacube
+mem1 = nearest wall
+jump a
+b:
+step mem2
+pickup n
+if mem4 != 3:
+	step s
+	mem2 = nearest datacube
+endif
+if myitem < 50:
+	if myitem < 30:
+		if myitem < 20:
+			if myitem < 10:
+				mem3 = set 0
+			else:
+				mem3 = set 1
+			endif
+		else:
+			mem3 = set 2
+		endif
+	else:
+		if myitem < 40:
+			mem3 = set 3
+		else:
+			mem3 = set 4
+		endif
+	endif
+else:
+	if myitem < 80:
+		if myitem < 70:
+			if myitem < 60:
+				mem3 = set 5
+			else:
+				mem3 = set 6
+			endif
+		else:
+			mem3 = set 7
+		endif
+	else:
+		if myitem < 90:
+			mem3 = set 8
+		else:
+			mem3 = set 9
+		endif
+	endif
+endif
+if mem3 != mem1:
+	mem1 = nearest shredder
+	step mem1
+	mem1 = nearest datacube
+	if mem3 >= mem1:
+		c:
+		if mem3 != mem1:
+			step e
+			mem1 = nearest datacube
+			jump c
+		endif
+	else:
+		d:
+		step w
+		mem1 = nearest datacube
+		if mem3 != mem1:
+			jump d
+		endif
+	endif
+else:
+	step mem1
+endif
+mem1 = nearest shredder
+giveto mem1
+mem1 = nearest datacube
+step mem2
+if mem4 != 3:
+	pickup ne
+else:
+	pickup e
+endif
+if myitem < 50:
+	if myitem < 30:
+		if myitem < 20:
+			if myitem < 10:
+				mem3 = set 0
+			else:
+				mem3 = set 1
+			endif
+		else:
+			mem3 = set 2
+		endif
+	else:
+		if myitem < 40:
+			mem3 = set 3
+		else:
+			mem3 = set 4
+		endif
+	endif
+else:
+	if myitem < 80:
+		if myitem < 70:
+			if myitem < 60:
+				mem3 = set 5
+			else:
+				mem3 = set 6
+			endif
+		else:
+			mem3 = set 7
+		endif
+	else:
+		if myitem < 90:
+			mem3 = set 8
+		else:
+			mem3 = set 9
+		endif
+	endif
+endif
+if mem4 < 2:
+	if mem4 == 0:
+		mem4 = set 1
+	else:
+		mem4 = set 2
+	endif
+else:
+	if mem4 == 2:
+		mem4 = set 3
+	else:
+		mem4 = set 4
+		if mem3 != mem1:
+			mem1 = nearest shredder
+			step mem1
+			mem1 = nearest datacube
+			if mem3 >= mem1:
+				e:
+				if mem3 != mem1:
+					step e
+					mem1 = nearest datacube
+					jump e
+				endif
+			else:
+				f:
+				step w
+				mem1 = nearest datacube
+				if mem3 != mem1:
+					jump f
+				endif
+			endif
+		else:
+			step mem1
+		endif
+		mem1 = nearest shredder
+		giveto mem1
+		mem1 = nearest datacube
+		pickup mem2
+		a:
+		g:
+		if myitem < 50:
+			if myitem < 30:
+				if myitem < 20:
+					if myitem < 10:
+						mem3 = set 0
+					else:
+						mem3 = set 1
+					endif
+				else:
+					mem3 = set 2
+				endif
+			else:
+				if myitem < 40:
+					mem3 = set 3
+				else:
+					mem3 = set 4
+				endif
+			endif
+		else:
+			if myitem < 80:
+				if myitem < 70:
+					if myitem < 60:
+						mem3 = set 5
+					else:
+						mem3 = set 6
+					endif
+				else:
+					mem3 = set 7
+				endif
+			else:
+				if myitem < 90:
+					mem3 = set 8
+				else:
+					mem3 = set 9
+				endif
+			endif
+		endif
+	endif
+endif
+if mem3 != mem1 or
+ mem1 == wall:
+	mem1 = nearest shredder
+	step mem1
+	mem1 = nearest datacube
+	if mem3 >= mem1:
+		h:
+		if mem3 != mem1:
+			step e
+			mem1 = nearest datacube
+			jump h
+		endif
+	else:
+		i:
+		step w
+		mem1 = nearest datacube
+		if mem3 != mem1:
+			jump i
+		endif
+	endif
+else:
+	step mem1
+endif
+mem1 = nearest shredder
+giveto mem1
+mem1 = nearest datacube
+if mem4 < 4:
+	jump b
+endif
+if mem1 != 0 and
+ mem1 != 9:
+	step nw,n,ne
+else:
+	step n
+endif
+j:
+mem2 = nearest datacube
+if mem2 >= 10:
+	pickup n
+else:
+	if n != datacube and
+	 nw != datacube and
+	 ne != datacube:
+		k:
+		step w,e
+		step w,e
+		jump j
+	else:
+		if ne == datacube:
+			pickup ne
+		else:
+			if nw == datacube:
+				pickup nw
+			else:
+				pickup n
+			endif
+		endif
+		if myitem != datacube:
+			jump k
+		endif
+	endif
+endif
+jump g
+
+
