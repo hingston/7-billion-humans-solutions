@@ -1,4 +1,4 @@
--- 7 Billion Humans (2059) --
+-- Code from commonnickname; I've been tasked to compress this, currently compressed about 20 instructions --
 -- 67: Decimal Doubler --
 
 step s
@@ -13,23 +13,18 @@ if c != datacube:
 	step ne
 	tell everyone hi
 	step sw
-	step e
 	a:
+	step e
 	tell everyone hi
 	tell everyone hi
 	step w
 	step e
-	step nw
-	step e
-	step s
-	mem1 = set myitem
-	mem1 = set myitem
-	mem1 = set myitem
+	tell everyone hi
+	mem1 = set e
 	mem1 = set myitem
 	mem1 = set myitem
 	mem1 = set myitem
 	step w
-	step e
 	jump a
 endif
 pickup c
@@ -51,6 +46,8 @@ if myitem == 1:
 	jump b
 endif
 comment 1
+step n
+step s
 mem2 = set e
 mem1 = calc [blank] + [blank]
 mem1 = calc [blank] + [blank]
@@ -89,8 +86,6 @@ mem1 = calc [blank] + [blank]
 jump h
 comment 0
 c:
-step n
-step s
 i:
 write 1
 drop
@@ -147,8 +142,6 @@ jump l
 comment 2
 d:
 g:
-step n
-step s
 write 1
 drop
 pickup c
@@ -160,16 +153,10 @@ write 5
 drop
 pickup c
 if mem2 == 1:
-	write 0
-	drop
-	pickup c
+	mem1 = calc [blank] + [blank]
 endif
-write 0
-drop
-pickup c
-write 0
-drop
-pickup c
+mem1 = calc [blank] + [blank]
+mem1 = calc [blank] + [blank]
 write 1
 drop
 pickup c
@@ -182,9 +169,7 @@ pickup c
 write 5
 drop
 pickup c
-write 0
-drop
-pickup c
+mem1 = calc [blank] + [blank]
 write 1
 drop
 pickup c
@@ -198,8 +183,6 @@ jump i
 comment 3
 h:
 e:
-step n
-step s
 write 1
 drop
 pickup c
@@ -234,8 +217,6 @@ write 8
 jump k
 comment 4
 f:
-step n
-step s
 write 1
 drop
 pickup c
