@@ -1,8 +1,11 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2059) --
 -- 26: Budget Brigade 2 --
 
 a:
-if s != shredder:
+if myitem == nothing or
+ myitem < 50 and
+ s != shredder:
+	giveto w
 	takefrom s
 endif
 if s == shredder and
@@ -11,9 +14,4 @@ if s == shredder and
 	takefrom w
 	giveto s
 endif
-if myitem < 50:
-	giveto w
-endif
 jump a
-
-
