@@ -1,33 +1,103 @@
--- 7 Billion Humans (2144) --
+-- 7 Billion Humans (2145) --
 -- 26: Budget Brigade 2 --
 
 if s == printer:
-	a:
 	takefrom s
-	giveto n
+	a:
+	if myitem == nothing:
+		takefrom s
+	endif
 	jump a
 endif
-comment 0
-if n == worker:
-	b:
-	if myitem == datacube:
-		giveto n
-	endif
-	jump b
-endif
-comment 2
-if s == worker:
-	c:
-	if myitem == datacube:
-		if myitem >= 50:
-			giveto e
-		else:
-			giveto w
+if nw == hole and
+ n == worker:
+	if nw == nw:
+		b:
+		if myitem == myitem:
+			if myitem == myitem:
+				if myitem == myitem:
+					if myitem == myitem:
+						if myitem == myitem:
+							if myitem == myitem:
+								if myitem == myitem:
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
 		endif
+	endif
+	if myitem == myitem:
+		if myitem == myitem:
+			if myitem == myitem:
+				if myitem == myitem:
+					if myitem == myitem:
+						if myitem == myitem:
+							if myitem == myitem:
+								if myitem == myitem:
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+	endif
+	if myitem == myitem:
+		if myitem == myitem:
+			if myitem == myitem:
+				if myitem == myitem:
+					if myitem == myitem:
+						if myitem == myitem:
+							if myitem == myitem:
+								if myitem == myitem:
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+	endif
+	if myitem == myitem:
+		if myitem == myitem:
+			if myitem == myitem:
+				if myitem == myitem:
+					if myitem == myitem:
+						if myitem == myitem:
+							if myitem == myitem:
+								if myitem == myitem:
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+	endif
+	if myitem == myitem:
+		if myitem == myitem:
+			if myitem == myitem:
+				if myitem == myitem:
+					takefrom s
+					jump b
+				endif
+			endif
+		endif
+	endif
+endif
+if nw == worker:
+	c:
+	takefrom s
+	if myitem > 49:
+		giveto ne
+	endif
+	if myitem < 50:
+		giveto nw
 	endif
 	jump c
 endif
-comment 1
 if s == shredder:
 	d:
 	if myitem == datacube:
@@ -35,21 +105,43 @@ if s == shredder:
 	endif
 	jump d
 endif
-comment 3
-e:
-if myitem == datacube:
-	if myitem >= 50:
-		f:
+if se == worker or
+ sw == worker:
+	if sw == worker:
+		e:
 		if myitem == datacube:
 			giveto e
 		endif
-		jump f
+		jump e
 	else:
-		g:
+		f:
 		if myitem == datacube:
 			giveto w
 		endif
-		jump g
+		jump f
 	endif
 endif
-jump e
+g:
+if myitem == nothing:
+	jump g
+endif
+if myitem < 50:
+	giveto w
+	h:
+	if myitem == datacube:
+		giveto w
+	endif
+	jump h
+else:
+	giveto e
+	i:
+	if myitem == datacube:
+		giveto e
+	endif
+	jump i
+endif
+
+
+
+
+

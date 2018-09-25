@@ -1,17 +1,213 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2059) --
 -- 39: Printing Etiquette 1 --
 
 mem1 = nearest printer
-a:
 takefrom mem1
-b:
-step nw,w,sw,n,ne,e,se
+step w
+step s
 if c == nothing:
-	drop
-	mem2 = calc mem2 + 1
-else:
-	jump b
-endif
-if mem2 != 5:
 	jump a
 endif
+step s
+if c == nothing:
+	jump b
+endif
+step e
+if c == nothing:
+	jump c
+endif
+step e
+if c == nothing:
+	jump d
+endif
+step n
+jump e
+comment 0
+a:
+drop
+step se
+step ne
+step n
+takefrom mem1
+step w
+step w
+step w
+drop
+step ne
+step e
+step e
+takefrom mem1
+step w
+step sw
+step sw
+drop
+step e
+step ne
+step n
+step ne
+takefrom mem1
+step se
+step se
+step e
+drop
+step nw
+step n
+step nw
+step w
+takefrom mem1
+step w
+step w
+step w
+step w
+drop
+end
+comment 1
+b:
+drop
+step e
+step ne
+step n
+takefrom mem1
+step w
+step w
+drop
+step ne
+step e
+takefrom mem1
+step w
+step sw
+drop
+step n
+step ne
+step e
+takefrom mem1
+step se
+step e
+step e
+drop
+step n
+step nw
+step w
+step w
+takefrom mem1
+step w
+step n
+drop
+end
+comment 2
+c:
+drop
+step ne
+step n
+takefrom mem1
+step sw
+step sw
+drop
+step n
+step n
+step ne
+step e
+takefrom mem1
+step se
+step e
+drop
+step n
+step n
+step w
+step w
+takefrom mem1
+step w
+step nw
+drop
+step ne
+step e
+step s
+takefrom mem1
+step e
+step n
+drop
+end
+comment 3
+d:
+drop
+step n
+step n
+takefrom mem1
+step sw
+step w
+step w
+drop
+step ne
+step ne
+step e
+takefrom mem1
+step w
+step nw
+step w
+drop
+step e
+step e
+step e
+takefrom mem1
+step w
+step nw
+step n
+drop
+step e
+step e
+step s
+takefrom mem1
+step w
+drop
+end
+comment 4
+e:
+drop
+step n
+takefrom mem1
+step se
+step se
+drop
+step n
+step n
+step w
+takefrom mem1
+step w
+step nw
+step nw
+drop
+step e
+step e
+step e
+takefrom mem1
+step e
+step e
+step e
+drop
+step nw
+step nw
+takefrom mem1
+drop
+
+
+DEFINE COMMENT 0
+eJwTYmBgaAhgKGoIYshgCGeIaEhmMAHirIYkhhlA/IAhmeEJQwoQg9TlMtxqyGS405DK8IghguFJQyjD
+CwZ/IPZjeMYwCkbBKBiSAACLQhYk;
+
+DEFINE COMMENT 1
+eJztykEKglAUheF/JQ3DFbgAaWjiQIRCoQaBKA5EcRgH20NrEQmREGngony0Cgfvg8PlHO4B0IWIK4ES
+PG64ynAoOKrEUYVLzYmGWDW56Z3Z3zzodWdSykzMotDcMyM+o3wGAnoS81PxVctPT1a6f2ZefLAsaxc2
+GEwjKw;
+
+DEFINE COMMENT 2
+eJwTZQCCRAYXhhQGB4ZcBpuGMgYbhmogu4bBD0jHNJQzZDAUMZQwZANFkhkaGEoZmhpqGdoYWhh6GjoZ
+pjB0McwC8pYBxTYAVW1hSAPiUTAKRsGQAQCSNxUL;
+
+DEFINE COMMENT 3
+eJwTYgCCMAazhlAGp4ZghhAGP4aKBj+GhoYAhiaGGIamhiSGOpAShjwGE4YshgCGTIYkhnSGooY0oHwq
+Qx9DMsM6ID7FMApGwSgYkgAARjcQGg;
+
+DEFINE COMMENT 4
+eJwTYwCCPAYDhhwGB4YMhhCGOIY6hniGJoYkhqaGVIa2hmKGCQ0lDFMaShnmAek1DEUMWxqyGXY1xDHs
+AmltKGIwYShlMGkoZ7BoqGWwYmgD4g4GO4ZRMApGwZAAAGp0FoU;
+

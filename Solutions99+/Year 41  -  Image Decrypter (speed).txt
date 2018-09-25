@@ -1,0 +1,84 @@
+-- 7 Billion Humans (2059) --
+-- 41: Image Decrypter --
+
+mem4 = nearest datacube
+step w
+mem2 = nearest datacube
+step w
+mem3 = nearest datacube
+pickup e
+if myitem == 9:
+	if mem4 == 12:
+		step nw
+		jump a
+	endif
+	jump b
+endif
+if myitem == 12:
+	step sw
+	jump c
+endif
+if myitem == 11:
+	if mem3 == 6:
+		step nw
+		jump d
+	endif
+	step s
+	jump e
+endif
+if myitem == 10:
+	jump f
+endif
+if myitem == 7:
+	jump g
+endif
+if myitem == 6:
+	if mem4 == 11:
+		step sw
+		jump h
+	endif
+	jump i
+endif
+if myitem == 5:
+	jump j
+endif
+if myitem == 4:
+	if mem3 == 4:
+		step nw
+		jump k
+	endif
+	jump l
+endif
+if myitem == 3:
+	jump m
+endif
+if myitem == 1:
+	jump n
+endif
+a:
+f:
+step w
+c:
+h:
+b:
+step w
+step w
+e:
+g:
+d:
+step w
+i:
+k:
+step w
+j:
+step w
+l:
+step w
+m:
+step w
+step w
+n:
+drop
+mem1 = calc 0 / 0
+
+

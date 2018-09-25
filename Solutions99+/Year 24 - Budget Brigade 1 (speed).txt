@@ -9,9 +9,9 @@ if s == shredder:
 	takefrom w
 	jump a
 endif
-b:
 if s == printer:
-	if myitem != datacube:
+	b:
+	if myitem == nothing:
 		takefrom s
 	endif
 	jump b
@@ -21,3 +21,5 @@ if myitem != datacube:
 	takefrom w
 endif
 jump c
+
+
