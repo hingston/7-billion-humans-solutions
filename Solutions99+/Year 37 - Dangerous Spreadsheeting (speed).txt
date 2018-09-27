@@ -1,26 +1,323 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2059) --
 -- 37: Dangerous Spreadsheeting --
 
 step e
-a:
-b:
-if c == datacube:
-	mem1 = calc mem1 + c
-endif
+mem1 = set e
 step e
-if e == hole:
-	mem1 = calc mem1 + c
-	step ne
-	if se == hole:
-		step e
+mem2 = set e
+if mem1 == datacube and
+ mem2 == datacube:
+	step e
+	step e
+	step e
+	mem3 = set 99
+	a:
+	b:
+	c:
+	if mem1 >= mem2:
+		mem4 = set mem2
+		mem2 = set mem1
+		mem1 = set mem4
 	endif
-	step se
-	jump b
-endif
-if c == 0 and
- e == wall:
+	if mem1 == 0 or
+	 mem1 == 1:
+		if mem1 == 1 and
+		 mem2 == 1 or
+		 mem1 == 0:
+			if mem1 == 0:
+				mem4 = set mem2
+			else:
+				mem4 = set 2
+			endif
+		else:
+			if mem2 < 6:
+				if mem2 < 4:
+					if mem2 < 3:
+						mem4 = set 3
+					else:
+						mem4 = set 4
+					endif
+				else:
+					if mem2 < 5:
+						mem4 = set 5
+					else:
+						mem4 = set 6
+					endif
+				endif
+			else:
+				if mem2 < 8:
+					if mem2 < 7:
+						mem4 = set 7
+					else:
+						mem4 = set 8
+					endif
+				else:
+					if mem2 < 9:
+						mem4 = set 9
+					else:
+						mem4 = set 10
+					endif
+				endif
+			endif
+		endif
+	else:
+		if mem1 < 6 and
+		 mem2 >= 6:
+			if mem1 < 4:
+				if mem2 < 8:
+					if mem1 < 3:
+						if mem2 < 7:
+							mem4 = set 8
+						else:
+							mem4 = set 9
+						endif
+					else:
+						if mem2 < 7:
+							mem4 = set 9
+						else:
+							mem4 = set 10
+						endif
+					endif
+				else:
+					if mem1 < 3:
+						if mem2 < 9:
+							mem4 = set 10
+						else:
+							mem4 = set 11
+						endif
+					else:
+						if mem2 < 9:
+							mem4 = set 11
+						else:
+							mem4 = set 12
+						endif
+					endif
+				endif
+			else:
+				if mem2 < 8:
+					if mem1 < 5:
+						if mem2 < 7:
+							mem4 = set 10
+						else:
+							mem4 = set 11
+						endif
+					else:
+						if mem2 < 7:
+							mem4 = set 11
+						else:
+							mem4 = set 12
+						endif
+					endif
+				else:
+					if mem1 < 5:
+						if mem2 < 9:
+							mem4 = set 12
+						else:
+							mem4 = set 13
+						endif
+					else:
+						if mem2 < 9:
+							mem4 = set 13
+						else:
+							mem4 = set 14
+						endif
+					endif
+				endif
+			endif
+		else:
+			if mem1 < 6:
+				if mem1 < 4:
+					if mem2 < 4:
+						if mem1 == 2 and
+						 mem2 == 2:
+							mem4 = set 4
+						else:
+							if mem1 == 2 and
+							 mem2 == 3:
+								mem4 = set 5
+							else:
+								mem4 = set 6
+							endif
+						endif
+					else:
+						if mem1 < 3:
+							if mem2 < 5:
+								mem4 = set 6
+							else:
+								mem4 = set 7
+							endif
+						else:
+							if mem2 < 5:
+								mem4 = set 7
+							else:
+								mem4 = set 8
+							endif
+						endif
+					endif
+				else:
+					if mem1 == 4 and
+					 mem2 == 4:
+						mem4 = set 8
+					else:
+						if mem1 == 4 and
+						 mem2 == 5:
+							mem4 = set 9
+						else:
+							mem4 = set 10
+						endif
+					endif
+				endif
+			else:
+				if mem1 < 8:
+					if mem2 < 8:
+						if mem1 == 6 and
+						 mem2 == 6:
+							mem4 = set 12
+						else:
+							if mem1 == 6 and
+							 mem2 == 7:
+								mem4 = set 13
+							else:
+								mem4 = set 14
+							endif
+						endif
+					else:
+						if mem1 < 7:
+							if mem2 < 9:
+								mem4 = set 14
+							else:
+								mem4 = set 15
+							endif
+						else:
+							if mem2 < 9:
+								mem4 = set 15
+							else:
+								mem4 = set 16
+							endif
+						endif
+					endif
+				else:
+					if mem1 == 8 and
+					 mem2 == 8:
+						mem4 = set 16
+					else:
+						if mem1 == 8 and
+						 mem2 == 9:
+							mem4 = set 17
+						else:
+							mem4 = set 18
+						endif
+					endif
+				endif
+			endif
+		endif
+	endif
+	if mem3 == 99:
+		jump d
+	else:
+		if mem3 == 98:
+			jump e
+		else:
+			if mem3 == 97:
+				jump f
+			else:
+				jump g
+			endif
+		endif
+	endif
+	d:
+	mem4 = calc mem4 + w
+	mem1 = set e
+	if mem1 == datacube:
+		mem4 = calc mem4 + mem1
+		step e
+	else:
+		step e
+		mem4 = calc mem4 + w
+	endif
+	mem1 = set e
+	mem3 = set mem4
+	step e
+	step e
 	pickup c
-	write mem1
-	drop
+	mem2 = set myitem
+	jump b
+	g:
+	mem4 = calc mem4 + mem3
+	step e
+	step e
+else:
+	if mem1 == datacube:
+		if mem2 == hole:
+			step se
+			step ne
+			mem3 = set 97
+			mem2 = set c
+			jump c
+			f:
+			mem1 = set mem4
+			step e
+			mem2 = set c
+			step e
+			mem3 = set c
+			step e
+			step e
+			step e
+			jump h
+		else:
+			mem2 = set w
+			step e
+			step e
+			mem3 = set c
+			step se
+			step e
+			step e
+			step ne
+			pickup ne
+			drop
+			jump i
+		endif
+	else:
+		if mem2 == hole:
+			mem1 = set w
+			step se
+			step ne
+			mem2 = set c
+			mem3 = set e
+			step e
+			step se
+			step ne
+			step e
+			pickup ne
+			drop
+			h:
+			i:
+			mem4 = calc mem1 + mem2
+			mem4 = calc mem4 + mem3
+			mem4 = calc mem4 + w
+			step e
+			pickup c
+		else:
+			mem1 = set w
+			step e
+			step ne
+			step se
+			mem3 = set 98
+			jump a
+			e:
+			mem3 = calc c + e
+			step e
+			step e
+			step e
+			pickup se
+			drop
+			mem4 = calc mem4 + mem3
+			mem4 = calc mem4 + w
+			step e
+			pickup c
+		endif
+	endif
 endif
-jump a
+write mem4
+drop
+
