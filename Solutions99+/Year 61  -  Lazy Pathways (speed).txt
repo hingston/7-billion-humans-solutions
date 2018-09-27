@@ -10,262 +10,269 @@ if mem1 == 99 and
  mem2 == 99:
 	step e
 	pickup c
-	if s != wall:
-		write 3
-		drop
-		step w
-		pickup c
-		if n == wall or
-		 n == worker:
-			write 2
+	jump a
+	mem4 = foreachdir s:
+		a:
+		if mem4 != wall:
+			write 3
 			drop
 			step w
+			pickup c
+			jump b
+			mem4 = foreachdir n:
+				b:
+				if mem4 == wall or
+				 mem4 == worker:
+					write 2
+					drop
+					step w
+					step w
+					step n
+					jump c
+					mem4 = foreachdir n:
+						c:
+						if mem4 == wall:
+							step w
+							step w
+							pickup nw
+							step nw
+							write 2
+							drop
+							step w
+							mem3 = nearest datacube
+							if mem3 == 2:
+								step sw
+							endif
+							pickup c
+							write 3
+							drop
+							step w
+							pickup c
+							write 4
+							drop
+							d:
+							step w
+							pickup c
+							write 5
+							drop
+							step sw
+							pickup c
+							write 6
+						else:
+							if mem4 == datacube:
+								step nw
+								step w
+								step w
+								step w
+								step w
+								step w
+								step w
+								step sw
+								step s
+								pickup c
+								write 7
+								drop
+								step w
+								pickup c
+								write 7
+								drop
+								step w
+								pickup c
+								write 8
+							else:
+								step s
+								jump e
+							endif
+						endif
+					endfor
+				else:
+					write 3
+					drop
+					step ne
+					pickup c
+					write 3
+				endif
+			endfor
+		else:
+			write 5
+			drop
 			step w
-			step n
-			if n == wall:
+			pickup nw
+			step nw
+			write 4
+			drop
+			step s
+			pickup c
+			write 5
+			drop
+			step w
+			jump d
+		endif
+	endfor
+else:
+	if mem1 == 99 and
+	 mem2 == 1:
+		jump f
+		mem4 = foreachdir n:
+			f:
+			if mem4 == wall:
+				step w
+				step w
+				step w
+				step w
+				step w
 				step w
 				step w
 				pickup nw
 				step nw
-				write 2
-				drop
-				step w
-				mem3 = nearest datacube
-				if mem3 == 2:
-					step sw
-				endif
-				pickup c
-				write 3
-				drop
-				step w
-				pickup c
-				write 4
-				drop
-				a:
-				step w
-				pickup c
-				write 5
-				drop
-				step sw
-				pickup c
 				write 6
 				drop
-				end
+				step w
+				pickup c
+				write 7
+				drop
+				step s
+				pickup c
+				write 7
+				drop
+				step w
+				pickup c
+				write 8
+				drop
+				step s
+				pickup c
+				write 8
+				drop
+				step e
+				pickup c
+				write 7
 			else:
-				if n == datacube:
-					step nw
-					step w
-					step w
-					step w
-					step w
-					step w
+				step s
+				mem3 = nearest datacube
+				if mem3 == 2:
+					e:
+					step sw
+					pickup c
+					write 3
+					drop
+					step sw
+					pickup c
+					write 4
+					drop
+					if mem1 == 3:
+						step w
+						pickup c
+						write 4
+						drop
+					endif
 					step w
 					step sw
-					step s
 					pickup c
-					write 7
+					write 5
 					drop
-					step w
+					step sw
 					pickup c
-					write 7
-					drop
-					step w
-					pickup c
-					write 8
-					drop
-					end
+					write 6
 				else:
 					step s
-					jump b
+					mem3 = nearest datacube
+					if mem3 == 2:
+						step w
+						step w
+						g:
+						pickup c
+						write 2
+						drop
+						step sw
+						step w
+						pickup c
+						write 3
+						drop
+						step nw
+						pickup n
+						step n
+						write 2
+						drop
+						step n
+						pickup n
+						step n
+						write 2
+					else:
+						step sw
+						jump g
+					endif
 				endif
 			endif
-		else:
-			write 3
-			drop
-			step ne
-			pickup c
-			write 3
-			drop
-			end
-		endif
+		endfor
 	else:
-		write 5
-		drop
-		step w
-		pickup nw
-		step nw
-		write 4
-		drop
-		step s
-		pickup c
-		write 5
-		drop
-		step w
-		jump a
-	endif
-endif
-if mem1 == 99 and
- mem2 == 1:
-	if n == wall:
-		step w
-		step w
-		step w
-		step w
-		step w
-		step w
-		step w
-		pickup nw
-		step nw
-		write 6
-		drop
-		step w
-		pickup c
-		write 7
-		drop
-		step s
-		pickup c
-		write 7
-		drop
-		step w
-		pickup c
-		write 8
-		drop
-		step s
-		pickup c
-		write 8
-		drop
-		step e
-		pickup c
-		write 7
-		drop
-		end
-	endif
-	step s
-	mem3 = nearest datacube
-	if mem3 == 2:
-		b:
-		step sw
-		pickup c
-		write 3
-		drop
-		step sw
-		pickup c
-		write 4
-		drop
-		if mem1 == 3:
-			step w
-			pickup c
-			write 4
-			drop
-		endif
 		step w
 		step sw
-		pickup c
-		write 5
-		drop
+		step w
 		step sw
-		pickup c
-		write 6
-		drop
-		end
-	else:
-		step s
-		mem3 = nearest datacube
-		if mem3 == 2:
+		step sw
+		step w
+		step w
+		if mem2 == 2:
 			step w
-			step w
-			c:
-			pickup c
-			write 2
-			drop
-			step sw
-			step w
-			pickup c
-			write 3
-			drop
 			step nw
 			pickup n
 			step n
-			write 2
+			write 9
 			drop
-			step n
-			pickup n
-			step n
-			write 2
+			pickup nw
+			step nw
+			write 9
 			drop
-			end
+			step e
+			step e
+			pickup c
+			write 9
+			drop
+			step e
+			step ne
+			pickup c
+			write 9
+			drop
+			step nw
+			step w
+			pickup c
+			write 8
+			drop
+			step w
+			step w
+			pickup c
+			write 8
 		else:
-			step sw
-			jump c
+			if mem2 == 4 or
+			 mem1 == 4:
+				pickup nw
+				step nw
+			else:
+				pickup c
+			endif
+			if mem2 != 4:
+				write 7
+				drop
+				step w
+				pickup c
+			else:
+				write 6
+				drop
+				step w
+				pickup nw
+				step nw
+			endif
+			write 8
+			drop
+			step w
+			pickup c
+			write 9
+			drop
+			pickup nw
+			step nw
+			write 10
 		endif
 	endif
-endif
-step w
-step sw
-step w
-step sw
-step sw
-step w
-step w
-if mem2 == 2:
-	step w
-	step nw
-	pickup n
-	step n
-	write 9
-	drop
-	pickup nw
-	step nw
-	write 9
-	drop
-	step e
-	step e
-	pickup c
-	write 9
-	drop
-	step e
-	step ne
-	pickup c
-	write 9
-	drop
-	step nw
-	step w
-	pickup c
-	write 8
-	drop
-	step w
-	step w
-	pickup c
-	write 8
-else:
-	if mem2 == 4 or
-	 mem1 == 4:
-		pickup nw
-		step nw
-	else:
-		pickup c
-	endif
-	if mem2 != 4:
-		write 7
-		drop
-		step w
-		pickup c
-	else:
-		write 6
-		drop
-		step w
-		pickup nw
-		step nw
-	endif
-	write 8
-	drop
-	step w
-	pickup c
-	write 9
-	drop
-	pickup nw
-	step nw
-	write 10
 endif
 drop
 
