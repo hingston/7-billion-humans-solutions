@@ -122,7 +122,7 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 55 | Data Flowers | [hingston](https://github.com/hingston/) | **8** ✔ | **25** ❌ |
 | Year 56 | Local Maximums | [hingston](https://github.com/hingston/) | **8** ✔ | **13** ✔ |
 | Year 57 | Neighborly Sweeper | [hingston](https://github.com/hingston/) | **15** ❌ | **96** ❌ |
-| Year 58 | Good Neighbors | [hingston](https://github.com/hingston/) | **8** ❌ | 277 |
+| Year 58 | Good Neighbors | [commonnickname](https://github.com/commonnickname) | **5** ✔ | ~315 |
 | Year 58 | Good Neighbors | [hingston](https://github.com/hingston/) | 11 | **78** ❌ |
 | Year 59 | Glory Hole | [commonnickname](https://github.com/commonnickname) | **4** ➕ | 74 |
 | Year 59 | Glory Hole | [hingston](https://github.com/hingston/) | 9 | **15** ❌ |
