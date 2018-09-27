@@ -1,18 +1,23 @@
--- 7 Billion Humans (2056) --
+-- 7 Billion Humans (2145) --
 -- 10: Emergency Escapades --
 
 a:
-if c == 1:
+if n != hole and
+ s != 3 and
+ c != 3 and
+ n != 3:
 	step n
 endif
-if c == 2:
-	step e
-endif
-if c == 3:
+if s == 3 or
+ c == 3:
 	step s
 endif
-if c == 4 or
- c != datacube:
+if s == wall or
+ n == hole or
+ sw == 3 or
+ se == 3:
 	step w
 endif
 jump a
+
+

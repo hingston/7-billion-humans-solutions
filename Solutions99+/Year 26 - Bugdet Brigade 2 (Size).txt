@@ -1,0 +1,17 @@
+-- 7 Billion Humans (2059) --
+-- 26: Budget Brigade 2 --
+
+a:
+if myitem == nothing or
+ myitem < 50 and
+ s != shredder:
+	giveto w
+	takefrom s
+endif
+if s == shredder and
+ myitem == datacube or
+ w >= 50:
+	takefrom w
+	giveto s
+endif
+jump a
