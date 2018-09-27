@@ -1,0 +1,28 @@
+-- 7 Billion Humans (2145) --
+-- 38: Seek and Destroy 3 --
+
+a:
+if n != wall:
+	if c < mem1 or
+	 mem1 != datacube:
+		mem1 = set c
+	endif
+	step n
+	jump a
+endif
+pickup mem1
+mem3 = nearest shredder
+mem4 = nearest hole
+b:
+mem2 = nearest worker
+if mem2 != worker:
+	giveto mem3
+endif
+if myitem > mem2 or
+ myitem != datacube:
+	step mem4
+endif
+if myitem == mem2:
+	step sw,e
+endif
+jump b
