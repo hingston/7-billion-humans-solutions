@@ -1,0 +1,220 @@
+-- 7 Billion Humans (2059) --
+-- 64: Binary Counter --
+
+step s
+if e == nothing and
+ c == datacube:
+	pickup c
+	step s
+	drop
+	pickup c
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	drop
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	pickup c
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	drop
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	pickup c
+	drop
+	pickup c
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	mem1 = set myitem
+	drop
+	pickup c
+	drop
+	pickup c
+	drop
+	pickup c
+else:
+	if s == button:
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		step s
+		step n
+		step e
+		step sw
+		step n
+		step s
+		step n
+		step s
+		step n
+		step s
+		step n
+		mem1 = set myitem
+		mem1 = set myitem
+		step s
+		step n
+		step s
+		step n
+		step s
+		step n
+		step s
+		step n
+		mem1 = set myitem
+		mem1 = set myitem
+		step s
+		step n
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		step s
+		step n
+		end
+	else:
+		pickup c
+		if e == nothing:
+			step s
+			drop
+			step n
+			step s
+			pickup c
+			if w == nothing:
+			endif
+			drop
+			if w == nothing:
+			endif
+			pickup c
+			step n
+			step s
+			drop
+			mem1 = set myitem
+			mem1 = set myitem
+			mem1 = set myitem
+			mem1 = set myitem
+			mem1 = set myitem
+			mem1 = set myitem
+			mem1 = set myitem
+			mem1 = set myitem
+			mem1 = set myitem
+			mem1 = set myitem
+			mem1 = set myitem
+			mem1 = set myitem
+			mem1 = set myitem
+			mem1 = set myitem
+			mem1 = set myitem
+			pickup c
+			step n
+			step s
+		else:
+			if e == nothing:
+				step s
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				drop
+				step se
+				step e
+				step e
+				step w
+				step w
+				pickup nw
+				step nw
+				step nw
+				step e
+				step s
+			else:
+				step s
+				tell everyone hi
+				tell everyone hi
+				tell everyone hi
+				tell everyone hi
+				drop
+				step se
+				step e
+				step e
+				step e
+				step w
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				step e
+				step w
+				step se
+				step n
+				end
+			endif
+		endif
+	endif
+endif
+drop
+
