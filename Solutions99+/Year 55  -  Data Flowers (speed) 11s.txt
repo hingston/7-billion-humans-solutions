@@ -1,0 +1,310 @@
+-- 7 Billion Humans (2059) --
+-- 55: Data Flowers --
+
+step n
+jump a
+mem4 = foreachdir n:
+	a:
+	if mem4 == datacube:
+		pickup n
+	else:
+		step n
+		jump b
+		mem4 = foreachdir n:
+			b:
+			if mem4 == datacube:
+				pickup n
+			else:
+				step n
+				step n
+				step n
+				jump c
+				mem4 = foreachdir n:
+					c:
+					if mem4 == datacube:
+						pickup n
+					else:
+						step n
+						pickup n
+					endif
+				endfor
+			endif
+		endfor
+	endif
+endfor
+step n
+step n
+comment 0
+mem2 = foreachdir sw:
+	if myitem <= mem2:
+		mem1 = set myitem
+		mem3 = set mem2
+	else:
+		mem1 = set mem2
+		mem3 = set myitem
+	endif
+	mem2 = set 0
+	jump d
+endfor
+mem1 = foreachdir w:
+	mem2 = foreachdir nw:
+		e:
+		if mem1 <= mem2:
+			mem3 = set mem2
+		else:
+			mem3 = set mem1
+			mem1 = set mem2
+		endif
+		mem2 = set 1
+		jump f
+	endfor
+endfor
+mem1 = foreachdir n:
+	mem2 = foreachdir ne:
+		g:
+		if mem1 <= mem2:
+			mem3 = set mem2
+		else:
+			mem3 = set mem1
+			mem1 = set mem2
+		endif
+		mem2 = set 2
+		jump h
+	endfor
+endfor
+mem1 = foreachdir e:
+	mem2 = foreachdir se:
+		i:
+		if mem1 <= mem2:
+			mem3 = set mem2
+		else:
+			mem3 = set mem1
+			mem1 = set mem2
+		endif
+		mem2 = set 3
+		jump j
+	endfor
+endfor
+k:
+write mem4
+drop
+end
+comment 2
+j:
+d:
+f:
+h:
+if mem1 == 0 or
+ mem1 == 1:
+	if mem1 == 1 and
+	 mem3 == 1 or
+	 mem1 == 0:
+		if mem1 == 0:
+		else:
+			mem3 = set 2
+		endif
+	else:
+		if mem3 < 6:
+			if mem3 < 4:
+				if mem3 < 3:
+					mem3 = set 3
+				else:
+					mem3 = set 4
+				endif
+			else:
+				if mem3 < 5:
+					mem3 = set 5
+				else:
+					mem3 = set 6
+				endif
+			endif
+		else:
+			if mem3 < 8:
+				if mem3 < 7:
+					mem3 = set 7
+				else:
+					mem3 = set 8
+				endif
+			else:
+				if mem3 < 9:
+					mem3 = set 9
+				else:
+					mem3 = set 10
+				endif
+			endif
+		endif
+	endif
+else:
+	if mem1 < 6 and
+	 mem3 >= 6:
+		if mem1 < 4:
+			if mem3 < 8:
+				if mem1 < 3:
+					if mem3 < 7:
+						mem3 = set 8
+					else:
+						mem3 = set 9
+					endif
+				else:
+					if mem3 < 7:
+						mem3 = set 9
+					else:
+						mem3 = set 10
+					endif
+				endif
+			else:
+				if mem1 < 3:
+					if mem3 < 9:
+						mem3 = set 10
+					else:
+						mem3 = set 11
+					endif
+				else:
+					if mem3 < 9:
+						mem3 = set 11
+					else:
+						mem3 = set 12
+					endif
+				endif
+			endif
+		else:
+			if mem3 < 8:
+				if mem1 < 5:
+					if mem3 < 7:
+						mem3 = set 10
+					else:
+						mem3 = set 11
+					endif
+				else:
+					if mem3 < 7:
+						mem3 = set 11
+					else:
+						mem3 = set 12
+					endif
+				endif
+			else:
+				if mem1 < 5:
+					if mem3 < 9:
+						mem3 = set 12
+					else:
+						mem3 = set 13
+					endif
+				else:
+					if mem3 < 9:
+						mem3 = set 13
+					else:
+						mem3 = set 14
+					endif
+				endif
+			endif
+		endif
+	else:
+		if mem1 < 6:
+			if mem1 < 4:
+				if mem3 < 4:
+					if mem1 == 2 and
+					 mem3 == 2:
+						mem3 = set 4
+					else:
+						if mem1 == 2 and
+						 mem3 == 3:
+							mem3 = set 5
+						else:
+							mem3 = set 6
+						endif
+					endif
+				else:
+					if mem1 < 3:
+						if mem3 < 5:
+							mem3 = set 6
+						else:
+							mem3 = set 7
+						endif
+					else:
+						if mem3 < 5:
+							mem3 = set 7
+						else:
+							mem3 = set 8
+						endif
+					endif
+				endif
+			else:
+				if mem1 == 4 and
+				 mem3 == 4:
+					mem3 = set 8
+				else:
+					if mem1 == 4 and
+					 mem3 == 5:
+						mem3 = set 9
+					else:
+						mem3 = set 10
+					endif
+				endif
+			endif
+		else:
+			if mem1 < 8:
+				if mem3 < 8:
+					if mem1 == 6 and
+					 mem3 == 6:
+						mem3 = set 12
+					else:
+						if mem1 == 6 and
+						 mem3 == 7:
+							mem3 = set 13
+						else:
+							mem3 = set 14
+						endif
+					endif
+				else:
+					if mem1 < 7:
+						if mem3 < 9:
+							mem3 = set 14
+						else:
+							mem3 = set 15
+						endif
+					else:
+						if mem3 < 9:
+							mem3 = set 15
+						else:
+							mem3 = set 16
+						endif
+					endif
+				endif
+			else:
+				if mem1 == 8 and
+				 mem3 == 8:
+					mem3 = set 16
+				else:
+					if mem1 == 8 and
+					 mem3 == 9:
+						mem3 = set 17
+					else:
+						mem3 = set 18
+					endif
+				endif
+			endif
+		endif
+	endif
+endif
+if mem2 < 2:
+	if mem2 < 1:
+		mem4 = set mem3
+		jump e
+	else:
+		mem4 = calc mem4 + mem3
+		jump g
+	endif
+else:
+	if mem2 < 3:
+		mem4 = calc mem4 + mem3
+		jump i
+	else:
+		mem4 = calc mem4 + mem3
+		jump k
+	endif
+endif
+
+
+DEFINE COMMENT 0
+eJxjYBgFo2AUjGQAAAQEAAE;
+
