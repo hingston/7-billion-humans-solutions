@@ -35,7 +35,9 @@ endfor
 step n
 step n
 comment 0
+jump d
 mem2 = foreachdir sw:
+	d:
 	if myitem <= mem2:
 		mem1 = set myitem
 		mem3 = set mem2
@@ -44,11 +46,11 @@ mem2 = foreachdir sw:
 		mem3 = set myitem
 	endif
 	mem2 = set 0
-	jump d
+	jump e
 endfor
 mem1 = foreachdir w:
 	mem2 = foreachdir nw:
-		e:
+		f:
 		if mem1 <= mem2:
 			mem3 = set mem2
 		else:
@@ -56,12 +58,12 @@ mem1 = foreachdir w:
 			mem1 = set mem2
 		endif
 		mem2 = set 1
-		jump f
+		jump g
 	endfor
 endfor
 mem1 = foreachdir n:
 	mem2 = foreachdir ne:
-		g:
+		h:
 		if mem1 <= mem2:
 			mem3 = set mem2
 		else:
@@ -69,12 +71,12 @@ mem1 = foreachdir n:
 			mem1 = set mem2
 		endif
 		mem2 = set 2
-		jump h
+		jump i
 	endfor
 endfor
 mem1 = foreachdir e:
 	mem2 = foreachdir se:
-		i:
+		j:
 		if mem1 <= mem2:
 			mem3 = set mem2
 		else:
@@ -82,18 +84,18 @@ mem1 = foreachdir e:
 			mem1 = set mem2
 		endif
 		mem2 = set 3
-		jump j
+		jump k
 	endfor
 endfor
-k:
+l:
 write mem4
 drop
 end
 comment 2
-j:
-d:
-f:
-h:
+k:
+e:
+g:
+i:
 if mem1 == 0 or
  mem1 == 1:
 	if mem1 == 1 and
@@ -289,18 +291,18 @@ endif
 if mem2 < 2:
 	if mem2 < 1:
 		mem4 = set mem3
-		jump e
+		jump f
 	else:
 		mem4 = calc mem4 + mem3
-		jump g
+		jump h
 	endif
 else:
 	if mem2 < 3:
 		mem4 = calc mem4 + mem3
-		jump i
+		jump j
 	else:
 		mem4 = calc mem4 + mem3
-		jump k
+		jump l
 	endif
 endif
 
