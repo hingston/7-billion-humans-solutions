@@ -72,7 +72,7 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 24 | Budget Brigade 1 | [hingston](https://github.com/hingston/) | **6** ✔ | 120 |
 | Year 24 | Budget Brigade 1 | [martinez8859](https://github.com/martinez8859) | 12 | **47** ✔ |
 | Year 25 | My First Shredding Memory | [hingston](https://github.com/hingston/) | **5** ✔ | 139 |
-| Year 25 | My First Shredding Memory | [martinez8859](https://github.com/martinez8859) | 9 | **131** ✔ |
+| Year 25 | My First Shredding Memory | [n05ucc4u](https://github.com/n05ucc4u) | 9 | **130** ➕ |
 | Year 26 | Bugdet Bragade 2 | [psam](https://www.twitch.tv/psam/) | **7** ➕ | ~200 |
 | Year 26 | Bugdet Bragade 2 | [n05ucc4u](https://github.com/n05ucc4u) | 76 | **61** ➕ |
 | Year 28 | Neural Pathways | [hingston](https://github.com/hingston/) | **4** ✔ | **51** ✔ |
@@ -116,7 +116,7 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 52 | The Mode Code | [hingston](https://github.com/hingston/) | **18** ➕ | 275 |
 | Year 52 | The Mode Code | [commonnickname](https://github.com/commonnickname) | 228 | **~65** ➕ |
 | Year 53 | 100 Cubes on the Floor | [hingston](https://github.com/hingston/) | **16** ❌ | 97 |
-| Year 53 | 100 Cubes on the Floor | [commonnickname](https://github.com/commonnickname) | 245 | **31** ➕ |
+| Year 53 | 100 Cubes on the Floor | [n05ucc4u](https://github.com/n05ucc4u) | 228 | **28** ➕ |
 | Year 54 | Terrain Leveler | [hingston](https://github.com/hingston/) | **10** ➕ | 251 |
 | Year 54 | Terrain Leveler | [commonnickname](https://github.com/commonnickname) | 91 | **47** ➕ |
 | Year 55 | Data Flowers | [hingston](https://github.com/hingston/) | **8** ✔ | **25** ❌ |
