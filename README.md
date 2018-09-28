@@ -72,18 +72,18 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 24 | Budget Brigade 1 | [hingston](https://github.com/hingston/) | **6** ✔ | 120 |
 | Year 24 | Budget Brigade 1 | [martinez8859](https://github.com/martinez8859) | 12 | **47** ✔ |
 | Year 25 | My First Shredding Memory | [hingston](https://github.com/hingston/) | **5** ✔ | 139 |
-| Year 25 | My First Shredding Memory | [martinez8859](https://github.com/martinez8859) | 9 | **131** ✔ |
+| Year 25 | My First Shredding Memory | [n05ucc4u](https://github.com/n05ucc4u) | 9 | **130** ➕ |
 | Year 26 | Bugdet Bragade 2 | [psam](https://www.twitch.tv/psam/) | **7** ➕ | ~200 |
 | Year 26 | Bugdet Bragade 2 | [n05ucc4u](https://github.com/n05ucc4u) | 76 | **61** ➕ |
 | Year 28 | Neural Pathways | [hingston](https://github.com/hingston/) | **4** ✔ | **51** ✔ |
 | Year 29 | Biometric Access | [hingston](https://github.com/hingston/) | **5** ✔ | **60** ❌ |
 | Year 30 | Fill the Floor | [hingston](https://github.com/hingston/) | **6** ❌ | 303 |
-| Year 30 | Fill the Floor | [main-gi](https://github.com/main-gi) | 59 | **131** ❌ |
+| Year 30 | Fill the Floor | [main-gi](https://github.com/main-gi) | 64 | **~112** ➕ |
 | Year 31 | Checkerboard Organization | [hingston](https://github.com/hingston/) | **7** ✔ | 149 |
 | Year 31 | Checkerboard Organization | [hingston](https://github.com/hingston/) | 9 | **97** ❌ |
 | Year 32 | Creative Writhing | [hingston](https://github.com/hingston/) | **6** ❌ | 331 |
 | Year 32 | Creative Writhing | [hingston](https://github.com/hingston/) | 22 | **39** ❌ |
-| Year 33 | Data Backup Day | [hingston](https://github.com/hingston/) | **8** ✔ | 5 |
+| Year 33 | Data Backup Day | [$uppenbaer](https://steamcommunity.com/profiles/76561198047610018) | **7** ➕ | ~20 |
 | Year 33 | Data Backup Day | [hingston](https://github.com/hingston/) | 9 | **2** ✔ |
 | Year 34 | Seek and Destroy 1 | [hingston](https://github.com/hingston/) | **9** ❌ | 22 |
 | Year 34 | Seek and Destroy 1 | [hingston](https://github.com/hingston/) | 10 | **21** ❌ |
@@ -101,7 +101,8 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 41 | Image Decrypter | [commonnickname](https://github.com/commonnickname) | 51 | **6** ➕ |
 | Year 42 | Important Email Organization | [hingston](https://github.com/hingston/) | **14** ➕ | 596 |
 | Year 42 | Important Email Organization | [commonnickname](https://github.com/commonnickname) | 204 | **~78** ➕ |
-| Year 43 | Multiplication Table | [hingston](https://github.com/hingston/) | **11** ❌ | **47** ❌ |
+| Year 43 | Multiplication Table | [main-gi](https://github.com/main-gi) | **10** ✔ | 49 |
+| Year 43 | Multiplication Table | [hingston](https://github.com/hingston/) | 11 | **47** ❌ |
 | Year 44 | Unique Fashion Party | [commonnickname](https://github.com/commonnickname) | **5** ➕ | ~62 |
 | Year 44 | Unique Fashion Party | [hingston](https://github.com/hingston/) | 11 | **59** ❌ |
 | Year 46 | Compulsory Office Romance | [hingston](https://github.com/hingston/) | **7** ❌ | **13** ❌ |
@@ -110,23 +111,24 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 49 | Double Sided Destruction | [commonnickname](https://github.com/commonnickname) | **4** ➕ | **13** ➕ |
 | Year 50 | Cubical Communication | [yifeixuer](https://steamcommunity.com/profiles/76561198831890282) | **6** ➕ | 49 |
 | Year 50 | Cubical Communication | [commonnickname](https://github.com/commonnickname) | 45 | **26** ➕ |
-| Year 51 | Identify Yourselves | [hingston](https://github.com/hingston/) | **7** ❌ | 38 |
+| Year 51 | Identify Yourselves | [main-gi](https://github.com/main-gi) | **6** ✔ | 44 |
 | Year 51 | Identify Yourselves | [commonnickname](https://github.com/commonnickname) | 46 | **4** ➕ |
 | Year 52 | The Mode Code | [hingston](https://github.com/hingston/) | **18** ➕ | 275 |
-| Year 52 | The Mode Code | [hingston](https://github.com/hingston/) | 29 | **154** ❌ |
+| Year 52 | The Mode Code | [commonnickname](https://github.com/commonnickname) | 228 | **~65** ➕ |
 | Year 53 | 100 Cubes on the Floor | [hingston](https://github.com/hingston/) | **16** ❌ | 97 |
-| Year 53 | 100 Cubes on the Floor | [commonnickname](https://github.com/commonnickname) | 245 | **31** ➕ |
+| Year 53 | 100 Cubes on the Floor | [n05ucc4u](https://github.com/n05ucc4u) | 228 | **28** ➕ |
 | Year 54 | Terrain Leveler | [hingston](https://github.com/hingston/) | **10** ➕ | 251 |
 | Year 54 | Terrain Leveler | [commonnickname](https://github.com/commonnickname) | 91 | **47** ➕ |
 | Year 55 | Data Flowers | [hingston](https://github.com/hingston/) | **8** ✔ | **25** ❌ |
 | Year 56 | Local Maximums | [hingston](https://github.com/hingston/) | **8** ✔ | **13** ✔ |
 | Year 57 | Neighborly Sweeper | [hingston](https://github.com/hingston/) | **15** ❌ | **96** ❌ |
-| Year 58 | Good Neighbors | [hingston](https://github.com/hingston/) | **8** ❌ | 277 |
+| Year 58 | Good Neighbors | [commonnickname](https://github.com/commonnickname) | **5** ✔ | ~315 |
 | Year 58 | Good Neighbors | [hingston](https://github.com/hingston/) | 11 | **78** ❌ |
 | Year 59 | Glory Hole | [commonnickname](https://github.com/commonnickname) | **4** ➕ | 74 |
 | Year 59 | Glory Hole | [hingston](https://github.com/hingston/) | 9 | **15** ❌ |
 | Year 60 | Understaffed Sorting | [hingston](https://github.com/hingston/) | **12** ✔ | **177** ❌ |
 | Year 61 | Lazy Pathways | [commonnickname](https://github.com/commonnickname) | 246 | **20** ➕ |
+| Year 62 | The Sorting Floor | [main-gi](https://github.com/main-gi) | **30** ❌ | 144 |
 | Year 62 | The Sorting Floor | [mrtong96](https://steamcommunity.com/profiles/76561198191650798) | 152 | **36** ➕ |
 | Year 63 | Defrag Disordered | [main-gi](https://github.com/main-gi) | **12** ➕ | 328 |
 | Year 64 | Binary Counter | [AlonzoTG](https://github.com/AlonzoTG) | **16** ❌ | 60 |
@@ -134,7 +136,7 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 65 | Defrag Ordered | [main-gi](https://github.com/main-gi) | **15** ➕ | 1170 |
 | Year 66 | Decimal Counter | [AlonzoTG](https://github.com/AlonzoTG) | **23** ❌ | 150 |
 | Year 66 | Decimal Counter | [commonnickname](https://github.com/commonnickname) | 239 | **26** ➕ |
-| Year 67 | Decimal Doubler | [commonnickname](https://github.com/commonnickname) | 224 | **47** ➕ |
+| Year 67 | Decimal Doubler | [commonnickname](https://github.com/commonnickname), [main-gi](https://github.com/main-gi) | 196 | **47** ➕ |
 | Year 68 | Goodbye, Humans! | [AlonzoTG](https://github.com/AlonzoTG) | **9** ❌ | 91 |
 
 ###### +50% Solutions

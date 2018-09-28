@@ -1,18 +1,15 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2059) --
 -- 58: Good Neighbors --
 
 a:
-mem1 = nearest wall
 step nw,w,sw,n,s,ne,e,se
-if c == datacube and
- c > 5:
+drop
+if c == 8 and
+ myitem == nothing and
+ n != wall and
+ w != wall and
+ e != wall and
+ s != wall:
 	pickup c
-	step mem1
-endif
-if n == wall or
- e == wall or
- s == wall or
- w == wall:
-	drop
 endif
 jump a
