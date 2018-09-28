@@ -1,6 +1,5 @@
--- 7 Billion Humans (2144) --
+-- Basically Alonzo's solution with fixed if --
 -- 68: Goodbye, Humans! --
-
 a:
 if se != hole and
  se != wall:
@@ -11,12 +10,11 @@ if sw != hole and
 	step sw
 endif
 if w == wall and
- e == wall:
-	if n != worker and
-	 ne != worker and
-	 nw != worker:
-		tell everyone goodbye
-	endif
+ e == wall and
+ n != worker and
+ ne != worker and
+ nw != worker:
+	tell everyone goodbye
 endif
 step s
 jump a
