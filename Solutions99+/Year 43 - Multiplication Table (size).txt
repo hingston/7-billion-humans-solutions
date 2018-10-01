@@ -1,17 +1,18 @@
--- 7 Billion Humans (2056) --
+-- 7 Billion Humans (2145) --
 -- 43: Multiplication Table --
 
 a:
-step n
-if n == 0 or
- n == nothing:
-	jump a
+step n,s
+if n == datacube and
+ c == nothing and
+ s == datacube:
+	mem1 = set n
 endif
-mem1 = set n
-b:
-step s
-pickup c
-mem2 = calc mem2 + mem1
-write mem2
-drop
-jump b
+if c == 0 and
+ mem1 != 0:
+	pickup c
+	mem2 = calc mem1 + n
+	write mem2
+	drop
+endif
+jump a

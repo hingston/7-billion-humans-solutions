@@ -101,7 +101,7 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 41 | Image Decrypter | [commonnickname](https://github.com/commonnickname) | 51 | **6** ➕ |
 | Year 42 | Important Email Organization | [commonnickname](https://github.com/commonnickname) | **10** ➕ | ~899 |
 | Year 42 | Important Email Organization | [commonnickname](https://github.com/commonnickname) | 204 | **~78** ➕ |
-| Year 43 | Multiplication Table | [main-gi](https://github.com/main-gi) | **10** ✔ | 49 |
+| Year 43 | Multiplication Table | [Farzher ヽ(◕◡◕✿)ノ](https://steamcommunity.com/id/farzher) | **9** ➕ | ~696 |
 | Year 43 | Multiplication Table | [hingston](https://github.com/hingston/) | 11 | **47** ❌ |
 | Year 44 | Unique Fashion Party | [commonnickname](https://github.com/commonnickname) | **5** ➕ | ~62 |
 | Year 44 | Unique Fashion Party | [marky1124](https://github.com/marky1124) | 10 | **~59** ❌ |
