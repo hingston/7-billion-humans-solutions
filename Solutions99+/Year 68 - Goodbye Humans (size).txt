@@ -1,20 +1,15 @@
--- Basically Alonzo's solution with fixed if --
+-- 7 Billion Humans (2145) --
 -- 68: Goodbye, Humans! --
+
 a:
-if se != hole and
- se != wall:
-	step se
-endif
-if sw != hole and
- sw != wall:
-	step sw
-endif
-if w == wall and
- e == wall and
- n != worker and
- ne != worker and
- nw != worker:
+mem1 = nearest worker
+if mem1 != worker:
 	tell everyone goodbye
 endif
-step s
+if sw != hole and
+ s != hole or
+ e == wall:
+	step sw,s
+endif
+step se
 jump a
