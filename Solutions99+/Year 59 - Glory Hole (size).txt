@@ -1,14 +1,14 @@
 -- 7 Billion Humans (2145) --
 -- 59: Glory Hole --
 
-mem1 = nearest datacube
-step mem1
 a:
-mem2 = foreachdir nw,w,sw,n,s,ne,se:
-	if c == 1 and
-	 mem2 == hole or
-	 mem2 < c:
-		step mem2
+mem1 = foreachdir nw,w,sw,n,s,ne,e,se:
+	if c == nothing and
+	 mem1 == datacube or
+	 c > mem1 or
+	 c == 1 and
+	 mem1 != worker:
+		step mem1
 	endif
 endfor
 jump a

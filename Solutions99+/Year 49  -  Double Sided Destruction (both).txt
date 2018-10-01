@@ -1,9 +1,0 @@
--- 7 Billion Humans (2059) --
--- 49: Double Sided Destruction --
-
-mem1 = nearest shredder
-pickup s
-giveto mem1
-step e
-
-

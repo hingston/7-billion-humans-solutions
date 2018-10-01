@@ -1,12 +1,9 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2059) --
 -- 49: Double Sided Destruction --
 
 mem1 = nearest shredder
 pickup s
-if w == worker and
- e == worker:
-	listenfor ready
-endif
-mem2 = nearest worker
 giveto mem1
-tell mem2 ready
+step e
+
+
