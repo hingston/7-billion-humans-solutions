@@ -78,33 +78,33 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 28 | Neural Pathways | [hingston](https://github.com/hingston/) | **4** ✔ | **51** ✔ |
 | Year 29 | Biometric Access | [hingston](https://github.com/hingston/) | **5** ✔ | **60** ❌ |
 | Year 30 | Fill the Floor | [hingston](https://github.com/hingston/) | **6** ✔ | 303 |
-| Year 30 | Fill the Floor | [main-gi](https://github.com/main-gi) | 64 | **~112** ➕ |
+| Year 30 | Fill the Floor | [marky1124](https://github.com/marky1124) | 238 | **109** ➕ |
 | Year 31 | Checkerboard Organization | [hingston](https://github.com/hingston/) | **7** ✔ | 149 |
-| Year 31 | Checkerboard Organization | [hingston](https://github.com/hingston/) | 9 | **97** ❌ |
+| Year 31 | Checkerboard Organization | [aqueous68](https://github.com/aqueous68) | 155 | **42** ➕ |
 | Year 32 | Creative Writhing | [hingston](https://github.com/hingston/) | **6** ❌ | 331 |
 | Year 32 | Creative Writhing | [hingston](https://github.com/hingston/) | 22 | **39** ❌ |
 | Year 33 | Data Backup Day | [$uppenbaer](https://steamcommunity.com/profiles/76561198047610018) | **7** ➕ | ~20 |
 | Year 33 | Data Backup Day | [hingston](https://github.com/hingston/) | 9 | **2** ✔ |
-| Year 34 | Seek and Destroy 1 | [hingston](https://github.com/hingston/) | **9** ❌ | 22 |
-| Year 34 | Seek and Destroy 1 | [hingston](https://github.com/hingston/) | 10 | **21** ❌ |
+| Year 34 | Seek and Destroy 1 | [n05ucc4u](https://github.com/n05ucc4u) | **8** ✔ | ~20 |
+| Year 34 | Seek and Destroy 1 | [aqueous68](https://github.com/aqueous68) | 39 | **8** ✔ |
 | Year 35 | Intro to Calc for Art Majors | [hingston](https://github.com/hingston/) | **4** ✔ | **3** ✔ |
-| Year 36 | Seek and Destroy 2 | [hingston](https://github.com/hingston/) | **10** ❌ | 152 |
-| Year 36 | Seek and Destroy 2 | [hingston](https://github.com/hingston/) | 11 | **143** ❌ |
+| Year 36 | Seek and Destroy 2 | [main-gi](https://github.com/main-gi) | **8** ✔ | 143 |
+| Year 36 | Seek and Destroy 2 | [marky1124](https://github.com/marky1124) | 32 | **101-102** ❌ |
 | Year 37 | Dangerous Spreadsheeting | [hingston](https://github.com/hingston/) | **13** ✔ | 34 |
-| Year 37 | Dangerous Spreadsheeting | [hingston](https://github.com/hingston/) | 16 | **30** ❌ |
-| Year 38 | Seek and Destroy 3 | [hingston](https://github.com/hingston/) | **18** ❌ | **32** ❌ |
-| Year 39 | Printing Etiquette 1 | [hingston](https://github.com/hingston/) | **8** ❌ | 80 |
+| Year 37 | Dangerous Spreadsheeting | [commonnickname](https://github.com/commonnickname) | 243 | **14** ➕ |
+| Year 38 | Seek and Destroy 3 | [aqueous68](https://github.com/aqueous68) | **16** ➕ | **32** ❌ |
+| Year 39 | Printing Etiquette 1 | [main-gi](https://github.com/main-gi) | **7** ❌ | ~97 |
 | Year 39 | Printing Etiquette 1 | [commonnickname](https://github.com/commonnickname) | 173 | **35** ➕ |
-| Year 40 | Printing Etiquette 2 | [hingston](https://github.com/hingston/) | **9** ❌ | 70 |
+| Year 40 | Printing Etiquette 2 | [main-gi](https://github.com/main-gi) | **8** ✔ | ~118 |
 | Year 40 | Printing Etiquette 2 | [hingston](https://github.com/hingston/) | 11 | **54** ❌ |
-| Year 41 | Image Decrypter | [hingston](https://github.com/hingston/) | **8** ✔ | 72 |
+| Year 41 | Image Decrypter | [aqueous68](https://github.com/aqueous68) | **7** ➕ | 30 |
 | Year 41 | Image Decrypter | [commonnickname](https://github.com/commonnickname) | 51 | **6** ➕ |
-| Year 42 | Important Email Organization | [hingston](https://github.com/hingston/) | **14** ➕ | 596 |
+| Year 42 | Important Email Organization | [commonnickname](https://github.com/commonnickname) | **10** ➕ | ~899 |
 | Year 42 | Important Email Organization | [commonnickname](https://github.com/commonnickname) | 204 | **~78** ➕ |
 | Year 43 | Multiplication Table | [main-gi](https://github.com/main-gi) | **10** ✔ | 49 |
 | Year 43 | Multiplication Table | [hingston](https://github.com/hingston/) | 11 | **47** ❌ |
 | Year 44 | Unique Fashion Party | [commonnickname](https://github.com/commonnickname) | **5** ➕ | ~62 |
-| Year 44 | Unique Fashion Party | [hingston](https://github.com/hingston/) | 11 | **59** ❌ |
+| Year 44 | Unique Fashion Party | [marky1124](https://github.com/marky1124) | 10 | **~59** ❌ |
 | Year 46 | Compulsory Office Romance | [hingston](https://github.com/hingston/) | **7** ❌ | **13** ❌ |
 | Year 47 | Automated Pleasantries | [hingston](https://github.com/hingston/) | **3** ✔ | **7** ✔ |
 | Year 48 | Community Training Day | [hingston](https://github.com/hingston/) | **6** ✔ | **7** ❌ |
@@ -119,25 +119,29 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 53 | 100 Cubes on the Floor | [n05ucc4u](https://github.com/n05ucc4u) | 228 | **28** ➕ |
 | Year 54 | Terrain Leveler | [hingston](https://github.com/hingston/) | **10** ➕ | 251 |
 | Year 54 | Terrain Leveler | [commonnickname](https://github.com/commonnickname) | 91 | **47** ➕ |
-| Year 55 | Data Flowers | [hingston](https://github.com/hingston/) | **8** ✔ | **25** ❌ |
-| Year 56 | Local Maximums | [hingston](https://github.com/hingston/) | **8** ✔ | **13** ✔ |
+| Year 55 | Data Flowers | [hingston](https://github.com/hingston/) | **8** ✔ | 25 |
+| Year 55 | Data Flowers | [commonnickname](https://github.com/commonnickname), [main-gi](https://github.com/main-gi) | 213 | **10** ➕ |
+| Year 56 | Local Maximums | [hingston](https://github.com/hingston/) | **8** ✔ | 13 |
+| Year 56 | Local Maximums | [main-gi](https://github.com/main-gi) | 34 | **12-13** ✔ |
 | Year 57 | Neighborly Sweeper | [hingston](https://github.com/hingston/) | **15** ❌ | **96** ❌ |
 | Year 58 | Good Neighbors | [commonnickname](https://github.com/commonnickname) | **5** ✔ | ~315 |
-| Year 58 | Good Neighbors | [hingston](https://github.com/hingston/) | 11 | **78** ❌ |
+| Year 58 | Good Neighbors | [commonnickname](https://github.com/commonnickname) | 108 | **3** ➕ |
 | Year 59 | Glory Hole | [commonnickname](https://github.com/commonnickname) | **4** ➕ | 74 |
 | Year 59 | Glory Hole | [hingston](https://github.com/hingston/) | 9 | **15** ❌ |
-| Year 60 | Understaffed Sorting | [hingston](https://github.com/hingston/) | **12** ✔ | **177** ❌ |
-| Year 61 | Lazy Pathways | [commonnickname](https://github.com/commonnickname) | 246 | **20** ➕ |
+| Year 60 | Understaffed Sorting | [hingston](https://github.com/hingston/) | **12** ✔ | 177 |
+| Year 60 | Understaffed Sorting | [aqueous68](https://github.com/aqueous68) | 58 | **~100** ➕ |
+| Year 61 | Lazy Pathways | [commonnickname](https://github.com/commonnickname) | 245 | **19** ➕ |
 | Year 62 | The Sorting Floor | [main-gi](https://github.com/main-gi) | **30** ❌ | 144 |
 | Year 62 | The Sorting Floor | [mrtong96](https://steamcommunity.com/profiles/76561198191650798) | 152 | **36** ➕ |
 | Year 63 | Defrag Disordered | [main-gi](https://github.com/main-gi) | **12** ➕ | 328 |
+| Year 63 | Defrag Disordered | [aqueous68](https://github.com/aqueous68) | 53 | **8** ✔ |
 | Year 64 | Binary Counter | [AlonzoTG](https://github.com/AlonzoTG) | **16** ❌ | 60 |
 | Year 64 | Binary Counter | [commonnickname](https://github.com/commonnickname) | 209 | **9** ➕ |
 | Year 65 | Defrag Ordered | [main-gi](https://github.com/main-gi) | **15** ➕ | 1170 |
 | Year 66 | Decimal Counter | [AlonzoTG](https://github.com/AlonzoTG) | **23** ❌ | 150 |
 | Year 66 | Decimal Counter | [commonnickname](https://github.com/commonnickname) | 239 | **26** ➕ |
 | Year 67 | Decimal Doubler | [commonnickname](https://github.com/commonnickname), [main-gi](https://github.com/main-gi) | 196 | **47** ➕ |
-| Year 68 | Goodbye, Humans! | [AlonzoTG](https://github.com/AlonzoTG) | **9** ❌ | 91 |
+| Year 68 | Goodbye, Humans! | [main-gi](https://github.com/main-gi) | **8** ❌ | 67 |
 
 ###### +50% Solutions
 
