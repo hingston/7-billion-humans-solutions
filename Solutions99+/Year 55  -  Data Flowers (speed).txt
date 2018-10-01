@@ -1,4 +1,4 @@
--- 7 Billion Humans (2059) --
+-- 7 Billion Humans (2145) --
 -- 55: Data Flowers --
 
 step n
@@ -34,7 +34,6 @@ mem4 = foreachdir n:
 endfor
 step n
 step n
-comment 0
 jump d
 mem2 = foreachdir sw:
 	d:
@@ -91,7 +90,6 @@ l:
 write mem4
 drop
 end
-comment 2
 k:
 e:
 g:
@@ -305,8 +303,3 @@ else:
 		jump l
 	endif
 endif
-
-
-DEFINE COMMENT 0
-eJxjYBgFo2AUjGQAAAQEAAE;
-
