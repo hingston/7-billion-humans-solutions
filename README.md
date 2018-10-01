@@ -93,7 +93,7 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 37 | Dangerous Spreadsheeting | [hingston](https://github.com/hingston/) | **13** ✔ | 34 |
 | Year 37 | Dangerous Spreadsheeting | [commonnickname](https://github.com/commonnickname) | 243 | **14** ➕ |
 | Year 38 | Seek and Destroy 3 | [aqueous68](https://github.com/aqueous68) | **16** ➕ | **32** ❌ |
-| Year 39 | Printing Etiquette 1 | [main-gi](https://github.com/main-gi) | **7** ❌ | ~97 |
+| Year 39 | Printing Etiquette 1 | [main-gi](https://github.com/main-gi) | **7** ✔ | ~97 |
 | Year 39 | Printing Etiquette 1 | [commonnickname](https://github.com/commonnickname) | 173 | **35** ➕ |
 | Year 40 | Printing Etiquette 2 | [main-gi](https://github.com/main-gi) | **8** ✔ | ~118 |
 | Year 40 | Printing Etiquette 2 | [hingston](https://github.com/hingston/) | 11 | **54** ❌ |
