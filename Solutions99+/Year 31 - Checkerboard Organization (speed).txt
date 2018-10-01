@@ -2,14 +2,164 @@
 -- 31: Checkerboard Organization --
 
 mem1 = nearest printer
-a:
-if myitem != datacube:
+if ne == printer:
 	takefrom mem1
-	step w,n,e
-else:
-	step nw,sw,ne,se
-	if c != datacube:
-		drop
-	endif
+	step nw
+	step w
+	step w
+	step w
+	drop
+	takefrom mem1
+	step nw
+	step nw
+	step w
+	drop
+	takefrom mem1
+	step nw
+	step w
+	drop
+	takefrom mem1
+	step nw
+	step n
+	drop
+	takefrom mem1
+	step n
+	drop
+	end
 endif
-jump a
+if sw == datacube:
+	takefrom mem1
+	step ne
+	step ne
+	step e
+	step se
+	drop
+	takefrom mem1
+	step ne
+	step ne
+	step e
+	drop
+	takefrom mem1
+	step e
+	step e
+	step e
+	drop
+	takefrom mem1
+	step ne
+	step e
+	drop
+	takefrom mem1
+	step ne
+	step n
+	drop
+	end
+endif
+if se == hole:
+	takefrom mem1
+	step w
+	step w
+	step w
+	step sw
+	drop
+	takefrom mem1
+	step w
+	step w
+	step w
+	drop
+	takefrom mem1
+	step w
+	step sw
+	drop
+	takefrom mem1
+	step w
+	drop
+	takefrom mem1
+	step e
+	drop
+	end
+endif
+if s == wall:
+	takefrom mem1
+	step sw
+	step sw
+	step sw
+	step s
+	drop
+	takefrom mem1
+	step sw
+	step s
+	step s
+	step s
+	drop
+	takefrom mem1
+	step se
+	step s
+	step s
+	step s
+	drop
+	takefrom mem1
+	step se
+	step se
+	step se
+	step s
+	drop
+	end
+endif
+step s
+if se == printer:
+	takefrom mem1
+	step se
+	step se
+	step se
+	step e
+	drop
+	takefrom mem1
+	step se
+	step e
+	step e
+	step e
+	drop
+	takefrom mem1
+	step se
+	step se
+	step s
+	drop
+	takefrom mem1
+	step se
+	step se
+	step e
+	drop
+	takefrom mem1
+	step se
+	step e
+	drop
+	end
+else:
+	takefrom mem1
+	step sw
+	step sw
+	step sw
+	step w
+	drop
+	takefrom mem1
+	step sw
+	step sw
+	step w
+	drop
+	takefrom mem1
+	step sw
+	step sw
+	step s
+	drop
+	takefrom mem1
+	step sw
+	step se
+	step s
+	drop
+	takefrom mem1
+	step sw
+	step s
+	drop
+endif
+
+
