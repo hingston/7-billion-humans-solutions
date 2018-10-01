@@ -4,8 +4,7 @@
 pickup s
 a:
 step s
-if s != wall or
- s == hole:
+if s != wall:
 	jump a
 endif
 b:
@@ -16,7 +15,6 @@ if n != myitem and
 	jump b
 endif
 if n == myitem:
-	mem1 = nearest hole
-	step mem1
+	step s
 endif
 step n
