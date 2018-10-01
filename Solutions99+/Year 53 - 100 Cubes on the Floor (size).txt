@@ -1,22 +1,17 @@
 -- 53: 100 Cubes on the Floor --
 
 a:
-if w != datacube:
-	step w
-	jump a
+mem2 = set e
+if n == wall or
+ n == datacube and
+ w == 0:
+	mem2 = set w
 endif
-b:
-if n != datacube and
- n != wall:
-	jump b
+if mem2 != 0:
+	mem2 = set s
 endif
-if n == datacube:
-	mem1 = calc n + 9
-endif
-c:
 mem1 = calc mem1 + 1
-pickup w
+pickup mem2
 write mem1
 drop
-step w
-jump c
+jump a
