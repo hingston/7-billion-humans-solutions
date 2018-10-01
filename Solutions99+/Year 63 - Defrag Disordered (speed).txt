@@ -1,0 +1,59 @@
+-- 7 Billion Humans (2145) --
+-- 63: Defrag Disordered --
+
+if w == worker or
+ e == worker:
+	if e == worker:
+		step ne
+		step n
+		step n
+		pickup n
+		step n
+		step n
+		drop
+		step e
+		step ne
+		step se
+		pickup sw
+		drop
+		step se
+		pickup s
+		step n
+		step n
+		drop
+	else:
+		step e
+		step e
+		step e
+		step e
+		step ne
+		pickup n
+		step n
+		step n
+		step n
+		step n
+		step ne
+		drop
+		step sw
+		pickup s
+		step n
+		step n
+		drop
+	endif
+else:
+	step nw
+	pickup nw
+	step n
+	step n
+	step n
+	step nw
+	step nw
+	drop
+	step se
+	step se
+	pickup s
+	step n
+	step n
+	step ne
+	drop
+endif

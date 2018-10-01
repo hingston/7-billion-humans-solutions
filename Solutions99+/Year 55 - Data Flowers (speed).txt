@@ -1,0 +1,24 @@
+-- 7 Billion Humans (2145) --
+-- 55: Data Flowers --
+
+pickup s
+step n
+step n
+step n
+if s != datacube:
+	step n
+	if s != datacube:
+		step n
+		step n
+		step n
+		if s != datacube:
+			step n
+		endif
+	endif
+endif
+mem2 = set nw
+mem1 = foreachdir w,sw,n,s,ne,e,se:
+	mem2 = calc mem2 + mem1
+endfor
+write mem2
+drop
