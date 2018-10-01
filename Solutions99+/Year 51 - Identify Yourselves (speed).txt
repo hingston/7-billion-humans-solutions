@@ -1,24 +1,64 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2059) --
 -- 51: Identify Yourselves --
 
-mem1 = set 11
-pickup s
-step s
-a:
-if e == nothing:
-	mem1 = calc mem1 - 1
-	b:
-	write mem1
+if w == nothing or
+ e == nothing:
+	step s
+	if ne == worker:
+		pickup c
+		write 1
+	else:
+		pickup c
+		write 10
+	endif
 	drop
-endif
-if e == datacube:
-	mem1 = calc e - 1
-	jump b
 endif
 if w == nothing or
- w == datacube:
-	mem2 = calc w + 1
-	write mem2
+ e == nothing:
+	step s
+	if ne == worker:
+		pickup c
+		write 2
+	else:
+		pickup c
+		write 9
+	endif
 	drop
 endif
-jump a
+if w == nothing or
+ e == nothing:
+	step s
+	if ne == worker:
+		pickup c
+		write 3
+	else:
+		pickup c
+		write 8
+	endif
+	drop
+endif
+if w == nothing or
+ e == nothing:
+	step s
+	if ne == worker:
+		pickup c
+		write 4
+	else:
+		pickup c
+		write 7
+	endif
+	drop
+endif
+if w == nothing:
+	step s
+	pickup c
+	write 5
+	drop
+else:
+	step s
+	pickup c
+	write 6
+	drop
+endif
+
+

@@ -1,95 +1,268 @@
--- Solution by main_gi, 111s, could be massively improved probably --
+-- 7 Billion Humans (2145) --
 -- 30: Fill the Floor --
 
 mem1 = nearest printer
-takefrom mem1
-step nw,w,sw,n,s,ne,e,se
-drop
-takefrom mem1
-a:
-step nw,w,sw,n,s,ne,e,se
-if c == datacube:
-	jump a
-endif
-drop
-mem2 = nearest datacube
-b:
-c:
-d:
-e:
-f:
-g:
-h:
-i:
-takefrom mem1
-step mem2
-j:
-k:
-if nw == something and
- n == something and
- ne == something and
- e == something and
- se == something and
- s == something and
- sw == something and
- w == something:
-	step nw,w,sw,n,s,ne,e,se
-	jump j
-endif
-if nw != something:
+if n == nothing:
+	takefrom mem1
 	step nw
-	drop
-	mem2 = nearest datacube
-	jump b
-endif
-if ne != something:
-	step ne
-	drop
-	mem2 = nearest datacube
-	jump c
-endif
-if n != something:
-	step n
-	drop
-	mem2 = nearest datacube
-	jump d
-endif
-if sw != something:
-	step sw
-	drop
-	mem2 = nearest datacube
-	jump e
-endif
-if se != something:
-	step se
-	drop
-	mem2 = nearest datacube
-	jump f
-endif
-if s != something:
-	step s
-	drop
-	mem2 = nearest datacube
-	jump g
-endif
-if w != something:
+	step nw
+	step w
 	step w
 	drop
-	mem2 = nearest datacube
-	jump h
-endif
-if e != something:
+	takefrom mem1
+	step nw
+	step nw
+	step w
+	drop
+	takefrom mem1
+	step nw
+	step nw
+	drop
+	takefrom mem1
+	step nw
+	step n
+	drop
+	takefrom mem1
+	step n
+	step n
+	drop
+	takefrom mem1
+	step ne
+	step n
+	drop
+	takefrom mem1
+	step ne
+	step ne
+	drop
+	takefrom mem1
+	step ne
+	step ne
 	step e
 	drop
-	mem2 = nearest datacube
-	jump i
+	takefrom mem1
+	step ne
+	step ne
+	step e
+	step e
+	drop
+	end
 endif
+if n == wall and
+ w == nothing:
+	takefrom mem1
+	step nw
+	step w
+	step w
+	step w
+	drop
+	takefrom mem1
+	step nw
+	step w
+	step w
+	drop
+	takefrom mem1
+	step nw
+	step w
+	drop
+	takefrom mem1
+	step nw
+	drop
+	takefrom mem1
+	step n
+	drop
+	takefrom mem1
+	step ne
+	drop
+	takefrom mem1
+	step ne
+	step e
+	drop
+	takefrom mem1
+	step ne
+	step e
+	step e
+	drop
+	takefrom mem1
+	step ne
+	step e
+	step e
+	step e
+	drop
+	end
+endif
+if nw == wall and
+ n == wall and
+ ne == wall and
+ e != wall:
+	takefrom mem1
+	step w
+	step w
+	step w
+	step w
+	drop
+	takefrom mem1
+	step w
+	step w
+	step w
+	drop
+	takefrom mem1
+	step w
+	step w
+	drop
+	takefrom mem1
+	step w
+	drop
+	takefrom mem1
+	drop
+	takefrom mem1
+	step e
+	drop
+	takefrom mem1
+	step e
+	step e
+	drop
+	takefrom mem1
+	step e
+	step e
+	step e
+	drop
+	takefrom mem1
+	step e
+	step e
+	step e
+	step e
+	drop
+	end
+endif
+if n == wall and
+ e == wall:
+	takefrom mem1
+	takefrom mem1
+	step sw
+	step w
+	step w
+	step w
+	drop
+	takefrom mem1
+	step sw
+	step w
+	step w
+	drop
+	takefrom mem1
+	step sw
+	step w
+	drop
+	takefrom mem1
+	step sw
+	drop
+	takefrom mem1
+	step se
+	drop
+	takefrom mem1
+	step se
+	step e
+	drop
+	takefrom mem1
+	step se
+	step e
+	step e
+	drop
+	takefrom mem1
+	step se
+	step e
+	step e
+	step e
+	drop
+	end
+endif
+if w == nothing and
+ s == wall:
+	takefrom mem1
+	step sw
+	step sw
+	step w
+	step w
+	drop
+	takefrom mem1
+	step sw
+	step sw
+	step w
+	drop
+	takefrom mem1
+	step sw
+	step sw
+	drop
+	takefrom mem1
+	step sw
+	step s
+	drop
+	takefrom mem1
+	step sw
+	step se
+	drop
+	takefrom mem1
+	step se
+	step s
+	drop
+	takefrom mem1
+	step se
+	step se
+	drop
+	takefrom mem1
+	step se
+	step se
+	step e
+	drop
+	takefrom mem1
+	step se
+	step se
+	step e
+	step e
+	drop
+	end
+endif
+if sw == wall and
+ s == wall and
+ se == wall and
+ e != wall:
+	a:
+	takefrom mem1
+	step sw
+	step sw
+	step sw
+	step w
+	b:
+	if c == nothing:
+		drop
+		jump a
+	endif
+	step e
+	jump b
+endif
+c:
+d:
+takefrom mem1
+step se
 step se
 step e
-step se
-step se
 step e
+e:
+if c == nothing:
+	drop
+	jump d
+endif
+if n == wall and
+ e == wall:
+	jump f
+endif
 step e
-step e
-step e
-jump k
+jump e
+f:
+step s
+g:
+if c == nothing:
+	drop
+	jump c
+endif
+step w
+jump g
