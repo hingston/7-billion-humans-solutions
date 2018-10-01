@@ -1,0 +1,59 @@
+-- About a half second speed improvement unfortunately. This gets 12s half the time and 13s the other half. That still beats OCD+ though. --
+-- 56: Local Maximums --
+
+mem1 = nearest shredder
+step w
+step w
+jump a
+mem3 = foreachdir nw:
+	mem2 = foreachdir n:
+		a:
+		if mem3 < mem2:
+			mem3 = set mem2
+		endif
+		jump b
+	endfor
+	mem2 = foreachdir ne:
+		b:
+		if mem3 < mem2:
+			mem3 = set mem2
+		endif
+		jump c
+	endfor
+	mem2 = foreachdir e:
+		c:
+		if mem3 < mem2:
+			mem3 = set mem2
+		endif
+		jump d
+	endfor
+	mem2 = foreachdir se:
+		d:
+		if mem3 < mem2:
+			mem3 = set mem2
+		endif
+		jump e
+	endfor
+	mem2 = foreachdir s:
+		e:
+		if mem3 < mem2:
+			mem3 = set mem2
+		endif
+		jump f
+	endfor
+	mem2 = foreachdir sw:
+		f:
+		if mem3 < mem2:
+			mem3 = set mem2
+		endif
+		jump g
+	endfor
+	mem2 = foreachdir w:
+		g:
+		if mem3 < mem2:
+			mem3 = set mem2
+		endif
+	endfor
+	pickup mem3
+	giveto mem1
+endfor
