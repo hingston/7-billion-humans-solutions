@@ -1,4 +1,4 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2056) --
 -- 30: Fill the Floor --
 
 mem1 = nearest printer
@@ -137,7 +137,6 @@ endif
 if n == wall and
  e == wall:
 	takefrom mem1
-	takefrom mem1
 	step sw
 	step w
 	step w
@@ -217,7 +216,7 @@ if w == nothing and
 	step se
 	step se
 	step e
-	step e
+	step se
 	drop
 	end
 endif
