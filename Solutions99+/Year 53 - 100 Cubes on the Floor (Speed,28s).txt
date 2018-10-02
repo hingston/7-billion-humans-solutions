@@ -3,55 +3,35 @@
 
 if ne == wall and
  e == wall:
-	if sw == nothing:
-		step w
-		step w
-		step w
-		pickup w
-		write 39
-		drop
-		step w
-		pickup w
-		write 38
-		drop
-		step w
-		pickup w
-		write 37
-		drop
-		step w
-		pickup w
-		write 36
-		mem1 = set 35
-		mem2 = set 34
-		mem3 = set 33
-		mem4 = set 32
-	else:
-		step w
-		step w
-		step w
-		pickup w
+	step w
+	step w
+	step w
+	pickup w
+	if s == 0:
 		write 79
 		drop
 		step w
 		pickup w
 		write 78
+		mem1 = set 77
+		mem2 = set 76
+		mem3 = set 75
+		mem4 = set 74
+	else:
+		write 39
 		drop
 		step w
 		pickup w
-		write 77
-		drop
-		step w
-		pickup w
-		write 76
-		mem1 = set 75
-		mem2 = set 74
-		mem3 = set 73
-		mem4 = set 72
+		write 38
+		mem1 = set 37
+		mem2 = set 36
+		mem3 = set 35
+		mem4 = set 34
 	endif
 else:
 	if sw == worker:
-		if e == nothing:
-			step w
+		step w
+		if n == nothing:
 			step w
 			pickup w
 			write 59
@@ -59,41 +39,24 @@ else:
 			step w
 			pickup w
 			write 58
-			drop
-			step w
-			pickup w
-			write 57
-			drop
-			step w
-			pickup w
-			write 56
-			mem1 = set 55
-			mem2 = set 54
-			mem3 = set 53
-			mem4 = set 52
+			mem1 = set 57
+			mem2 = set 56
+			mem3 = set 55
+			mem4 = set 54
 		else:
-			step w
 			pickup w
 			write 89
 			drop
 			step w
 			pickup w
 			write 88
-			drop
-			step w
-			pickup w
-			write 87
-			drop
-			step w
-			pickup w
-			write 86
-			mem1 = set 85
-			mem2 = set 84
-			mem3 = set 83
-			mem4 = set 82
+			mem1 = set 87
+			mem2 = set 86
+			mem3 = set 85
+			mem4 = set 84
 		endif
 	else:
-		if w != datacube:
+		if w == nothing:
 			if nw == nothing:
 				step w
 				pickup w
@@ -102,18 +65,10 @@ else:
 				step w
 				pickup w
 				write 68
-				drop
-				step w
-				pickup w
-				write 67
-				drop
-				step w
-				pickup w
-				write 66
-				mem1 = set 65
-				mem2 = set 64
-				mem3 = set 63
-				mem4 = set 62
+				mem1 = set 67
+				mem2 = set 66
+				mem3 = set 65
+				mem4 = set 64
 			else:
 				step w
 				pickup w
@@ -122,63 +77,34 @@ else:
 				step w
 				pickup w
 				write 28
-				drop
-				step w
-				pickup w
-				write 27
-				drop
-				step w
-				pickup w
-				write 26
-				mem1 = set 25
-				mem2 = set 24
-				mem3 = set 23
-				mem4 = set 22
+				mem1 = set 27
+				mem2 = set 26
+				mem3 = set 25
+				mem4 = set 24
 			endif
 		else:
 			if nw == wall or
 			 sw == wall:
+				pickup w
 				if n == wall:
-					pickup w
 					write 9
-					drop
-					step w
-					pickup w
-					write 8
-					drop
-					step w
-					pickup w
-					write 7
-					drop
-					step w
-					pickup w
-					write 6
-					mem1 = set 5
-					mem2 = set 4
-					mem3 = set 3
-					mem4 = set 2
+					mem1 = set 8
+					mem2 = set 7
+					mem3 = set 6
+					mem4 = set 5
 				else:
-					pickup w
 					write 99
 					drop
 					step w
 					pickup w
 					write 98
-					drop
-					step w
-					pickup w
-					write 97
-					drop
-					step w
-					pickup w
-					write 96
-					mem1 = set 95
-					mem2 = set 94
-					mem3 = set 93
-					mem4 = set 92
+					mem1 = set 97
+					mem2 = set 96
+					mem3 = set 95
+					mem4 = set 94
 				endif
 			else:
-				if nw == datacube:
+				if sw == datacube:
 					pickup w
 					write 19
 					drop
@@ -193,30 +119,47 @@ else:
 					step w
 					pickup w
 					write 16
-					mem1 = set 15
-					mem2 = set 14
-					mem3 = set 13
-					mem4 = set 12
-				else:
-					pickup w
-					write 49
 					drop
 					step w
 					pickup w
-					write 48
+					write 15
 					drop
 					step w
 					pickup w
-					write 47
-					drop
-					step w
-					pickup w
-					write 46
-					mem1 = set 45
-					mem2 = set 44
-					mem3 = set 43
-					mem4 = set 42
+					write 14
+					mem1 = set 13
+					mem2 = set 12
+					mem3 = set 11
+					mem4 = set 10
+					jump a
 				endif
+				pickup w
+				write 49
+				drop
+				step w
+				pickup w
+				write 48
+				drop
+				step w
+				pickup w
+				write 47
+				drop
+				step w
+				pickup w
+				write 46
+				drop
+				step w
+				pickup w
+				write 45
+				drop
+				step w
+				pickup w
+				write 44
+				mem1 = set 43
+				mem2 = set 42
+				mem3 = set 41
+				mem4 = set 40
+				jump b
 			endif
 		endif
 	endif
@@ -234,13 +177,80 @@ step w
 pickup w
 write mem3
 drop
+step w
+pickup w
+write mem4
+if mem1 > 57:
+	if mem1 > 77:
+		if mem1 == 87:
+			mem1 = set 83
+			mem2 = set 82
+			mem3 = set 81
+			mem4 = set 80
+		else:
+			mem1 = set 93
+			mem2 = set 92
+			mem3 = set 91
+			mem4 = set 90
+		endif
+	else:
+		if mem1 == 67:
+			mem1 = set 63
+			mem2 = set 62
+			mem3 = set 61
+			mem4 = set 60
+		else:
+			mem1 = set 73
+			mem2 = set 72
+			mem3 = set 71
+			mem4 = set 70
+		endif
+	endif
+else:
+	if mem1 > 27:
+		if mem1 == 37:
+			mem1 = set 33
+			mem2 = set 32
+			mem3 = set 31
+			mem4 = set 30
+		else:
+			mem1 = set 53
+			mem2 = set 52
+			mem3 = set 51
+			mem4 = set 50
+		endif
+	else:
+		if mem1 == 8:
+			mem1 = set 4
+			mem2 = set 3
+			mem3 = set 2
+			mem4 = set 1
+		else:
+			mem1 = set 23
+			mem2 = set 22
+			mem3 = set 21
+			mem4 = set 20
+		endif
+	endif
+endif
+b:
 a:
+drop
+step w
+pickup w
+write mem1
+drop
+step w
+pickup w
+write mem2
+drop
+step w
+pickup w
+write mem3
+drop
 step w
 pickup w
 write mem4
 drop
-mem4 = calc mem4 - 1
-jump a
-
 
 
