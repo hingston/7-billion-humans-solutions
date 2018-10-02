@@ -1,0 +1,20 @@
+-- Base solution by aqueous68. I would be very impressed if someone manages to hack this into a 100% solution --
+-- 68: Goodbye, Humans! --
+
+a:
+if sw != hole and
+ sw != wall or
+ e == wall or
+ se == wall or
+ s == wall:
+	if w == wall and
+	 e == wall and
+	 n != worker and
+	 ne != worker and
+	 nw != worker:
+		tell everyone goodbye
+	endif
+	step sw,s
+endif
+step se
+jump a
