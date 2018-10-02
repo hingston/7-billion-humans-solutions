@@ -1,0 +1,16 @@
+-- Solution is NOT BY ME, it's by nezhi here https://steamcommunity.com/app/792100/discussions/0/3338745825889555670/#c3338745825892194360
+-- Even then, you should also give credit to SDP Ragequit, who made an 8i https://steamcommunity.com/app/792100/discussions/0/3338745825888853938/#c3338745825889109683
+-- 53: 100 Cubes on the Floor --
+
+a:
+step nw,w,sw,n,s,ne,e,se
+if n == wall and
+ e == nothing or
+ mem1 > 0 and
+ c == 0:
+	mem1 = calc mem1 + 1
+	pickup c
+	write mem1
+	drop
+endif
+jump a
