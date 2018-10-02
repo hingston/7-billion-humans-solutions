@@ -1,15 +1,21 @@
 -- 7 Billion Humans (2145) --
 -- 68: Goodbye, Humans! --
 
+mem1 = nearest wall
+step mem1
+step sw
 a:
+step se
+step se
+step s
+step s
+step sw
+step se
+step se
+step sw
 mem1 = nearest worker
 if mem1 != worker:
 	tell everyone goodbye
 endif
-if sw != hole and
- s != hole or
- e == wall:
-	step sw,s
-endif
-step se
+step s
 jump a
