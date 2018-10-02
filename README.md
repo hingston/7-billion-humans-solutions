@@ -155,3 +155,4 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 32 | [Creative Writhing](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions50%2B/Year%2032%20-%20Creative%20Writhing%20(size).txt) | [main-gi](https://github.com/main-gi) | **5** ❌ | ~947 |
 | Year 38 | [Seek and Destroy 3](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions50%2B/Year%2038%20-%20Seek%20and%20Destroy%203%20(size).txt) | [main-gi](https://github.com/main-gi) | **8** ➕ | ~480 |
 | Year 53 | [100 Cubes on the Floor](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions50%2B/Year%2053%20-%20100%20Cubes%20on%20the%20Floor%20(speed).txt) | [nezhi](https://steamcommunity.com/profiles/76561198013091047) | **7** ➕ | ~1106 |
+| Year 68 | [Goodbye, Humans!](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2068%20-%20Goodbye%20Humans%20(size).txt) | [main-gi](https://github.com/main-gi) | **6** ➕ | ~75 |
