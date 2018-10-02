@@ -141,7 +141,8 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 66 | [Decimal Counter](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2066%20-%20Decimal%20Counter%20(speed).txt) | [AlonzoTG](https://github.com/AlonzoTG) | **23** ❌ | 150 |
 | Year 66 | [Decimal Counter](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2066%20-%20Decimal%20Counter%20(speed).txt) | [commonnickname](https://github.com/commonnickname) | 239 | **26** ➕ |
 | Year 67 | [Decimal Doubler](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2067%20-%20Decimal%20Doubler%20(speed).txt) | [commonnickname](https://github.com/commonnickname), [main-gi](https://github.com/main-gi) | 196 | **47** ➕ |
-| Year 68 | [Goodbye, Humans!](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2068%20-%20Goodbye%20Humans%20(size).txt) | [main-gi](https://github.com/main-gi) | **8** ❌ | 67 |
+| Year 68 | [Goodbye, Humans!](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2068%20-%20Goodbye%20Humans%20(size).txt) | [aqueous68](https://github.com/aqueous68) | **7** ✔ | 49-50 |
+| Year 68 | [Goodbye, Humans!](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2068%20-%20Goodbye%20Humans%20(size).txt) | [aqueous68](https://github.com/aqueous68) | 16 | **23** ✔ |
 
 ###### +50% Solutions
 
