@@ -11,23 +11,6 @@ if s == printer:
 endif
 if nw == hole and
  n == worker:
-	if nw == nw:
-		b:
-		if myitem == myitem:
-			if myitem == myitem:
-				if myitem == myitem:
-					if myitem == myitem:
-						if myitem == myitem:
-							if myitem == myitem:
-								if myitem == myitem:
-								endif
-							endif
-						endif
-					endif
-				endif
-			endif
-		endif
-	endif
 	if myitem == myitem:
 		if myitem == myitem:
 			if myitem == myitem:
@@ -77,68 +60,131 @@ if nw == hole and
 		endif
 	endif
 	if myitem == myitem:
-		if myitem == myitem:
-			if myitem == myitem:
-				if myitem == myitem:
-					takefrom s
-					jump b
-				endif
-			endif
+		if s >= 0:
+			b:
+			takefrom s
+			giveto n
+			jump b
 		endif
 	endif
+	c:
+	jump c
 endif
 if nw == worker:
-	c:
+	if nw == nw:
+		if nw == nw:
+			if nw == nw:
+				if nw == nw:
+					if myitem == myitem:
+						if myitem == myitem:
+							if myitem == myitem:
+								if myitem == myitem:
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+	endif
+	if myitem == myitem:
+		if myitem == myitem:
+			if myitem == myitem:
+				if myitem == myitem:
+					if myitem == myitem:
+						if myitem == myitem:
+							if myitem == myitem:
+								if myitem == myitem:
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+	endif
+	if myitem == myitem:
+		if myitem == myitem:
+			if myitem == myitem:
+				if myitem == myitem:
+					if myitem == myitem:
+						if myitem == myitem:
+							if myitem == myitem:
+								if myitem == myitem:
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+	endif
+	if myitem == myitem:
+		if myitem == myitem:
+			if myitem == myitem:
+				if myitem == myitem:
+					if myitem == myitem:
+						if myitem == myitem:
+							if myitem == myitem:
+								if myitem == myitem:
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+	endif
+	d:
 	takefrom s
 	if myitem > 49:
 		giveto ne
-	endif
-	if myitem < 50:
+	else:
 		giveto nw
 	endif
-	jump c
+	jump d
 endif
 if s == shredder:
-	d:
+	e:
 	if myitem == datacube:
 		giveto s
 	endif
-	jump d
+	jump e
 endif
 if se == worker or
  sw == worker:
 	if sw == worker:
-		e:
+		f:
 		if myitem == datacube:
 			giveto e
 		endif
-		jump e
+		jump f
 	else:
-		f:
+		g:
 		if myitem == datacube:
 			giveto w
 		endif
-		jump f
+		jump g
 	endif
 endif
-g:
+h:
 if myitem == nothing:
-	jump g
+	jump h
 endif
 if myitem < 50:
 	giveto w
-	h:
+	i:
 	if myitem == datacube:
 		giveto w
 	endif
-	jump h
+	jump i
 else:
 	giveto e
-	i:
+	j:
 	if myitem == datacube:
 		giveto e
 	endif
-	jump i
+	jump j
 endif
 
 
