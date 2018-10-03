@@ -1,0 +1,139 @@
+-- 7 Billion Humans (2145) --
+-- 38: Seek and Destroy 3 --
+
+if s == shredder:
+	step e
+	step e
+	step e
+	step e
+	step e
+	step e
+	step e
+	step e
+	step e
+	step e
+	a:
+	if sw != datacube:
+		jump a
+	endif
+	step sw
+	pickup c
+	step w
+	mem2 = nearest datacube
+	if mem2 < myitem:
+		step n
+		drop
+		pickup s
+		step sw
+	else:
+		step w
+	endif
+	mem2 = nearest datacube
+	if mem2 < myitem:
+		step n
+		drop
+		pickup s
+		step sw
+	else:
+		step w
+	endif
+	mem2 = nearest datacube
+	if mem2 < myitem:
+		step n
+		drop
+		pickup s
+		step sw
+	else:
+		step w
+	endif
+	mem2 = nearest datacube
+	if mem2 < myitem:
+		step n
+		drop
+		pickup s
+		step sw
+	else:
+		step w
+	endif
+	mem2 = nearest datacube
+	if mem2 < myitem:
+		step n
+		drop
+		pickup s
+		step sw
+	else:
+		step w
+	endif
+	mem2 = nearest datacube
+	if mem2 < myitem:
+		step n
+		drop
+		pickup s
+		step sw
+	else:
+		step w
+	endif
+	mem2 = nearest datacube
+	if mem2 < myitem:
+		step nw
+		drop
+		pickup se
+	endif
+	mem1 = nearest shredder
+	giveto mem1
+	end
+endif
+step n
+step n
+mem1 = nearest datacube
+step n
+mem2 = nearest datacube
+if mem2 < mem1:
+	mem1 = set mem2
+endif
+step n
+mem2 = nearest datacube
+if mem2 < mem1:
+	mem1 = set mem2
+endif
+step n
+mem2 = nearest datacube
+if mem2 < mem1:
+	mem1 = set mem2
+endif
+step n
+mem2 = nearest datacube
+if mem2 < mem1:
+	mem1 = set mem2
+endif
+step n
+mem2 = nearest datacube
+if mem2 < mem1:
+	mem1 = set mem2
+endif
+step n
+mem2 = nearest datacube
+if mem2 < mem1:
+	mem1 = set mem2
+endif
+step n
+mem2 = nearest datacube
+if mem2 < mem1:
+	mem1 = set mem2
+endif
+pickup mem1
+step s
+step s
+step s
+step s
+step s
+step s
+step s
+step s
+step s
+drop
+step n
+step n
+end
+
+
