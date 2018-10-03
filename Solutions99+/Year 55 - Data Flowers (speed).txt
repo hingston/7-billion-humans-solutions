@@ -265,34 +265,32 @@ if mem3 >= 9 and
 		endif
 	else:
 		if mem3 == 36:
-			if mem3 == 36:
-				if mem2 < 5:
-					if mem2 < 3:
-						if mem2 < 2:
-							mem3 = set 37
-						else:
-							mem3 = set 38
-						endif
+			if mem2 < 5:
+				if mem2 < 3:
+					if mem2 < 2:
+						mem3 = set 37
 					else:
-						if mem2 < 4:
-							mem3 = set 39
-						else:
-							mem3 = set 40
-						endif
+						mem3 = set 38
 					endif
 				else:
-					if mem2 < 7:
-						if mem2 < 6:
-							mem3 = set 41
-						else:
-							mem3 = set 42
-						endif
+					if mem2 < 4:
+						mem3 = set 39
 					else:
-						if mem2 < 8:
-							mem3 = set 43
-						else:
-							mem3 = set 44
-						endif
+						mem3 = set 40
+					endif
+				endif
+			else:
+				if mem2 < 7:
+					if mem2 < 6:
+						mem3 = set 41
+					else:
+						mem3 = set 42
+					endif
+				else:
+					if mem2 < 8:
+						mem3 = set 43
+					else:
+						mem3 = set 44
 					endif
 				endif
 			endif
