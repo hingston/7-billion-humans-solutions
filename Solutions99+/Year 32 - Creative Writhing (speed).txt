@@ -1,106 +1,97 @@
 -- 7 Billion Humans (2145) --
 -- 32: Creative Writhing --
 
+pickup s
+write 99
+drop
 if ne == something:
 	pickup sw
 	if myitem == datacube:
 		write 99
+		step w
 		drop
-		step sw
-		pickup e
+		step s
+		pickup s
 		write 99
 		drop
 		step s
-		pickup c
-		write 99
-		drop
-		step s
-		pickup c
+		pickup s
 		write 99
 		drop
 		step e
-		pickup c
+		pickup s
 		write 99
 		drop
 		step s
-		pickup c
+		pickup s
 		write 99
 		drop
 		step s
-		pickup c
+		pickup s
 		write 99
 		drop
 		step s
-		pickup c
+		pickup s
 		write 99
 		drop
 		step w
-		pickup c
+		pickup s
 		write 99
 		drop
 		step s
-		pickup c
+		pickup s
 		write 99
 		drop
 		step s
-		pickup c
+		pickup s
 		write 99
 		drop
 		step e
-		pickup c
-		write 99
-		drop
-		pickup s
-		write 99
 	else:
+		step s
 		pickup s
-		write 99
-		drop
-		step sw
-		pickup se
-		write 99
-		drop
-		step s
-		pickup c
-		write 99
-		drop
-		step s
-		pickup c
-		write 99
-		drop
-		step s
-		pickup c
-		write 99
-		drop
-		step e
-		pickup c
-		write 99
-		drop
-		step s
-		pickup c
-		write 99
-		drop
-		step s
-		pickup c
 		write 99
 		drop
 		step w
-		pickup c
-		write 99
-		drop
-		step s
-		pickup c
-		write 99
-		drop
-		step s
-		pickup c
-		write 99
-		drop
 		pickup s
 		write 99
+		drop
+		step s
+		pickup s
+		write 99
+		drop
+		step s
+		pickup s
+		write 99
+		drop
+		step e
+		pickup s
+		write 99
+		drop
+		step s
+		pickup s
+		write 99
+		drop
+		step s
+		pickup s
+		write 99
+		drop
+		step w
+		pickup s
+		write 99
+		drop
+		step s
+		pickup s
+		write 99
+		drop
+		step s
 	endif
-	step e
 else:
+	step s
+	pickup s
+	write 99
+	drop
+	step e
 	pickup s
 	write 99
 	drop
@@ -108,67 +99,53 @@ else:
 	pickup s
 	write 99
 	drop
-	step se
-	pickup c
-	write 99
-	drop
 	step s
-	pickup c
-	write 99
-	drop
-	step s
-	pickup c
+	pickup s
 	write 99
 	drop
 	step w
-	pickup c
+	pickup s
 	write 99
 	drop
 	step s
-	pickup c
+	pickup s
 	write 99
 	drop
 	step s
-	pickup c
+	pickup s
 	write 99
 	drop
-	pickup e
+	pickup se
 	if myitem == datacube:
 		step e
 		write 99
 		drop
 		step s
-		pickup c
+		pickup s
 		write 99
 		drop
 		step s
-		pickup c
-		write 99
-		drop
-		step w
-		pickup c
-		write 99
-		drop
 		pickup s
-		step w
 		write 99
+		drop
+		step w
 	else:
 		step s
-		pickup c
+		pickup s
 		write 99
 		drop
 		step e
-		pickup c
+		pickup s
 		write 99
 		drop
 		step s
-		pickup c
-		write 99
-		drop
-		pickup s
-		write 99
-		step e
 	endif
 endif
+pickup s
+write 99
+drop
+step s
+pickup s
+write 99
 drop
 
