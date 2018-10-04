@@ -3,9 +3,9 @@
 
 mem1 = nearest printer
 a:
-if c == nothing:
-	drop
-	takefrom mem1
-endif
-step nw,w,sw,n,s,ne,e,se
+takefrom mem1
+step nw,w,sw,s,ne,e,se
+drop
 jump a
+
+
