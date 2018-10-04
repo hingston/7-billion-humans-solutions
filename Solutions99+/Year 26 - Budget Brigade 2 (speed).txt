@@ -66,9 +66,9 @@ if nw == hole and
 			giveto n
 			jump b
 		endif
+		c:
+		jump c
 	endif
-	c:
-	jump c
 endif
 if nw == worker:
 	if nw == nw:
@@ -126,8 +126,6 @@ if nw == worker:
 					if myitem == myitem:
 						if myitem == myitem:
 							if myitem == myitem:
-								if myitem == myitem:
-								endif
 							endif
 						endif
 					endif
@@ -186,8 +184,3 @@ else:
 	endif
 	jump j
 endif
-
-
-
-
-
