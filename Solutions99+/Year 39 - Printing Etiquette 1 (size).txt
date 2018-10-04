@@ -1,14 +1,13 @@
--- 7 Billion Humans (2145) --
+-- My 7i is not the first, but I did discover it independently --
 -- 39: Printing Etiquette 1 --
 
 mem1 = nearest printer
 a:
-takefrom mem1
-step nw,w,sw,n,ne,e,se
-drop
-if myitem == nothing:
+if myitem == nothing and
+ mem2 < 5:
+	takefrom mem1
 	mem2 = calc mem2 + 1
 endif
-if mem2 != 5:
-	jump a
-endif
+step nw,w,sw,n,s,ne,e,se
+drop
+jump a
