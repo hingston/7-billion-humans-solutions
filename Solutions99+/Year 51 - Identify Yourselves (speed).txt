@@ -1,64 +1,58 @@
--- 7 Billion Humans (2059) --
+-- 7 Billion Humans (2145) --
 -- 51: Identify Yourselves --
 
 if w == nothing or
  e == nothing:
-	step s
-	if ne == worker:
-		pickup c
+	if w == nothing:
+		step se
+		step s
+		pickup nw
 		write 1
+		step nw
 	else:
-		pickup c
+		step sw
+		step s
+		pickup ne
 		write 10
+		step ne
 	endif
-	drop
-endif
-if w == nothing or
- e == nothing:
-	step s
-	if ne == worker:
-		pickup c
-		write 2
-	else:
-		pickup c
-		write 9
-	endif
-	drop
-endif
-if w == nothing or
- e == nothing:
-	step s
-	if ne == worker:
-		pickup c
-		write 3
-	else:
-		pickup c
-		write 8
-	endif
-	drop
-endif
-if w == nothing or
- e == nothing:
-	step s
-	if ne == worker:
-		pickup c
-		write 4
-	else:
-		pickup c
-		write 7
-	endif
-	drop
-endif
-if w == nothing:
-	step s
-	pickup c
-	write 5
-	drop
 else:
-	step s
-	pickup c
-	write 6
-	drop
+	pickup s
+	if s == worker or
+	 sw == worker or
+	 se == worker:
+		step s
+		if s == worker:
+			if e == worker:
+				write 2
+			else:
+				write 9
+			endif
+		else:
+			if sw == worker:
+				write 3
+			else:
+				write 8
+			endif
+		endif
+	else:
+		if sw == worker or
+		 se == worker:
+			step s
+			if e == nothing:
+				write 4
+			else:
+				write 7
+			endif
+		else:
+			if e == worker:
+				step s
+				write 5
+			else:
+				step s
+				write 6
+			endif
+		endif
+	endif
 endif
-
-
+drop
