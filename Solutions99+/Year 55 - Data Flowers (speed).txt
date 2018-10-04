@@ -26,199 +26,213 @@ mem1 = foreachdir nw,w,sw,n,ne,e,se:
 		mem1 = set mem2
 		mem2 = set mem4
 	endif
-	if mem1 >= 5 and
-	 mem1 == mem2 or
+	if mem2 <= 2 and
+	 mem1 != 2 or
 	 mem1 == 0 or
 	 mem1 == 9:
-		if mem1 != 0:
-			if mem1 != 9:
-				if mem1 < 7:
-					if mem1 < 6:
+		if mem1 == 0 or
+		 mem1 == 9:
+			if mem1 == 9:
+				jump d
+			endif
+		else:
+			if mem2 == 1:
+				mem2 = set 2
+			else:
+				mem2 = set 3
+			endif
+		endif
+	else:
+		if mem2 <= 4 or
+		 mem1 == 3 and
+		 mem2 <= 5 or
+		 mem1 == 2 and
+		 mem2 <= 6 or
+		 mem1 == 1 and
+		 mem2 <= 7:
+			if mem2 <= 3 or
+			 mem1 == 2 and
+			 mem2 <= 4 or
+			 mem1 == 1 and
+			 mem2 <= 5:
+				if mem2 == 2 or
+				 mem1 == 2 and
+				 mem2 <= 3 or
+				 mem1 == 1 and
+				 mem2 <= 4:
+					if mem2 == 2 or
+					 mem1 == 1 and
+					 mem2 <= 3:
+						mem2 = set 4
+					else:
+						mem2 = set 5
+					endif
+				else:
+					mem2 = set 6
+				endif
+			else:
+				if mem1 == 3 and
+				 mem2 <= 4 or
+				 mem1 == 2 and
+				 mem2 <= 5 or
+				 mem1 == 1 and
+				 mem2 <= 6:
+					mem2 = set 7
+				else:
+					mem2 = set 8
+				endif
+			endif
+		else:
+			if mem2 <= 6 or
+			 mem1 == 5 and
+			 mem2 <= 7 or
+			 mem1 <= 4:
+				if mem2 == 5 or
+				 mem1 == 4 and
+				 mem2 <= 6 or
+				 mem1 == 3 and
+				 mem2 <= 7 or
+				 mem1 <= 2:
+					if mem1 == 4 and
+					 mem2 <= 5 or
+					 mem1 == 3 and
+					 mem2 <= 6 or
+					 mem1 == 2 and
+					 mem2 <= 7 or
+					 mem1 == 1:
+						mem2 = set 0
+					else:
 						mem2 = set 1
+					endif
+				else:
+					if mem1 == 5 and
+					 mem2 <= 6 or
+					 mem1 == 4 and
+					 mem2 <= 7 or
+					 mem1 == 3:
+						mem2 = set 2
 					else:
 						mem2 = set 3
 					endif
-				else:
-					if mem1 < 8:
+				endif
+			else:
+				if mem2 == 7 or
+				 mem1 <= 6:
+					if mem1 == 6 and
+					 mem2 <= 7 or
+					 mem1 == 5:
+						mem2 = set 4
+					else:
 						mem2 = set 5
+					endif
+				else:
+					if mem1 == 7:
+						mem2 = set 6
 					else:
 						mem2 = set 7
 					endif
 				endif
 			endif
-			jump d
-		endif
-	else:
-		if mem2 >= 3 and
-		 mem2 <= 6:
-			if mem2 == 4 or
-			 mem2 == 5:
-				if mem2 == 4 or
-				 mem1 == 1 and
-				 mem1 != mem2:
-					if mem2 == 4 and
-					 mem1 != 2:
-						if mem1 == 1:
-							mem2 = set 5
-						else:
-							mem2 = set 7
-						endif
-					else:
-						mem2 = set 6
-					endif
+			d:
+			if mem3 < 27:
+				if mem3 < 9:
+					mem3 = set 9
 				else:
-					if mem1 == 2 or
-					 mem1 == 4 and
-					 mem2 != 4:
-						if mem1 == 2:
-							mem2 = set 7
-						else:
-							jump e
-						endif
+					if mem3 < 18:
+						mem3 = set 18
 					else:
-						mem2 = set 8
+						mem3 = set 27
 					endif
 				endif
 			else:
-				if mem2 == 3 or
-				 mem1 == 1:
-					if mem1 == 1:
-						if mem2 == 3:
-							mem2 = set 4
-						else:
-							mem2 = set 7
-						endif
+				if mem3 < 45:
+					if mem3 < 36:
+						mem3 = set 36
 					else:
-						if mem1 == 2:
-							mem2 = set 5
-						else:
-							mem2 = set 6
-						endif
+						mem3 = set 45
 					endif
 				else:
-					if mem1 < 4:
-						if mem1 < 3:
-							mem2 = set 8
-						else:
-							jump f
-						endif
+					if mem3 < 54:
+						mem3 = set 54
 					else:
-						if mem1 < 5:
-							mem2 = set 1
+						if mem3 < 63:
+							mem3 = set 63
 						else:
-							mem2 = set 2
-						endif
-						jump g
-					endif
-				endif
-			endif
-		else:
-			if mem1 == 2 and
-			 mem2 == 7 or
-			 mem2 == 8:
-				if mem1 < 4:
-					if mem2 == 7 or
-					 mem1 == 1:
-						e:
-						f:
-						mem2 = set 0
-					else:
-						if mem1 == 2:
-							mem2 = set 1
-						else:
-							mem2 = set 2
+							mem3 = set 72
 						endif
 					endif
-				else:
-					if mem1 < 6:
-						if mem1 < 5:
-							mem2 = set 3
-						else:
-							mem2 = set 4
-						endif
-					else:
-						if mem1 < 7:
-							mem2 = set 5
-						else:
-							mem2 = set 6
-						endif
-					endif
-				endif
-				g:
-				d:
-				h:
-				if mem3 < 27:
-					if mem3 < 9:
-						mem3 = set 9
-					else:
-						if mem3 < 18:
-							mem3 = set 18
-						else:
-							mem3 = set 27
-						endif
-					endif
-				else:
-					if mem3 < 45:
-						if mem3 < 36:
-							mem3 = set 36
-						else:
-							mem3 = set 45
-						endif
-					else:
-						if mem3 < 54:
-							mem3 = set 54
-						else:
-							if mem3 < 63:
-								mem3 = set 63
-							else:
-								mem3 = set 72
-							endif
-						endif
-					endif
-				endif
-			else:
-				if mem1 < 3:
-					if mem2 == 2:
-						if mem1 == 1:
-							mem2 = set 3
-						else:
-							mem2 = set 4
-						endif
-					else:
-						if mem2 == 1:
-							mem2 = set 2
-						else:
-							mem2 = set 8
-						endif
-					endif
-				else:
-					if mem1 < 5:
-						if mem1 < 4:
-							mem2 = set 1
-						else:
-							mem2 = set 2
-						endif
-					else:
-						if mem1 < 6:
-							mem2 = set 3
-						else:
-							mem2 = set 4
-						endif
-					endif
-					jump h
 				endif
 			endif
 		endif
 	endif
 endfor
-if mem3 == 18 or
- mem3 == 27 or
- mem3 == 36 or
- mem3 == 45 and
+if mem3 >= 9 and
+ mem3 <= 54 and
  mem2 != 0:
-	if mem3 == 27 or
-	 mem3 == 36:
-		if mem3 == 27:
+	if mem3 <= 27:
+		if mem3 != 27:
+			if mem3 == 9:
+				if mem2 < 5:
+					if mem2 < 3:
+						if mem2 < 2:
+							mem3 = set 10
+						else:
+							mem3 = set 11
+						endif
+					else:
+						if mem2 < 4:
+							mem3 = set 12
+						else:
+							mem3 = set 13
+						endif
+					endif
+				else:
+					if mem2 < 7:
+						if mem2 < 6:
+							mem3 = set 14
+						else:
+							mem3 = set 15
+						endif
+					else:
+						if mem2 < 8:
+							mem3 = set 16
+						else:
+							mem3 = set 17
+						endif
+					endif
+				endif
+			else:
+				if mem2 < 5:
+					if mem2 < 3:
+						if mem2 < 2:
+							mem3 = set 19
+						else:
+							mem3 = set 20
+						endif
+					else:
+						if mem2 < 4:
+							mem3 = set 21
+						else:
+							mem3 = set 22
+						endif
+					endif
+				else:
+					if mem2 < 7:
+						if mem2 < 6:
+							mem3 = set 23
+						else:
+							mem3 = set 24
+						endif
+					else:
+						if mem2 < 8:
+							mem3 = set 25
+						else:
+							mem3 = set 26
+						endif
+					endif
+				endif
+			endif
+		else:
 			if mem2 < 5:
 				if mem2 < 3:
 					if mem2 < 2:
@@ -248,7 +262,9 @@ if mem3 == 18 or
 					endif
 				endif
 			endif
-		else:
+		endif
+	else:
+		if mem3 == 36:
 			if mem2 < 5:
 				if mem2 < 3:
 					if mem2 < 2:
@@ -278,65 +294,65 @@ if mem3 == 18 or
 					endif
 				endif
 			endif
-		endif
-	else:
-		if mem3 == 18:
-			if mem2 < 5:
-				if mem2 < 3:
-					if mem2 < 2:
-						mem3 = set 19
-					else:
-						mem3 = set 20
-					endif
-				else:
-					if mem2 < 4:
-						mem3 = set 21
-					else:
-						mem3 = set 22
-					endif
-				endif
-			else:
-				if mem2 < 7:
-					if mem2 < 6:
-						mem3 = set 23
-					else:
-						mem3 = set 24
-					endif
-				else:
-					if mem2 < 8:
-						mem3 = set 25
-					else:
-						mem3 = set 26
-					endif
-				endif
-			endif
 		else:
-			if mem2 < 5:
-				if mem2 < 3:
-					if mem2 < 2:
-						mem3 = set 46
+			if mem3 == 45:
+				if mem2 < 5:
+					if mem2 < 3:
+						if mem2 < 2:
+							mem3 = set 46
+						else:
+							mem3 = set 47
+						endif
 					else:
-						mem3 = set 47
+						if mem2 < 4:
+							mem3 = set 48
+						else:
+							mem3 = set 49
+						endif
 					endif
 				else:
-					if mem2 < 4:
-						mem3 = set 48
+					if mem2 < 7:
+						if mem2 < 6:
+							mem3 = set 50
+						else:
+							mem3 = set 51
+						endif
 					else:
-						mem3 = set 49
+						if mem2 < 8:
+							mem3 = set 52
+						else:
+							mem3 = set 53
+						endif
 					endif
 				endif
 			else:
-				if mem2 < 7:
-					if mem2 < 6:
-						mem3 = set 50
+				if mem2 < 5:
+					if mem2 < 3:
+						if mem2 < 2:
+							mem3 = set 55
+						else:
+							mem3 = set 56
+						endif
 					else:
-						mem3 = set 51
+						if mem2 < 4:
+							mem3 = set 57
+						else:
+							mem3 = set 58
+						endif
 					endif
 				else:
-					if mem2 < 8:
-						mem3 = set 52
+					if mem2 < 7:
+						if mem2 < 6:
+							mem3 = set 59
+						else:
+							mem3 = set 60
+						endif
 					else:
-						mem3 = set 53
+						if mem2 < 8:
+							mem3 = set 61
+						else:
+							mem3 = set 62
+						endif
 					endif
 				endif
 			endif
@@ -349,5 +365,4 @@ else:
 endif
 write mem3
 drop
-
 
