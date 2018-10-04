@@ -1,24 +1,58 @@
 -- 7 Billion Humans (2145) --
 -- 51: Identify Yourselves --
 
-mem1 = set 11
-pickup s
-step s
-a:
-if e == nothing:
-	mem1 = calc mem1 - 1
-	b:
-	write mem1
-	drop
-endif
-if e == datacube:
-	mem1 = calc e - 1
-	jump b
-endif
 if w == nothing or
- w == datacube:
-	mem2 = calc w + 1
-	write mem2
-	drop
+ e == nothing:
+	if w == nothing:
+		step se
+		step s
+		pickup nw
+		write 1
+		step nw
+	else:
+		step sw
+		step s
+		pickup ne
+		write 10
+		step ne
+	endif
+else:
+	pickup s
+	if s == worker or
+	 sw == worker or
+	 se == worker:
+		step s
+		if s == worker:
+			if e == worker:
+				write 2
+			else:
+				write 9
+			endif
+		else:
+			if sw == worker:
+				write 3
+			else:
+				write 8
+			endif
+		endif
+	else:
+		if sw == worker or
+		 se == worker:
+			step s
+			if e == nothing:
+				write 4
+			else:
+				write 7
+			endif
+		else:
+			if e == worker:
+				step s
+				write 5
+			else:
+				step s
+				write 6
+			endif
+		endif
+	endif
 endif
-jump a
+drop

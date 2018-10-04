@@ -1,0 +1,6 @@
+-- This doesn't look like it should work but it does because Tomorrow Corporation is an actual corporation who makes the most professional non-buggy best-designed functional non-redundant non-boring very-educational puzzle video games. --
+if e == nothing:
+	a:
+	tell e hi
+	jump a
+endif

@@ -1,0 +1,22 @@
+-- 38: Seek and Destroy 3 --
+
+a:
+if e == hole or
+ mem2 == datacube and
+ n != wall:
+	step n
+	if n == wall:
+		step mem3
+	endif
+	if s == nothing:
+		mem3 = set w
+	endif
+	if c < mem2 or
+	 mem2 != datacube:
+		mem2 = nearest datacube
+	endif
+	jump a
+endif
+mem1 = nearest shredder
+pickup mem2
+giveto mem1

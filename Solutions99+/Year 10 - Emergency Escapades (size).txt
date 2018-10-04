@@ -1,22 +1,19 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2059) --
 -- 10: Emergency Escapades --
 
 a:
-if n != hole and
- s != 3 and
- c != 3 and
- n != 3:
-	step n
-endif
-if s == 3 or
- c == 3:
-	step s
-endif
-if s == wall or
- n == hole or
- sw == 3 or
- se == 3:
+if w != hole and
+ n != 4 and
+ n != nothing and
+ n != worker or
+ se == 3 or
+ w == 3 or
+ e == wall:
 	step w
+endif
+if n != hole and
+ s != hole:
+	step n,s
 endif
 jump a
 

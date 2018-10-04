@@ -1,0 +1,230 @@
+-- 7 Billion Humans (2145) --
+-- 57: Neighborly Sweeper --
+
+if w == wall:
+	step e
+	step e
+	if c == datacube:
+		pickup c
+		if se == datacube:
+			if e == datacube:
+				write 2
+				drop
+				step e
+				pickup c
+				write 2
+				drop
+				step s
+				pickup c
+				write 3
+				drop
+				step se
+				pickup c
+				write 4
+				drop
+				step e
+				pickup c
+				write 4
+				drop
+			else:
+				write 1
+				drop
+				step e
+				step e
+				pickup c
+				write 2
+				drop
+				step e
+				step e
+				step e
+				pickup c
+				write 3
+				drop
+				step e
+				pickup c
+				write 4
+				drop
+				step e
+				pickup c
+				write 3
+				drop
+			endif
+		else:
+			write 1
+			drop
+			step ne
+			pickup c
+			write 3
+			drop
+			step e
+			step e
+			pickup c
+			write 2
+			drop
+			step e
+			pickup c
+			write 3
+			drop
+			step e
+			pickup c
+			write 3
+			drop
+		endif
+	else:
+		if n == datacube:
+			step e
+			step se
+			pickup c
+			write 2
+			drop
+			step e
+			pickup c
+			write 3
+			drop
+			step ne
+			pickup c
+			write 4
+			drop
+			step ne
+			pickup c
+			write 4
+			drop
+			step ne
+			pickup c
+			write 6
+			drop
+		else:
+			step s
+			pickup c
+			write 1
+			drop
+			step e
+			pickup c
+			write 3
+			drop
+			step e
+			pickup c
+			write 4
+			drop
+			step se
+			pickup c
+			write 5
+			drop
+			step ne
+			pickup c
+			write 4
+			drop
+		endif
+	endif
+else:
+	step w
+	step w
+	if c == datacube:
+		pickup c
+		if s == datacube:
+			if sw == datacube:
+				write 4
+				drop
+				step w
+				pickup c
+				write 6
+				drop
+				step w
+				pickup c
+				write 5
+				drop
+				step w
+				step w
+				pickup c
+				write 3
+				drop
+				step w
+				pickup c
+				write 2
+				drop
+			else:
+				write 2
+				drop
+				step s
+				pickup c
+				write 4
+				drop
+				step nw
+				pickup c
+				write 4
+				drop
+				step w
+				pickup c
+				write 3
+				drop
+				step sw
+				pickup c
+				write 4
+				drop
+			endif
+		else:
+			if w == datacube:
+				write 3
+				drop
+				step n
+				pickup c
+				write 5
+				drop
+				step w
+				pickup c
+				write 8
+				drop
+				step s
+				pickup c
+				write 5
+				drop
+				step nw
+				pickup c
+				write 7
+				drop
+			else:
+				drop
+				step w
+				step w
+				pickup c
+				write 1
+				drop
+				step w
+				pickup c
+				write 1
+				drop
+				step n
+				step n
+				pickup c
+				write 4
+				drop
+				step e
+				pickup c
+				write 5
+				drop
+			endif
+		endif
+	else:
+		step n
+		pickup c
+		write 1
+		drop
+		step sw
+		pickup c
+		write 4
+		drop
+		step w
+		pickup c
+		write 4
+		drop
+		step s
+		pickup c
+		write 4
+		drop
+		step w
+		step sw
+		pickup c
+		write 1
+		drop
+	endif
+endif

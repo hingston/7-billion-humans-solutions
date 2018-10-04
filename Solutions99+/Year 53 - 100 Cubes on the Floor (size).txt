@@ -1,25 +1,17 @@
--- 7 Billion Humans (2145) --
 -- 53: 100 Cubes on the Floor --
 
-mem1 = set 9
 a:
-if c == nothing:
-	step w
-	jump a
+mem2 = set e
+if n == wall or
+ n == datacube and
+ w == 0:
+	mem2 = set w
 endif
-if n == wall:
-	jump b
+if mem2 != 0:
+	mem2 = set s
 endif
-listenfor ready
-mem1 = calc n + 10
-b:
-c:
-pickup c
+mem1 = calc mem1 + 1
+pickup mem2
 write mem1
-tell s ready
 drop
-if w != wall:
-	step w
-	mem1 = calc mem1 - 1
-	jump c
-endif
+jump a
