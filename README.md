@@ -22,6 +22,8 @@ Year `NUM` - `NAME` (`TYPE`).txt
 
 `TYPE` = Speed, Size or Both
 
+Run [check_names.py](https://github.com/hingston/7-billion-humans-solutions/blob/master/check_names.py) to confirm.
+
 ## Contributors
 
 ###### +99% Solutions
