@@ -1,24 +1,106 @@
--- 7 Billion Humans (2144) --
+-- 7 Billion Humans (2145) --
 -- 32: Creative Writhing --
 
-pickup s
-write 99
-drop
-if sw == datacube:
-	a:
-	step w
-	pickup s
-	write 99
-	drop
-	step s
-	pickup s
-	write 99
-	drop
-	step s
-	pickup s
-	write 99
-	drop
+if ne == something:
+	pickup sw
+	if myitem == datacube:
+		write 99
+		drop
+		step sw
+		pickup e
+		write 99
+		drop
+		step s
+		pickup c
+		write 99
+		drop
+		step s
+		pickup c
+		write 99
+		drop
+		step e
+		pickup c
+		write 99
+		drop
+		step s
+		pickup c
+		write 99
+		drop
+		step s
+		pickup c
+		write 99
+		drop
+		step s
+		pickup c
+		write 99
+		drop
+		step w
+		pickup c
+		write 99
+		drop
+		step s
+		pickup c
+		write 99
+		drop
+		step s
+		pickup c
+		write 99
+		drop
+		step e
+		pickup c
+		write 99
+		drop
+		pickup s
+		write 99
+	else:
+		pickup s
+		write 99
+		drop
+		step sw
+		pickup se
+		write 99
+		drop
+		step s
+		pickup c
+		write 99
+		drop
+		step s
+		pickup c
+		write 99
+		drop
+		step s
+		pickup c
+		write 99
+		drop
+		step e
+		pickup c
+		write 99
+		drop
+		step s
+		pickup c
+		write 99
+		drop
+		step s
+		pickup c
+		write 99
+		drop
+		step w
+		pickup c
+		write 99
+		drop
+		step s
+		pickup c
+		write 99
+		drop
+		step s
+		pickup c
+		write 99
+		drop
+		pickup s
+		write 99
+	endif
 	step e
+else:
 	pickup s
 	write 99
 	drop
@@ -26,112 +108,67 @@ if sw == datacube:
 	pickup s
 	write 99
 	drop
-	step s
-	pickup s
+	step se
+	pickup c
 	write 99
 	drop
 	step s
-	pickup s
-	write 99
-	drop
-	jump a
-endif
-step s
-pickup s
-write 99
-drop
-if sw == datacube:
-	step w
-	pickup s
+	pickup c
 	write 99
 	drop
 	step s
-	pickup s
-	write 99
-	drop
-	step s
-	pickup s
-	write 99
-	drop
-	step e
-	pickup s
-	write 99
-	drop
-	step s
-	pickup s
-	write 99
-	drop
-	step s
-	pickup s
+	pickup c
 	write 99
 	drop
 	step w
-	b:
-	pickup s
+	pickup c
 	write 99
 	drop
 	step s
-	jump b
+	pickup c
+	write 99
+	drop
+	step s
+	pickup c
+	write 99
+	drop
+	pickup e
+	if myitem == datacube:
+		step e
+		write 99
+		drop
+		step s
+		pickup c
+		write 99
+		drop
+		step s
+		pickup c
+		write 99
+		drop
+		step w
+		pickup c
+		write 99
+		drop
+		pickup s
+		step w
+		write 99
+	else:
+		step s
+		pickup c
+		write 99
+		drop
+		step e
+		pickup c
+		write 99
+		drop
+		step s
+		pickup c
+		write 99
+		drop
+		pickup s
+		write 99
+		step e
+	endif
 endif
-step e
-pickup s
-write 99
 drop
-step s
-pickup s
-write 99
-drop
-step s
-pickup s
-write 99
-drop
-step w
-pickup s
-write 99
-drop
-step s
-pickup s
-write 99
-drop
-step s
-pickup s
-write 99
-drop
-if se == datacube:
-	step e
-	pickup s
-	write 99
-	drop
-	step s
-	pickup s
-	write 99
-	drop
-	step s
-	pickup s
-	write 99
-	drop
-	step w
-	pickup s
-	write 99
-	drop
-	step s
-	pickup s
-	write 99
-	drop
-endif
-step s
-pickup s
-write 99
-drop
-step e
-pickup s
-write 99
-drop
-step s
-pickup s
-write 99
-drop
-step s
-pickup s
-write 99
-drop
+
