@@ -1,19 +1,317 @@
 -- 7 Billion Humans (2145) --
 -- 43: Multiplication Table --
 
-a:
-if n == 0 or
- n == nothing or
- s == wall:
-	step n
-	jump a
-endif
+step n
+step n
+step n
+step n
+step n
+step n
+step n
+step n
+step n
+step n
+step n
+step n
 mem1 = nearest datacube
-mem2 = set mem1
-b:
-pickup s
 step s
-write mem2
+step s
+pickup c
+write mem1
 drop
-mem2 = calc mem1 + mem2
-jump b
+step s
+pickup c
+if mem1 < 5:
+	if mem1 < 3:
+		if mem1 == 1:
+			mem1 = set 2
+		else:
+			mem1 = set 4
+		endif
+	else:
+		if mem1 == 3:
+			mem1 = set 6
+		else:
+			mem1 = set 8
+		endif
+	endif
+else:
+	if mem1 == 5:
+		mem1 = set 10
+	else:
+		if mem1 < 8:
+			if mem1 == 6:
+				mem1 = set 12
+			else:
+				mem1 = set 14
+			endif
+		else:
+			if mem1 == 8:
+				mem1 = set 16
+			else:
+				mem1 = set 18
+			endif
+		endif
+	endif
+endif
+write mem1
+drop
+step s
+pickup c
+if mem1 < 10:
+	if mem1 < 6:
+		if mem1 == 2:
+			mem1 = set 3
+		else:
+			mem1 = set 6
+		endif
+	else:
+		if mem1 == 6:
+			mem1 = set 9
+		else:
+			mem1 = set 12
+		endif
+	endif
+else:
+	if mem1 == 10:
+		mem1 = set 15
+	else:
+		if mem1 < 16:
+			if mem1 == 12:
+				mem1 = set 18
+			else:
+				mem1 = set 21
+			endif
+		else:
+			if mem1 == 16:
+				mem1 = set 24
+			else:
+				mem1 = set 27
+			endif
+		endif
+	endif
+endif
+write mem1
+drop
+step s
+pickup c
+if mem1 < 15:
+	if mem1 < 9:
+		if mem1 == 3:
+			mem1 = set 4
+		else:
+			mem1 = set 8
+		endif
+	else:
+		if mem1 == 9:
+			mem1 = set 12
+		else:
+			mem1 = set 16
+		endif
+	endif
+else:
+	if mem1 == 15:
+		mem1 = set 20
+	else:
+		if mem1 < 24:
+			if mem1 == 18:
+				mem1 = set 24
+			else:
+				mem1 = set 28
+			endif
+		else:
+			if mem1 == 24:
+				mem1 = set 32
+			else:
+				mem1 = set 36
+			endif
+		endif
+	endif
+endif
+write mem1
+drop
+step s
+pickup c
+if mem1 < 20:
+	if mem1 < 12:
+		if mem1 == 4:
+			mem1 = set 5
+		else:
+			mem1 = set 10
+		endif
+	else:
+		if mem1 == 12:
+			mem1 = set 15
+		else:
+			mem1 = set 20
+		endif
+	endif
+else:
+	if mem1 == 20:
+		mem1 = set 25
+	else:
+		if mem1 < 32:
+			if mem1 == 24:
+				mem1 = set 30
+			else:
+				mem1 = set 35
+			endif
+		else:
+			if mem1 == 32:
+				mem1 = set 40
+			else:
+				mem1 = set 45
+			endif
+		endif
+	endif
+endif
+write mem1
+drop
+step s
+pickup c
+if mem1 < 25:
+	if mem1 < 15:
+		if mem1 == 5:
+			mem1 = set 6
+		else:
+			mem1 = set 12
+		endif
+	else:
+		if mem1 == 15:
+			mem1 = set 18
+		else:
+			mem1 = set 24
+		endif
+	endif
+else:
+	if mem1 == 25:
+		mem1 = set 30
+	else:
+		if mem1 < 40:
+			if mem1 == 30:
+				mem1 = set 36
+			else:
+				mem1 = set 42
+			endif
+		else:
+			if mem1 == 40:
+				mem1 = set 48
+			else:
+				mem1 = set 54
+			endif
+		endif
+	endif
+endif
+write mem1
+drop
+step s
+pickup c
+if mem1 < 30:
+	if mem1 < 18:
+		if mem1 == 6:
+			mem1 = set 7
+		else:
+			mem1 = set 14
+		endif
+	else:
+		if mem1 == 18:
+			mem1 = set 21
+		else:
+			mem1 = set 28
+		endif
+	endif
+else:
+	if mem1 == 30:
+		mem1 = set 35
+	else:
+		if mem1 < 48:
+			if mem1 == 36:
+				mem1 = set 42
+			else:
+				mem1 = set 49
+			endif
+		else:
+			if mem1 == 48:
+				mem1 = set 56
+			else:
+				mem1 = set 63
+			endif
+		endif
+	endif
+endif
+write mem1
+drop
+step s
+pickup c
+if mem1 < 35:
+	if mem1 < 21:
+		if mem1 == 7:
+			mem1 = set 8
+		else:
+			mem1 = set 16
+		endif
+	else:
+		if mem1 == 21:
+			mem1 = set 24
+		else:
+			mem1 = set 32
+		endif
+	endif
+else:
+	if mem1 == 35:
+		mem1 = set 40
+	else:
+		if mem1 < 56:
+			if mem1 == 42:
+				mem1 = set 48
+			else:
+				mem1 = set 56
+			endif
+		else:
+			if mem1 == 56:
+				mem1 = set 64
+			else:
+				mem1 = set 72
+			endif
+		endif
+	endif
+endif
+write mem1
+drop
+step s
+pickup c
+if mem1 < 40:
+	if mem1 < 24:
+		if mem1 == 8:
+			mem1 = set 9
+		else:
+			mem1 = set 18
+		endif
+	else:
+		if mem1 == 24:
+			mem1 = set 27
+		else:
+			mem1 = set 36
+		endif
+	endif
+else:
+	if mem1 == 40:
+		mem1 = set 45
+	else:
+		if mem1 < 64:
+			if mem1 == 48:
+				mem1 = set 54
+			else:
+				mem1 = set 63
+			endif
+		else:
+			if mem1 == 64:
+				mem1 = set 72
+			else:
+				mem1 = set 81
+			endif
+		endif
+	endif
+endif
+write mem1
+drop
