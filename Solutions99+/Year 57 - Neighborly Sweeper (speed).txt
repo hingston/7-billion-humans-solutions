@@ -1,230 +1,257 @@
 -- 7 Billion Humans (2145) --
 -- 57: Neighborly Sweeper --
 
-if w == wall:
-	step e
-	step e
-	if c == datacube:
-		pickup c
-		if se == datacube:
-			if e == datacube:
-				write 2
-				drop
-				step e
-				pickup c
-				write 2
-				drop
-				step s
-				pickup c
-				write 3
-				drop
+jump a
+mem1 = foreachdir w:
+	a:
+	if mem1 == wall:
+		step e
+		jump b
+		mem1 = foreachdir se:
+			b:
+			if mem1 == datacube:
 				step se
-				pickup c
-				write 4
-				drop
-				step e
-				pickup c
-				write 4
-				drop
+				jump c
+				mem1 = foreachdir e:
+					c:
+					if mem1 == datacube:
+						pickup c
+						write 1
+						drop
+						step e
+						pickup c
+						write 3
+						drop
+						step e
+						pickup c
+						write 4
+						drop
+						step se
+						pickup c
+						write 5
+						drop
+						pickup ne
+						step ne
+						write 4
+					else:
+						step e
+						step e
+						pickup c
+						write 2
+						drop
+						step e
+						pickup c
+						write 3
+						drop
+						pickup ne
+						step ne
+						write 4
+						drop
+						pickup ne
+						step ne
+						write 4
+						drop
+						step n
+						pickup n
+						step n
+						write 3
+					endif
+				endfor
 			else:
-				write 1
-				drop
-				step e
 				step e
 				pickup c
-				write 2
-				drop
-				step e
-				step e
-				step e
-				pickup c
-				write 3
-				drop
-				step e
-				pickup c
-				write 4
-				drop
-				step e
-				pickup c
-				write 3
-				drop
+				jump d
+				mem1 = foreachdir e:
+					d:
+					if mem1 == nothing:
+						write 1
+						drop
+						jump e
+						mem1 = foreachdir ne:
+							e:
+							if mem1 == nothing:
+								step e
+								step e
+								pickup c
+								write 2
+								drop
+								step se
+								step e
+								pickup c
+								write 3
+								drop
+								step e
+								pickup c
+								write 3
+								drop
+								pickup n
+								step n
+								write 3
+							else:
+								pickup ne
+								step ne
+								write 3
+								drop
+								step e
+								pickup e
+								step e
+								write 2
+								drop
+								step s
+								step se
+								step s
+								step s
+								pickup c
+								write 2
+							endif
+						endfor
+					else:
+						write 2
+						drop
+						step e
+						pickup c
+						write 2
+						drop
+						step s
+						pickup c
+						write 3
+						drop
+						pickup se
+						step se
+						write 4
+						drop
+						step e
+						pickup c
+						write 4
+					endif
+				endfor
 			endif
-		else:
-			write 1
-			drop
-			step ne
-			pickup c
-			write 3
-			drop
-			step e
-			step e
-			pickup c
-			write 2
-			drop
-			step e
-			pickup c
-			write 3
-			drop
-			step e
-			pickup c
-			write 3
-			drop
-		endif
+		endfor
 	else:
-		if n == datacube:
-			step e
-			step se
-			pickup c
-			write 2
-			drop
-			step e
-			pickup c
-			write 3
-			drop
-			step ne
-			pickup c
-			write 4
-			drop
-			step ne
-			pickup c
-			write 4
-			drop
-			step ne
-			pickup c
-			write 6
-			drop
-		else:
-			step s
-			pickup c
-			write 1
-			drop
-			step e
-			pickup c
-			write 3
-			drop
-			step e
-			pickup c
-			write 4
-			drop
-			step se
-			pickup c
-			write 5
-			drop
-			step ne
-			pickup c
-			write 4
-			drop
-		endif
-	endif
-else:
-	step w
-	step w
-	if c == datacube:
-		pickup c
-		if s == datacube:
-			if sw == datacube:
-				write 4
-				drop
-				step w
-				pickup c
-				write 6
-				drop
-				step w
-				pickup c
-				write 5
-				drop
-				step w
-				step w
-				pickup c
-				write 3
-				drop
-				step w
-				pickup c
-				write 2
-				drop
-			else:
-				write 2
-				drop
-				step s
-				pickup c
-				write 4
-				drop
+		step w
+		jump f
+		mem1 = foreachdir w:
+			f:
+			if mem1 == nothing:
+				pickup nw
 				step nw
-				pickup c
-				write 4
-				drop
-				step w
-				pickup c
-				write 3
+				write 1
 				drop
 				step sw
 				pickup c
 				write 4
 				drop
-			endif
-		else:
-			if w == datacube:
-				write 3
-				drop
-				step n
-				pickup c
-				write 5
-				drop
 				step w
-				pickup c
-				write 8
-				drop
-				step s
-				pickup c
-				write 5
-				drop
-				step nw
-				pickup c
-				write 7
-				drop
-			else:
-				drop
-				step w
-				step w
-				pickup c
-				write 1
-				drop
-				step w
-				pickup c
-				write 1
-				drop
-				step n
-				step n
 				pickup c
 				write 4
 				drop
-				step e
-				pickup c
-				write 5
+				pickup n
+				step n
+				write 3
 				drop
+				step w
+				pickup c
+				write 4
+			else:
+				step w
+				jump g
 			endif
-		endif
-	else:
-		step n
-		pickup c
-		write 1
-		drop
-		step sw
-		pickup c
-		write 4
-		drop
-		step w
-		pickup c
-		write 4
-		drop
-		step s
-		pickup c
-		write 4
-		drop
-		step w
-		step sw
-		pickup c
-		write 1
-		drop
+		endfor
 	endif
-endif
+endfor
+jump h
+mem1 = foreachdir w:
+	mem2 = foreachdir n:
+		mem3 = foreachdir nw:
+			g:
+			if mem1 == nothing:
+				step w
+				step w
+				pickup c
+				write 1
+				drop
+				step w
+				pickup c
+				write 1
+				drop
+				step n
+				pickup n
+				step n
+				write 4
+				drop
+				pickup ne
+				step ne
+				write 7
+				drop
+				step w
+				pickup c
+				write 6
+			else:
+				pickup c
+				if mem2 == nothing:
+					write 2
+					drop
+					step s
+					pickup c
+					write 4
+					drop
+					pickup nw
+					step nw
+					write 4
+					drop
+					step w
+					pickup c
+					write 3
+					drop
+					pickup n
+					step n
+					write 4
+				else:
+					if mem3 == nothing:
+						write 4
+						drop
+						step w
+						pickup c
+						write 6
+						drop
+						step w
+						pickup c
+						write 5
+						drop
+						pickup nw
+						step nw
+						write 4
+						drop
+						pickup nw
+						step nw
+						write 1
+						drop
+						i:
+						jump i
+					else:
+						write 3
+						drop
+						step w
+						pickup c
+						write 5
+						drop
+						step w
+						pickup c
+						write 5
+						drop
+						pickup ne
+						step ne
+						write 8
+						drop
+						step e
+						pickup c
+						write 5
+					endif
+				endif
+			endif
+		endfor
+	endfor
+endfor
+h:
+drop
+
