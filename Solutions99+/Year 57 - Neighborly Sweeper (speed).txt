@@ -225,9 +225,6 @@ mem1 = foreachdir w:
 						pickup nw
 						step nw
 						write 1
-						drop
-						i:
-						jump i
 					else:
 						write 3
 						drop
@@ -254,4 +251,3 @@ mem1 = foreachdir w:
 endfor
 h:
 drop
-
