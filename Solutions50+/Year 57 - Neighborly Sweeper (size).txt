@@ -1,0 +1,17 @@
+-- 7 Billion Humans (2145) --
+-- 57: Neighborly Sweeper --
+
+a:
+mem2 = set 0
+step nw,w,sw,ne,e,se
+mem1 = foreachdir nw,w,sw,n,s,ne,e,se:
+	if mem1 == worker and
+	 mem1 >= 0 or
+	 mem1 == datacube:
+		mem2 = calc mem2 + 1
+	endif
+endfor
+pickup c
+write mem2
+drop
+jump a

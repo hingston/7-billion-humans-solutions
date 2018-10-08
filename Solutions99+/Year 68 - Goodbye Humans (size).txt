@@ -2,14 +2,18 @@
 -- 68: Goodbye, Humans! --
 
 a:
-mem1 = nearest worker
-if mem1 != worker:
+if nw != worker and
+ n != worker and
+ ne != worker and
+ e == wall and
+ s == hole:
 	tell everyone goodbye
 endif
 if sw != hole and
- s != hole or
+ s != hole and
+ w != hole or
  e == wall:
-	step sw,s
+	step w,sw,s
 endif
 step se
 jump a

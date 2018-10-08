@@ -22,6 +22,8 @@ Year `NUM` - `NAME` (`TYPE`).txt
 
 `TYPE` = Speed, Size or Both
 
+Run [check_names.py](https://github.com/hingston/7-billion-humans-solutions/blob/master/check_names.py) to confirm.
+
 ## Contributors
 
 ###### +99% Solutions
@@ -74,16 +76,16 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 25 | [My First Shredding Memory](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2025%20-%20My%20First%20Shredding%20Memory%20(speed).txt) | [hingston](https://github.com/hingston/) | **5** ✔ | 139 |
 | Year 25 | [My First Shredding Memory](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2025%20-%20My%20First%20Shredding%20Memory%20(size).txt) | [n05ucc4u](https://github.com/n05ucc4u) | 9 | **130** ➕ |
 | Year 26 | [Bugdet Bragade 2](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2026%20-%20Bugdet%20Bragade%202%20(Speed).txt) | [psam](https://www.twitch.tv/psam/) | **7** ➕ | ~200 |
-| Year 26 | [Bugdet Bragade 2](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2026%20-%20Bugdet%20Brigade%202%20(Size).txt) | [n05ucc4u](https://github.com/n05ucc4u) | 76 | **61** ➕ |
+| Year 26 | [Bugdet Bragade 2](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2026%20-%20Bugdet%20Brigade%202%20(Size).txt) | [n05ucc4u](https://github.com/n05ucc4u) | 100 | **60** ➕ |
 | Year 28 | [Neural Pathways](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2028%20-%20Neural%20Pathways%20(both).txt) | [hingston](https://github.com/hingston/) | **4** ✔ | **51** ✔ |
 | Year 29 | [Biometric Access](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2029%20-%20Biometric%20Access%20(both).txt) | [hingston](https://github.com/hingston/) | **5** ✔ | 60 |
 | Year 29 | [Biometric Access](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2029%20-%20Biometric%20Access%20(both).txt) | [ansvonwa](https://github.com/ansvonwa) | 9 | **57** ➕ |
-| Year 30 | [Fill the Floor](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2030%20-%20Fill%20the%20Floor%20(size).txt) | [hingston](https://github.com/hingston/) | **6** ✔ | 303 |
-| Year 30 | [Fill the Floor](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2030%20-%20Fill%20the%20Floor%20(speed).txt) | [main-gi](https://github.com/main-gi) | 237 | **102** ➕ |
+| Year 30 | [Fill the Floor](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2030%20-%20Fill%20the%20Floor%20(size).txt) | [martinez8859](https://github.com/martinez8859) | **5** ➕ | ~588 |
+| Year 30 | [Fill the Floor](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2030%20-%20Fill%20the%20Floor%20(speed).txt) | [n05ucc4u](https://github.com/n05ucc4u) | 110 | **92** ➕ |
 | Year 31 | [Checkerboard Organization](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2031%20-%20Checkerboard%20Organization%20(size).txt) | [hingston](https://github.com/hingston/) | **7** ✔ | 149 |
-| Year 31 | [Checkerboard Organization](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2031%20-%20Checkerboard%20Organization%20(speed).txt) | [aqueous68](https://github.com/aqueous68) | 155 | **42** ➕ |
+| Year 31 | [Checkerboard Organization](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2031%20-%20Checkerboard%20Organization%20(speed).txt) | [n05ucc4u](https://github.com/n05ucc4u) | 157 | **41** ➕ |
 | Year 32 | [Creative Writhing](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2032%20-%20Creative%20Writhing%20(size).txt) | [hingston](https://github.com/hingston/) | **6** ❌ | 331 |
-| Year 32 | [Creative Writhing](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2032%20-%20Creative%20Writhing%20(speed).txt) | [hingston](https://github.com/hingston/) | 22 | **39** ❌ |
+| Year 32 | [Creative Writhing](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2032%20-%20Creative%20Writhing%20(speed).txt) | [main-gi](https://github.com/main-gi) | 129 | **31** ✔ |
 | Year 33 | [Data Backup Day](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2033%20-%20Data%20Backup%20Day%20(size).txt) | [$uppenbaer](https://steamcommunity.com/profiles/76561198047610018) | **7** ➕ | ~20 |
 | Year 33 | [Data Backup Day](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2033%20-%20Data%20Backup%20Day%20(speed).txt) | [hingston](https://github.com/hingston/) | 9 | **2** ✔ |
 | Year 34 | [Seek and Destroy 1](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2034%20-%20Seek%20and%20Destroy%201%20(size).txt) | [n05ucc4u](https://github.com/n05ucc4u) | **8** ✔ | ~20 |
@@ -93,17 +95,18 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 36 | [Seek and Destroy 2](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2036%20-%20Seek%20and%20Destroy%202%20(speed).txt) | [ansvonwa](https://github.com/ansvonwa) | 195 | **51-52** ➕ |
 | Year 37 | [Dangerous Spreadsheeting](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2037%20-%20Dangerous%20Spreadsheeting%20(size).txt) | [hingston](https://github.com/hingston/) | **13** ✔ | 34 |
 | Year 37 | [Dangerous Spreadsheeting](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2037%20-%20Dangerous%20Spreadsheeting%20(speed).txt) | [commonnickname](https://github.com/commonnickname) | 243 | **14** ➕ |
-| Year 38 | [Seek and Destroy 3](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2038%20-%20Seek%20and%20Destroy%203%20(both).txt) | [aqueous68](https://github.com/aqueous68) | **16** ➕ | **32** ❌ |
+| Year 38 | [Seek and Destroy 3](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2038%20-%20Seek%20and%20Destroy%203%20(size).txt) | [main-gi](https://github.com/main-gi) | **12** ➕ | 200-201 |
+| Year 38 | [Seek and Destroy 3](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2038%20-%20Seek%20and%20Destroy%203%20(speed).txt) | [martinez8859](https://github.com/martinez8859) | 117 | **~16** ➕ |
 | Year 39 | [Printing Etiquette 1](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2039%20-%20Printing%20Etiquette%201%20(size).txt) | [main-gi](https://github.com/main-gi) | **7** ✔ | ~97 |
 | Year 39 | [Printing Etiquette 1](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2039%20-%20Printing%20Etiquette%201%20(speed).txt) | [commonnickname](https://github.com/commonnickname) | 173 | **35** ➕ |
 | Year 40 | [Printing Etiquette 2](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2040%20-%20Printing%20Etiquette%202%20(size).txt) | [main-gi](https://github.com/main-gi) | **8** ✔ | ~118 |
-| Year 40 | [Printing Etiquette 2](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2040%20-%20Printing%20Etiquette%202%20(speed).txt) | [hingston](https://github.com/hingston/) | 11 | **54** ❌ |
+| Year 40 | [Printing Etiquette 2](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2040%20-%20Printing%20Etiquette%202%20(speed).txt) | [commonnickname](https://github.com/commonnickname) | 177 | **37** ➕ |
 | Year 41 | [Image Decrypter](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2041%20-%20Image%20Decrypter%20(size).txt) | [aqueous68](https://github.com/aqueous68) | **7** ➕ | 30 |
 | Year 41 | [Image Decrypter](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2041%20-%20Image%20Decrypter%20(speed).txt) | [commonnickname](https://github.com/commonnickname) | 51 | **6** ➕ |
 | Year 42 | [Important Email Organization](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2042%20-%20Important%20Email%20Organization%20(size).txt) | [commonnickname](https://github.com/commonnickname) | **10** ➕ | ~899 |
 | Year 42 | [Important Email Organization](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2042%20-%20Important%20Email%20Organization%20(speed).txt) | [commonnickname](https://github.com/commonnickname) | 204 | **~78** ➕ |
 | Year 43 | [Multiplication Table](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2043%20-%20Multiplication%20Table%20(size).txt) | [Farzher ヽ(◕◡◕✿)ノ](https://steamcommunity.com/id/farzher) | **9** ➕ | ~696 |
-| Year 43 | [Multiplication Table](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2043%20-%20Multiplication%20Table%20(speed).txt) | [hingston](https://github.com/hingston/) | 11 | **47** ❌ |
+| Year 43 | [Multiplication Table](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2043%20-%20Multiplication%20Table%20(speed).txt) | [aqueous68](https://github.com/aqueous68) | 250 | **27** ➕ |
 | Year 44 | [Unique Fashion Party](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2044%20-%20Unique%20Fashion%20Party%20(size).txt) | [commonnickname](https://github.com/commonnickname) | **5** ➕ | ~62 |
 | Year 44 | [Unique Fashion Party](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2044%20-%20Unique%20Fashion%20Party%20(speed).txt) | [marky1124](https://github.com/marky1124) | 10 | **~59** ❌ |
 | Year 46 | [Compulsory Office Romance](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2046%20-%20Compulsory%20Office%20Romance%20(both).txt) | [main-gi](https://github.com/main-gi) | **3** ➕ | **5** ➕ |
@@ -113,18 +116,19 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 50 | [Cubical Communication](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2050%20-%20Cubical%20Communication%20(size).txt) | [yifeixuer](https://steamcommunity.com/profiles/76561198831890282) | **6** ➕ | 49 |
 | Year 50 | [Cubical Communication](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2050%20-%20Cubical%20Communication%20(speed).txt) | [commonnickname](https://github.com/commonnickname) | 45 | **26** ➕ |
 | Year 51 | [Identify Yourselves](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2051%20-%20Identify%20Yourselves%20(size).txt) | [main-gi](https://github.com/main-gi) | **6** ✔ | 44 |
-| Year 51 | [Identify Yourselves](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2051%20-%20Identify%20Yourselves%20(speed).txt) | [commonnickname](https://github.com/commonnickname) | 46 | **4** ➕ |
-| Year 52 | [The Mode Code](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2052%20-%20The%20Mode%20Code%20(size).txt) | [hingston](https://github.com/hingston/) | **18** ➕ | 275 |
+| Year 51 | [Identify Yourselves](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2051%20-%20Identify%20Yourselves%20(speed).txt) | [commonnickname](https://github.com/commonnickname) | 42 | **3** ➕ |
+| Year 52 | [The Mode Code](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2052%20-%20The%20Mode%20Code%20(size).txt) | [commonnickname](https://github.com/commonnickname) | **16** ➕ | ~327 |
 | Year 52 | [The Mode Code](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2052%20-%20The%20Mode%20Code%20(speed).txt) | [commonnickname](https://github.com/commonnickname) | 228 | **~65** ➕ |
 | Year 53 | [100 Cubes on the Floor](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2053%20-%20100%20Cubes%20on%20the%20Floor%20(size).txt) | [main-gi](https://github.com/main-gi) | **10** ❌ | 556 |
 | Year 53 | [100 Cubes on the Floor](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2053%20-%20100%20Cubes%20on%20the%20Floor%20(speed).txt) | [n05ucc4u](https://github.com/n05ucc4u) | 231 | **25** ➕ |
 | Year 54 | [Terrain Leveler](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2054%20-%20Terrain%20Leveler%20(size).txt) | [hingston](https://github.com/hingston/) | **10** ➕ | 251 |
 | Year 54 | [Terrain Leveler](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2054%20-%20Terrain%20Leveler%20(speed).txt) | [commonnickname](https://github.com/commonnickname) | 91 | **47** ➕ |
 | Year 55 | [Data Flowers](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2055%20-%20Data%20Flowers%20(both).txt) | [hingston](https://github.com/hingston/) | **8** ✔ | 25 |
-| Year 55 | [Data Flowers](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2055%20-%20Data%20Flowers%20(speed).txt) | [commonnickname](https://github.com/commonnickname) | 241 | **~5** ➕ |
+| Year 55 | [Data Flowers](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2055%20-%20Data%20Flowers%20(speed).txt) | [commonnickname](https://github.com/commonnickname) | 234 | **5** ➕ |
 | Year 56 | [Local Maximums](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2056%20-%20Local%20Maximums%20(size).txt) | [hingston](https://github.com/hingston/) | **8** ✔ | 13 |
 | Year 56 | [Local Maximums](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2056%20-%20Local%20Maximums%20(speed)) | [main-gi](https://github.com/main-gi) | 34 | **12-13** ✔ |
-| Year 57 | [Neighborly Sweeper](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2057%20-%20Neighborly%20Sweeper%20(both).txt) | [hingston](https://github.com/hingston/) | **15** ❌ | **96** ❌ |
+| Year 57 | [Neighborly Sweeper](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2057%20-%20Neighborly%20Sweeper%20(size).txt) | [hingston](https://github.com/hingston/) | **15** ❌ | 96 |
+| Year 57 | [Neighborly Sweeper](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2057%20-%20Neighborly%20Sweeper%20(speed).txt) | [commonnickname](https://github.com/commonnickname) | 224 | **12** ➕ |
 | Year 58 | [Good Neighbors](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2058%20-%20Good%20Neighbors%20(size).txt) | [commonnickname](https://github.com/commonnickname) | **5** ✔ | ~315 |
 | Year 58 | [Good Neighbors](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2058%20-%20Good%20Neighbors%20(speed).txt) | [commonnickname](https://github.com/commonnickname) | 108 | **3** ➕ |
 | Year 59 | [Glory Hole](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2059%20-%20Glory%20Hole%20(size).txt) | [commonnickname](https://github.com/commonnickname) | **4** ➕ | 74 |
@@ -133,7 +137,7 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 60 | [Understaffed Sorting](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2060%20-%20Understaffed%20Sorting%20(speed).txt) | [aqueous68](https://github.com/aqueous68) | 58 | **~100** ➕ |
 | Year 61 | [Lazy Pathways](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2061%20-%20Lazy%20Pathways%20(speed).txt) | [commonnickname](https://github.com/commonnickname) | 245 | **19** ➕ |
 | Year 62 | [The Sorting Floor](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2062%20-%20The%20Sorting%20Floor%20(size).txt) | [main-gi](https://github.com/main-gi) | **30** ❌ | 144 |
-| Year 62 | [The Sorting Floor](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2062%20-%20The%20Sorting%20Floor%20(speed).txt) | [mrtong96](https://steamcommunity.com/profiles/76561198191650798) | 152 | **36** ➕ |
+| Year 62 | [The Sorting Floor](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2062%20-%20The%20Sorting%20Floor%20(speed).txt) | [main-gi](https://github.com/main-gi) | 166 | **33-34** ➕ |
 | Year 63 | [Defrag Disordered](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2063%20-%20Defrag%20Disordered%20(size).txt) | [main-gi](https://github.com/main-gi) | **12** ➕ | 328 |
 | Year 63 | [Defrag Disordered](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2063%20-%20Defrag%20Disordered%20(speed).txt) | [aqueous68](https://github.com/aqueous68) | 53 | **8** ✔ |
 | Year 64 | [Binary Counter](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2064%20-%20Binary%20Counter%20(size).txt) | [AlonzoTG](https://github.com/AlonzoTG) | **16** ❌ | 60 |
@@ -142,7 +146,7 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 66 | [Decimal Counter](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2066%20-%20Decimal%20Counter%20(speed).txt) | [AlonzoTG](https://github.com/AlonzoTG) | **23** ❌ | 150 |
 | Year 66 | [Decimal Counter](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2066%20-%20Decimal%20Counter%20(speed).txt) | [commonnickname](https://github.com/commonnickname) | 239 | **26** ➕ |
 | Year 67 | [Decimal Doubler](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2067%20-%20Decimal%20Doubler%20(speed).txt) | [commonnickname](https://github.com/commonnickname), [main-gi](https://github.com/main-gi) | 196 | **47** ➕ |
-| Year 68 | [Goodbye, Humans!](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2068%20-%20Goodbye%20Humans%20(size).txt) | [aqueous68](https://github.com/aqueous68) | **7** ✔ | 49-50 |
+| Year 68 | [Goodbye, Humans!](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2068%20-%20Goodbye%20Humans%20(size).txt) | [aqueous68](https://github.com/aqueous68) | **6** ➕ | ~75 |
 | Year 68 | [Goodbye, Humans!](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2068%20-%20Goodbye%20Humans%20(size).txt) | [aqueous68](https://github.com/aqueous68) | 16 | **23** ✔ |
 
 ###### +50% Solutions
@@ -155,4 +159,6 @@ Year `NUM` - `NAME` (`TYPE`).txt
 | Year 32 | [Creative Writhing](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions50%2B/Year%2032%20-%20Creative%20Writhing%20(size).txt) | [main-gi](https://github.com/main-gi) | **5** ❌ | ~947 |
 | Year 38 | [Seek and Destroy 3](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions50%2B/Year%2038%20-%20Seek%20and%20Destroy%203%20(size).txt) | [main-gi](https://github.com/main-gi) | **8** ➕ | ~480 |
 | Year 53 | [100 Cubes on the Floor](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions50%2B/Year%2053%20-%20100%20Cubes%20on%20the%20Floor%20(speed).txt) | [nezhi](https://steamcommunity.com/profiles/76561198013091047) | **7** ➕ | ~1106 |
-| Year 68 | [Goodbye, Humans!](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions99%2B/Year%2068%20-%20Goodbye%20Humans%20(size).txt) | [main-gi](https://github.com/main-gi) | **6** ➕ | ~75 |
+| Year 68 | [Goodbye, Humans!](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions50%2B/Year%2068%20-%20Goodbye%20Humans%20(size).txt) | [main-gi](https://github.com/main-gi) | **6** ➕ | ~75 |
+| Year 57 | [Neighborly Sweeper](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions50%2B/Year%2057%20-%20Neighborly%20Sweeper%20(size).txt) | [aqueous68](https://github.com/aqueous68) | **9** ➕ | ~858 |
+
