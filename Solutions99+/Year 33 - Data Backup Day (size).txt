@@ -2,11 +2,11 @@
 -- 33: Data Backup Day --
 
 a:
+mem2 = nearest datacube
+drop
+mem1 = set c
 pickup mem2
 if myitem > mem1:
 	write mem1
 endif
-mem2 = nearest datacube
-mem1 = set myitem
-drop
 jump a
