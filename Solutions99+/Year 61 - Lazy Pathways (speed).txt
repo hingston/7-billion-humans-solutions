@@ -135,13 +135,11 @@ else:
 				drop
 				step sw
 				pickup c
+				h:
 				write 8
 				drop
 				pickup n
 				step n
-				write 8
-				mem1 = set 8
-				mem2 = set 8
 				jump h
 			else:
 				step s
@@ -229,20 +227,19 @@ else:
 		else:
 			step w
 			step w
+			pickup c
 			if mem1 == mem2:
 				if mem1 == 3:
-					mem1 = set 9
+					write 9
 					mem2 = set 10
 				else:
-					mem1 = set 7
+					write 7
 					mem2 = set 8
 				endif
 			else:
-				mem1 = set 8
+				write 8
 				mem2 = set 9
 			endif
-			pickup c
-			write mem1
 			drop
 			pickup nw
 			step nw
@@ -251,17 +248,16 @@ else:
 			pickup n
 			step n
 			write mem2
-			if mem1 == 7:
+			if mem2 == 8:
 				mem2 = set 9
 			endif
-			mem1 = set 9
-			h:
 			drop
 			pickup n
 			step n
 			write mem2
 			drop
 			step n
+			mem1 = set 9
 		endif
 	endif
 endif
