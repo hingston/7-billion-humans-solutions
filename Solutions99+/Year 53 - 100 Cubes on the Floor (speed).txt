@@ -98,10 +98,27 @@ else:
 					step w
 					pickup w
 					write 98
-					mem1 = set 97
-					mem2 = set 96
-					mem3 = set 95
-					mem4 = set 94
+					drop
+					step w
+					pickup w
+					write 97
+					drop
+					step w
+					pickup w
+					write 96
+					drop
+					step w
+					pickup w
+					write 95
+					drop
+					step w
+					pickup w
+					write 94
+					mem1 = set 93
+					mem2 = set 92
+					mem3 = set 91
+					mem4 = set 90
+					jump a
 				endif
 			else:
 				if sw == datacube:
@@ -131,7 +148,7 @@ else:
 					mem2 = set 12
 					mem3 = set 11
 					mem4 = set 10
-					jump a
+					jump b
 				endif
 				pickup w
 				write 49
@@ -159,7 +176,7 @@ else:
 				mem2 = set 42
 				mem3 = set 41
 				mem4 = set 40
-				jump b
+				jump c
 			endif
 		endif
 	endif
@@ -181,18 +198,11 @@ step w
 pickup w
 write mem4
 if mem1 > 57:
-	if mem1 > 77:
-		if mem1 == 87:
-			mem1 = set 83
-			mem2 = set 82
-			mem3 = set 81
-			mem4 = set 80
-		else:
-			mem1 = set 93
-			mem2 = set 92
-			mem3 = set 91
-			mem4 = set 90
-		endif
+	if mem1 == 87:
+		mem1 = set 83
+		mem2 = set 82
+		mem3 = set 81
+		mem4 = set 80
 	else:
 		if mem1 == 67:
 			mem1 = set 63
@@ -233,6 +243,7 @@ else:
 		endif
 	endif
 endif
+c:
 b:
 a:
 drop
@@ -252,5 +263,3 @@ step w
 pickup w
 write mem4
 drop
-
-
