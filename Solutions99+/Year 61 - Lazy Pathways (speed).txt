@@ -53,8 +53,7 @@ if mem1 == 99 and
 						write 6
 						drop
 						step w
-						pickup c
-						write 7
+						mem1 = set 7
 					else:
 						if mem4 == datacube:
 							step nw
@@ -73,8 +72,7 @@ if mem1 == 99 and
 							write 7
 							drop
 							step se
-							pickup c
-							write 7
+							mem1 = set 7
 						else:
 							step sw
 							pickup c
@@ -92,8 +90,7 @@ if mem1 == 99 and
 							drop
 							step sw
 							step sw
-							pickup c
-							write 4
+							mem1 = set 4
 						endif
 					endif
 				endfor
@@ -168,8 +165,7 @@ else:
 					write 5
 					drop
 					step sw
-					pickup c
-					write 6
+					mem1 = set 6
 				else:
 					step w
 					step w
@@ -191,8 +187,7 @@ else:
 					write 4
 					drop
 					step w
-					pickup c
-					write 5
+					mem1 = set 5
 				endif
 			endif
 		endfor
@@ -230,8 +225,7 @@ else:
 			drop
 			step w
 			step w
-			pickup c
-			write 8
+			mem1 = set 8
 		else:
 			step w
 			step w
@@ -267,10 +261,10 @@ else:
 			step n
 			write mem2
 			drop
-			pickup n
 			step n
-			write mem1
 		endif
 	endif
 endif
+pickup c
+write mem1
 drop
