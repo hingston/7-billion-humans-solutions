@@ -1,4 +1,4 @@
--- 7 Billion Humans (2059) --
+-- 7 Billion Humans (2145) --
 -- 61: Lazy Pathways --
 
 step w
@@ -50,12 +50,8 @@ if mem1 == 99 and
 							pickup c
 							write 4
 							drop
-							d:
 							step w
-							pickup c
-							write 5
-							drop
-							step sw
+							step w
 							pickup c
 							write 6
 						else:
@@ -76,37 +72,40 @@ if mem1 == 99 and
 								pickup c
 								write 7
 								drop
-								step w
+								step s
 								pickup c
 								write 8
 							else:
+								step mem1
 								step s
-								jump e
+								pickup c
+								write 3
+								drop
+								step sw
+								step sw
+								pickup c
+								write 4
 							endif
 						endif
 					endfor
 				else:
 					write 3
 					drop
-					step ne
-					pickup c
-					write 3
+					jump d
 				endif
 			endfor
 		else:
 			write 5
 			drop
 			step w
-			pickup nw
-			step nw
-			write 4
-			drop
-			step s
+			step w
 			pickup c
 			write 5
 			drop
-			step w
-			jump d
+			step nw
+			pickup nw
+			step nw
+			jump e
 		endif
 	endfor
 else:
@@ -123,49 +122,42 @@ else:
 				step w
 				step w
 				step w
-				pickup nw
-				step nw
+				step sw
+				pickup c
 				write 6
 				drop
 				step w
 				pickup c
 				write 7
 				drop
-				step s
-				pickup c
+				pickup n
+				step n
 				write 7
 				drop
 				step w
 				pickup c
 				write 8
 				drop
-				step s
-				pickup c
-				write 8
-				drop
-				step e
-				pickup c
+				pickup ne
+				step ne
 				write 7
 			else:
 				step s
 				mem3 = nearest datacube
 				if mem3 == 2:
-					e:
 					step sw
+					step w
+					d:
+					step w
+					step w
 					pickup c
+					e:
 					write 3
 					drop
-					step sw
+					step s
 					pickup c
 					write 4
 					drop
-					if mem1 == 3:
-						step w
-						pickup c
-						write 4
-						drop
-					endif
-					step w
 					step sw
 					pickup c
 					write 5
@@ -179,35 +171,36 @@ else:
 					if mem3 == 2:
 						step w
 						step w
-						g:
-						pickup c
-						write 2
-						drop
-						step sw
-						step w
-						pickup c
-						write 3
-						drop
-						step nw
-						pickup n
-						step n
-						write 2
-						drop
-						step n
-						pickup n
-						step n
-						write 2
 					else:
 						step sw
-						jump g
 					endif
+					pickup c
+					write 2
+					drop
+					step w
+					step w
+					step nw
+					pickup c
+					write 2
+					drop
+					step n
+					pickup n
+					step n
+					write 2
+					drop
+					step n
+					step nw
+					step w
+					step w
+					pickup c
+					write 5
 				endif
 			endif
 		endfor
 	else:
 		step w
-		step sw
 		step w
+		step sw
 		step sw
 		step sw
 		step w
@@ -236,12 +229,6 @@ else:
 			step nw
 			step w
 			pickup c
-			write 8
-			drop
-			step w
-			step w
-			pickup c
-			write 8
 		else:
 			if mem2 == 4 or
 			 mem1 == 4:
@@ -271,9 +258,14 @@ else:
 			pickup nw
 			step nw
 			write 10
+			drop
+			step n
+			step n
+			step n
+			pickup n
+			step n
 		endif
+		write 8
 	endif
 endif
 drop
-
-
