@@ -1,7 +1,7 @@
 -- 7 Billion Humans (2145) --
 -- 43: Multiplication Table --
 
-step n
+step s
 step n
 step n
 step n
@@ -14,304 +14,234 @@ step n
 step n
 step n
 mem1 = nearest datacube
-step s
-step s
-pickup c
+pickup s
 write mem1
-drop
 step s
-pickup c
-if mem1 < 5:
-	if mem1 < 3:
+drop
+pickup s
+step s
+if mem1 > 4:
+	if mem1 > 6:
+		if mem1 == 7:
+			write 14
+			drop
+			pickup s
+			write 21
+			step s
+			drop
+			pickup s
+			write 28
+			step s
+			drop
+			pickup s
+			write 35
+			step s
+			drop
+			pickup s
+			write 42
+			step s
+			drop
+			pickup s
+			write 49
+			step s
+			drop
+			pickup s
+			write 56
+			step s
+			drop
+			pickup s
+			write 63
+			jump a
+		endif
+		if mem1 == 8:
+			write 16
+			drop
+			pickup s
+			write 24
+			step s
+			drop
+			pickup s
+			write 32
+			step s
+			drop
+			pickup s
+			write 40
+			step s
+			drop
+			pickup s
+			write 48
+			step s
+			drop
+			pickup s
+			write 56
+			step s
+			drop
+			pickup s
+			write 64
+			step s
+			drop
+			pickup s
+			write 72
+			jump b
+		endif
+		mem1 = set 18
+		mem2 = set 27
+		mem3 = set 36
+		mem4 = set 45
+	else:
+		if mem1 == 5:
+			write 10
+			drop
+			pickup s
+			write 15
+			step s
+			drop
+			pickup s
+			write 20
+			step s
+			drop
+			pickup s
+			write 25
+			step s
+			drop
+			pickup s
+			write 30
+			step s
+			drop
+			pickup s
+			write 35
+			step s
+			drop
+			pickup s
+			write 40
+			step s
+			drop
+			pickup s
+			write 45
+			jump c
+		endif
+		mem1 = set 12
+		mem2 = set 18
+		mem3 = set 24
+		mem4 = set 30
+	endif
+else:
+	if mem1 > 2:
+		if mem1 == 3:
+			mem1 = set 6
+			mem2 = set 9
+			mem3 = set 12
+			mem4 = set 15
+		else:
+			mem1 = set 8
+			mem2 = set 12
+			mem3 = set 16
+			mem4 = set 20
+		endif
+	else:
 		if mem1 == 1:
 			mem1 = set 2
+			mem2 = set 3
+			mem3 = set 4
+			mem4 = set 5
 		else:
-			mem1 = set 4
-		endif
-	else:
-		if mem1 == 3:
-			mem1 = set 6
-		else:
-			mem1 = set 8
-		endif
-	endif
-else:
-	if mem1 == 5:
-		mem1 = set 10
-	else:
-		if mem1 < 8:
-			if mem1 == 6:
-				mem1 = set 12
-			else:
-				mem1 = set 14
-			endif
-		else:
-			if mem1 == 8:
-				mem1 = set 16
-			else:
-				mem1 = set 18
-			endif
-		endif
-	endif
-endif
-write mem1
-drop
-step s
-pickup c
-if mem1 < 10:
-	if mem1 < 6:
-		if mem1 == 2:
-			mem1 = set 3
-		else:
-			mem1 = set 6
-		endif
-	else:
-		if mem1 == 6:
-			mem1 = set 9
-		else:
-			mem1 = set 12
-		endif
-	endif
-else:
-	if mem1 == 10:
-		mem1 = set 15
-	else:
-		if mem1 < 16:
-			if mem1 == 12:
-				mem1 = set 18
-			else:
-				mem1 = set 21
-			endif
-		else:
-			if mem1 == 16:
-				mem1 = set 24
-			else:
-				mem1 = set 27
-			endif
+			write 4
+			drop
+			pickup s
+			write 6
+			step s
+			drop
+			pickup s
+			write 8
+			step s
+			drop
+			pickup s
+			write 10
+			step s
+			drop
+			pickup s
+			write 12
+			step s
+			drop
+			pickup s
+			write 14
+			step s
+			drop
+			pickup s
+			write 16
+			step s
+			drop
+			pickup s
+			write 18
+			jump d
 		endif
 	endif
 endif
 write mem1
 drop
+pickup s
+write mem2
 step s
-pickup c
-if mem1 < 15:
-	if mem1 < 9:
-		if mem1 == 3:
-			mem1 = set 4
-		else:
-			mem1 = set 8
-		endif
-	else:
-		if mem1 == 9:
-			mem1 = set 12
-		else:
-			mem1 = set 16
-		endif
-	endif
-else:
-	if mem1 == 15:
-		mem1 = set 20
-	else:
-		if mem1 < 24:
-			if mem1 == 18:
-				mem1 = set 24
-			else:
-				mem1 = set 28
-			endif
-		else:
-			if mem1 == 24:
-				mem1 = set 32
-			else:
-				mem1 = set 36
-			endif
-		endif
-	endif
-endif
-write mem1
 drop
+pickup s
+write mem3
 step s
-pickup c
-if mem1 < 20:
-	if mem1 < 12:
-		if mem1 == 4:
-			mem1 = set 5
-		else:
-			mem1 = set 10
-		endif
+drop
+pickup s
+write mem4
+if mem1 > 6:
+	if mem1 == 8:
+		mem1 = set 24
+		mem2 = set 28
+		mem3 = set 32
+		mem4 = set 36
 	else:
 		if mem1 == 12:
-			mem1 = set 15
-		else:
-			mem1 = set 20
-		endif
-	endif
-else:
-	if mem1 == 20:
-		mem1 = set 25
-	else:
-		if mem1 < 32:
-			if mem1 == 24:
-				mem1 = set 30
-			else:
-				mem1 = set 35
-			endif
-		else:
-			if mem1 == 32:
-				mem1 = set 40
-			else:
-				mem1 = set 45
-			endif
-		endif
-	endif
-endif
-write mem1
-drop
-step s
-pickup c
-if mem1 < 25:
-	if mem1 < 15:
-		if mem1 == 5:
-			mem1 = set 6
-		else:
-			mem1 = set 12
-		endif
-	else:
-		if mem1 == 15:
-			mem1 = set 18
-		else:
-			mem1 = set 24
-		endif
-	endif
-else:
-	if mem1 == 25:
-		mem1 = set 30
-	else:
-		if mem1 < 40:
-			if mem1 == 30:
-				mem1 = set 36
-			else:
-				mem1 = set 42
-			endif
-		else:
-			if mem1 == 40:
-				mem1 = set 48
-			else:
-				mem1 = set 54
-			endif
-		endif
-	endif
-endif
-write mem1
-drop
-step s
-pickup c
-if mem1 < 30:
-	if mem1 < 18:
-		if mem1 == 6:
-			mem1 = set 7
-		else:
-			mem1 = set 14
-		endif
-	else:
-		if mem1 == 18:
-			mem1 = set 21
-		else:
-			mem1 = set 28
-		endif
-	endif
-else:
-	if mem1 == 30:
-		mem1 = set 35
-	else:
-		if mem1 < 48:
-			if mem1 == 36:
-				mem1 = set 42
-			else:
-				mem1 = set 49
-			endif
-		else:
-			if mem1 == 48:
-				mem1 = set 56
-			else:
-				mem1 = set 63
-			endif
-		endif
-	endif
-endif
-write mem1
-drop
-step s
-pickup c
-if mem1 < 35:
-	if mem1 < 21:
-		if mem1 == 7:
-			mem1 = set 8
-		else:
-			mem1 = set 16
-		endif
-	else:
-		if mem1 == 21:
-			mem1 = set 24
-		else:
-			mem1 = set 32
-		endif
-	endif
-else:
-	if mem1 == 35:
-		mem1 = set 40
-	else:
-		if mem1 < 56:
-			if mem1 == 42:
-				mem1 = set 48
-			else:
-				mem1 = set 56
-			endif
-		else:
-			if mem1 == 56:
-				mem1 = set 64
-			else:
-				mem1 = set 72
-			endif
-		endif
-	endif
-endif
-write mem1
-drop
-step s
-pickup c
-if mem1 < 40:
-	if mem1 < 24:
-		if mem1 == 8:
-			mem1 = set 9
-		else:
-			mem1 = set 18
-		endif
-	else:
-		if mem1 == 24:
-			mem1 = set 27
-		else:
 			mem1 = set 36
+			mem2 = set 42
+			mem3 = set 48
+			mem4 = set 54
+		else:
+			mem1 = set 54
+			mem2 = set 63
+			mem3 = set 72
+			mem4 = set 81
 		endif
 	endif
 else:
-	if mem1 == 40:
-		mem1 = set 45
+	if mem1 == 2:
+		mem1 = set 6
+		mem2 = set 7
+		mem3 = set 8
+		mem4 = set 9
 	else:
-		if mem1 < 64:
-			if mem1 == 48:
-				mem1 = set 54
-			else:
-				mem1 = set 63
-			endif
-		else:
-			if mem1 == 64:
-				mem1 = set 72
-			else:
-				mem1 = set 81
-			endif
-		endif
+		mem1 = set 18
+		mem2 = set 21
+		mem3 = set 24
+		mem4 = set 27
 	endif
 endif
-write mem1
+step s
 drop
+pickup s
+write mem1
+step s
+drop
+pickup s
+write mem2
+step s
+drop
+pickup s
+write mem3
+step s
+drop
+pickup s
+write mem4
+d:
+c:
+b:
+a:
+step s
+drop
+
+
