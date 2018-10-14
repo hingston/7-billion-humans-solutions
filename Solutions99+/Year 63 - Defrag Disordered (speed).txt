@@ -1,76 +1,153 @@
 -- 7 Billion Humans (2145) --
--- 63: Defrag Disordered --
+-- 65: Defrag Ordered --
 
-step n
-jump a
-mem1 = foreachdir nw:
-	mem2 = foreachdir n:
-		mem3 = foreachdir w:
-			a:
-			if mem1 == hole or
-			 mem3 == worker:
-				if mem1 == nothing:
-					step ne
-					step ne
-					pickup w
-					step ne
-					step n
-					drop
-					step s
-					pickup s
-					step nw
-					step n
-					step n
-					drop
-				else:
-					step n
-					step n
-					pickup se
-					step n
-					step n
-					step n
-					drop
-					step se
-					pickup s
-					drop
-					step e
-					pickup se
-					step n
-					drop
-				endif
-			else:
-				if mem2 == datacube:
-					step ne
-					pickup w
-					step n
-					step ne
-					step n
-					step n
-					drop
-					step s
-					step s
-					pickup s
-					step n
-					step n
-					step n
-					drop
-				else:
-					pickup ne
-					step ne
-					step ne
-					step n
-					step n
-					step n
-					drop
-					step sw
-					pickup s
-					step n
-					step n
-					drop
-				endif
-			endif
-		endfor
-	endfor
-endfor
+if w == nothing:
+	if e == nothing:
+		step ne
+		pickup nw
+		step n
+		step ne
+		step ne
+		step n
+		drop
+		pickup e
+		step n
+		drop
+		step se
+		step se
+		step s
+		pickup s
+		step ne
+		step n
+		drop
+		pickup w
+		step nw
+		step w
+		drop
+		step sw
+		step sw
+		pickup sw
+		step nw
+		drop
+		pickup sw
+		step ne
+		step e
+		step e
+		step e
+		step e
+		drop
+	else:
+		step ne
+		pickup nw
+		step n
+		step ne
+		step n
+		step n
+		if nw == nw:
+		endif
+		drop
+		step n
+		pickup nw
+		step nw
+		step w
+		drop
+		step se
+		step se
+		step s
+		step s
+		pickup s
+		step n
+		step ne
+		drop
+		pickup s
+		step sw
+		step w
+		step w
+		step w
+		step nw
+		drop
+		pickup w
+		step n
+		if nw == nw:
+		endif
+		drop
+	endif
+else:
+	if e == nothing:
+		step ne
+		step ne
+		step n
+		step n
+		step n
+		step n
+		pickup n
+		step nw
+		step w
+		step w
+		if nw == nw:
+		endif
+		drop
+		step e
+		step se
+		pickup se
+		drop
+		step sw
+		step s
+		pickup s
+		step w
+		step nw
+		if nw == nw:
+		endif
+		drop
+		pickup n
+		step e
+		step ne
+		step ne
+		drop
+		step w
+		step w
+		step w
+		step w
+		pickup sw
+		step e
+		step e
+		step e
+		drop
+	else:
+		step ne
+		step nw
+		step n
+		step n
+		step n
+		step n
+		pickup c
+		step ne
+		step e
+		step e
+		drop
+		pickup sw
+		step w
+		step w
+		step w
+		step w
+		step sw
+		step w
+		step w
+		drop
+		step se
+		step e
+		pickup e
+		step ne
+		drop
+		pickup sw
+		step w
+		drop
+		step s
+		pickup se
+		step sw
+		step nw
+		drop
+	endif
+endif
 
 
