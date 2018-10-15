@@ -15,9 +15,9 @@ if w == nothing:
 		drop
 		step se
 		step se
-		step s
-		pickup s
-		step ne
+		step se
+		pickup sw
+		step n
 		step n
 		drop
 		pickup w
@@ -39,12 +39,35 @@ if w == nothing:
 	else:
 		step ne
 		pickup nw
-		step n
 		step ne
 		step n
 		step n
-		if nw == nw:
-		endif
+		step n
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
 		drop
 		step n
 		pickup nw
@@ -68,8 +91,6 @@ if w == nothing:
 		drop
 		pickup w
 		step n
-		if nw == nw:
-		endif
 		drop
 	endif
 else:
@@ -84,25 +105,31 @@ else:
 		step nw
 		step w
 		step w
-		if nw == nw:
-		endif
 		drop
 		step e
 		step se
 		pickup se
 		drop
 		step sw
-		step s
-		pickup s
-		step w
+		step sw
+		pickup se
 		step nw
-		if nw == nw:
-		endif
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
 		drop
 		pickup n
+		step ne
+		step ne
 		step e
-		step ne
-		step ne
 		drop
 		step w
 		step w
@@ -119,18 +146,17 @@ else:
 		step n
 		step n
 		step n
-		step n
-		pickup c
 		step ne
+		pickup w
 		step e
-		step e
+		step ne
 		drop
 		pickup sw
 		step w
 		step w
 		step w
-		step w
 		step sw
+		step w
 		step w
 		step w
 		drop
@@ -144,10 +170,11 @@ else:
 		drop
 		step s
 		pickup se
-		step sw
-		step nw
+		step w
+		step w
 		drop
 	endif
 endif
+
 
 
