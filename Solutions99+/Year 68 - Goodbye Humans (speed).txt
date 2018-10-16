@@ -1,21 +1,75 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2199) --
 -- 68: Goodbye, Humans! --
 
-mem1 = nearest wall
-step mem1
-step sw
-a:
-step se
-step se
-step s
-step s
-step sw
-step se
-step se
-step sw
-mem1 = nearest worker
-if mem1 != worker:
-	tell everyone goodbye
-endif
-step s
 jump a
+mem1 = foreachdir se:
+	a:
+	if mem1 == hole:
+		step w
+		step w
+		step w
+		step w
+		step s
+		step s
+		step s
+		step s
+		tell everyone hi
+		tell everyone hi
+		tell everyone hi
+		step s
+		tell everyone goodbye
+		step s
+		step s
+	endif
+endfor
+jump b
+mem1 = foreachdir n:
+	mem2 = foreachdir s:
+		b:
+		if mem1 == hole or
+		 mem2 == hole:
+			step e
+			step e
+			step e
+			step e
+		else:
+			jump c
+			mem1 = foreachdir w:
+				mem2 = foreachdir nw:
+					mem3 = foreachdir sw:
+						c:
+						if mem2 == hole or
+						 mem1 == hole or
+						 mem3 == hole:
+							step e
+							step e
+							step e
+						endif
+					endfor
+				endfor
+			endfor
+		endif
+	endfor
+endfor
+step s
+step s
+step s
+step s
+step s
+step s
+step s
+step s
+d:
+jump e
+mem1 = foreachdir w:
+	e:
+	if mem1 == wall:
+		step e
+	else:
+		step w
+	endif
+endfor
+step s
+step s
+jump d
+
