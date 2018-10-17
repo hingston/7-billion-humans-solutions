@@ -1,59 +1,94 @@
--- About a half second speed improvement unfortunately. This gets 12s half the time and 13s the other half. That still beats OCD+ though. --
+-- 7 Billion Humans (2199) --
 -- 56: Local Maximums --
 
-mem1 = nearest shredder
 step w
 step w
 jump a
-mem3 = foreachdir nw:
-	mem2 = foreachdir n:
+mem2 = foreachdir n:
+	mem1 = foreachdir ne:
 		a:
-		if mem3 < mem2:
-			mem3 = set mem2
+		if mem1 > mem2:
+			mem2 = set mem1
+			mem3 = set 1
 		endif
 		jump b
 	endfor
-	mem2 = foreachdir ne:
-		b:
-		if mem3 < mem2:
-			mem3 = set mem2
-		endif
-		jump c
-	endfor
-	mem2 = foreachdir e:
-		c:
-		if mem3 < mem2:
-			mem3 = set mem2
-		endif
-		jump d
-	endfor
-	mem2 = foreachdir se:
-		d:
-		if mem3 < mem2:
-			mem3 = set mem2
-		endif
-		jump e
-	endfor
-	mem2 = foreachdir s:
-		e:
-		if mem3 < mem2:
-			mem3 = set mem2
-		endif
-		jump f
-	endfor
-	mem2 = foreachdir sw:
-		f:
-		if mem3 < mem2:
-			mem3 = set mem2
-		endif
-		jump g
-	endfor
-	mem2 = foreachdir w:
-		g:
-		if mem3 < mem2:
-			mem3 = set mem2
-		endif
-	endfor
-	pickup mem3
-	giveto mem1
 endfor
+mem1 = foreachdir e:
+	b:
+	if mem1 > mem2:
+		mem2 = set mem1
+		mem3 = set 2
+	endif
+	jump c
+endfor
+mem1 = foreachdir se:
+	c:
+	if mem1 > mem2:
+		mem2 = set mem1
+		mem3 = set 3
+	endif
+	jump d
+endfor
+mem1 = foreachdir s:
+	d:
+	if mem1 > mem2:
+		mem2 = set mem1
+		mem3 = set 4
+	endif
+	jump e
+endfor
+mem1 = foreachdir sw:
+	e:
+	if mem1 > mem2:
+		mem2 = set mem1
+		mem3 = set 5
+	endif
+	jump f
+endfor
+mem1 = foreachdir w:
+	f:
+	if mem1 > mem2:
+		mem2 = set mem1
+		mem3 = set 6
+	endif
+	jump g
+endfor
+mem1 = foreachdir nw:
+	g:
+	if mem1 > mem2:
+		mem2 = set mem1
+		mem3 = set 7
+	endif
+endfor
+if mem3 < 4:
+	if mem3 < 2:
+		if mem3 < 1:
+			pickup n
+		else:
+			pickup ne
+		endif
+	else:
+		if mem3 < 3:
+			pickup e
+		else:
+			pickup se
+		endif
+	endif
+else:
+	if mem3 < 6:
+		if mem3 < 5:
+			pickup s
+		else:
+			pickup sw
+		endif
+	else:
+		if mem3 < 7:
+			pickup w
+		else:
+			pickup nw
+		endif
+	endif
+endif
+mem1 = nearest shredder
+giveto mem1
