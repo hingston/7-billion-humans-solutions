@@ -37,7 +37,6 @@ if mem1 == mem2:
 else:
 	step n
 	if e == worker:
-		write 0
 		step w
 	else:
 		write 5
