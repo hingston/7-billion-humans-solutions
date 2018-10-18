@@ -17,9 +17,8 @@ if mem1 == mem2:
 			step nw
 		else:
 			write 3
-			step e
-			step e
 			step ne
+			jump a
 		endif
 	else:
 		if se == worker:
@@ -28,8 +27,11 @@ if mem1 == mem2:
 			step w
 		else:
 			write 4
-			step e
-			step e
+			a:
+			step ne
+			step ne
+			step ne
+			jump b
 		endif
 	endif
 else:
@@ -39,11 +41,18 @@ else:
 		step w
 	else:
 		write 5
-		step e
+		step ne
+		step ne
+		step n
+		b:
+		step n
+		step n
+		step n
+		step nw
 	endif
 endif
 mem2 = set 0
-a:
+c:
 mem1 = nearest datacube
 if mem1 == myitem:
 	if mem2 < 16:
@@ -114,7 +123,11 @@ if mem1 == myitem:
 endif
 if mem3 < 15:
 	if mem3 == 7:
-		step n
+		if myitem < 3:
+			step n
+		else:
+			step s
+		endif
 	else:
 		if myitem < 3:
 			if mem3 < 7:
@@ -199,42 +212,44 @@ else:
 		if mem4 < 3:
 			mem4 = set 3
 		else:
-			jump b
+			jump d
 		endif
 	endif
-	step n
+	if myitem < 3:
+		step n
+	else:
+		step s
+	endif
 endif
-jump a
-b:
+jump c
+d:
 if myitem < 3:
+	step sw
+	step s
+	step s
+	step s
+	step s
+	step s
+	if myitem != 2:
+		step s
+		if myitem != 1:
+			step s
+		endif
+	endif
+	step se
+	step se
+	step se
 	step se
 else:
 	step sw
-endif
-if myitem != 0 and
- myitem != 5:
-	if myitem < 3:
-		step se
-	else:
+	if myitem != 5:
 		step sw
-	endif
-	if myitem != 1 and
-	 myitem != 4:
-		if myitem < 3:
-			step se
-		else:
+		if myitem != 4:
 			step sw
 		endif
 	endif
+	step s
+	step s
 endif
-step s
 write mem2
-step s
-step s
-step s
-step s
-step s
-step s
-step s
-step s
 drop
