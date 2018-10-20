@@ -1,24 +1,17 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2199) --
 -- 57: Neighborly Sweeper --
 
-if e == wall:
-	mem1 = set 1
-endif
 a:
-mem2 = set 0
-if mem1 == 1:
-	step w
-else:
-	step e
-endif
+step nw,w,sw,n,s,ne,e,se
+mem1 = set 0
 if c == datacube:
-	mem3 = foreachdir nw,w,sw,n,s,ne,e,se:
-		if mem3 == datacube:
-			mem2 = calc mem2 + 1
+	mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
+		if mem2 >= 0:
+			mem1 = calc mem1 + 1
 		endif
 	endfor
 	pickup c
-	write mem2
+	write mem1
 	drop
 endif
 jump a
