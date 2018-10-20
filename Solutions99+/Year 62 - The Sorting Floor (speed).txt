@@ -5,22 +5,24 @@ jump a
 mem1 = foreachdir e:
 	a:
 	if mem1 == hole:
+		mem1 = set c
 		b:
+		mem1 = set c
+		tell everyone hi
+		mem1 = set c
 		mem1 = set c
 		mem1 = set c
 		tell everyone hi
 		mem1 = set c
-		mem1 = set myitem
-		mem1 = set myitem
-		mem1 = set myitem
-		mem1 = set myitem
-		mem1 = set myitem
-		mem1 = set myitem
-		mem1 = set myitem
-		mem1 = set myitem
-		mem1 = set myitem
-		mem1 = set myitem
-		mem1 = set myitem
+		mem1 = set c
+		mem1 = set c
+		tell everyone hi
+		mem1 = set c
+		mem1 = set c
+		mem1 = set c
+		tell everyone hi
+		mem1 = calc [blank] + [blank]
+		mem1 = calc [blank] + [blank]
 		jump b
 	endif
 endfor
@@ -51,44 +53,39 @@ if mem1 == worker:
 		endfor
 		g:
 		if mem1 < myitem:
-			if mem2 < myitem:
-				if mem3 < myitem:
+			if mem2 < myitem or
+			 mem3 < myitem:
+				if mem2 < myitem or
+				 mem2 == myitem and
+				 mem3 < myitem:
 					step se
 				else:
 					step s
 				endif
 			else:
-				if mem3 < myitem:
-					if mem2 == myitem:
-						step se
-					else:
-						step s
-					endif
-				else:
-					step e
-				endif
+				step e
 			endif
 		else:
-			if mem2 < myitem:
-				if mem3 < myitem:
+			if mem1 == myitem:
+				if mem2 > myitem and
+				 mem3 < myitem or
+				 mem2 < myitem:
 					step s
 				else:
-					if mem1 == myitem or
-					 mem3 == myitem:
-						step s
-					else:
-						step e
+					if mem2 == myitem and
+					 mem3 < myitem:
+						step se
 					endif
 				endif
 			else:
-				if mem3 < myitem:
-					if mem1 == myitem:
-						if mem2 == myitem:
-							step se
-						else:
-							step s
-						endif
-					else:
+				if mem2 < myitem and
+				 mem3 < myitem:
+					step s
+				else:
+					if mem2 == myitem and
+					 mem3 == myitem or
+					 mem2 < myitem or
+					 mem3 < myitem:
 						step e
 					endif
 				endif
@@ -106,38 +103,33 @@ if mem1 == worker:
 		endfor
 		i:
 		if mem1 < myitem:
-			if mem2 < myitem:
-				if mem3 < myitem:
+			if mem2 < myitem or
+			 mem3 < myitem:
+				if mem3 < myitem or
+				 mem3 == myitem and
+				 mem2 < myitem:
 					step s
 				else:
-					if mem3 == myitem:
-						step s
-					else:
-						step sw
-					endif
-				endif
-			else:
-				if mem3 < myitem:
 					step sw
 				endif
 			endif
 		else:
-			if mem2 < myitem:
-				if mem3 < myitem:
-					if mem1 == myitem:
+			if mem1 == myitem:
+				if mem3 != myitem and
+				 mem2 < myitem:
+					if mem3 < myitem:
 						step s
-					else:
-						step sw
 					endif
 				endif
 			else:
-				if mem3 < myitem:
+				if mem2 == myitem or
+				 mem2 > myitem and
+				 mem3 > myitem:
+					step w
 				else:
-					if mem1 == myitem or
-					 mem2 == myitem or
-					 mem3 == myitem:
-					else:
-						step w
+					if mem2 < myitem and
+					 mem3 < myitem:
+						step sw
 					endif
 				endif
 			endif
@@ -156,46 +148,30 @@ else:
 		endfor
 		k:
 		if mem1 < myitem:
-			if mem2 < myitem:
-				if mem3 < myitem:
-					step e
-				endif
+			if mem2 < myitem and
+			 mem3 < myitem:
+				step e
 			else:
-				if mem3 < myitem:
-				else:
-					if mem3 == myitem or
-					 mem2 == myitem:
-					else:
-						step ne
-					endif
+				if mem2 > myitem and
+				 mem3 > myitem:
+					step ne
 				endif
 			endif
 		else:
-			if mem2 < myitem:
-				if mem3 < myitem:
-				else:
-					if mem3 == myitem or
-					 mem1 == myitem:
-					else:
-						step ne
-					endif
+			if mem1 == myitem:
+				if mem2 > myitem and
+				 mem3 > myitem:
+					step n
 				endif
 			else:
-				if mem3 < myitem:
-					if mem1 == myitem or
-					 mem2 == myitem:
+				if mem2 > myitem or
+				 mem3 > myitem:
+					if mem3 == myitem or
+					 mem3 > myitem and
+					 mem2 > myitem:
+						step n
 					else:
 						step ne
-					endif
-				else:
-					if mem2 == myitem:
-						if mem1 == myitem or
-						 mem3 == myitem:
-						else:
-							step ne
-						endif
-					else:
-						step n
 					endif
 				endif
 			endif
@@ -212,69 +188,37 @@ else:
 		endfor
 		m:
 		if mem1 < myitem:
-			if mem2 < myitem:
-				if mem3 < myitem:
+			if mem2 > myitem or
+			 mem3 > myitem:
+				if mem2 > myitem and
+				 mem3 > myitem:
+					step n
 				else:
-					if mem1 == myitem or
-					 mem2 == myitem or
-					 mem3 == myitem:
-					else:
-						step w
-					endif
-				endif
-			else:
-				if mem3 < myitem:
-					if mem2 == myitem:
-					else:
-						step w
-					endif
-				else:
-					if mem2 == myitem:
-						if mem3 == myitem:
-						else:
-							step w
-						endif
-					else:
-						step n
-					endif
+					step w
 				endif
 			endif
 		else:
-			if mem2 < myitem:
-				if mem3 < myitem:
-					if mem1 == myitem:
-					else:
-						step w
-					endif
-				else:
-					if mem3 == myitem:
-						step w
+			if mem1 == myitem:
+				if mem2 > myitem or
+				 mem3 > myitem:
+					if mem2 == myitem and
+					 mem3 > myitem:
+						step nw
 					else:
 						step n
 					endif
 				endif
 			else:
-				if mem3 < myitem:
-					if mem2 == myitem:
-						if mem1 == myitem:
-						else:
-							step w
-						endif
+				if mem2 > myitem or
+				 mem3 > myitem:
+					if mem2 > myitem and
+					 mem3 > myitem:
+						step nw
 					else:
 						step n
 					endif
 				else:
-					if mem1 == myitem or
-					 mem3 == myitem and
-					 mem2 != myitem:
-						step n
-					else:
-						if mem3 == myitem:
-							step w
-						else:
-							step nw
-						endif
-					endif
+					step w
 				endif
 			endif
 		endif
@@ -339,5 +283,3 @@ else:
 	endif
 endif
 jump c
-
-
