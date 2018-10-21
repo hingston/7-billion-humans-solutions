@@ -6,8 +6,8 @@ mem1 = foreachdir e:
 	a:
 	if mem1 == hole:
 		mem1 = set c
+		mem1 = set c
 		b:
-		mem1 = set c
 		tell everyone hi
 		mem1 = set c
 		mem1 = set c
@@ -22,7 +22,16 @@ mem1 = foreachdir e:
 		mem1 = set c
 		tell everyone hi
 		mem1 = calc [blank] + [blank]
-		mem1 = calc [blank] + [blank]
+		step n
+		step sw
+		step e
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
 		jump b
 	endif
 endfor
@@ -78,14 +87,12 @@ if mem1 == worker:
 					endif
 				endif
 			else:
-				if mem2 < myitem and
+				if mem2 < myitem or
 				 mem3 < myitem:
-					step s
-				else:
-					if mem2 == myitem and
-					 mem3 == myitem or
-					 mem2 < myitem or
+					if mem2 < myitem and
 					 mem3 < myitem:
+						step s
+					else:
 						step e
 					endif
 				endif
@@ -228,58 +235,50 @@ drop
 if mem4 == 0 or
  mem4 == 1:
 	if mem4 == 0:
-		step e
-		pickup c
+		pickup ne
+		step ne
 		mem4 = set 1
 	else:
-		pickup n
-		step n
+		pickup s
+		step s
 		mem4 = set 2
 	endif
 else:
 	if mem4 == 2:
-		step w
-		pickup c
+		pickup nw
+		step nw
 		mem4 = set 3
 	else:
 		jump n
-		mem4 = foreachdir w:
+		mem1 = foreachdir sw:
 			n:
-			if mem4 == hole:
-				step e
+			step e
+			if mem1 == hole:
 				jump o
-				mem4 = foreachdir e:
-					o:
-					step sw
-					pickup c
-					if mem4 > myitem:
-						step e
-						step ne
-						drop
-						step sw
-					else:
-						drop
-					endif
+				mem1 = foreachdir sw:
+					mem2 = foreachdir e:
+						o:
+						if mem1 < mem2:
+							pickup sw
+							step e
+							drop
+						endif
+						pickup sw
+					endfor
 				endfor
 			else:
-				jump p
-				mem4 = foreachdir sw:
-					p:
-					step e
+				mem2 = nearest datacube
+				if mem1 < mem2:
 					pickup c
-					if mem4 < myitem:
-						step sw
-						step w
-						drop
-					else:
-						drop
-						step sw
-					endif
-				endfor
+					step w
+				else:
+					pickup sw
+				endif
 			endif
 		endfor
-		pickup c
+		step sw
 		mem4 = set 0
 	endif
 endif
 jump c
+
