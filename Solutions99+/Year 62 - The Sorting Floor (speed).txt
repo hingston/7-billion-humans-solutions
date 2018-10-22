@@ -1,229 +1,284 @@
--- 7 Billion Humans (2144) --
+-- 7 Billion Humans (2199) --
 -- 62: The Sorting Floor --
 
-step n
+jump a
+mem1 = foreachdir e:
+	a:
+	if mem1 == hole:
+		mem1 = set c
+		mem1 = set c
+		b:
+		tell everyone hi
+		mem1 = set c
+		mem1 = set c
+		mem1 = set c
+		tell everyone hi
+		mem1 = set c
+		mem1 = set c
+		mem1 = set c
+		tell everyone hi
+		mem1 = set c
+		mem1 = set c
+		mem1 = set c
+		tell everyone hi
+		mem1 = calc [blank] + [blank]
+		step n
+		step sw
+		step e
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		mem1 = set myitem
+		jump b
+	endif
+endfor
 step n
 step n
 pickup n
-step s
-step s
-drop
-if n == worker or
- nw == worker:
-	step n
-	pickup n
-	step s
-	step s
-	drop
-	step s
-else:
-	if w == worker:
-		step ne
-		step n
-		pickup n
-		step s
-		step s
-		drop
-		step sw
-		mem1 = set c
-		jump a
-		mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
-			a:
-			if mem1 == nothing or
-			 mem2 > mem1:
-				mem1 = set mem2
-			endif
-		endfor
-		pickup mem1
-		b:
-		if e != hole:
-			step e
-			jump b
-		endif
-		c:
-		step n
-		if c == datacube or
-		 w == datacube:
-			jump c
-		endif
-		drop
-		mem4 = set c
-		step s
-		step sw
-		mem1 = nearest datacube
-		jump d
-		mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
-			d:
-			if mem1 == nothing or
-			 mem2 > mem1:
-				mem1 = set mem2
-			endif
-		endfor
-		pickup mem1
-		step mem4
-		step w
-		drop
-		mem4 = set c
-		step s
-		step s
-		mem1 = nearest datacube
+step n
+c:
+listenfor hi
+jump d
+mem1 = foreachdir s:
+	mem2 = foreachdir e:
+		d:
 		jump e
-		mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
-			e:
-			if mem1 == nothing or
-			 mem2 > mem1:
-				mem1 = set mem2
-			endif
-		endfor
-		pickup mem1
-		step mem4
-		step w
-		drop
-		step s
-		step se
-		mem1 = nearest datacube
+	endfor
+endfor
+e:
+if mem1 == worker:
+	if mem2 == worker:
 		jump f
-		mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
-			f:
-			if mem1 == nothing or
-			 mem2 > mem1:
-				mem1 = set mem2
-			endif
+		mem1 = foreachdir e:
+			mem2 = foreachdir s:
+				mem3 = foreachdir se:
+					f:
+					jump g
+				endfor
+			endfor
 		endfor
-		pickup mem1
-		step mem4
-		step ne
-		drop
-		step sw
-		mem4 = nearest datacube
-		step s
-		step s
-		mem1 = nearest datacube
-		jump g
-		mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
-			g:
-			if mem1 == nothing or
-			 mem2 > mem1:
-				mem1 = set mem2
+		g:
+		if mem1 < myitem:
+			if mem2 < myitem or
+			 mem3 < myitem:
+				if mem2 < myitem or
+				 mem2 == myitem and
+				 mem3 < myitem:
+					step se
+				else:
+					step s
+				endif
+			else:
+				step e
 			endif
-		endfor
-		mem3 = nearest worker
-		if mem3 >= 0:
-			jump h
+		else:
+			if mem1 == myitem:
+				if mem2 > myitem and
+				 mem3 < myitem or
+				 mem2 < myitem:
+					step s
+				else:
+					if mem2 == myitem and
+					 mem3 < myitem:
+						step se
+					endif
+				endif
+			else:
+				if mem2 < myitem or
+				 mem3 < myitem:
+					if mem2 < myitem and
+					 mem3 < myitem:
+						step s
+					else:
+						step e
+					endif
+				endif
+			endif
 		endif
-		pickup mem1
-		step mem4
-		step n
-		drop
-		h:
 	else:
-		step ne
-		step w
-		step se
-		step s
-		mem1 = set c
-		jump i
-		mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
-			i:
-			if mem1 == nothing or
-			 mem2 < mem1:
-				mem1 = set mem2
-			endif
+		jump h
+		mem1 = foreachdir w:
+			mem2 = foreachdir s:
+				mem3 = foreachdir sw:
+					h:
+					jump i
+				endfor
+			endfor
 		endfor
-		pickup mem1
-		j:
-		jump k
-		mem2 = foreachdir nw:
-			k:
-			if mem2 != hole:
-				step nw
-				jump j
+		i:
+		if mem1 < myitem:
+			if mem2 < myitem or
+			 mem3 < myitem:
+				if mem3 < myitem or
+				 mem3 == myitem and
+				 mem2 < myitem:
+					step s
+				else:
+					step sw
+				endif
 			endif
-		endfor
-		l:
-		jump m
-		mem2 = foreachdir n:
-			m:
-			if mem2 != hole:
-				step n
-				jump l
+		else:
+			if mem1 == myitem:
+				if mem3 != myitem and
+				 mem2 < myitem:
+					if mem3 < myitem:
+						step s
+					endif
+				endif
+			else:
+				if mem2 == myitem or
+				 mem2 > myitem and
+				 mem3 > myitem:
+					step w
+				else:
+					if mem2 < myitem and
+					 mem3 < myitem:
+						step sw
+					endif
+				endif
 			endif
-		endfor
-		drop
-		mem4 = set c
-		step s
-		step s
-		step s
-		step se
-		mem1 = set c
-		jump n
-		mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
-			n:
-			if mem1 == nothing or
-			 mem2 < mem1:
-				mem1 = set mem2
-			endif
-		endfor
-		pickup mem1
-		step mem4
-		step e
-		drop
-		mem4 = set c
-		step s
-		step s
-		step s
-		step s
-		mem1 = nearest datacube
-		jump o
-		mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
-			o:
-			if mem1 == nothing or
-			 mem2 < mem1:
-				mem1 = set mem2
-			endif
-		endfor
-		pickup mem1
-		step mem4
-		step e
-		drop
-		step s
-		step sw
-		step s
-		step s
-		mem1 = nearest datacube
-		jump p
-		mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
-			p:
-			if mem1 == nothing or
-			 mem2 < mem1:
-				mem1 = set mem2
-			endif
-		endfor
-		pickup mem1
-		step mem4
-		step sw
-		drop
-		step se
-		mem4 = nearest datacube
-		step s
-		step s
-		mem1 = nearest datacube
-		jump q
-		mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
-			q:
-			if mem1 == nothing or
-			 mem2 < mem1:
-				mem1 = set mem2
-			endif
-		endfor
-		mem3 = nearest worker
-		if mem3 >= 0:
-			jump r
 		endif
-		pickup mem1
-		step mem4
-		step n
-		drop
+	endif
+else:
+	if mem2 == worker:
+		jump j
+		mem1 = foreachdir e:
+			mem2 = foreachdir n:
+				mem3 = foreachdir ne:
+					j:
+					jump k
+				endfor
+			endfor
+		endfor
+		k:
+		if mem1 < myitem:
+			if mem2 < myitem and
+			 mem3 < myitem:
+				step e
+			else:
+				if mem2 > myitem and
+				 mem3 > myitem:
+					step ne
+				endif
+			endif
+		else:
+			if mem1 == myitem:
+				if mem2 > myitem and
+				 mem3 > myitem:
+					step n
+				endif
+			else:
+				if mem2 > myitem or
+				 mem3 > myitem:
+					if mem3 == myitem or
+					 mem3 > myitem and
+					 mem2 > myitem:
+						step n
+					else:
+						step ne
+					endif
+				endif
+			endif
+		endif
+	else:
+		jump l
+		mem1 = foreachdir w:
+			mem2 = foreachdir n:
+				mem3 = foreachdir nw:
+					l:
+					jump m
+				endfor
+			endfor
+		endfor
+		m:
+		if mem1 < myitem:
+			if mem2 > myitem or
+			 mem3 > myitem:
+				if mem2 > myitem and
+				 mem3 > myitem:
+					step n
+				else:
+					step w
+				endif
+			endif
+		else:
+			if mem1 == myitem:
+				if mem2 > myitem or
+				 mem3 > myitem:
+					if mem2 == myitem and
+					 mem3 > myitem:
+						step nw
+					else:
+						step n
+					endif
+				endif
+			else:
+				if mem2 > myitem or
+				 mem3 > myitem:
+					if mem2 > myitem and
+					 mem3 > myitem:
+						step nw
+					else:
+						step n
+					endif
+				else:
+					step w
+				endif
+			endif
+		endif
 	endif
 endif
-r:
+drop
+if mem4 == 0 or
+ mem4 == 1:
+	if mem4 == 0:
+		pickup ne
+		step ne
+		mem4 = set 1
+	else:
+		pickup s
+		step s
+		mem4 = set 2
+	endif
+else:
+	if mem4 == 2:
+		pickup nw
+		step nw
+		mem4 = set 3
+	else:
+		jump n
+		mem1 = foreachdir sw:
+			n:
+			step e
+			if mem1 == hole:
+				jump o
+				mem1 = foreachdir sw:
+					mem2 = foreachdir e:
+						o:
+						if mem1 < mem2:
+							pickup sw
+							step e
+							drop
+						endif
+						pickup sw
+					endfor
+				endfor
+			else:
+				mem2 = nearest datacube
+				if mem1 < mem2:
+					pickup c
+					step w
+				else:
+					pickup sw
+				endif
+			endif
+		endfor
+		step sw
+		mem4 = set 0
+	endif
+endif
+jump c
+
