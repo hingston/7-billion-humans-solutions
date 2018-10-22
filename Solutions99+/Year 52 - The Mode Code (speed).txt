@@ -1,313 +1,254 @@
--- 7 Billion Humans (2059) --
+-- 7 Billion Humans (2199) --
 -- 52: The Mode Code --
 
 pickup s
-if w == nothing or
- e == nothing:
+mem1 = nearest wall
+step n
+mem2 = nearest wall
+if mem1 == mem2:
 	step n
-	if se == worker:
-		step nw
-		mem2 = set 3
-	else:
-		step ne
-		write 5
-		mem2 = set 2
-	endif
-else:
-	if w == nothing or
-	 e == nothing:
-		step n
-		if se == worker:
-			step w
-			step nw
-			write 1
-			mem2 = set 4
-		else:
-			step e
-			step ne
-			write 4
-			mem2 = set 1
-		endif
-	else:
-		if ne == nothing:
+	mem2 = nearest wall
+	if mem1 == mem2:
+		step s
+		if nw == worker:
 			write 2
-			mem2 = set 5
 			step w
 			step w
 			step nw
 		else:
 			write 3
-			step e
-			step e
 			step ne
+			jump a
 		endif
-		step n
-	endif
-endif
-a:
-mem1 = nearest datacube
-if mem1 == myitem or
- mem1 == mem2:
-	if mem1 == myitem:
-		mem3 = calc mem3 + 1
 	else:
-		mem4 = calc mem4 + 1
-	endif
-endif
-if myitem < 3:
-	step e
-else:
-	step w
-endif
-mem1 = nearest datacube
-if mem1 == myitem or
- mem1 == mem2:
-	if mem1 == myitem:
-		mem3 = calc mem3 + 1
-	else:
-		mem4 = calc mem4 + 1
-	endif
-endif
-if myitem < 3:
-	step e
-else:
-	step w
-endif
-mem1 = nearest datacube
-if mem1 == myitem or
- mem1 == mem2:
-	if mem1 == myitem:
-		mem3 = calc mem3 + 1
-	else:
-		mem4 = calc mem4 + 1
-	endif
-endif
-if myitem < 3:
-	step e
-else:
-	step w
-endif
-mem1 = nearest datacube
-if mem1 == myitem or
- mem1 == mem2:
-	if mem1 == myitem:
-		mem3 = calc mem3 + 1
-	else:
-		mem4 = calc mem4 + 1
-	endif
-endif
-if myitem < 3:
-	step ne
-else:
-	step nw
-endif
-mem1 = nearest datacube
-if mem1 == myitem or
- mem1 == mem2:
-	if mem1 == myitem:
-		mem3 = calc mem3 + 1
-	else:
-		mem4 = calc mem4 + 1
-	endif
-endif
-if myitem < 3:
-	step e
-else:
-	step w
-endif
-mem1 = nearest datacube
-if mem1 == myitem or
- mem1 == mem2:
-	if mem1 == myitem:
-		mem3 = calc mem3 + 1
-	else:
-		mem4 = calc mem4 + 1
-	endif
-endif
-if myitem < 3:
-	step e
-else:
-	step w
-endif
-mem1 = nearest datacube
-if mem1 == myitem or
- mem1 == mem2:
-	if mem1 == myitem:
-		mem3 = calc mem3 + 1
-	else:
-		mem4 = calc mem4 + 1
-	endif
-endif
-if myitem < 3:
-	step e
-else:
-	step w
-endif
-mem1 = nearest datacube
-if mem1 == myitem or
- mem1 == mem2:
-	if mem1 == myitem:
-		mem3 = calc mem3 + 1
-	else:
-		mem4 = calc mem4 + 1
-	endif
-endif
-step n
-mem1 = nearest datacube
-if mem1 == myitem or
- mem1 == mem2:
-	if mem1 == myitem:
-		mem3 = calc mem3 + 1
-	else:
-		mem4 = calc mem4 + 1
-	endif
-endif
-if myitem < 3:
-	step w
-else:
-	step e
-endif
-mem1 = nearest datacube
-if mem1 == myitem or
- mem1 == mem2:
-	if mem1 == myitem:
-		mem3 = calc mem3 + 1
-	else:
-		mem4 = calc mem4 + 1
-	endif
-endif
-if myitem < 3:
-	step w
-else:
-	step e
-endif
-mem1 = nearest datacube
-if mem1 == myitem or
- mem1 == mem2:
-	if mem1 == myitem:
-		mem3 = calc mem3 + 1
-	else:
-		mem4 = calc mem4 + 1
-	endif
-endif
-if myitem < 3:
-	step w
-else:
-	step e
-endif
-mem1 = nearest datacube
-if mem1 == myitem or
- mem1 == mem2:
-	if mem1 == myitem:
-		mem3 = calc mem3 + 1
-	else:
-		mem4 = calc mem4 + 1
-	endif
-endif
-if myitem < 3:
-	step nw
-else:
-	step ne
-endif
-mem1 = nearest datacube
-if mem1 == myitem or
- mem1 == mem2:
-	if mem1 == myitem:
-		mem3 = calc mem3 + 1
-	else:
-		mem4 = calc mem4 + 1
-	endif
-endif
-if myitem < 3:
-	step w
-else:
-	step e
-endif
-mem1 = nearest datacube
-if mem1 == myitem or
- mem1 == mem2:
-	if mem1 == myitem:
-		mem3 = calc mem3 + 1
-	else:
-		mem4 = calc mem4 + 1
-	endif
-endif
-if myitem < 3:
-	step w
-else:
-	step e
-endif
-mem1 = nearest datacube
-if mem1 == myitem or
- mem1 == mem2:
-	if mem1 == myitem:
-		mem3 = calc mem3 + 1
-	else:
-		mem4 = calc mem4 + 1
-	endif
-endif
-if myitem < 3:
-	step w
-else:
-	step e
-endif
-mem1 = nearest datacube
-if mem1 == myitem or
- mem1 == mem2:
-	if mem1 == myitem:
-		mem3 = calc mem3 + 1
-	else:
-		mem4 = calc mem4 + 1
-	endif
-endif
-if n == datacube:
-	step n
-	jump a
-endif
-b:
-step s
-step s
-step s
-step s
-step s
-if s != wall:
-	jump b
-endif
-if myitem < 3:
-	step e
-	if myitem > 0:
-		step e
-		if myitem > 1:
-			step e
-		endif
-	endif
-else:
-	step w
-	if myitem < 5:
-		step w
-		if myitem < 4:
+		if se == worker:
+			write 1
 			step w
+			step w
+		else:
+			write 4
+			a:
+			step ne
+			step ne
+			step ne
+			jump b
 		endif
 	endif
-endif
-write mem3
-drop
-if mem2 > 2:
-	step e
-	step e
-	step ne
 else:
-	step w
-	step w
-	step nw
+	step n
+	if e == worker:
+		step w
+	else:
+		write 5
+		step ne
+		step ne
+		step n
+		b:
+		step n
+		step n
+		step n
+		step nw
+	endif
 endif
+mem2 = set 0
 c:
-if s != datacube:
-	jump c
+mem1 = nearest datacube
+if mem1 == myitem:
+	if mem2 < 16:
+		if mem2 < 8:
+			if mem2 < 4:
+				if mem2 < 2:
+					if mem2 < 1:
+						mem2 = set 1
+					else:
+						mem2 = set 2
+					endif
+				else:
+					if mem2 < 3:
+						mem2 = set 3
+					else:
+						mem2 = set 4
+					endif
+				endif
+			else:
+				if mem2 < 6:
+					if mem2 < 5:
+						mem2 = set 5
+					else:
+						mem2 = set 6
+					endif
+				else:
+					if mem2 < 7:
+						mem2 = set 7
+					else:
+						mem2 = set 8
+					endif
+				endif
+			endif
+		else:
+			if mem2 < 12:
+				if mem2 < 10:
+					if mem2 < 9:
+						mem2 = set 9
+					else:
+						mem2 = set 10
+					endif
+				else:
+					if mem2 < 11:
+						mem2 = set 11
+					else:
+						mem2 = set 12
+					endif
+				endif
+			else:
+				if mem2 < 14:
+					if mem2 < 13:
+						mem2 = set 13
+					else:
+						mem2 = set 14
+					endif
+				else:
+					if mem2 < 15:
+						mem2 = set 15
+					else:
+						mem2 = set 16
+					endif
+				endif
+			endif
+		endif
+	else:
+		mem2 = calc mem2 + 1
+	endif
 endif
-pickup s
-mem1 = calc myitem + mem4
-write mem1
-step s
+if mem3 < 15:
+	if mem3 == 7:
+		if myitem < 3:
+			step n
+		else:
+			step s
+		endif
+	else:
+		if myitem < 3:
+			if mem3 < 7:
+				step e
+			else:
+				step w
+			endif
+		else:
+			if mem3 < 7:
+				step w
+			else:
+				step e
+			endif
+		endif
+	endif
+	if mem3 < 8:
+		if mem3 < 4:
+			if mem3 < 2:
+				if mem3 < 1:
+					mem3 = set 1
+				else:
+					mem3 = set 2
+				endif
+			else:
+				if mem3 < 3:
+					mem3 = set 3
+				else:
+					mem3 = set 4
+				endif
+			endif
+		else:
+			if mem3 < 6:
+				if mem3 < 5:
+					mem3 = set 5
+				else:
+					mem3 = set 6
+				endif
+			else:
+				if mem3 < 7:
+					mem3 = set 7
+				else:
+					mem3 = set 8
+				endif
+			endif
+		endif
+	else:
+		if mem3 < 12:
+			if mem3 < 10:
+				if mem3 < 9:
+					mem3 = set 9
+				else:
+					mem3 = set 10
+				endif
+			else:
+				if mem3 < 11:
+					mem3 = set 11
+				else:
+					mem3 = set 12
+				endif
+			endif
+		else:
+			if mem3 < 14:
+				if mem3 < 13:
+					mem3 = set 13
+				else:
+					mem3 = set 14
+				endif
+			else:
+				mem3 = set 15
+			endif
+		endif
+	endif
+else:
+	mem3 = set 0
+	if mem4 < 2:
+		if mem4 < 1:
+			mem4 = set 1
+		else:
+			mem4 = set 2
+		endif
+	else:
+		if mem4 < 3:
+			mem4 = set 3
+		else:
+			jump d
+		endif
+	endif
+	if myitem < 3:
+		step n
+	else:
+		step s
+	endif
+endif
+jump c
+d:
+if myitem < 3:
+	step sw
+	step s
+	step s
+	step s
+	step s
+	step s
+	if myitem != 2:
+		step s
+		if myitem != 1:
+			step s
+		endif
+	endif
+	step se
+	step se
+	step se
+	step se
+else:
+	step sw
+	if myitem != 5:
+		step sw
+		if myitem != 4:
+			step sw
+		endif
+	endif
+	step s
+	step s
+endif
+write mem2
 drop
-
