@@ -2,16 +2,225 @@
 -- 59: Glory Hole --
 
 mem1 = nearest datacube
-a:
-step mem1
-if mem1 == 1:
-	mem1 = nearest hole
-	step mem1
+if mem1 == 2:
+	jump a
+else:
+	if mem1 == 3:
+		jump b
+	else:
+		if mem1 == 4:
+			jump c
+		else:
+			if mem1 == 5:
+				jump d
+			else:
+				if mem1 == 6:
+					jump e
+				else:
+					if mem1 == 10:
+						jump f
+					else:
+						if mem1 == 11:
+							jump g
+						else:
+							jump h
+						endif
+					endif
+				endif
+			endif
+		endif
+	endif
 endif
-mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
-	if mem1 > mem2:
-		mem1 = set mem2
-		jump a
+comment 2
+a:
+step e
+jump i
+mem1 = foreachdir e:
+	i:
+	if mem1 == 1:
+		step e
+		step e
+		j:
+		jump j
+	else:
+		jump k
+		mem1 = foreachdir ne:
+			k:
+			if mem1 == 1:
+				step ne
+				step e
+				step n
+			else:
+				step se
+				step se
+			endif
+		endfor
 	endif
 endfor
+comment 0
+mem1 = foreachdir s:
+	b:
+	if mem1 == datacube:
+		step s
+		jump l
+		mem1 = foreachdir s:
+			l:
+			if mem1 == 2:
+				step s
+				step s
+				jump m
+				mem1 = foreachdir s:
+					m:
+					if mem1 == hole:
+						step sw
+						step e
+					else:
+						step s
+						step w
+						step w
+					endif
+				endfor
+			else:
+				step w
+				step sw
+				step sw
+				step sw
+				step e
+			endif
+		endfor
+	else:
+		step ne
+		step ne
+		step n
+		step n
+	endif
+endfor
+comment 1
+c:
+step sw
+step sw
+step s
+step s
+step w
+step w
+comment 3
+d:
+step nw
+step nw
+step n
+step n
+jump n
+mem1 = foreachdir n:
+	n:
+	if mem1 == 1:
+		step ne
+		step n
+	else:
+		if mem1 == 2:
+			step ne
+			step n
+			step e
+		else:
+			step nw
+			step n
+			step w
+			step w
+		endif
+	endif
+endfor
+comment 4
+e:
+step nw
+step nw
+step nw
+step nw
+step nw
+step w
+step n
+comment 5
+f:
+o:
+step sw
+p:
+step sw
+step w
+step nw
+step nw
+step nw
+step nw
+step w
+step w
+step w
+comment 6
+g:
+step s
+mem1 = nearest datacube
+if mem1 == 10:
+	jump o
+else:
+	step se
+	step se
+	step sw
+	step w
+	step w
+	step nw
+	step nw
+	step w
+	step nw
+	step w
+	step nw
+endif
+comment 7
+h:
+step se
+step s
+step s
+mem1 = nearest datacube
+if mem1 == 9:
+	jump p
+else:
+	step w
+	step s
+	step sw
+	step w
+	step w
+	step w
+	step w
+	step nw
+	step nw
+	step nw
+	step nw
+endif
 
+
+DEFINE COMMENT 0
+eJwTYwCCBAazhkwGA4YCIC5ksADSHgy5DDFAsayGZIYyhnSGioZChgogrGmoZWhiqGOYwFDLMIehimEZ
+UHYNUP0mhmyGLQ1xQBzLsA1Ib2MYBaNgFAwJAAAyzBda;
+
+DEFINE COMMENT 1
+eJwTZACCOAYbIHZiiGIIawhiyGDwYahp8GZoaPBjaGMIZegAynUxlAAxEDSUMUQBcQ5DEcOqhkKGPQwF
+DGcYRsEoGAVDFgAAMLEQFw;
+
+DEFINE COMMENT 2
+eJwTZwCCNAY7hjwGC4YCIC5jcGEoZ/BgqGAIA9JZDfkMUxqSGDY1xDDsaghl2McQzrCjIZJhC0MKwzqg
++jUNxUC6DMivZNjBUM2wr6GO4QhDAxC3MGxgGAWjYBQMegAA2FAZqw;
+
+DEFINE COMMENT 3
+eJwTZGBgaIhnMAFiO4Y4hiCGSIYchnCGooYkhpKGDIYKIF7CkM6whiGWYQ+DH8M+BhBIYzBqyGUwYyhj
+sGhoAOobBaNgFAxZAACskQ+h;
+
+DEFINE COMMENT 4
+eJwTYmBgaChkMGnIYbBgSGNwaIhj8GKIYAhjCGFIaghgqGEIZOgB8pY0RDKsakhi2MKQzbClIZ9hDUMh
+wxwgPaEhFygfDsSjYBSMgiEJAP4FE2w;
+
+DEFINE COMMENT 5
+eJyTZGBgaAhlsGMIZOgD4nUMIH45gwtDPkMSQyZDAxD3NGQxzGjIYVjQkMewpKGEYRVDJcOahiYgbgGy
+2xiWNbQDcSfDnIYuhklA3AQUywOSSQw1DBEMFQxhDKNgFIyCQQsAuI0c1A;
+
+DEFINE COMMENT 6
+eJzjY2BgaIhgsGGIZHBqiGSY0hDNsKYhhmELQxzDLiA+wAACzUD5ZoYuhhaGWUC8hKGVYQXDKBgFo2BY
+AACG8w23;
+
+DEFINE COMMENT 7
+eJztyLENQEAARuG3g5UUV12hklCwgl7yR3NCQkUrVKJWGUBuLIwhua95yYsAZcTkpBR0Ktn5Xk1Cg2XA
+aMIwY99W9GxqOXCcclwa8Sx4rdwEQfA7D+LlFhc;
