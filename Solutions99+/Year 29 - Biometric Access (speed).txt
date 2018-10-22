@@ -1,15 +1,169 @@
--- 7 Billion Humans (2053) --
+-- 7 Billion Humans (2199) --
 -- 29: Biometric Access --
 
-mem1 = nearest shredder
-mem2 = nearest datacube
-step mem2
+mem3 = nearest shredder
+mem1 = nearest worker
 step n
-pickup n
+step n
+step n
+step n
+mem2 = nearest worker
+if mem1 != mem2:
+	jump a
+endif
+mem1 = nearest datacube
+b:
+pickup mem1
+mem1 = nearest datacube
+if myitem == datacube:
+	giveto mem3
+	jump b
+endif
+step mem3
+end
+comment 0
 a:
-giveto mem1
-mem2 = nearest datacube
-pickup mem2
-jump a
+mem1 = nearest datacube
+step mem1
+mem4 = nearest worker
+if mem2 == mem4:
+	pickup c
+	mem1 = nearest datacube
+	giveto mem3
+	step mem1
+	pickup n
+	giveto mem3
+	step mem1
+	pickup nw
+	giveto mem3
+	step n
+	step n
+	step n
+	step n
+	step nw
+	step nw
+	pickup nw
+	giveto mem3
+	step n
+	step n
+	step n
+	step n
+	step nw
+	step nw
+	step nw
+	pickup nw
+	giveto mem3
+	step n
+	step n
+	step n
+	step n
+	step nw
+	step nw
+	step nw
+	step nw
+	pickup n
+	giveto mem3
+	step n
+	step n
+	step n
+	step n
+	step n
+	step nw
+	step nw
+	step nw
+	step nw
+	pickup nw
+	giveto mem3
+	step n
+	step n
+	step n
+	step n
+	step nw
+	step nw
+	step nw
+	step n
+	step n
+	pickup nw
+	step se
+	step se
+	step se
+	step s
+	step s
+	step s
+	step s
+	step s
+	giveto mem3
+else:
+	mem1 = nearest datacube
+	pickup c
+	giveto mem3
+	step n
+	step n
+	step nw
+	step n
+	step ne
+	step n
+	pickup ne
+	step sw
+	step s
+	step s
+	giveto mem3
+	step nw
+	step n
+	step n
+	step n
+	step n
+	pickup ne
+	giveto mem3
+	step nw
+	step n
+	step n
+	step n
+	step n
+	step n
+	step n
+	pickup nw
+	step s
+	step s
+	giveto mem3
+	step nw
+	step n
+	step n
+	step n
+	step n
+	step nw
+	step nw
+	step nw
+	pickup nw
+	giveto mem3
+	step nw
+	step n
+	step n
+	step n
+	step n
+	step nw
+	step nw
+	step nw
+	step nw
+	pickup n
+	giveto mem3
+	step nw
+	step n
+	step n
+	step n
+	step n
+	step n
+	step n
+	step n
+	step ne
+	pickup ne
+	giveto mem3
+endif
 
 
+DEFINE COMMENT 0
+eJztkE8rhFEUxn9bJWUli9n5DGyYBTXNgpLEm4VkoWbhbdYWPEXIxpgsLKnpTRqESdMkNYySLSXfxvOe
+fArNc/vV+XfPOffOARpgUkPUzQu5BilrmHVGUfgFVmynGmEr/DHKphX2FLOM8xR20fEZ6pT+ctNkKtLQ
+BFnuatGRZRKf1HxFTcq8aYe9SlVrbFPhXJs8xp0dlsyhNznTLi3tufaADkd0dExTNfc+Yd9TqyaJPpck
+arjHBT3zEbErFtRkg2u/4ZZT7py/p60HniN/44rM5Op6z67nvlIz73pzj0//zbf5oUdfff0j/QJ3sEsy
+;
