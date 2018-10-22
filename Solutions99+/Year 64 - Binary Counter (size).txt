@@ -1,15 +1,13 @@
--- 7 Billion Humans (2144) --
+-- 7 Billion Humans (2145) --
 -- 64: Binary Counter --
 
 step s
+a:
 step s
-if se == nothing and
- e == nothing:
-	a:
+if c == button:
 	step n
 	tell w morning
 	listenfor go
-	step s
 	jump a
 endif
 pickup n
@@ -21,3 +19,5 @@ listenfor morning
 tell w morning
 pickup c
 jump b
+
+
