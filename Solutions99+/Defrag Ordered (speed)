@@ -1,0 +1,182 @@
+-- 7 Billion Humans (2145) --
+-- 65: Defrag Ordered --
+
+step ne
+jump a
+mem1 = foreachdir w:
+	mem2 = foreachdir e:
+		a:
+		if mem1 == nothing:
+			if mem2 == nothing:
+				pickup nw
+				step n
+				step ne
+				step ne
+				step n
+				drop
+				pickup e
+				step n
+				drop
+				step se
+				step se
+				step se
+				pickup sw
+				step n
+				step n
+				drop
+				pickup w
+				step nw
+				step w
+				drop
+				step sw
+				step sw
+				pickup sw
+				step nw
+				drop
+				pickup sw
+				step ne
+				step e
+				step e
+				step e
+				step e
+				drop
+			else:
+				pickup nw
+				step ne
+				step n
+				step n
+				step n
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				drop
+				step n
+				pickup nw
+				step nw
+				step w
+				drop
+				step se
+				step se
+				step s
+				step s
+				pickup s
+				step n
+				step ne
+				drop
+				pickup s
+				step sw
+				step w
+				step w
+				step w
+				step nw
+				drop
+				pickup w
+				step n
+				drop
+			endif
+		else:
+			if mem2 == nothing:
+				step ne
+				step n
+				step n
+				step n
+				step n
+				pickup n
+				step nw
+				step w
+				step w
+				drop
+				step e
+				step se
+				pickup se
+				drop
+				step sw
+				step sw
+				pickup se
+				step nw
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				drop
+				pickup n
+				step ne
+				step ne
+				step e
+				drop
+				step w
+				step w
+				step w
+				step w
+				pickup sw
+				step e
+				step e
+				step e
+				drop
+			else:
+				step nw
+				step n
+				step n
+				step n
+				step ne
+				pickup w
+				step e
+				step ne
+				drop
+				pickup sw
+				step w
+				step w
+				step w
+				step sw
+				step w
+				step w
+				step w
+				drop
+				step se
+				step e
+				pickup e
+				step ne
+				drop
+				pickup sw
+				step w
+				drop
+				step s
+				pickup se
+				step w
+				step w
+				drop
+			endif
+		endif
+	endfor
+endfor
+
+
