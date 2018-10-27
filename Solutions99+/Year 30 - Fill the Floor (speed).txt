@@ -1,127 +1,189 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2059) --
 -- 30: Fill the Floor --
 
 mem1 = nearest printer
-if n == nothing:
-	takefrom mem1
-	step e
-	step e
-	step e
-	step se
-	step se
-	drop
-	mem2 = nearest datacube
-	takefrom mem1
-	step mem2
-	step s
-	drop
-	takefrom mem1
-	step mem2
-	step e
-	drop
-	mem2 = nearest datacube
-	takefrom mem1
-	step mem2
-	step s
-	drop
-	takefrom mem1
-	step mem2
-	step e
-	drop
-	mem2 = nearest datacube
-	takefrom mem1
-	step mem2
-	step s
-	drop
-else:
-	if sw == nothing:
-		takefrom mem1
-		step sw
-		step sw
-		step sw
-	else:
-		if nw == nothing and
-		 n == worker:
-			takefrom mem1
-			step sw
-			step sw
+takefrom mem1
+step ne
+step ne
+if w == nothing:
+	step w
+	if w == nothing:
+		step w
+		if w == nothing:
 			step w
-		else:
 			if w == nothing:
-				takefrom mem1
-				step nw
-				step nw
 				step w
-			else:
-				if nw == worker:
-					takefrom mem1
-					step nw
+				if w == nothing:
 					step w
-					step w
-				else:
-					if nw == wall:
+					if w == nothing:
+						step w
+						drop
 						takefrom mem1
+						step sw
 						step sw
 						step w
 						step w
-						drop
-						mem2 = nearest datacube
-						takefrom mem1
-						step mem2
-						step w
-						drop
-						takefrom mem1
-						step mem2
-						step e
-						drop
-						mem2 = nearest datacube
-						takefrom mem1
-						step mem2
-						step e
-						drop
-						takefrom mem1
-						step se
-						drop
-						mem2 = nearest datacube
-						jump a
 					else:
+						drop
 						takefrom mem1
+						step nw
 						step w
 						step w
 						step w
 					endif
+				else:
+					drop
+					step s
+					takefrom mem1
+					step se
+					step se
+					step e
+					step e
+					step e
+					step e
+					step e
+					drop
+					takefrom mem1
+					step se
+					step se
+					step se
+					step e
+					step e
+					step e
+					step e
+					drop
+					takefrom mem1
+					step se
+					step se
+					step e
+					step e
+					step e
+					step e
+					drop
+					takefrom mem1
+					step se
+					step se
+					step se
+					step e
+					step e
+					step e
+					drop
+					takefrom mem1
+					step se
+					step se
+					step e
+					step e
+					step e
+					drop
+					takefrom mem1
+					step se
+					step se
+					step se
+					step e
+					step e
+					drop
+					end
 				endif
+			else:
+				drop
+				takefrom mem1
+				step sw
+				step sw
+				step sw
+				step w
 			endif
+		else:
+			drop
+			takefrom mem1
+			step w
+			step w
+			step w
+			step w
 		endif
-	endif
-	drop
-	mem2 = nearest datacube
-	takefrom mem1
-	step mem2
-	step w
-	drop
-	a:
-	b:
-	takefrom mem1
-	step mem2
-	step e
-	drop
-	mem2 = nearest datacube
-	if e == worker and
-	 sw == wall:
-		step nw
-		step nw
-		step n
+	else:
 		drop
 		takefrom mem1
-		step e
-		step e
-		step e
-		step ne
+		step sw
+		step w
+		step w
+		step w
 		drop
+		takefrom mem1
+		step sw
+		step w
+		step w
+		drop
+		takefrom mem1
+		step sw
+		step w
+		drop
+		takefrom mem1
+		step sw
+		drop
+		step n
+		takefrom mem1
+		step se
+		step e
+		step e
+		drop
+		takefrom mem1
+		step se
+		step e
+		drop
+		takefrom mem1
+		step se
+		drop
+		end
 	endif
-	jump b
+else:
+	drop
+	step s
+	takefrom mem1
+	step ne
+	step e
+	step ne
+	drop
+	takefrom mem1
+	step ne
+	step e
+	step e
+	step ne
+	drop
+	takefrom mem1
+	step se
+	step e
+	step e
+	step e
+	drop
+	takefrom mem1
+	step ne
+	step e
+	step e
+	step e
+	drop
+	takefrom mem1
+	step ne
+	step e
+	step e
+	drop
+	takefrom mem1
+	step e
+	step e
+	step e
+	step e
+	drop
+	end
 endif
+a:
+drop
+mem2 = nearest datacube
+takefrom mem1
+step mem2
+step e
+jump a
+
+
+
 
 
 
