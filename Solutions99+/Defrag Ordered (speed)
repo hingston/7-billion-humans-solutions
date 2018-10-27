@@ -1,4 +1,4 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2059) --
 -- 65: Defrag Ordered --
 
 step ne
@@ -126,7 +126,6 @@ mem1 = foreachdir w:
 				mem1 = set myitem
 				mem1 = set myitem
 				mem1 = set myitem
-				mem1 = set myitem
 				drop
 				pickup n
 				step ne
@@ -178,5 +177,6 @@ mem1 = foreachdir w:
 		endif
 	endfor
 endfor
+
 
 
