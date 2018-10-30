@@ -1,31 +1,29 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2059) --
 -- 9: Dynamic Angles --
 
+pickup s
 step s
 step s
-pickup n
 if e == nothing:
-	step s
-	step s
-	step s
-	step s
-	drop
+	jump a
 endif
 if e == nothing:
-	step s
-	step s
-	step s
-	drop
+	jump b
 endif
 if e == nothing:
-	step s
-	step s
-	drop
+	jump c
 endif
 if e == nothing:
+	jump d
+	a:
 	step s
-	drop
-else:
-	drop
+	b:
+	step s
+	c:
+	step s
+	d:
+	step s
 endif
+drop
+
 
