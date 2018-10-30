@@ -1,4 +1,4 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2059) --
 -- 7: Collation Station --
 
 step s
@@ -6,29 +6,21 @@ step s
 step s
 if n == datacube:
 	pickup n
-	jump a
+	step s
 else:
-	if c == datacube:
-		pickup c
-		jump b
+	step s
+	if n == datacube:
+		pickup n
 	else:
-		if s == datacube:
+		if c == datacube:
+			pickup c
+		else:
 			pickup s
-			jump c
 		endif
 	endif
 endif
 step s
 step s
-step s
-pickup n
-jump d
-a:
-b:
-c:
-step s
-step s
-step s
-d:
 drop
+
 
