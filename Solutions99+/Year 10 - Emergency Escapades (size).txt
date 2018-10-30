@@ -2,19 +2,19 @@
 -- 10: Emergency Escapades --
 
 a:
-if w != hole and
- n != 4 and
- n != nothing and
- n != worker or
- se == 3 or
- w == 3 or
- e == wall:
+if w == hole or
+ c != 1 and
+ n != hole and
+ e != wall and
+ s != hole and
+ se != 3:
+	step n,s
+else:
 	step w
 endif
-if n != hole and
- s != hole:
-	step n,s
-endif
 jump a
+
+
+
 
 
