@@ -77,8 +77,7 @@ if mem1 == mem2:
 	step s
 	takefrom mem4
 	drop
-	a:
-	jump a
+	end
 else:
 	step w
 	mem1 = nearest datacube
