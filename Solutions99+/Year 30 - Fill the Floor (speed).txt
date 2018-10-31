@@ -1,4 +1,4 @@
--- 7 Billion Humans (2199) --
+-- 7 Billion Humans (2212:2214M) --
 -- 30: Fill the Floor --
 
 mem1 = nearest wall
@@ -17,20 +17,22 @@ if mem1 == mem2:
 	step sw
 	step se
 	drop
-	mem2 = nearest datacube
 	step mem1
 	takefrom mem4
-	step mem2
+	step se
+	step sw
 	step w
 	drop
 	step mem1
 	takefrom mem4
-	step mem2
+	step se
+	step sw
 	step sw
 	drop
 	step mem1
 	takefrom mem4
-	step mem2
+	step se
+	step sw
 	step s
 	drop
 	step mem1
@@ -43,13 +45,14 @@ if mem1 == mem2:
 	drop
 	step mem3
 	takefrom mem4
-	step mem2
 	step se
+	step s
+	step s
 	drop
 	step mem3
 	takefrom mem4
-	step mem2
-	step e
+	step se
+	step s
 	drop
 	step mem3
 	takefrom mem4
@@ -63,19 +66,13 @@ if mem1 == mem2:
 	mem2 = nearest datacube
 	step mem3
 	takefrom mem4
-	step mem2
-	step w
-	drop
-	step mem3
-	takefrom mem4
+	step se
 	step mem2
 	step e
 	drop
+	step mem3
 	takefrom mem4
-	step ne
-	drop
-	step s
-	takefrom mem4
+	step se
 	drop
 	end
 else:
@@ -120,44 +117,53 @@ else:
 				step n
 				mem1 = nearest datacube
 				takefrom mem4
+				step se
 				step mem3
 				step s
 				drop
 				mem3 = nearest datacube
 				step mem1
 				takefrom mem4
+				step se
 				step mem3
 				step s
 				drop
 				step mem1
 				takefrom mem4
-				step n
+				step ne
 				step mem2
 				step n
 				drop
 				mem2 = nearest datacube
 				step mem1
 				takefrom mem4
+				step ne
 				step mem2
 				step n
 				drop
 				if w == nothing:
 					mem3 = nearest wall
+				else:
+					if e != wall:
+						mem3 = nearest printer
+					else:
+						end
+					endif
 				endif
 				step mem1
 				takefrom mem4
+				step ne
 				step mem2
 				step nw
 				step w
 				step w
 				drop
-				if mem3 != wall:
-					end
-				endif
 				step mem1
 				takefrom mem4
 				step ne
-				step n
+				if mem3 == wall:
+					step n
+				endif
 				drop
 				end
 			endif
@@ -174,12 +180,14 @@ drop
 mem3 = nearest datacube
 step mem1
 takefrom mem4
+step sw
 step mem3
 step s
 drop
 mem3 = nearest datacube
 step mem1
 takefrom mem4
+step sw
 step mem3
 step s
 drop
@@ -192,6 +200,7 @@ drop
 mem2 = nearest datacube
 step mem1
 takefrom mem4
+step nw
 step mem2
 step n
 drop
@@ -200,6 +209,7 @@ if e == nothing:
 endif
 step mem1
 takefrom mem4
+step sw
 step mem3
 step se
 step e
@@ -212,8 +222,20 @@ step e
 step e
 drop
 if mem2 != wall:
+	if w != nothing:
+		mem1 = nearest datacube
+		step w
+		step nw
+		step w
+		pickup nw
+		step mem1
+		step n
+		drop
+	endif
 	end
 endif
+step mem3
+step mem1
 takefrom mem4
 step nw
 drop
@@ -221,3 +243,7 @@ step s
 takefrom mem4
 step n
 drop
+step sw
+takefrom mem4
+drop
+
