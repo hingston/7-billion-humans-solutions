@@ -1,0 +1,29 @@
+-- 7 Billion Humans (Switch 1.0.0) --
+-- 67: Decimal Doubler --
+
+step s
+if c == datacube:
+  pickup c
+  step s
+  a:
+  tell everyone Coffee time!
+  drop
+  mem1 = calc c * 2
+  if e >= 5:
+    mem1 = calc mem1 + 1
+  else:
+    mem1 = calc mem1 + 0
+  endif
+  if mem1 >= 10:
+    mem1 = calc mem1 - 10
+  else:
+    mem1 = calc mem1 - 0
+  endif
+  pickup c
+  write mem1
+  jump a
+b:
+listen Coffee time!
+step s
+step n
+jump b
