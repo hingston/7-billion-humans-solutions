@@ -1,4 +1,4 @@
--- 7 Billion Humans (2059) --
+-- 7 Billion Humans (2214M) --
 -- 37: Dangerous Spreadsheeting --
 
 step e
@@ -7,317 +7,402 @@ step e
 mem2 = set e
 if mem1 == datacube and
  mem2 == datacube:
-	step e
-	step e
-	step e
-	mem3 = set 99
-	a:
-	b:
-	c:
-	if mem1 >= mem2:
-		mem4 = set mem2
-		mem2 = set mem1
-		mem1 = set mem4
+	if mem2 == 9:
+		mem2 = set 0
+		mem3 = set 9
 	endif
-	if mem1 == 0 or
-	 mem1 == 1:
-		if mem1 == 1 and
-		 mem2 == 1 or
-		 mem1 == 0:
-			if mem1 == 0:
-				mem4 = set mem2
-			else:
-				mem4 = set 2
-			endif
-		else:
-			if mem2 < 6:
-				if mem2 < 4:
-					if mem2 < 3:
-						mem4 = set 3
-					else:
-						mem4 = set 4
-					endif
-				else:
-					if mem2 < 5:
-						mem4 = set 5
-					else:
-						mem4 = set 6
-					endif
-				endif
-			else:
-				if mem2 < 8:
-					if mem2 < 7:
-						mem4 = set 7
-					else:
-						mem4 = set 8
-					endif
-				else:
-					if mem2 < 9:
-						mem4 = set 9
-					else:
-						mem4 = set 10
-					endif
-				endif
-			endif
-		endif
-	else:
-		if mem1 < 6 and
-		 mem2 >= 6:
-			if mem1 < 4:
-				if mem2 < 8:
-					if mem1 < 3:
-						if mem2 < 7:
-							mem4 = set 8
-						else:
-							mem4 = set 9
-						endif
-					else:
-						if mem2 < 7:
-							mem4 = set 9
-						else:
-							mem4 = set 10
-						endif
-					endif
-				else:
-					if mem1 < 3:
-						if mem2 < 9:
-							mem4 = set 10
-						else:
-							mem4 = set 11
-						endif
-					else:
-						if mem2 < 9:
-							mem4 = set 11
-						else:
-							mem4 = set 12
-						endif
-					endif
-				endif
-			else:
-				if mem2 < 8:
-					if mem1 < 5:
-						if mem2 < 7:
-							mem4 = set 10
-						else:
-							mem4 = set 11
-						endif
-					else:
-						if mem2 < 7:
-							mem4 = set 11
-						else:
-							mem4 = set 12
-						endif
-					endif
-				else:
-					if mem1 < 5:
-						if mem2 < 9:
-							mem4 = set 12
-						else:
-							mem4 = set 13
-						endif
-					else:
-						if mem2 < 9:
-							mem4 = set 13
-						else:
-							mem4 = set 14
-						endif
-					endif
-				endif
-			endif
-		else:
-			if mem1 < 6:
-				if mem1 < 4:
-					if mem2 < 4:
-						if mem1 == 2 and
-						 mem2 == 2:
-							mem4 = set 4
-						else:
-							if mem1 == 2 and
-							 mem2 == 3:
-								mem4 = set 5
-							else:
-								mem4 = set 6
-							endif
-						endif
-					else:
-						if mem1 < 3:
-							if mem2 < 5:
-								mem4 = set 6
-							else:
-								mem4 = set 7
-							endif
-						else:
-							if mem2 < 5:
-								mem4 = set 7
-							else:
-								mem4 = set 8
-							endif
-						endif
-					endif
-				else:
-					if mem1 == 4 and
-					 mem2 == 4:
-						mem4 = set 8
-					else:
-						if mem1 == 4 and
-						 mem2 == 5:
-							mem4 = set 9
-						else:
-							mem4 = set 10
-						endif
-					endif
-				endif
-			else:
-				if mem1 < 8:
-					if mem2 < 8:
-						if mem1 == 6 and
-						 mem2 == 6:
-							mem4 = set 12
-						else:
-							if mem1 == 6 and
-							 mem2 == 7:
-								mem4 = set 13
-							else:
-								mem4 = set 14
-							endif
-						endif
-					else:
-						if mem1 < 7:
-							if mem2 < 9:
-								mem4 = set 14
-							else:
-								mem4 = set 15
-							endif
-						else:
-							if mem2 < 9:
-								mem4 = set 15
-							else:
-								mem4 = set 16
-							endif
-						endif
-					endif
-				else:
-					if mem1 == 8 and
-					 mem2 == 8:
-						mem4 = set 16
-					else:
-						if mem1 == 8 and
-						 mem2 == 9:
-							mem4 = set 17
-						else:
-							mem4 = set 18
-						endif
-					endif
-				endif
-			endif
-		endif
-	endif
-	if mem3 == 99:
-		jump d
-	else:
-		if mem3 == 98:
-			jump e
-		else:
-			if mem3 == 97:
-				jump f
-			else:
-				jump g
-			endif
-		endif
-	endif
-	d:
-	mem4 = calc mem4 + w
-	mem1 = set e
-	if mem1 == datacube:
-		mem4 = calc mem4 + mem1
-		step e
-	else:
-		step e
-		mem4 = calc mem4 + w
-	endif
-	mem1 = set e
-	mem3 = set mem4
-	step e
-	step e
-	pickup c
-	mem2 = set myitem
-	jump b
-	g:
-	mem4 = calc mem4 + mem3
-	step e
-	step e
+	mem4 = set 11
 else:
 	if mem1 == datacube:
-		if mem2 == hole:
-			step se
-			step ne
-			mem3 = set 97
-			mem2 = set c
-			jump c
-			f:
-			mem1 = set mem4
-			step e
-			mem2 = set c
-			step e
-			mem3 = set c
-			step e
-			step e
-			step e
-			jump h
+		mem4 = set mem2
+		if mem1 == 9:
+			mem3 = set 9
+			mem2 = set 0
 		else:
-			mem2 = set w
-			step e
-			step e
-			mem3 = set c
+			mem2 = set mem1
+		endif
+		if mem4 == hole:
 			step se
-			step e
-			step e
 			step ne
-			pickup ne
-			drop
-			jump i
+			mem1 = set c
+			mem4 = set 8
+		else:
+			mem1 = set w
+			mem4 = set 2
 		endif
 	else:
 		if mem2 == hole:
-			mem1 = set w
+			mem2 = set w
+			if mem2 == 9:
+				mem2 = set 0
+				mem3 = set 9
+			endif
 			step se
-			step ne
-			mem2 = set c
-			mem3 = set e
 			step e
-			step se
-			step ne
-			step e
-			pickup ne
-			drop
-			h:
-			i:
-			mem4 = calc mem1 + mem2
-			mem4 = calc mem4 + mem3
-			mem4 = calc mem4 + w
-			step e
-			pickup c
+			mem1 = set n
 		else:
+			if mem2 == 9:
+				mem2 = set 0
+				mem3 = set 9
+			endif
 			mem1 = set w
 			step e
-			step ne
-			step se
-			mem3 = set 98
-			jump a
-			e:
-			mem3 = calc c + e
-			step e
-			step e
-			step e
-			pickup se
-			drop
-			mem4 = calc mem4 + mem3
-			mem4 = calc mem4 + w
-			step e
-			pickup c
+			mem4 = set 5
 		endif
 	endif
 endif
-write mem4
+a:
+if mem1 == 2 and
+ mem2 <= 1 or
+ mem1 == 1 and
+ mem2 <= 2 or
+ mem1 == 0 or
+ mem2 == 0 or
+ mem1 == 9:
+	if mem1 <= 2 and
+	 mem1 != 0 and
+	 mem2 != 0 or
+	 mem1 == 9:
+		if mem1 == 9:
+			jump b
+		else:
+			if mem1 == 1 and
+			 mem2 == 1:
+				mem2 = set 2
+			else:
+				mem2 = set 3
+			endif
+		endif
+	else:
+		if mem1 == 0:
+		else:
+			mem2 = set mem1
+		endif
+	endif
+else:
+	if mem1 == 6 and
+	 mem2 <= 1 or
+	 mem1 == 5 and
+	 mem2 <= 2 or
+	 mem1 == 4 and
+	 mem2 <= 7 or
+	 mem1 <= 3:
+		if mem2 <= 4 or
+		 mem1 == 3 and
+		 mem2 <= 5 or
+		 mem1 == 2 and
+		 mem2 <= 6 or
+		 mem1 == 1 and
+		 mem2 <= 7:
+			if mem2 <= 3 or
+			 mem1 == 2 and
+			 mem2 <= 4 or
+			 mem1 == 1 and
+			 mem2 <= 5:
+				if mem1 == 4 and
+				 mem2 <= 1 or
+				 mem1 == 3 and
+				 mem2 <= 2 or
+				 mem1 == 2 and
+				 mem2 <= 3 or
+				 mem1 == 1 and
+				 mem2 <= 4:
+					if mem1 == 3 and
+					 mem2 <= 1 or
+					 mem1 == 2 and
+					 mem2 <= 2 or
+					 mem1 == 1 and
+					 mem2 <= 3:
+						mem2 = set 4
+					else:
+						mem2 = set 5
+					endif
+				else:
+					if mem1 == 5 and
+					 mem2 <= 1 or
+					 mem1 == 4 and
+					 mem2 <= 2 or
+					 mem1 <= 3:
+						mem2 = set 6
+					else:
+						mem2 = set 7
+					endif
+				endif
+			else:
+				if mem1 == 3 and
+				 mem2 <= 4 or
+				 mem1 == 2 and
+				 mem2 <= 5 or
+				 mem1 == 1 and
+				 mem2 <= 6:
+					mem2 = set 7
+				else:
+					mem2 = set 8
+				endif
+			endif
+		else:
+			if mem2 <= 5 or
+			 mem1 == 3 and
+			 mem2 <= 6 or
+			 mem1 == 2 and
+			 mem2 <= 7 or
+			 mem1 == 1:
+				mem2 = set 0
+			else:
+				if mem2 <= 6 or
+				 mem1 == 3 and
+				 mem2 <= 7 or
+				 mem1 == 2:
+					mem2 = set 1
+				else:
+					mem2 = set 2
+				endif
+			endif
+			jump c
+		endif
+	else:
+		if mem2 <= 4 or
+		 mem1 == 7 and
+		 mem2 <= 5 or
+		 mem1 == 6 and
+		 mem2 <= 6 or
+		 mem1 == 5 and
+		 mem2 <= 7 or
+		 mem1 == 4:
+			if mem2 <= 2 or
+			 mem1 == 7 and
+			 mem2 <= 3 or
+			 mem1 == 6 and
+			 mem2 <= 4 or
+			 mem1 == 5 and
+			 mem2 <= 5:
+				if mem1 == 7 and
+				 mem2 <= 1 or
+				 mem1 == 6 and
+				 mem2 <= 2 or
+				 mem1 == 5 and
+				 mem2 <= 3:
+					mem2 = set 8
+					jump d
+				else:
+					if mem2 <= 1 or
+					 mem1 == 7 and
+					 mem2 <= 2 or
+					 mem1 == 6 and
+					 mem2 <= 3 or
+					 mem1 == 5 and
+					 mem2 <= 4:
+						mem2 = set 0
+					else:
+						mem2 = set 1
+					endif
+				endif
+			else:
+				if mem2 <= 3 or
+				 mem1 == 7 and
+				 mem2 <= 4 or
+				 mem1 == 6 and
+				 mem2 <= 5 or
+				 mem1 == 5 and
+				 mem2 <= 6:
+					mem2 = set 2
+				else:
+					mem2 = set 3
+				endif
+			endif
+		else:
+			if mem2 <= 6 or
+			 mem1 == 7 and
+			 mem2 <= 7 or
+			 mem1 <= 6:
+				if mem2 <= 5 or
+				 mem1 == 7 and
+				 mem2 <= 6 or
+				 mem1 == 6 and
+				 mem2 <= 7 or
+				 mem1 == 5:
+					mem2 = set 4
+				else:
+					mem2 = set 5
+				endif
+			else:
+				if mem2 <= 7 or
+				 mem1 == 7:
+					mem2 = set 6
+				else:
+					mem2 = set 7
+				endif
+			endif
+		endif
+		b:
+		c:
+		if mem3 < 27:
+			if mem3 < 18:
+				if mem3 < 9:
+					mem3 = set 9
+				else:
+					mem3 = set 18
+				endif
+			else:
+				mem3 = set 27
+			endif
+		else:
+			if mem3 < 36:
+				mem3 = set 36
+			else:
+				if mem3 < 45:
+					mem3 = set 45
+				else:
+					mem3 = set 54
+				endif
+			endif
+		endif
+	endif
+endif
+d:
+if mem4 < 8:
+	if mem4 < 4:
+		if mem4 < 2:
+			if mem4 < 1:
+				step e
+				step e
+				mem1 = set nw
+				mem4 = set 1
+			else:
+				jump e
+			endif
+		else:
+			if mem4 < 3:
+				step e
+				step e
+				mem1 = set c
+				mem4 = set 3
+			else:
+				step se
+				step e
+				e:
+				step e
+				step ne
+				pickup ne
+				mem1 = set w
+				mem4 = set 4
+				drop
+			endif
+		endif
+	else:
+		if mem4 < 6:
+			if mem4 < 5:
+				step e
+				pickup c
+				mem4 = set 99
+			else:
+				step ne
+				step se
+				mem1 = set c
+				mem4 = set 6
+			endif
+		else:
+			step e
+			mem1 = set c
+			if mem4 < 7:
+				mem4 = set 7
+			else:
+				mem4 = set 4
+				step e
+				pickup se
+				drop
+			endif
+		endif
+	endif
+else:
+	if mem4 < 12:
+		if mem4 < 10:
+			step e
+			mem1 = set c
+			if mem4 < 9:
+				mem4 = set 9
+			else:
+				mem4 = set 10
+			endif
+		else:
+			step e
+			if mem4 < 11:
+				step e
+				step e
+				mem1 = set w
+				mem4 = set 4
+			else:
+				mem1 = set e
+				mem4 = set 12
+			endif
+		endif
+	else:
+		if mem4 < 14:
+			if mem4 < 13:
+				step e
+				mem1 = set e
+				step e
+				if mem1 != datacube:
+					mem1 = set e
+				endif
+				step e
+				mem4 = set 13
+			else:
+				mem1 = set e
+				mem4 = set 14
+			endif
+		else:
+			step e
+			if mem4 < 15:
+				pickup e
+				mem1 = set myitem
+				mem4 = set 15
+			else:
+				step e
+				step e
+				mem4 = set 99
+			endif
+		endif
+	endif
+endif
+if mem4 != 99:
+	jump a
+endif
+if mem2 != 0 and
+ mem3 != 18:
+	mem3 = calc mem3 + mem2
+else:
+	if mem2 != 0:
+		if mem2 <= 4:
+			if mem2 <= 2:
+				if mem2 <= 1:
+					mem3 = set 19
+				else:
+					mem3 = set 20
+				endif
+			else:
+				if mem2 <= 3:
+					mem3 = set 21
+				else:
+					mem3 = set 22
+				endif
+			endif
+		else:
+			if mem2 <= 6:
+				if mem2 <= 5:
+					mem3 = set 23
+				else:
+					mem3 = set 24
+				endif
+			else:
+				if mem2 <= 7:
+					mem3 = set 25
+				else:
+					mem3 = set 26
+				endif
+			endif
+		endif
+	endif
+endif
+write mem3
 drop
-
