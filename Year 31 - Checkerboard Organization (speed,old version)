@@ -1,0 +1,171 @@
+-- 7 Billion Humans (2059) --
+-- 31: Checkerboard Organization --
+
+mem1 = nearest wall
+mem2 = nearest hole
+step sw
+mem3 = nearest wall
+mem4 = nearest hole
+if mem1 == mem3:
+	step nw
+	step ne
+	step ne
+	step ne
+	mem1 = nearest printer
+	takefrom mem1
+	step w
+	step w
+	step w
+	drop
+	takefrom mem1
+	step sw
+	step s
+	drop
+	step nw
+	takefrom mem1
+	step sw
+	step sw
+	step sw
+	step s
+	drop
+	step nw
+	takefrom mem1
+	step e
+else:
+	if mem2 == mem4:
+		mem1 = nearest worker
+		step mem1
+		mem1 = nearest wall
+		if mem1 == mem3:
+			mem1 = nearest printer
+			takefrom mem1
+			step nw
+			step nw
+			step w
+			drop
+			takefrom mem1
+			step nw
+			step w
+			step w
+			step w
+			drop
+			takefrom mem1
+			step sw
+			step w
+			drop
+			takefrom mem1
+			step sw
+			step sw
+			step sw
+			step w
+			drop
+			takefrom mem1
+			step se
+			step s
+			step s
+			step s
+		else:
+			step n
+			mem3 = nearest wall
+			if mem1 == mem3:
+				mem1 = nearest printer
+				takefrom mem1
+				step nw
+				step n
+				drop
+				takefrom mem1
+				step nw
+				step w
+				drop
+				takefrom mem1
+				step e
+				step e
+				step e
+				drop
+				takefrom mem1
+				step sw
+				step sw
+				step s
+				drop
+				step nw
+				takefrom mem1
+				step se
+				step se
+				step se
+				step s
+			else:
+				mem4 = nearest worker
+				step mem4
+				step mem4
+				mem2 = nearest wall
+				if mem2 == mem3:
+					step ne
+					step ne
+					mem1 = nearest printer
+					takefrom mem1
+					step sw
+					step sw
+					step w
+					drop
+					takefrom mem1
+					step se
+					step se
+					step s
+					drop
+					step ne
+					takefrom mem1
+					step w
+				else:
+					mem1 = nearest printer
+					takefrom mem1
+					step ne
+					step n
+					drop
+					takefrom mem1
+					step ne
+					step e
+					drop
+					takefrom mem1
+					step se
+					step e
+					drop
+					takefrom mem1
+					step sw
+					step se
+					step s
+					drop
+					step nw
+					step nw
+					takefrom mem1
+					step n
+				endif
+			endif
+		endif
+	else:
+		mem1 = nearest printer
+		takefrom mem1
+		step ne
+		step ne
+		step e
+		drop
+		takefrom mem1
+		step sw
+		step w
+		step w
+		step w
+		drop
+		takefrom mem1
+		step se
+		step se
+		step e
+		drop
+		takefrom mem1
+		step sw
+		step s
+		step s
+		step s
+	endif
+endif
+drop
+
+
