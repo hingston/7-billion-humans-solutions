@@ -1,4 +1,4 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2059) --
 -- 25: My First Shredding Memory --
 
 mem1 = nearest shredder
@@ -11,8 +11,8 @@ if mem2 == datacube:
 	endif
 	jump a
 endif
-if w == worker and
- sw == nothing:
+if w == nothing and
+ s == shredder:
 	giveto mem1
 endif
 
