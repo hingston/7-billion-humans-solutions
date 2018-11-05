@@ -1,4 +1,4 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2059) --
 -- 20: Reverse Line --
 
 if sw == hole or
@@ -52,16 +52,16 @@ else:
 				step sw
 			endif
 		else:
-			if se == datacube:
-				pickup s
-				step se
+			if sw == nothing:
+				pickup se
 			else:
-				pickup s
-				step sw
+				pickup sw
 			endif
+			step s
 		endif
 	endif
 endif
 drop
+
 
 
