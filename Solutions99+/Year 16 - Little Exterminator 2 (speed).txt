@@ -1,29 +1,24 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2059) --
 -- 16: Little Exterminator 2 --
 
+step se
 step s
 step s
-step s
-step s
-if se == worker:
-	if nw == worker:
+if ne == nothing:
+	step s
+	if nw == nothing:
 		step s
-		pickup c
-		step e
-	else:
-		step s
-		step s
-		pickup c
-		step e
+	endif
+	pickup sw
+	step e
+	if ne == nothing:
 		step e
 	endif
 else:
-	pickup c
+	pickup sw
 endif
+step se
 step e
-step e
-step e
-step e
-giveto s
-step e
-step e
+giveto se
+
+
