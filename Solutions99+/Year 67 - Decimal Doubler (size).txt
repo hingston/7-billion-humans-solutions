@@ -1,4 +1,4 @@
--- 7 Billion Humans (2212:2214M) --
+-- 7 Billion Humans (2214M) --
 -- 67: Decimal Doubler --
 
 step s
