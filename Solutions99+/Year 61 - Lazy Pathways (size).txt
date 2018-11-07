@@ -1,0 +1,16 @@
+-- 7 Billion Humans (2214M) --
+-- 61: Lazy Pathways --
+
+a:
+step nw,w,sw,ne,se
+mem1 = nearest datacube
+mem4 = foreachdir nw,w,sw,n,s,ne,e,se:
+	if mem4 < mem1 and
+	 mem4 != wall:
+		mem1 = calc mem4 + 1
+	endif
+endfor
+pickup c
+write mem1
+drop
+jump a
