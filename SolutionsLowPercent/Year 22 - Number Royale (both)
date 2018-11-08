@@ -1,0 +1,13 @@
+--This solution isn't mine, it's from here https://steamcommunity.com/app/792100/discussions/0/1735463620086845201/
+
+-- 7 Billion Humans (2145) --
+-- 22: Number Royale --
+
+pickup s
+if myitem < 90:
+	a:
+	step s
+	jump a
+endif
+
+
