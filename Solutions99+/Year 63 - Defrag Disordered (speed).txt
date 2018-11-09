@@ -12,16 +12,14 @@ mem1 = foreachdir nw:
 				if mem1 == nothing:
 					step ne
 					step ne
-					pickup w
+					pickup s
 					step ne
 					step n
 					drop
-					step s
-					pickup s
-					step nw
+					step sw
+					pickup sw
 					step n
 					step n
-					drop
 				else:
 					step n
 					step n
@@ -35,25 +33,21 @@ mem1 = foreachdir nw:
 					drop
 					step e
 					pickup se
-					step n
-					drop
 				endif
 			else:
 				if mem2 == datacube:
 					step ne
-					pickup w
-					step n
+					pickup ne
 					step ne
 					step n
 					step n
+					step n
 					drop
 					step s
 					step s
-					pickup s
+					pickup sw
 					step n
 					step n
-					step n
-					drop
 				else:
 					pickup ne
 					step ne
@@ -65,12 +59,12 @@ mem1 = foreachdir nw:
 					step sw
 					pickup s
 					step n
-					step n
-					drop
 				endif
 			endif
 		endfor
 	endfor
 endfor
+step n
+drop
 
 
