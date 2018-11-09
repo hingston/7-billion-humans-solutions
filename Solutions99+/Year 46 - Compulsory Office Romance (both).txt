@@ -1,12 +1,9 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2214M) --
 -- 46: Compulsory Office Romance --
 
-a:
-if e == worker:
-	tell e hi
-	listenfor hi
-else:
-	listenfor hi
-	tell w hi
+if w == worker:
+	a:
+	tell mem1 hi
+	jump a
 endif
-jump a
+
