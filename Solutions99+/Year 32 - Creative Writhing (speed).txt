@@ -4,13 +4,13 @@
 pickup s
 write 99
 drop
-if ne == something:
-	pickup sw
+step s
+if sw == datacube:
+	pickup w
 	if myitem == datacube:
 		write 99
-		step w
 		drop
-		step s
+		step w
 		pickup s
 		write 99
 		drop
@@ -48,7 +48,6 @@ if ne == something:
 		drop
 		step e
 	else:
-		step s
 		pickup s
 		write 99
 		drop
@@ -77,17 +76,8 @@ if ne == something:
 		write 99
 		drop
 		step w
-		pickup s
-		write 99
-		drop
-		step s
-		pickup s
-		write 99
-		drop
-		step s
 	endif
 else:
-	step s
 	pickup s
 	write 99
 	drop
@@ -135,17 +125,11 @@ else:
 		write 99
 		drop
 		step e
-		pickup s
-		write 99
-		drop
-		step s
 	endif
 endif
+a:
 pickup s
 write 99
 drop
 step s
-pickup s
-write 99
-drop
-
+jump a
