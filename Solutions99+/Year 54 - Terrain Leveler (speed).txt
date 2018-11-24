@@ -1,4 +1,4 @@
--- 7 Billion Humans (2059) --
+-- 7 Billion Humans (2214M) --
 -- 54: Terrain Leveler --
 
 step s
@@ -16,9 +16,9 @@ step n
 step n
 mem3 = calc c + s
 pickup n
-step n
 mem4 = calc myitem + mem1
 mem4 = calc mem4 + mem2
+step n
 if w == nothing or
  e == nothing:
 	step n
@@ -99,11 +99,27 @@ mem2 = calc [blank] + [blank]
 a:
 write mem1
 mem1 = set myitem
-d:
 drop
 step s
 pickup c
 write mem1
-jump d
-
+drop
+step s
+pickup c
+write mem1
+drop
+step s
+pickup c
+write mem1
+drop
+step s
+pickup c
+write mem1
+drop
+step s
+pickup c
+write mem1
+drop
+pickup s
+write mem1
 
