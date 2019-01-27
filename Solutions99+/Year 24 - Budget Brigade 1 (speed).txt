@@ -1,25 +1,105 @@
--- 7 Billion Humans (2145) --
--- 24: Budget Brigade 1 --
-
-if s == shredder:
+if w == hole:
+	takefrom s
 	a:
-	if myitem == datacube:
-		giveto s
-	endif
-	takefrom w
-	jump a
-endif
-if s == printer:
-	b:
 	if myitem == nothing:
 		takefrom s
 	endif
+	jump a
+endif
+if nw == nw:
+	if myitem == myitem:
+		if myitem == myitem:
+			if myitem == myitem:
+				if myitem == myitem:
+					if myitem == myitem:
+						if myitem == myitem:
+							if myitem == myitem:
+								if myitem == myitem:
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+	endif
+endif
+if myitem == myitem:
+endif
+if e == worker:
+	b:
+	takefrom w
+	c:
+	if myitem == datacube:
+		if myitem == myitem:
+			if myitem == myitem:
+				if myitem == myitem:
+					if myitem == myitem:
+						if myitem == myitem:
+							if myitem == myitem:
+								if myitem == myitem:
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+		if myitem == myitem:
+			if myitem == myitem:
+				if myitem == myitem:
+					if myitem == myitem:
+						if myitem == myitem:
+							if myitem == myitem:
+								if myitem == myitem:
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+		if myitem == myitem:
+			if myitem == myitem:
+				if myitem == myitem:
+					if myitem == myitem:
+						if myitem == myitem:
+							if myitem == myitem:
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+		takefrom w
+		jump c
+	endif
+	if nw == nw:
+	endif
 	jump b
 endif
-c:
-if myitem != datacube:
+d:
+takefrom w
+e:
+if myitem == datacube:
+	giveto s
+	if myitem == myitem:
+		if myitem == myitem:
+			if myitem == myitem:
+				if myitem == myitem:
+					if myitem == myitem:
+						if myitem == myitem:
+							if myitem == myitem:
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+	endif
 	takefrom w
+	jump e
 endif
-jump c
-
-
+if nw == nw:
+endif
+jump d
