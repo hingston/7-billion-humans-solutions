@@ -1,6 +1,3 @@
--- 7 Billion Humans (2059) --
--- 15: Shred Lines --
-
 step n
 if n == datacube:
 	pickup n
@@ -8,13 +5,9 @@ if n == datacube:
 	giveto s
 	step n
 	step n
-	if n == datacube:
-		pickup n
-	else:
-		step n
-		pickup n
-		step s
-	endif
+	step n
+	pickup n,c
+	step s
 	step s
 	step s
 	giveto s
@@ -23,11 +16,7 @@ if n == datacube:
 	step n
 	step n
 	step n
-	if n == datacube:
-		pickup n
-	else:
-		pickup ne
-	endif
+	pickup n,ne
 	step s
 else:
 	step n
@@ -38,13 +27,9 @@ else:
 	step n
 	step n
 	step n
-	if n == datacube:
-		pickup n
-	else:
-		step n
-		pickup n
-		step s
-	endif
+	step n
+	pickup n,c
+	step s
 	step s
 	step s
 	step s
@@ -60,5 +45,3 @@ step s
 step s
 step s
 giveto s
-
-
