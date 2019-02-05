@@ -1,0 +1,68 @@
+-- 7 Billion Humans (2145) --
+-- 47: Automated Pleasantries --
+
+if w == worker:
+	if e == nothing:
+		if nw == nw:
+			if nw == nw:
+				if nw == nw:
+					if nw == nw:
+						if nw == nw:
+							if nw == nw:
+								if myitem == myitem:
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+		if myitem == myitem:
+			if myitem == myitem:
+				if myitem == myitem:
+					if myitem == myitem:
+						if myitem == myitem:
+							if myitem == myitem:
+								if myitem == myitem:
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+		if myitem == myitem:
+			if myitem == myitem:
+				if myitem == myitem:
+					if myitem == myitem:
+						if myitem == myitem:
+							if myitem == myitem:
+								if myitem == myitem:
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+		if myitem == myitem:
+			if myitem == myitem:
+				if myitem == myitem:
+					if myitem == myitem:
+						if myitem == myitem:
+							if myitem == myitem:
+								if myitem == myitem:
+								endif
+							endif
+						endif
+					endif
+				endif
+			endif
+		endif
+		if myitem == myitem:
+		endif
+		tell w morning
+	endif
+	listenfor morning
+endif
+tell e morning
