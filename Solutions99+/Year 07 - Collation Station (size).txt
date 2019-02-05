@@ -3,7 +3,6 @@
 
 a:
 step s
-pickup n
+pickup n,s
 drop
 jump a
-
