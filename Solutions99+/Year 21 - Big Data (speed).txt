@@ -1,24 +1,100 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2214M) --
 -- 21: Big Data --
 
 step s
-step s
-step s
-step s
 takefrom s
-a:
-if myitem >= 50:
-	step nw
-	step n
-	step n
-	step n
-	end
+if myitem == datacube:
+	comment 0
+	if myitem < 50:
+		step ne
+		drop
+		step s
+		takefrom sw
+		a:
+		if myitem < 50:
+			step w
+			giveto s
+			step e
+			takefrom s
+			jump a
+		endif
+	endif
 else:
-	step w
-	giveto s
-	step e
-	takefrom s
+	step sw
+	takefrom se
+	if myitem == datacube:
+		comment 1
+		if myitem < 50:
+			step e
+			drop
+			takefrom sw
+			b:
+			if myitem < 50:
+				step w
+				giveto s
+				step e
+				takefrom s
+				jump b
+			endif
+		endif
+	else:
+		step s
+		if se == printer:
+			comment 2
+			takefrom se
+			if myitem < 50:
+				step nw
+				drop
+				step s
+				takefrom se
+				c:
+				if myitem < 50:
+					step w
+					giveto s
+					step e
+					takefrom s
+					jump c
+				endif
+			endif
+		else:
+			comment 3
+			step s
+			takefrom se
+			if myitem < 50:
+				step w
+				drop
+				takefrom se
+				d:
+				if myitem < 50:
+					step w
+					giveto s
+					step e
+					takefrom s
+					jump d
+				endif
+			endif
+		endif
+	endif
 endif
-jump a
+step n
+step n
+step n
+step n
+step n
 
+
+DEFINE COMMENT 0
+eJzjYQACZ4aCBmeGnIZABjOGIAYbIF4DEm5IZ1jRkMawiiGKYQNQbBNQ3SaGUTAKRsGwAgCeiAqk;
+
+DEFINE COMMENT 1
+eJwTY2BgaAhi8GEIZvBgCGVwYYhjsGpIZTBrKGQwYShisGvIYUhgSAeyQhnmNAQyLAPiDQ3BDNsYwhl2
+MSQx7GrIZtjAkMewhqGAYRlQ1bKGUoYFDJVAPApGwSgYEgAAAYgXRg;
+
+DEFINE COMMENT 2
+eJwTZQCCSAa1hiQgzmDQaMhm0GLIZzBgKGAwachncGHIZfBpSGWIaUhhSADilIY8hoKGQoayhiKGGiDu
+ALL7GPIYpjCkMCxgiGFY1hDGsI5hFIyCUTBkAAAcOhZ2;
+
+DEFINE COMMENT 3
+eJwTYACCZAalhhiGIIYohiwgLmCIYShjSGCoakhhqGmoYKgBKWmoYTBhqGWwA9JZDZUMs4DiW4D4DMMo
+GAWjYEgDAHxxECY;
 
