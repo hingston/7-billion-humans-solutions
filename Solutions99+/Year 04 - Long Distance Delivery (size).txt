@@ -2,8 +2,6 @@
 -- 4: Long Distance Delivery --
 
 a:
-pickup c
 step e
+pickup c
 jump a
-
-
