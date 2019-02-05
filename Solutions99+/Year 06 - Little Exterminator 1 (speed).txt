@@ -1,4 +1,4 @@
--- 7 Billion Humans (2056) --
+-- 7 Billion Humans (2145) --
 -- 6: Little Exterminator 1 --
 
 step s
@@ -8,5 +8,4 @@ step se
 step e
 step se
 step s
-step s
-pickup c
+pickup c,s
