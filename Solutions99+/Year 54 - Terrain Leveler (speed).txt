@@ -1,4 +1,4 @@
--- 7 Billion Humans (2059) --
+-- 7 Billion Humans (2214M) --
 -- 54: Terrain Leveler --
 
 step s
@@ -101,9 +101,7 @@ write mem1
 mem1 = set myitem
 d:
 drop
-step s
-pickup c
+pickup s
 write mem1
+step s
 jump d
-
-
