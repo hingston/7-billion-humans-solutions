@@ -1,0 +1,6 @@
+pickup s
+if myitem < 90:
+	a:
+	step s
+	jump a
+endif
