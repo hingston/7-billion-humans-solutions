@@ -1,6 +1,7 @@
 -- 7 Billion Humans (2145) --
 -- 4: Long Distance Delivery --
 
+pickup c,e
 a:
 step e
 pickup c
