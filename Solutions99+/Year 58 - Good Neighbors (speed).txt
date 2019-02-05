@@ -1,195 +1,155 @@
--- 7 Billion Humans (2059) --
+-- 7 Billion Humans (2214M) --
 -- 58: Good Neighbors --
 
 mem1 = nearest datacube
-if mem1 == 3:
-	jump a
-else:
-	step mem1
-	jump b
-	mem1 = foreachdir n:
-		mem2 = foreachdir s:
-			mem3 = foreachdir w:
-				mem4 = foreachdir e:
+mem2 = nearest worker
+jump a
+mem3 = foreachdir se:
+	mem4 = foreachdir n:
+		a:
+		if mem1 == 5 and
+		 mem3 == nothing:
+			mem3 = nearest worker
+			step mem1
+			mem4 = nearest worker
+			jump b
+			mem1 = foreachdir s:
+				mem2 = foreachdir w:
 					b:
-					if mem1 == 8 or
-					 mem2 == 8:
-						if mem1 == 8:
-							jump c
+					jump c
+				endfor
+			endfor
+			c:
+			if mem1 == 8 and
+			 mem2 == 5:
+				if mem3 == mem4:
+					step mem1
+					pickup s
+				else:
+					step mem1
+					pickup sw
+				endif
+			else:
+				jump d
+				mem4 = foreachdir n:
+					d:
+					if mem1 == 5:
+						if mem4 == 3:
+							if mem2 == nothing:
+								step e
+								pickup e
+							else:
+								step w
+								pickup w
+							endif
 						else:
-							jump d
+							if mem2 == nothing:
+								pickup ne
+							else:
+								pickup nw
+							endif
 						endif
 					else:
-						if mem3 == 8:
-							jump e
+						if mem1 == 8:
+							step e
+							pickup se
 						else:
-							jump f
+							pickup n
 						endif
 					endif
+				endfor
+			endif
+			mem1 = calc 0 / 0
+		else:
+			if mem2 == mem3 and
+			 mem1 == 3:
+				step sw
+				step s
+				step w
+				pickup sw
+				mem1 = calc 0 / 0
+			endif
+			jump e
+		endif
+	endfor
+endfor
+e:
+if mem1 == 5:
+	jump f
+	mem4 = foreachdir nw:
+		f:
+		if mem4 == worker:
+		else:
+			if mem3 == wall:
+				step mem1
+				pickup nw
+			else:
+				step ne
+				step n
+				pickup ne
+			endif
+		endif
+	endfor
+else:
+	jump g
+	mem1 = foreachdir s:
+		mem2 = foreachdir nw:
+			mem3 = foreachdir sw:
+				mem4 = foreachdir n:
+					g:
+					jump h
 				endfor
 			endfor
 		endfor
 	endfor
-endif
-comment 0
-mem1 = foreachdir w:
-	mem2 = foreachdir e:
-		c:
-		if mem1 == 3 or
-		 mem2 == 3:
-			if mem1 == 3:
-				step e
-				pickup ne
-			else:
-				step w
-				pickup nw
-			endif
-		else:
-			if mem1 == worker:
-				step n
-				pickup ne
-			else:
-				step n
-				pickup n
-			endif
-		endif
-	endfor
-endfor
-mem1 = calc 0 / 0
-comment 1
-mem1 = foreachdir w:
-	d:
-	step e
-	jump g
-	mem2 = foreachdir e:
-		g:
-		if mem1 == 3:
-			pickup se
-		else:
-			if mem2 == 3:
-				pickup sw
-			else:
-				pickup s
-			endif
-		endif
-	endfor
-endfor
-mem1 = calc 0 / 0
-comment 2
-mem1 = foreachdir n:
-	e:
-	if mem1 == 3:
-		pickup sw
-	else:
-		pickup w
-	endif
-endfor
-mem1 = calc 0 / 0
-comment 3
-mem1 = foreachdir n:
-	f:
-	if mem1 == 3:
-		pickup se
-	else:
-		pickup e
-	endif
-endfor
-mem1 = calc 0 / 0
-comment 4
-mem1 = foreachdir s:
-	mem2 = foreachdir n:
-		mem3 = foreachdir sw:
-			mem4 = foreachdir ne:
-				a:
-				if mem1 == worker or
-				 mem2 == worker or
-				 mem3 == worker or
-				 mem4 == worker:
-					if mem1 == worker or
-					 mem2 == worker:
-						step ne
-						step e
-						if mem1 == worker:
-							step e
-							pickup e
-						else:
-							pickup ne
-						endif
-					else:
-						step se
-						if mem3 == worker:
-							step se
-							pickup se
-						else:
-							step e
-							pickup se
-						endif
-					endif
+	h:
+	if mem2 == nothing and
+	 mem3 == nothing and
+	 mem4 == nothing:
+		jump i
+		mem4 = foreachdir ne:
+			i:
+			if mem1 == worker or
+			 mem4 == worker:
+				if mem1 == worker:
+					step ne
+					step e
+					pickup ne
 				else:
-					jump h
+					step se
+					step e
+					pickup se
 				endif
-			endfor
-		endfor
-	endfor
-endfor
-mem1 = calc 0 / 0
-mem1 = foreachdir nw:
-	mem2 = foreachdir se:
-		h:
-		if mem1 == worker or
-		 mem2 == worker:
-			step s
-			jump i
-			mem1 = foreachdir w:
-				i:
-				if mem1 == datacube:
+			else:
+				step nw
+				mem1 = nearest datacube
+				if mem1 == 5:
 					step w
-					pickup sw
-				else:
-					end
-				endif
-			endfor
-		else:
-			step w
-			jump j
-			mem1 = foreachdir w:
-				j:
-				if mem1 == 3:
-					step w
-					mem1 = set e
 				else:
 					step n
-					step nw
 				endif
 				pickup nw
-			endfor
+			endif
+		endfor
+	else:
+		if mem2 == worker:
+			if mem3 == datacube:
+				step w
+				step s
+				pickup sw
+			else:
+				step ne
+				step ne
+				pickup ne
+			endif
+		else:
+			if mem4 == worker:
+				step ne
+				step e
+				pickup ne
+			endif
 		endif
-	endfor
-endfor
+	endif
+endif
 mem1 = calc 0 / 0
-
-
-DEFINE COMMENT 0
-eJztjD0LQQEYhZ8fJF+L1WAgomQwyHTHK1I+Srln4tZFBhnMMshwB6PBL/CbHP/BeE89dd7OeU8OUIm+
-SVXko4LJ8zY3+43KDFUhVJWLatzVIKXJjTZrOgSmxW8joU5CVzGBIk4seGrGS3P3f/nW+cpM/BnSM32N
-GDB2f+orQuw4sOdoTnZnHbhqz8O7KTFPliZTpkx/1RcG5TEQ;
-
-DEFINE COMMENT 1
-eJzti78LQXEUR89fY2Y1UA9J4ZXB8CaTH/VCSHmhj3phepNkNMhokEEyGfxdLn+E6XvqdG/3dlIYJTzl
-KZKhqTQBOaYqMFeFtWok+OzNI1WulHni8VKW9zdlRaAlfWYkmnDWkLsGPH4/WRGaPerq0KBLy/a2QruO
-iIit2bBjy8HmSTEXLbgxNh0Ox1/4ANVrJ8I;
-
-DEFINE COMMENT 2
-eJztjS0LwgAURc/vsRgsIsOvomHIlAWDJpuYFkyGG0xiHgpD8APFoUOLOJOIP8y3H2HbgRvehXduAVAR
-hxKuykxUYa4qB2pcqHOjYWkRySWkQyiPhC4verzl86XPR0MejDgS2BXgkzmvuJyYastSEYklznozO2xw
-tKKpNW3rPe0Z2NqYlJmZF5adUvM9iXW337Nt5uTk/IUfwTEw3A;
-
-DEFINE COMMENT 3
-eJztjksLAWEYRs8fIgsp04isLESTspCFlMlaLiXymCK3LCS3kTQLK8lP9M38Bss5dTan5603gSFPBos+
-WXayOMjmpBKBKgQ4POVwD2fk6FI11nCN7TCpSFINkrRI0SEdtTVlrWhqQY8ZR8a8or6kIA8bYWtISQOz
-G1Fnjqsznq4sdYvcyGePz0MX88eWj7n9amqc8CYmJuZv/ACAoDAJ;
-
-DEFINE COMMENT 4
-eJwTZgACXwaNBn8gDmPQa0hj0GMoZDBiKGBwYEhliGFIYEgC4jSGFIaMhjKGKoZyhjog3dNQxLCgIZdh
-Q0MGw66GKIYTQDNOMIyCUTAKhhwAAKiXE28;
 
