@@ -1,0 +1,41 @@
+-- 7 Billion Humans (2145) --
+-- 54: Terrain Leveler --
+
+step s
+step s
+step n
+step n
+step n
+pickup n
+write 2
+drop
+step n
+pickup n
+write 2
+drop
+step n
+pickup n
+write 2
+drop
+step n
+pickup n
+write 2
+drop
+step n
+pickup n
+write 2
+drop
+step n
+pickup n
+write 2
+drop
+step n
+pickup n
+write 2
+write 3
+a:
+drop
+pickup s
+write 3
+step s
+jump a
