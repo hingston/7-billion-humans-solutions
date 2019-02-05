@@ -1,12 +1,11 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2214M) --
 -- 21: Big Data --
 
 step s
 a:
-takefrom s
-if myitem <= 49:
+takefrom s,se
+if myitem < 50:
 	giveto sw
-	step e
 endif
 jump a
 
