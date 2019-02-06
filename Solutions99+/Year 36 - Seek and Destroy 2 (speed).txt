@@ -1,243 +1,112 @@
 -- 7 Billion Humans (2059) --
 -- 36: Seek and Destroy 2 --
 
-a:
+mem1 = set nothing
+mem2 = set nothing
+mem3 = set nothing
 step n
-mem1 = set n
-if mem1 == nothing:
-	jump a
+if n == nothing:
+	a:
+	b:
+	step n
 endif
-b:
-step n
-mem2 = set n
-if mem2 == nothing:
-	jump b
+mem4 = set n
+if mem4 == wall or
+ mem4 == nothing:
+	if c != datacube or
+	 ne != nothing and
+	 mem4 != wall:
+		jump b
+	endif
+	c:
+	mem4 = nearest shredder
+	d:
+	pickup mem1
+	giveto mem4
+	pickup mem2
+	giveto mem4
+	pickup mem3
+	giveto mem4
+	jump e
 endif
-if mem1 > mem2:
-	mem3 = set mem1
-	mem1 = set mem2
-	mem2 = set mem3
-endif
-c:
-step n
-mem3 = set n
-if mem3 == nothing:
-	jump c
-endif
-if mem2 > mem3:
-	mem4 = set mem3
-	mem3 = set mem2
-	if mem1 > mem4:
+if mem4 == datacube:
+	if mem4 < mem1 or
+	 mem1 == nothing:
+		mem3 = set mem2
 		mem2 = set mem1
 		mem1 = set mem4
 	else:
-		mem2 = set mem4
-	endif
-endif
-step n
-mem4 = set n
-if mem3 > mem4:
-	if mem2 > mem4:
-		mem3 = set mem2
-		if mem1 > mem4:
-			mem2 = set mem1
-			mem1 = set mem4
-		else:
-			mem2 = set mem4
-		endif
-	else:
-		mem3 = set mem4
-	endif
-endif
-step n
-mem4 = set n
-if mem3 > mem4:
-	if mem2 > mem4:
-		mem3 = set mem2
-		if mem1 > mem4:
-			mem2 = set mem1
-			mem1 = set mem4
-		else:
-			mem2 = set mem4
-		endif
-	else:
-		mem3 = set mem4
-	endif
-endif
-step n
-mem4 = set n
-if mem3 > mem4:
-	if mem2 > mem4:
-		mem3 = set mem2
-		if mem1 > mem4:
-			mem2 = set mem1
-			mem1 = set mem4
-		else:
-			mem2 = set mem4
-		endif
-	else:
-		mem3 = set mem4
-	endif
-else:
-	if n == nothing:
-		step n
-		if n == datacube:
-			jump d
-		endif
-		step n
-	endif
-endif
-step n
-d:
-mem4 = set n
-if mem3 > mem4:
-	if mem2 > mem4:
-		mem3 = set mem2
-		if mem1 > mem4:
-			mem2 = set mem1
-			mem1 = set mem4
-		else:
-			mem2 = set mem4
-		endif
-	else:
-		mem3 = set mem4
-	endif
-endif
-pickup mem1
-mem1 = nearest shredder
-giveto mem1
-pickup mem2
-giveto mem1
-pickup mem3
-giveto mem1
-if mem4 == datacube and
- mem3 != mem4:
-	step mem4
-	mem1 = set mem4
-	e:
-	mem2 = set s
-	if mem2 == nothing:
-		step s
-		jump e
-	endif
-	if mem1 > mem2:
-		mem4 = set mem1
-		mem1 = set mem2
-		mem2 = set mem4
-	else:
-		if mem2 == shredder:
-			jump f
-		endif
-	endif
-	g:
-	step s
-	mem3 = set s
-	if mem3 == nothing:
-		jump g
-	endif
-	if mem2 > mem3:
-		mem4 = set mem3
-		mem3 = set mem2
-		if mem1 > mem4:
-			mem2 = set mem1
-			mem1 = set mem4
-		else:
-			mem2 = set mem4
-		endif
-	else:
-		if mem3 == shredder:
-			jump h
-		endif
-	endif
-	i:
-	step s
-	mem4 = set s
-	if mem4 == nothing:
-		jump i
-	endif
-	if mem2 > mem4:
-		if mem1 > mem4:
-			mem4 = set mem3
+		if mem4 < mem2 or
+		 mem2 == nothing:
 			mem3 = set mem2
-			mem2 = set mem1
-			mem1 = set s
-		else:
-			mem4 = set mem3
-			mem3 = set mem2
-			mem2 = set s
-		endif
-	else:
-		if mem3 > mem4:
-			mem4 = set mem3
-			mem3 = set s
-		endif
-	endif
-else:
-	j:
-	step n
-	mem1 = set n
-	if mem1 == nothing:
-		jump j
-	endif
-	k:
-	step n
-	mem2 = set n
-	if mem2 == nothing:
-		jump k
-	endif
-	if mem1 > mem2:
-		mem3 = set mem1
-		mem1 = set mem2
-		mem2 = set mem3
-	endif
-	l:
-	step n
-	mem3 = set n
-	if mem3 == nothing:
-		jump l
-	endif
-	if mem2 > mem3:
-		mem4 = set mem3
-		mem3 = set mem2
-		if mem1 > mem4:
-			mem2 = set mem1
-			mem1 = set mem4
-		else:
 			mem2 = set mem4
-		endif
-	endif
-	m:
-	step n
-	mem4 = set n
-	if mem4 == nothing:
-		jump m
-	endif
-	if mem3 > mem4:
-		if mem2 > mem4:
-			if mem1 > mem4:
-				mem4 = set mem3
-				mem3 = set mem2
-				mem2 = set mem1
-				mem1 = set n
-			else:
-				mem4 = set mem3
-				mem3 = set mem2
-				mem2 = set n
+		else:
+			if mem4 < mem3 or
+			 mem3 == nothing:
+				mem3 = set mem4
 			endif
-		else:
-			mem4 = set mem3
-			mem3 = set n
 		endif
 	endif
 endif
+jump a
+comment 0
+e:
+mem1 = set nothing
+mem2 = set nothing
+mem3 = set nothing
 f:
-h:
-pickup mem1
-mem1 = nearest shredder
-giveto mem1
-pickup mem2
-giveto mem1
-pickup mem3
-giveto mem1
-pickup mem4
-giveto mem1
+step n
+mem4 = set n
+if mem4 == datacube:
+	if mem3 != nothing:
+		if mem4 < mem1:
+			pickup mem4
+		endif
+		if mem4 < mem2 and
+		 mem4 >= mem1:
+			pickup mem1
+			mem1 = set mem4
+		endif
+		if mem4 < mem3 and
+		 mem4 >= mem2:
+			pickup mem1
+			mem1 = set mem2
+			mem2 = set mem4
+		endif
+		if mem4 >= mem3:
+			pickup mem1
+			mem1 = set mem2
+			mem2 = set mem3
+			mem3 = set mem4
+		endif
+		mem4 = nearest shredder
+		giveto mem4
+		jump d
+	endif
+	if mem4 < mem1 or
+	 mem1 == nothing:
+		mem3 = set mem2
+		mem2 = set mem1
+		mem1 = set mem4
+	else:
+		if mem4 < mem2 or
+		 mem2 == nothing:
+			mem3 = set mem2
+			mem2 = set mem4
+		else:
+			if mem4 < mem3 or
+			 mem3 == nothing:
+				mem3 = set mem4
+			endif
+		endif
+	endif
+endif
+if mem4 == wall:
+	jump c
+endif
+jump f
+
+
+DEFINE COMMENT 0
+eJxjYBgFo2AUjGQAAAQEAAE;
+
