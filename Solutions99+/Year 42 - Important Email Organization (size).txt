@@ -1,28 +1,20 @@
 -- 7 Billion Humans (2059) --
 -- 42: Important Email Organization --
 
-mem3 = nearest wall
-mem4 = nearest shredder
 a:
-mem1 = nearest datacube
-step mem1
+step nw,w,s,ne,e
 if s != shredder and
  c == datacube:
 	pickup c
 	mem1 = calc myitem / 10
-	step mem4
 	b:
-	c:
-	if mem1 != c:
-		if mem1 < c:
-			step w
-			jump b
-		endif
-		step e
-		jump c
+	step nw,sw,s,e,se
+	if mem1 != c or
+	 s != shredder:
+		jump b
 	endif
 	giveto s
 endif
-step mem3
 jump a
+
 
