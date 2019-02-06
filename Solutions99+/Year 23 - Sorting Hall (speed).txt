@@ -1,0 +1,22 @@
+-- 7 Billion Humans (2059) --
+-- 23: Sorting Hall --
+
+pickup s
+if myitem < 50:
+	a:
+	b:
+	if myitem < w:
+		step w
+		jump b
+	endif
+	c:
+	d:
+	if myitem > e:
+		step e
+		jump d
+	endif
+	jump a
+endif
+jump c
+
+
