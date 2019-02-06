@@ -1,23 +1,16 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2059) --
 -- 64: Binary Counter --
 
-step s
 a:
-step s
-if c == button:
-	step n
-	tell w morning
-	listenfor go
-	jump a
-endif
+step n,s
 pickup n
-b:
-listenfor morning
-drop
-tell everyone go
-listenfor morning
-tell w morning
-pickup c
-jump b
+if c == switch:
+	drop
+endif
+if c == button or
+ c == switch:
+	step s
+endif
+jump a
 
 
