@@ -1,30 +1,30 @@
--- 7 Billion Humans (2214M) --
+-- 7 Billion Humans (2145) --
 -- 67: Decimal Doubler --
 
 step s
-if c == datacube:
-	pickup c
-	step s
-	a:
-	tell everyone coffeetime
-	drop
-	mem1 = calc c x 2
-	if e >= 5:
-		mem1 = calc mem1 + 1
-	else:
-		mem1 = calc mem1 + 0
-	endif
-	if mem1 >= 10:
-		mem1 = calc mem1 - 10
-	else:
-		mem1 = calc mem1 - 0
-	endif
-	pickup c
-	write mem1
-	jump a
-endif
-b:
-listenfor coffeetime
+pickup c
+a:
 step s
+drop
+mem4 = calc c x 2
+if e <= 4 or
+ se == button:
+	mem1 = calc [blank] + [blank]
+endif
+if e > 4:
+	mem4 = calc mem4 + 1
+endif
+if mem4 <= 9 and
+ c == switch:
+	mem1 = calc [blank] + [blank]
+endif
+if mem4 > 9:
+	mem4 = calc mem4 - 10
+endif
+pickup c
+write mem4
+write mem4
 step n
-jump b
+jump a
+
+
