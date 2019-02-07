@@ -1,20 +1,19 @@
--- 7 Billion Humans (2059) --
+-- 7 Billion Humans (2145) --
 -- 42: Important Email Organization --
 
 a:
-step nw,sw,n,ne,se
-if n == datacube and
- myitem == nothing:
+step nw,w,sw,n,ne,e,se
+if n == datacube:
 	pickup n
 	mem1 = calc myitem / 10
 	b:
-	step sw,se
-	if s != shredder or
-	 c != mem1:
-		step nw,w,ne,e
+	step nw,sw,s,e,se
+	if mem1 != c or
+	 s != shredder:
 		jump b
 	endif
 	giveto s
 endif
 jump a
+
 
