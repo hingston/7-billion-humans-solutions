@@ -2,7 +2,7 @@
 -- 42: Important Email Organization --
 
 a:
-step nw,w,sw,n,ne,e,se
+step nw,sw,n,ne,se
 if n == datacube:
 	pickup n
 	mem1 = calc myitem / 10
