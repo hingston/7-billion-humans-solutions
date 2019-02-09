@@ -1,0 +1,15 @@
+-- 7 Billion Humans (2214M) --
+-- 61: Lazy Pathways --
+
+a:
+step nw,w,sw,n,s,ne,e,se
+if mem1 < 11 and
+ mem1 > 1 and
+ c > mem1:
+	pickup c
+	write mem1
+	drop
+endif
+mem1 = calc 1 + c
+jump a
+
