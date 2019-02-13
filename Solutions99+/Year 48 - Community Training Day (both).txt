@@ -1,10 +1,4 @@
--- 7 Billion Humans (2145) --
--- 48: Community Training Day --
-
-mem1 = nearest shredder
-if n != wall:
-	listenfor go
-endif
+takefrom n
 takefrom s
+mem1 = nearest shredder
 giveto mem1
-tell everyone go
