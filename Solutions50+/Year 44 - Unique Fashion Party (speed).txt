@@ -1,0 +1,24 @@
+-- 7 Billion Humans (2214M) --
+-- 44: Unique Fashion Party --
+
+mem1 = set w
+mem2 = nearest worker
+if mem1 == wall:
+	pickup s
+else:
+	mem3 = nearest datacube
+	if mem2 >= 0:
+		if mem2 == mem3:
+			pickup s
+		else:
+			mem1 = calc 0 / 0
+		endif
+	endif
+	mem1 = set myitem
+	if mem2 >= 0:
+		step s
+		pickup sw
+	else:
+		mem1 = calc 0 / 0
+	endif
+endif
