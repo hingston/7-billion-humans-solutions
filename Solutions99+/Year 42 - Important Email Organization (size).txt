@@ -2,19 +2,19 @@
 -- 42: Important Email Organization --
 
 a:
-step nw,w,s,ne,e
-if s != shredder and
- c == datacube:
-	pickup c
+step nw,sw,n,ne,se
+if n == datacube and
+ myitem == nothing:
+	pickup n
 	mem1 = calc myitem / 10
 	b:
-	step nw,sw,s,e,se
-	if mem1 != c or
-	 s != shredder:
+	step sw,se
+	if s != shredder or
+	 c != mem1:
+		step nw,w,ne,e
 		jump b
 	endif
 	giveto s
 endif
 jump a
-
 
