@@ -1,30 +1,27 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2214M) --
 -- 67: Decimal Doubler --
 
-step s
-pickup c
 a:
-step s
-drop
-mem4 = calc c x 2
-if e <= 4 or
- se == button:
-	mem1 = calc [blank] + [blank]
+if se == worker or
+ c != switch:
+	step s
+	pickup n
+	if nw == 1 or
+	 c == button and
+	 myitem != datacube or
+	 n == switch:
+		step n
+		if e > 4 or
+		 myitem != datacube:
+			mem1 = calc mem1 + 1
+		endif
+		if mem1 > 9 or
+		 myitem != datacube:
+			mem1 = calc mem1 - 10
+		endif
+		write mem1
+	endif
+	drop
+	mem1 = calc 2 x c
 endif
-if e > 4:
-	mem4 = calc mem4 + 1
-endif
-if mem4 <= 9 and
- c == switch:
-	mem1 = calc [blank] + [blank]
-endif
-if mem4 > 9:
-	mem4 = calc mem4 - 10
-endif
-pickup c
-write mem4
-write mem4
-step n
 jump a
-
-
