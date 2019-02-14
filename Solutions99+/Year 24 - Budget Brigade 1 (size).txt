@@ -1,13 +1,11 @@
--- 7 Billion Humans (2145) --
--- 24: Budget Brigade 1 --
-
 a:
-if w == hole or
- sw == printer:
+if e == worker and
+ myitem == nothing:
 	takefrom w,s
 endif
-if w == worker and
- myitem == datacube:
+if e == hole or
+ se == shredder and
+ myitem == something:
 	giveto s,e
 endif
 jump a
