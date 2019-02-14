@@ -1,20 +1,17 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2214M) --
 -- 63: Defrag Disordered --
 
-mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
-	mem3 = foreachdir nw,n,ne,e:
-		mem1 = foreachdir nw,w,n,s,ne,e,se:
-			step n
-			if c == nothing:
-				pickup s
-				pickup w
-				pickup se
-				drop
-			endif
-		endfor
-		mem2 = foreachdir nw,sw,n,s,ne,e,se:
-			step s
-		endfor
-	endfor
-	step e
+a:
+mem1 = foreachdir nw,n,ne,e:
+	step n
+	pickup c,e
 endfor
+mem1 = foreachdir nw,n,ne:
+	step n
+	drop
+endfor
+step se
+mem1 = foreachdir nw,n,s,ne,e,se:
+	step s
+endfor
+jump a

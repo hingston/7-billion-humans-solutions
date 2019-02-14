@@ -1,30 +1,28 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2214M) --
 -- 52: The Mode Code --
 
 mem1 = nearest datacube
 a:
+if c == nothing or
+ s == wall and
+ w == worker or
+ n == wall:
+	mem3 = calc mem3 + 1
+	pickup mem1
+	write mem4
+	drop
+endif
+step w
 if w == wall or
  w == hole:
 	step ne
 	b:
-	if n == mem2:
-		mem3 = calc mem3 + 1
-	endif
-	step e
-	if n == datacube:
+	if e != nothing:
+		step e
 		jump b
 	endif
 endif
-if n != datacube and
- s == datacube and
- w == worker:
-	mem2 = calc mem2 + 1
+if c == mem3:
+	mem4 = calc mem4 + 1
 endif
-if n != wall:
-	step w
-	jump a
-endif
-pickup mem1
-write mem3
-drop
-
+jump a

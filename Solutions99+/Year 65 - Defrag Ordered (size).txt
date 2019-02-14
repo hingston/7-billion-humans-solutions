@@ -1,30 +1,25 @@
--- Solution by main_gi, base from Trixi (but much improved) https://steamcommunity.com/sharedfiles/filedetails/?id=1492607776 --
+-- 7 Billion Humans (2214M) --
 -- 65: Defrag Ordered --
 
+mem1 = foreachdir nw,w,n,s,ne,e,se:
+	step n
+endfor
 a:
-if e != hole:
-	step e
-else:
+if w != datacube and
+ c == datacube and
+ myitem != datacube or
+ mem2 != datacube:
+	pickup c
+	step mem2
+	mem2 = set myitem
+endif
+drop
+if e == hole:
 	step sw
-	mem3 = foreachdir nw,w,sw,n,ne,e:
+	mem1 = foreachdir nw,w,n,ne,e,se:
 		step w
 	endfor
-endif
-if c == datacube and
- w != datacube and
- myitem == nothing:
-	pickup c
-	mem2 = set 1
-endif
-if mem2 != 1:
-	drop
-endif
-if s == hole and
- e == hole:
-	mem2 = foreachdir nw,w,sw,n,ne,e,se:
-		step nw
-	endfor
+else:
+	step e
 endif
 jump a
-
-
