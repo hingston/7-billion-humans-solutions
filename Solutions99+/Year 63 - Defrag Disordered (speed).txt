@@ -7,25 +7,27 @@ mem1 = foreachdir nw:
 	mem2 = foreachdir n:
 		mem3 = foreachdir w:
 			a:
-			if mem1 == hole or
-			 mem3 == worker:
-				if mem1 == nothing:
-					step ne
-					step ne
-					pickup w
-					step ne
+			if mem1 == nothing and
+			 mem2 == datacube and
+			 mem3 == nothing:
+				step ne
+				pickup n
+				step n
+				step n
+				step n
+				step ne
+				drop
+				mem1 = nearest datacube
+				step s
+				step s
+				pickup s
+				step mem1
+			else:
+				if mem1 == hole and
+				 mem3 == hole:
+					pickup ne
 					step n
-					drop
-					step s
-					pickup s
-					step nw
 					step n
-					step n
-					drop
-				else:
-					step n
-					step n
-					pickup se
 					step n
 					step n
 					step n
@@ -35,42 +37,34 @@ mem1 = foreachdir nw:
 					drop
 					step e
 					pickup se
-					step n
-					drop
-				endif
-			else:
-				if mem2 == datacube:
-					step ne
-					pickup w
-					step n
-					step ne
-					step n
-					step n
-					drop
-					step s
-					step s
-					pickup s
-					step n
-					step n
-					step n
-					drop
 				else:
-					pickup ne
-					step ne
-					step ne
-					step n
-					step n
-					step n
-					drop
-					step sw
-					pickup s
-					step n
-					step n
-					drop
+					if mem3 == worker:
+						step ne
+						step ne
+						pickup s
+						step n
+						step ne
+						drop
+						step sw
+						pickup sw
+						step n
+						step n
+					else:
+						pickup ne
+						step ne
+						step ne
+						step n
+						step n
+						step n
+						drop
+						step sw
+						pickup s
+						step n
+					endif
 				endif
 			endif
 		endfor
 	endfor
 endfor
-
-
+step n
+drop
