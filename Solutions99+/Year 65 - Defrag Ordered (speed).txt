@@ -1,6 +1,3 @@
--- 7 Billion Humans (2059) --
--- 65: Defrag Ordered --
-
 step ne
 jump a
 mem1 = foreachdir w:
@@ -41,31 +38,11 @@ mem1 = foreachdir w:
 				step e
 			else:
 				pickup nw
+				step n
+				step n
 				step ne
 				step n
-				step n
-				step n
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
+				mem1 = set nw
 				mem1 = set myitem
 				mem1 = set myitem
 				mem1 = set myitem
@@ -174,5 +151,3 @@ mem1 = foreachdir w:
 	endfor
 endfor
 drop
-
-
