@@ -1,70 +1,153 @@
--- 7 Billion Humans (2145) --
--- 63: Defrag Disordered --
-
-step n
+step ne
 jump a
-mem1 = foreachdir nw:
-	mem2 = foreachdir n:
-		mem3 = foreachdir w:
-			a:
-			if mem1 == nothing and
-			 mem2 == datacube and
-			 mem3 == nothing:
-				step ne
-				pickup n
-				step n
-				step n
+mem1 = foreachdir w:
+	mem2 = foreachdir e:
+		a:
+		if mem1 == nothing:
+			if mem2 == nothing:
+				pickup nw
 				step n
 				step ne
+				step ne
+				step n
 				drop
-				mem1 = nearest datacube
+				pickup e
+				step n
+				drop
+				step se
+				step se
+				step se
+				pickup sw
+				step n
+				step n
+				drop
+				pickup w
+				step nw
+				step w
+				drop
+				step sw
+				step sw
+				pickup sw
+				step nw
+				drop
+				pickup sw
+				step ne
+				step e
+				step e
+				step e
+				step e
+			else:
+				pickup nw
+				step n
+				step n
+				step ne
+				step n
+				mem1 = set nw
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				drop
+				step n
+				pickup nw
+				step nw
+				step w
+				drop
+				step se
+				step se
 				step s
 				step s
 				pickup s
-				step mem1
-			else:
-				if mem1 == hole and
-				 mem3 == hole:
-					pickup ne
-					step n
-					step n
-					step n
-					step n
-					step n
-					drop
-					step se
-					pickup s
-					drop
-					step e
-					pickup se
-				else:
-					if mem3 == worker:
-						step ne
-						step ne
-						pickup s
-						step n
-						step ne
-						drop
-						step sw
-						pickup sw
-						step n
-						step n
-					else:
-						pickup ne
-						step ne
-						step ne
-						step n
-						step n
-						step n
-						drop
-						step sw
-						pickup s
-						step n
-					endif
-				endif
+				step n
+				step ne
+				drop
+				pickup s
+				step sw
+				step w
+				step w
+				step w
+				step nw
+				drop
+				pickup w
+				step n
 			endif
-		endfor
+		else:
+			if mem2 == nothing:
+				step ne
+				step n
+				step n
+				step n
+				step n
+				pickup n
+				step nw
+				step w
+				step w
+				drop
+				step e
+				step se
+				pickup se
+				drop
+				step sw
+				step sw
+				pickup se
+				step nw
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				mem1 = set myitem
+				drop
+				pickup n
+				step ne
+				step ne
+				step e
+				drop
+				step w
+				step w
+				step w
+				step w
+				pickup sw
+				step e
+				step e
+				step e
+			else:
+				step nw
+				step n
+				step n
+				step n
+				step ne
+				pickup w
+				step e
+				step ne
+				drop
+				pickup sw
+				step w
+				step w
+				step w
+				step sw
+				step w
+				step w
+				step w
+				drop
+				step se
+				step e
+				pickup e
+				step ne
+				drop
+				pickup sw
+				step w
+				drop
+				step s
+				pickup se
+				step w
+				step w
+			endif
+		endif
 	endfor
 endfor
-step n
 drop
