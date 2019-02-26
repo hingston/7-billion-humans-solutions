@@ -1,20 +1,27 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2214M) --
 -- 44: Unique Fashion Party --
 
-pickup s
-a:
-step s
-if s != wall:
-	jump a
+mem1 = set sw,n
+if mem1 != worker and
+ mem1 == wall:
+	mem4 = set myitem
+	pickup s
+	end
 endif
-b:
-step e
-if n != myitem and
- n != nothing or
- s != hole:
-	jump b
+if mem1 >= 0:
+	mem2 = nearest worker
+	if mem2 >= 0:
+		mem1 = calc 0 / 0
+	endif
+	if mem2 >= 0:
+		step s
+		pickup sw
+		end
+	endif
 endif
-if n == myitem:
-	step s
+if mem1 >= 0 and
+ mem2 >= 0:
+	pickup s
+	end
 endif
-step n
+mem1 = calc 0 / 0
