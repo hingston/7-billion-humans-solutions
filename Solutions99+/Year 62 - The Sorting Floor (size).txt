@@ -1,59 +1,26 @@
--- Solution by main_gi, base was a terribly unoptimized 48i by DESTROYBUZZLIGHTYEAR https://steamcommunity.com/sharedfiles/filedetails/?id=1492607776 --
--- I actually already have a 22i on this level with 227s :) --
+-- 7 Billion Humans (2214M) --
 -- 62: The Sorting Floor --
 
-comment 0
-mem4 = foreachdir w,e,se:
-	mem4 = foreachdir nw,n,ne,e,se:
-		pickup n
-		drop
-		step n
-	endfor
-	mem4 = foreachdir nw,w,n,ne,e:
+a:
+if n == hole:
+	mem1 = foreachdir nw,n,ne:
 		step s
 	endfor
-endfor
-mem4 = foreachdir nw,ne:
-	step nw
-endfor
-a:
-drop
-mem4 = set c
-b:
-if s != hole:
-	step s
-	jump b
 endif
-c:
-if e != hole:
-	step e
-	jump c
-endif
-step nw
-mem1 = nearest datacube
-mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
-	if mem1 < mem2 and
-	 mem2 == datacube:
-		mem1 = set mem2
-	endif
-endfor
-pickup mem1
-step mem4
-if w == hole:
-	step e
+if e == hole:
+	step w
+	step nw,n
+else:
 	step ne
 endif
-if c == datacube:
-	step w
+if e > sw or
+ c != datacube:
+	pickup e
+endif
+drop
+if ne != hole and
+ ne != datacube or
+ w > c:
+	pickup w
 endif
 jump a
-
-
-DEFINE COMMENT 0
-eJztkcsrhGEUxn97C5TLwrgs3JImIkVuTUaSLCa3LCSJSdI0hMVHR1mgaMhCInvMSs0GsRRKWdi4ZiUN
-cvkDPN8s/Q3O19Pznvdcvuec10GWRL4lk2fp5JAp9gg5usulRPDKryGDNsXa8dBu2QQUD5BPrxUyQBFB
-IWQFTJPFgqWxZKniFObd9ualEi+14mYrp5cK1VQxatWErZ4JfKr1MYqfQfPTZ836h59WwUcTNdYgDXWU
-SEWxakspU7Xbt5N+YYRu9XD9gDJc3payHUKJ8x6N7NNDVFqj9HEgxKThSP4JXYmcQ+o5xtwzF7TYueIX
-DNglQ1wRtGvhhkFuhTvd30u/a/faySMLiR5xOniRnhft4lXzvGm2D6btU/jCsW8cfrSTTyK8s84bG8QF
-1xxpnSLMOJM2xqwNs8kwu+KYpjvT3Y1iD8p5thlhjidb5NqWObUIMVvVhGtsiSP65m1FsyzrLZaYsFlh
-Rhoc1sQP/Nu//bFfUWWEvQ;

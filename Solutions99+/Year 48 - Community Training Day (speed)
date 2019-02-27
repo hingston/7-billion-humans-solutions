@@ -1,0 +1,5 @@
+takefrom n
+mem1 = nearest printer
+takefrom mem1
+mem1 = nearest shredder
+giveto mem1

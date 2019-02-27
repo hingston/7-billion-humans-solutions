@@ -1,75 +1,290 @@
--- 7 Billion Humans (2199) --
+-- 7 Billion Humans (2214M) --
 -- 68: Goodbye, Humans! --
 
 jump a
-mem1 = foreachdir se:
-	a:
-	if mem1 == hole:
-		step w
-		step w
-		step w
-		step w
-		step s
-		step s
-		step s
-		step s
-		tell everyone hi
-		tell everyone hi
-		tell everyone hi
-		step s
-		tell everyone goodbye
-		step s
-		step s
-	endif
-endfor
-jump b
-mem1 = foreachdir n:
+mem1 = foreachdir sw:
 	mem2 = foreachdir s:
-		b:
-		if mem1 == hole or
-		 mem2 == hole:
-			step e
-			step e
-			step e
-			step e
-		else:
-			jump c
-			mem1 = foreachdir w:
-				mem2 = foreachdir nw:
-					mem3 = foreachdir sw:
-						c:
-						if mem2 == hole or
-						 mem1 == hole or
-						 mem3 == hole:
-							step e
-							step e
-							step e
-						endif
-					endfor
-				endfor
-			endfor
-		endif
+		mem3 = foreachdir se:
+			a:
+			jump b
+		endfor
 	endfor
 endfor
-step s
-step s
-step s
-step s
-step s
-step s
-step s
-step s
-d:
-jump e
-mem1 = foreachdir w:
-	e:
-	if mem1 == wall:
-		step e
+b:
+if mem2 == nothing:
+	step s
+	step s
+endif
+if mem3 == nothing or
+ mem1 == nothing:
+	step e
+	step s
+	step s
+	jump c
+endif
+mem4 = set sw
+if mem1 == worker and
+ mem2 == worker and
+ mem3 == worker:
+	if mem4 == nothing:
+		jump d
 	else:
-		step w
+		mem1 = foreachdir nw,n:
+		endfor
+		mem1 = set myitem
+		jump e
+		mem1 = foreachdir s:
+			e:
+			if mem1 == nothing:
+				step sw
+				jump f
+			else:
+				mem1 = set c
+			endif
+		endfor
 	endif
+	jump g
+	mem1 = foreachdir sw:
+		mem2 = foreachdir s:
+			mem3 = foreachdir se:
+				mem4 = foreachdir e:
+					g:
+					if mem1 == nothing or
+					 mem2 == nothing or
+					 mem3 == nothing or
+					 mem4 == nothing:
+						if mem4 == nothing:
+							step n
+							step e
+							step se
+							jump h
+						else:
+							step s
+							step s
+							step s
+							step s
+							step s
+							if mem1 == nothing:
+								step w
+							endif
+							jump i
+						endif
+					else:
+						mem1 = set sw
+						mem2 = set se
+						if ne == nothing:
+							jump j
+						endif
+						if s == nothing and
+						 ne != wall:
+							step s
+							if mem1 != nothing:
+								step e
+							endif
+							if mem2 != nothing:
+								step e
+							endif
+							step s
+							step s
+							jump k
+						endif
+						jump l
+					endif
+				endfor
+			endfor
+		endfor
+	endfor
+	mem1 = foreachdir nw:
+		l:
+		if mem1 == worker:
+			step s
+			step s
+			jump m
+			mem1 = foreachdir n:
+				m:
+				if mem1 == nothing:
+					step e
+					step e
+					step e
+					step e
+					step e
+					step s
+					step w
+					step s
+					step w
+					step s
+					jump n
+				endif
+				if mem4 == nothing:
+					jump o
+				endif
+				step s
+				step w
+				step n
+				step w
+				step n
+				jump p
+			endfor
+		endif
+		if mem1 == hole:
+			tell everyone hi
+			mem1 = set c
+			jump q
+		endif
+	endfor
+	r:
+	jump s
+	mem1 = foreachdir w:
+		s:
+		if mem1 != hole:
+			step w
+			jump r
+		endif
+	endfor
+	step s
+	step s
+	step s
+	step s
+	step e
+	step s
+	jump t
+endif
+if mem1 == worker and
+ mem2 == worker and
+ mem3 == wall and
+ mem4 == worker:
+	jump u
+	mem1 = foreachdir s:
+		u:
+		if mem1 == nothing:
+			jump v
+		endif
+	endfor
+	if sw == nothing:
+		step sw
+		v:
+		step s
+		jump w
+	endif
+	if e == wall:
+		step sw
+		jump x
+	else:
+		step s
+		step s
+		jump y
+	endif
+endif
+if w == nothing:
+	step sw
+	jump z
+endif
+if e == wall:
+	jump aa
+endif
+if mem3 == nothing:
+	step w
+	step n
+	jump ab
+endif
+if w == worker and
+ sw == wall and
+ s == worker:
+	jump ac
+endif
+tell everyone hi
+tell everyone hi
+if nw == hole or
+ w == hole or
+ sw == hole and
+ n == worker:
+	if w == hole or
+	 nw == hole:
+		step n
+	endif
+	if w == hole:
+		step n
+	endif
+	jump ad
+endif
+if mem2 == wall and
+ mem3 == wall:
+	mem1 = foreachdir nw,w,sw,n,s,ne,e,se:
+		tell everyone hi
+	endfor
+	jump ae
+endif
+if se != hole:
+	mem1 = foreachdir nw,w,sw,n,s,ne,e,se:
+		tell everyone hi
+	endfor
+	if n == hole:
+		step se
+	else:
+		step ne
+	endif
+	jump af
+endif
+comment 2
+step sw
+step sw
+step sw
+step s
+step s
+mem1 = foreachdir nw,n,ne,e:
+	tell w hi
 endfor
+mem1 = set c
+tell everyone goodbye
+step sw
 step s
+comment 1
+af:
+ad:
+q:
+p:
+step e
+ac:
+ab:
+t:
+step e
+o:
+j:
+step e
+jump ag
+comment 0
+ae:
+step w
+aa:
+y:
+step w
+x:
+k:
+h:
+step w
+z:
+w:
+i:
+c:
+n:
+step w
+d:
+f:
+ag:
+ah:
 step s
-jump d
+jump ah
 
+
+DEFINE COMMENT 0
+eJzjZgCCEgYthkIGN4ZUhhaGFIYJQDyvIYVhEUMWw5KGOiBuZ1jU0MEwi2EUjIJRMOwAAPdyC8E;
+
+DEFINE COMMENT 1
+eJyTYmBgaNBnkGswYLAB4gUMBgybGEBihgwGDWYMGg32QDlPBgkGfwYphiAGhYZgBhWGMAYjILZqCGVw
+YQhh8GkIYAhrcGVIYHBkSGKwYkhqsGPIAOppYwhmmNUQybCgIRpo7igYBaNgUAIAgp4WBg;
+
+DEFINE COMMENT 2
+eJztjT8LQXEUhp+PYTApZTIZJFGKMPm7GETp0l2UwWDgTbomZbiDLFajIrkyGNkNPo7fvd/Afp96O6ee
+zntSGBLEFCdFlJEiiAiu8ri+UtPYFkkzC9TpqMKWIrfAtcmqQ4MuNj2kPnsNuJo8fE+fnUrsgn1Lmg0Z
+rSloSs2/kI3FmIlmLLXAkcOeNUdWnDTnLosvQz7BL48cHpYuHHXmYfIKet+U9aSqg4lrekNCQv7iB0bw
+Ngk;
