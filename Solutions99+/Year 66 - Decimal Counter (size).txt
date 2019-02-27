@@ -1,31 +1,26 @@
--- 7 Billion Humans (2144) --
+-- 7 Billion Humans (2214M) --
 -- 66: Decimal Counter --
 
-step s
-pickup c
-if myitem == nothing:
-	a:
+a:
+if se == button and
+ se == worker or
+ e == 9 and
+ e != datacube or
+ c != switch:
+	pickup c
+	mem1 = calc myitem + 1
+	if mem1 == 10 or
+	 myitem != datacube:
+		mem1 = calc 0 + 0
+	endif
 	step s
-	step n
-	tell w morning
-	listenfor go
-	jump a
+	if e == 9 and
+	 c == 0 or
+	 nw == 1 or
+	 s == wall:
+		write mem1
+		step n
+	endif
+	drop
 endif
-step s
-drop
-mem4 = set c
-b:
-listenfor morning
-pickup c
-if mem4 == 9:
-	tell w morning
-	mem4 = set 0
-else:
-	mem4 = calc myitem + 1
-endif
-write mem4
-drop
-if mem4 != 0:
-	tell everyone go
-endif
-jump b
+jump a

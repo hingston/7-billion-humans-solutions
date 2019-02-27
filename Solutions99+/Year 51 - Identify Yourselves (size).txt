@@ -1,10 +1,7 @@
--- 7 Billion Humans (2145) --
--- 51: Identify Yourselves --
-
 step s
 a:
 pickup c
-mem1 = calc w + 1
+mem1 = calc 1 + w
 write mem1
 drop
 jump a

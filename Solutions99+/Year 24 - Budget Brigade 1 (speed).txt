@@ -6,7 +6,8 @@ if w == hole:
 	endif
 	jump a
 endif
-if nw == nw:
+takefrom nw
+if myitem == myitem:
 	if myitem == myitem:
 		if myitem == myitem:
 			if myitem == myitem:
@@ -24,26 +25,13 @@ if nw == nw:
 		endif
 	endif
 endif
-if myitem == myitem:
-endif
 if e == worker:
 	b:
-	c:
 	takefrom w
-	if myitem == datacube:
-		if myitem == myitem:
-			if myitem == myitem:
-				if myitem == myitem:
-					if myitem == myitem:
-						if myitem == myitem:
-							if myitem == myitem:
-								if myitem == myitem:
-								endif
-							endif
-						endif
-					endif
-				endif
-			endif
+	if myitem == something:
+		c:
+		if myitem == something:
+			jump c
 		endif
 		if myitem == myitem:
 			if myitem == myitem:
@@ -59,28 +47,14 @@ if e == worker:
 				endif
 			endif
 		endif
-		if myitem == myitem:
-			if myitem == myitem:
-				if myitem == myitem:
-					if myitem == myitem:
-						if myitem == myitem:
-							if myitem == myitem:
-							endif
-						endif
-					endif
-				endif
-			endif
-		endif
-		jump c
-	endif
-	if nw == nw:
+	else:
+		takefrom nw
 	endif
 	jump b
 endif
 d:
-e:
 takefrom w
-if myitem == datacube:
+if myitem == something:
 	giveto s
 	if myitem == myitem:
 		if myitem == myitem:
@@ -96,8 +70,7 @@ if myitem == datacube:
 			endif
 		endif
 	endif
-	jump e
-endif
-if nw == nw:
+else:
+	takefrom nw
 endif
 jump d

@@ -1,24 +1,14 @@
--- 7 Billion Humans (2059) --
--- 16: Little Exterminator 2 --
-
-step se
 step s
 step s
-if ne == nothing:
-	step s
-	if nw == nothing:
-		step s
-	endif
-	pickup sw
-	step e
-	if ne == nothing:
-		step e
-	endif
-else:
-	pickup sw
-endif
-step se
+step s
+step s
+step sw
 step e
+pickup w,se
+step e
+step e
+step e
+giveto sw,s,ne
+step e
+step se
 giveto se
-
-
