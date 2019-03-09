@@ -1,0 +1,40 @@
+pickup s
+if myitem > 49:
+	a:
+	if e < myitem:
+		b:
+		step e
+		jump a
+	endif
+	c:
+	if w > myitem:
+		d:
+		step w
+		jump c
+	endif
+	if e < myitem:
+		jump b
+	endif
+	if w > myitem:
+		jump d
+	endif
+else:
+	e:
+	if w > myitem:
+		f:
+		step w
+		jump e
+	endif
+	g:
+	if e < myitem:
+		h:
+		step e
+		jump g
+	endif
+	if w > myitem:
+		jump f
+	endif
+	if e < myitem:
+		jump h
+	endif
+endif
