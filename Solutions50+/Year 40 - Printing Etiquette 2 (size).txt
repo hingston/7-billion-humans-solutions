@@ -1,0 +1,13 @@
+a:
+step nw,w,sw,n,s,ne,e,se
+drop
+if sw == printer or
+ s == printer or
+ se == printer and
+ myitem == nothing and
+ mem1 < 5:
+	takefrom sw,s,se
+	mem1 = calc mem1 + 1
+	write mem1
+endif
+jump a
