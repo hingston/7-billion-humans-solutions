@@ -43,8 +43,10 @@ def check_file_names(path: str):
 
 
 def main():
+    print("If nothing outputs before 'Finished!' there are no issues :)")
     check_file_names("Solutions99+")
     check_file_names("Solutions50+")
+    print("Finished!")
 
 
 main()
