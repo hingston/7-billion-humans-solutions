@@ -1,49 +1,31 @@
--- 7 Billion Humans (2059) --
--- 12: Unzip --
-
+pickup c
 if w == wall or
  e == wall:
-	step ne
-	pickup c
-	if e == wall:
-		step s
-	else:
-		step w
-		pickup s
-	endif
+	step nw,se
 else:
-	if nw == worker or
-	 n == worker or
-	 e != datacube:
-		pickup c
-		if n == worker:
-			step s
+	if ne == worker or
+	 sw == worker:
+		step sw,ne
+		if n == nothing:
+			step w
 		else:
-			step n
+			step e
 		endif
 	else:
-		if w != datacube or
-		 e != datacube:
-			pickup c
-			step s
+		if nw == worker or
+		 se == worker:
+			step nw,se
 		else:
-			if w != datacube or
-			 e != datacube:
-				pickup c
-				step n
+			if n == worker and
+			 n != datacube or
+			 ne == worker or
+			 s == datacube and
+			 w == nothing:
+				step nw,s
 			else:
-				if w != datacube or
-				 e != datacube:
-					pickup c
-					step s
-				else:
-					pickup c
-					step n
-				endif
+				step n,se
 			endif
 		endif
 	endif
 endif
 drop
-
-
