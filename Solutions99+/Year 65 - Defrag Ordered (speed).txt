@@ -1,148 +1,135 @@
-step ne
+-- 7 Billion Humans (2214M) --
+-- 65: Defrag Ordered --
+
 jump a
 mem1 = foreachdir w:
 	mem2 = foreachdir e:
 		a:
 		if mem1 == nothing:
 			if mem2 == nothing:
-				pickup nw
+				comment 0
 				step n
+				pickup n
 				step ne
 				step ne
+				step ne
 				step n
 				drop
-				pickup e
+				step nw
+				pickup ne
 				step n
 				drop
-				step se
-				step se
-				step se
-				pickup sw
-				step n
-				step n
+				pickup s
+				step e
+				step e
+				step e
 				drop
+				step sw
+				step sw
+				step s
+				pickup se
+				step nw
+				drop
+				step sw
 				pickup w
-				step nw
-				step w
-				drop
-				step sw
-				step sw
-				pickup sw
-				step nw
-				drop
-				pickup sw
+				step e
+				step e
+				step e
 				step ne
-				step e
-				step e
-				step e
-				step e
+				step ne
 			else:
-				pickup nw
+				comment 1
 				step n
+				pickup n
 				step n
 				step ne
+				step ne
 				step n
-				mem1 = set nw
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
 				drop
-				step n
-				pickup nw
+				step ne
+				pickup ne
 				step nw
 				step w
 				drop
-				step se
-				step se
-				step s
-				step s
-				pickup s
-				step n
-				step ne
-				drop
-				pickup s
 				step sw
+				pickup s
+				drop
 				step w
-				step w
-				step w
-				step nw
+				pickup s
 				drop
 				pickup w
+				step e
+				step e
+				step ne
+				drop
+				step s
+				step se
+				step s
+				step s
+				pickup sw
+				step n
 				step n
 			endif
 		else:
-			if mem2 == nothing:
-				step ne
+			if mem2 != nothing:
+				comment 2
 				step n
 				step n
 				step n
 				step n
-				pickup n
-				step nw
-				step w
-				step w
-				drop
-				step e
-				step se
-				pickup se
-				drop
-				step sw
-				step sw
-				pickup se
-				step nw
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
-				mem1 = set myitem
-				drop
-				pickup n
-				step ne
-				step ne
-				step e
-				drop
-				step w
-				step w
-				step w
-				step w
-				pickup sw
-				step e
-				step e
-				step e
-			else:
-				step nw
 				step n
-				step n
-				step n
-				step ne
-				pickup w
-				step e
-				step ne
-				drop
-				pickup sw
-				step w
-				step w
-				step w
-				step sw
-				step w
-				step w
-				step w
-				drop
-				step se
-				step e
 				pickup e
-				step ne
+				step n
+				drop
+				step e
+				pickup se
+				drop
+				step e
+				pickup se
+				drop
+				step se
+				step s
+				step s
+				pickup sw
+				step n
+				step n
 				drop
 				pickup sw
 				step w
+				step w
+				step w
+				step w
+				step w
+				step w
+			else:
+				comment 3
+				step n
+				step n
+				step n
+				step n
+				step n
+				step n
+				pickup w
+				step ne
+				step e
+				drop
+				step w
+				pickup s
+				step w
+				step w
+				step w
+				step sw
+				step w
+				step w
+				drop
+				pickup s
+				step e
 				drop
 				step s
+				step s
+				pickup se
+				step ne
+				drop
 				pickup se
 				step w
 				step w
@@ -151,3 +138,20 @@ mem1 = foreachdir w:
 	endfor
 endfor
 drop
+
+
+DEFINE COMMENT 0
+eJzjYGBgaIhlSGNIYkhgKGfQaqhgUGkoYqgC4nUMRQxbGEbBKBgFwxoAAIHxB/0;
+
+DEFINE COMMENT 1
+eJwTZmBgaIhj8GBIYHBpSGWwY8hisGnIZ7BhKGJwaChm8ADiCCA7oyGPoaYhm6GHIZ1hWkMiwzIgXteQ
+xrCNIR+IKxk2MFQxrGMYBaNgFAw5AACQlhTq;
+
+DEFINE COMMENT 2
+eJwTZACCFAanhjQGO4YsBpuGMiCuALIrGZyA2I+hnCGCoZghqSGToaChhKGMoYKhBijeAMRTgGoXNGQw
+rGMYBaNgFAxZAACf2BD5;
+
+DEFINE COMMENT 3
+eJzjZWBgaEhmsGiIY/BjiGRIYAhhKGsIZahqyGOoYihgqGAAgQoGj4YyhiSGYqB4PsMShlEwCkbBsAEA
+H2wMDw;
+
