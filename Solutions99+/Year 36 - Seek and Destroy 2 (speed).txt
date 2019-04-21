@@ -16,6 +16,7 @@ if mem1 == mem2:
 			mem1 = set c
 			if mem1 == datacube:
 				a:
+				comment 0
 				mem1 = nearest datacube
 				step n
 				mem2 = nearest datacube
@@ -163,23 +164,23 @@ endif
 c:
 e:
 mem4 = set n
-if mem4 == wall:
-	b:
-	mem4 = nearest shredder
-	pickup mem1
-	giveto mem4
-	pickup mem2
-	giveto mem4
-	pickup mem3
-	giveto mem4
-else:
+if mem4 == datacube or
+ mem4 == nothing:
 	step n
 	if mem4 == nothing:
 		jump e
-	else:
-		jump d
 	endif
+	jump d
 endif
+b:
+mem4 = nearest shredder
+pickup mem1
+giveto mem4
+pickup mem2
+giveto mem4
+pickup mem3
+giveto mem4
+comment 1
 f:
 step n
 mem1 = set n
@@ -267,3 +268,19 @@ pickup mem2
 giveto mem4
 pickup mem3
 giveto mem4
+
+
+DEFINE COMMENT 0
+eJztkM1KQlEUhb/nkaQmOaibRUXDBuEgpFE0ihQLMQvThcSl/xyEg4gIiYi6gQ10ICWVNuitWtpTBG74
+OPts9tpnnZ0CNMacSROjYKrEkcYpKUGJKd8DjjTDFUkiBTQ1TZsEfcXoM9DHWWSCeU2aWZJacOegHnIh
+cUaZUAXP2yarLOvKsGZSzpe1Y03eFKzZI1DJr5WdV1yrsOIz7XqRXXvJE5LzzAx35k05PlQ0+3R1QNv9
+kXm04xtVqesYDXxwyb3OrTnlVidc21ddh9SGHnv20GVTLf/vlQee//7EJ0tEQ1b1woaabNHxXvrU9EPD
+RPr2Hnp09E6XFl88mVGM4p/FL5ehZTs;
+
+DEFINE COMMENT 1
+eJztkEFLQkEUhb+fUQQtalFtrEVGiBqItRIXbcq3iDB9FLlwUdLC6hDRIlpIRET4XiKh9Cho2c/r+PoV
+gWf4mMuZe+/cmV2sGXKmz19cZI5NFllnyaxQ1jL7jg+1QIN5WpqlPUlVgbxXhSxXrJGwyk/ao8AOW1RV
+5kzb3JqXND/LvTa4c01XJTo+76T+HhXTUo2eiVMvINCB/brvb1ImpErT9x/Rtt8lcI+68xv07D8p5FnH
+9HXCkFNGJklnuaFkeml8TlGX5HXt9z6YiSLPHzkn9lTvfsWIDB9k9ElOX4TeL5R45jGPGjBQ5P6x/+qN
+Vw3N2PG3K6ea6p/qF/TSS/k;
+
