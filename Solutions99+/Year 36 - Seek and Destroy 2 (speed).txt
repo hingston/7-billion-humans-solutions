@@ -38,69 +38,66 @@ if mem1 == mem2:
 				endif
 				step n
 				mem4 = nearest datacube
-				if mem4 < mem1:
+				if mem4 < mem2:
 					mem3 = set mem2
-					mem2 = set mem1
-					mem1 = nearest datacube
-				else:
-					if mem4 < mem2:
-						mem3 = set mem2
-						mem2 = nearest datacube
+					if mem4 < mem1:
+						mem2 = set mem1
+						mem1 = nearest datacube
 					else:
-						if mem4 < mem3:
-							mem3 = nearest datacube
-						endif
+						mem2 = nearest datacube
+					endif
+				else:
+					if mem4 < mem3:
+						mem3 = nearest datacube
 					endif
 				endif
 				step n
 				mem4 = nearest datacube
-				if mem4 < mem1:
+				if mem4 < mem2:
 					mem3 = set mem2
-					mem2 = set mem1
-					mem1 = nearest datacube
-				else:
-					if mem4 < mem2:
-						mem3 = set mem2
-						mem2 = nearest datacube
+					if mem4 < mem1:
+						mem2 = set mem1
+						mem1 = nearest datacube
 					else:
-						if mem4 < mem3:
-							mem3 = nearest datacube
-						endif
+						mem2 = nearest datacube
+					endif
+				else:
+					if mem4 < mem3:
+						mem3 = nearest datacube
 					endif
 				endif
 				step n
 				mem4 = nearest datacube
-				if mem4 < mem1:
+				if mem4 < mem2:
 					mem3 = set mem2
-					mem2 = set mem1
-					mem1 = nearest datacube
-				else:
-					if mem4 < mem2:
-						mem3 = set mem2
-						mem2 = nearest datacube
+					if mem4 < mem1:
+						mem2 = set mem1
+						mem1 = nearest datacube
 					else:
-						if mem4 < mem3:
-							mem3 = nearest datacube
-						endif
+						mem2 = nearest datacube
+					endif
+				else:
+					if mem4 < mem3:
+						mem3 = nearest datacube
 					endif
 				endif
-				step n
-				mem4 = nearest datacube
-				if mem4 < mem1:
+				mem4 = set n
+				if mem4 < mem2:
 					mem3 = set mem2
-					mem2 = set mem1
-					mem1 = nearest datacube
-				else:
-					if mem4 < mem2:
-						mem3 = set mem2
-						mem2 = nearest datacube
+					if mem4 < mem1:
+						pickup n
+						mem2 = set mem1
+						mem1 = set myitem
+						jump b
 					else:
-						if mem4 < mem3:
-							mem3 = nearest datacube
-						endif
+						mem2 = set mem4
+					endif
+				else:
+					if mem4 < mem3:
+						mem3 = set mem4
 					endif
 				endif
-				jump b
+				jump c
 			else:
 				step n
 				mem1 = nearest wall
@@ -109,17 +106,18 @@ if mem1 == mem2:
 				endif
 			endif
 		endif
+	else:
+		mem4 = set nothing
 	endif
 else:
 	if mem2 == mem3:
 		mem1 = nearest datacube
 		step n
-		jump c
+		jump d
 	else:
 		step n
 		mem1 = set c
-		if mem1 == datacube:
-		else:
+		if mem1 != datacube:
 			step n
 		endif
 	endif
@@ -133,7 +131,8 @@ if mem2 < mem1:
 endif
 step n
 mem3 = nearest datacube
-if mem3 < mem2:
+if mem3 < mem2 or
+ mem2 != datacube:
 	mem3 = set mem2
 	mem2 = nearest datacube
 	if mem2 < mem1:
@@ -141,133 +140,150 @@ if mem3 < mem2:
 		mem1 = nearest datacube
 	endif
 endif
-step n
-mem4 = nearest datacube
 d:
-if mem4 < mem1 or
- mem1 != datacube:
-	mem3 = set mem2
-	mem2 = set mem1
-	mem1 = nearest datacube
-else:
-	if mem4 < mem2 or
-	 mem2 != datacube:
+step n
+if mem4 == nothing:
+	comment 2
+	mem4 = nearest datacube
+	if mem4 < mem2:
 		mem3 = set mem2
-		mem2 = nearest datacube
+		if mem4 < mem1:
+			mem2 = set mem1
+			mem1 = nearest datacube
+		else:
+			mem2 = nearest datacube
+		endif
 	else:
-		if mem4 < mem3 or
-		 mem3 != datacube:
+		if mem4 < mem3:
 			mem3 = nearest datacube
 		endif
 	endif
+	step n
+	mem4 = nearest datacube
+	if mem4 < mem2:
+		mem3 = set mem2
+		if mem4 < mem1:
+			mem2 = set mem1
+			mem1 = nearest datacube
+		else:
+			mem2 = nearest datacube
+		endif
+	else:
+		if mem4 < mem3:
+			mem3 = nearest datacube
+		endif
+	endif
+	step n
+	step n
+	step n
+	step n
 endif
-c:
+mem4 = nearest datacube
 e:
+if mem4 < mem2 or
+ mem2 != datacube:
+	mem3 = set mem2
+	if mem4 < mem1 or
+	 mem1 != datacube:
+		mem2 = set mem1
+		mem1 = nearest datacube
+	else:
+		mem2 = nearest datacube
+	endif
+else:
+	if mem4 < mem3 or
+	 mem3 != datacube:
+		mem3 = nearest datacube
+	endif
+endif
+f:
 mem4 = set n
 if mem4 == datacube or
  mem4 == nothing:
 	step n
 	if mem4 == nothing:
-		jump e
+		jump f
 	endif
-	jump d
+	jump e
 endif
+c:
+g:
+pickup mem1
 b:
 mem4 = nearest shredder
-pickup mem1
 giveto mem4
 pickup mem2
 giveto mem4
 pickup mem3
 giveto mem4
 comment 1
-f:
+h:
 step n
 mem1 = set n
 if mem1 == nothing:
-	jump f
-endif
-g:
-step n
-mem2 = set n
-if mem2 == nothing:
-	jump g
-endif
-if mem2 == wall:
-	pickup mem1
 	jump h
-endif
-if mem2 < mem1:
-	mem4 = set mem2
-	mem2 = set mem1
-	mem1 = set mem4
 endif
 i:
 step n
-mem3 = set n
-if mem3 == nothing:
+mem2 = set n
+if mem2 == nothing:
 	jump i
 endif
-if mem3 == wall:
+if mem2 == wall:
 	pickup mem1
-	mem1 = set mem2
-	jump j
-endif
-if mem3 < mem1:
-	mem4 = set mem3
-	mem3 = set mem2
-	mem2 = set mem1
-	mem1 = set mem4
 else:
-	if mem3 < mem2:
-		mem4 = set mem3
-		mem3 = set mem2
-		mem2 = set mem4
+	if mem2 < mem1:
+		mem4 = set mem2
+		mem2 = set mem1
+		mem1 = set mem4
 	endif
-endif
-k:
-step n
-mem4 = set n
-if mem4 == nothing:
-	jump k
-endif
-if mem4 < mem1:
-	pickup n
-else:
-	pickup mem1
-	mem1 = nearest shredder
-	giveto mem1
-	if mem4 < mem2:
-		pickup mem4
-		giveto mem1
-		pickup mem2
-		giveto mem1
-		pickup mem3
+	j:
+	step n
+	mem3 = set n
+	if mem3 == nothing:
+		jump j
+	endif
+	if mem3 == wall:
+		pickup mem1
+		mem1 = set mem2
 	else:
-		pickup mem2
-		giveto mem1
-		if mem4 < mem3:
-			pickup mem4
-			giveto mem1
-			pickup mem3
+		if mem3 < mem2:
+			mem4 = set mem3
+			mem3 = set mem2
+			if mem4 < mem1:
+				mem2 = set mem1
+				mem1 = set mem4
+			else:
+				mem2 = set mem4
+			endif
+		endif
+		k:
+		step n
+		mem4 = set n
+		if mem4 == nothing:
+			jump k
+		endif
+		if mem4 < mem1:
+			pickup n
 		else:
-			pickup mem3
-			giveto mem1
-			pickup mem4
+			pickup mem1
+			if mem4 < mem2:
+				mem1 = set mem4
+			else:
+				mem1 = set mem2
+				if mem4 < mem3:
+					mem2 = set mem4
+				else:
+					mem2 = set mem3
+					mem3 = set mem4
+				endif
+			endif
 		endif
 	endif
-	giveto mem1
 endif
-j:
-h:
 mem4 = nearest shredder
 giveto mem4
-pickup mem1
-giveto mem4
-pickup mem2
-giveto mem4
-pickup mem3
-giveto mem4
+jump g
 
 
 DEFINE COMMENT 0
@@ -284,3 +300,6 @@ gWf4mMuZe+/cmV2sGXKmz19cZI5NFllnyaxQ1jL7jg+1QIN5WpqlPUlVgbxXhSxXrJGwyk/ao8AOW1RV
 9HXCkFNGJklnuaFkeml8TlGX5HXt9z6YiSLPHzkn9lTvfsWIDB9k9ElOX4TeL5R45jGPGjBQ5P6x/+qN
 Vw3N2PG3K6ea6p/qF/TSS/k;
 
+DEFINE COMMENT 2
+eJwTZmBgaEhgMGooZzBiqGIwaahlsGKoY/BiqGUIaihhSGrIY8hoqGMoaWhmqGloY2hjaGeYAiTnAPmL
+GsoY1jEUMGxqyGHYxpDHsINhFIyCUTDkAABELhZk;
