@@ -1,0 +1,9 @@
+a:
+step n
+pickup c,s
+mem1 = foreachdir nw,sw,n,ne,se:
+	mem1 = calc myitem + mem1
+	write mem1
+endfor
+drop
+jump a
