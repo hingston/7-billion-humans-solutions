@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 import glob
 import os
 import re
@@ -22,7 +21,7 @@ def check_year(min_year, max_year):
         regex_result = re.search('Year (.*) - ', f['file'])
         try:
             year = int(regex_result.group(1))
-            return (year < min_year or year > max_year)
+            return year < min_year or year > max_year
         except (ValueError, AttributeError):
             return False
 
@@ -32,8 +31,8 @@ def check_year(min_year, max_year):
 def check_solution_type(guilty_solutions):
     def check(f):
         try:
-            type = re.search('\((.*)\)', f['file']).group(1)
-            return (type not in guilty_solutions)
+            solution_type = re.search('\((.*)\)', f['file']).group(1)
+            return solution_type not in guilty_solutions
         except AttributeError:
             return False
 
@@ -53,7 +52,7 @@ def check_files(files, solution_types, min_year, max_year):
 
 
 def print_results(results):
-    results_with_issues = dict(filter(lambda r: len(r[1]) > 0, results.items()))
+    results_with_issues = dict(filter(lambda result: len(result[1]) > 0, results.items()))
     if len(results_with_issues) == 0:
         print('Finished! There are no issues :)')
     else:
