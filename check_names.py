@@ -1,52 +1,64 @@
+#!/usr/bin/env python3
+
 import glob
 import re
+import os
 
+def get_files(directories, recursive=True):
+	files = []
+	for d in directories:
+		files_fullname = glob.glob(d + os.sep + '**', recursive=recursive)
+		for f in files_fullname:
+			files.append(dict(
+				dir = os.path.dirname(f), 
+				file = '' if os.path.isdir(f) else os.path.basename(f)
+			))
+	return files
+	
+def check_year(min_year, max_year):
+	def check(f):	
+		regex_result = re.search('Year (.*) - ', f['file'])
+		try:
+			year = int(regex_result.group(1))
+			return (year < min_year or year > max_year)
+		except (ValueError, AttributeError):
+			return False
+	return check
+		
+def check_solution_type(guilty_solutions):
+	def check(f):
+		try:
+			type = re.search('\((.*)\)', f['file']).group(1)
+			return (type not in guilty_solutions)
+		except AttributeError:
+			return False
+	return check
+	
+def check_files(files, solution_types, min_year, max_year):
+	only_files = list(filter(lambda f: f['file'] != '', files))	
+	txt_files = list(filter(lambda f: f['file'].endswith('.txt'), only_files))
+	return {
+		'Wrong extension (.txt):' : list(filter(lambda f: not f['file'].endswith('.txt'), only_files)),
+		'File must start with "Year ":' : list(filter(lambda f: not f['file'].startswith('Year '), txt_files)),
+		'Year must be between 2 and 68:' : list(filter(check_year(min_year, max_year), txt_files)),
+		'File name must specify speed, size or both between brackets:' : 
+			list(filter(check_solution_type(solution_types), txt_files))
+	}
 
-def check_file_names(path: str):
-    file_names = [f for f in glob.glob(path + "\\*")]
-    allowed = ['speed', 'size', 'both']
-    for name in file_names:
-
-        # Check year
-        if not name.startswith(path + "\\Year "):
-            print(name, "| file name must start with 'Year '")
-        else:
-            result = re.search('Year (.*) - ', name)
-            try:
-                year = int(result.group(1))
-                if not (2 <= year <= 68):
-                    print("Year must be between 02 and 68. Example: Year 02 - Welcome, New Employees (both).txt")
-            except ValueError:
-                if result is None:
-                    print("Year must be between 02 and 68. Example: Year 02 - Welcome, New Employees (both).txt")
-                else:
-                    print("Year must be between 02 and 68. Got:", result.group(1))
-
-        # Check file type
-        if not name.endswith('.txt'):
-            print(name, "| file name must end with .txt")
-
-        # Check solution type
-        result = re.search('\((.*)\)', name)
-        if result is None:
-            print(name, "| file name must specify speed, size or both between brackets")
-        else:
-            result = result.group(1)
-            if not (result in allowed):
-                for item in allowed:
-                    if item in result.lower():
-                        new_name = name.replace(name[name.find("(") + 1:name.find(")")], item)
-                        print(name, "->", new_name)
-                        name = ""
-                if name != "":
-                    print(name, "| file name must specify speed, size or both")
-
-
+def print_results(results):
+	results_with_issues = dict(filter(lambda r: len(r[1]) > 0, results.items()))
+	if len(results_with_issues) == 0:
+		print('Finished! There are no issues :)')
+	else:
+		for r in results_with_issues:
+			print(r)
+			for v in results_with_issues[r]:
+				print('- "{}{}{}"'.format(v['dir'], os.sep, v['file']))
+	
 def main():
-    print("If nothing outputs before 'Finished!' there are no issues :)")
-    check_file_names("Solutions99+")
-    check_file_names("Solutions50+")
-    print("Finished!")
-
-
-main()
+	print_results(
+		check_files(get_files(['Solutions99+', 'Solutions50+']), ['speed', 'size', 'both'], 2, 68)
+	)
+	
+if __name__ == "__main__":
+	main()
