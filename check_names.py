@@ -31,7 +31,7 @@ def check_year(min_year, max_year):
 def check_solution_type(guilty_solutions):
     def check(f):
         try:
-            solution_type = re.search('\((.*)\)', f['file']).group(1)
+            solution_type = re.search(r'\((.*?)\)', f['file']).group(1)
             return solution_type not in guilty_solutions
         except AttributeError:
             return False
