@@ -1,107 +1,114 @@
 -- 7 Billion Humans (2214M) --
 -- 54: Terrain Leveler --
 
-step s
-step s
+mem4 = set ne,se
 step n
-step n
-step n
-step n
-step n
-mem1 = calc c + s
-step n
-step n
-mem2 = calc c + s
-step n
-step n
-mem3 = calc c + s
-pickup n
-step n
-mem4 = calc myitem + mem1
-mem4 = calc mem4 + mem2
-if w == nothing or
- e == nothing:
+if mem4 == wall:
 	step n
-	mem4 = calc mem4 + mem3
-	if se == worker:
-		step e
-		write mem4
-		mem4 = calc se + myitem
-		mem3 = calc sw + se
-		step e
-		step se
-		mem4 = calc mem3 + mem4
-		mem1 = calc mem4 + e
+	step n
+	step n
+	mem1 = calc n + c
+	step n
+	mem1 = calc mem1 + n
+	step n
+	mem1 = calc mem1 + n
+	step n
+	mem1 = calc mem1 + n
+	step n
+	mem1 = calc mem1 + n
+	step n
+	pickup n
+	mem1 = calc mem1 + myitem
+	step e
+	step e
+	mem1 = calc mem1 + n
+	mem1 = calc mem1 + nw
+	step n
+	write mem1
+	mem1 = set e
+else:
+	if mem4 == nothing:
+		mem2 = set sw
+		step ne
+		mem1 = calc w + nw
+		step n
+		mem1 = calc mem1 + nw
+		step n
+		mem1 = calc mem1 + nw
+		step n
+		mem1 = calc mem1 + nw
+		step n
+		mem1 = calc mem1 + nw
+		step nw
+		pickup n
+		step nw
+		step nw
+		mem1 = calc mem1 + myitem
+		mem1 = calc mem1 + s
+		step sw
+		mem1 = calc mem1 + mem2
+		mem1 = calc mem1 + e
+		mem1 = calc mem1 + w
 		mem1 = calc mem1 / 49
 		jump a
 	else:
-		step w
-		write mem4
-		mem1 = calc sw + se
-		step sw
-		mem4 = calc mem4 + mem1
-		write mem4
-		mem1 = set w
-	endif
-else:
-	mem4 = calc mem4 + mem3
-	if w == nothing or
-	 e == nothing:
-		if e == worker:
-			step w
-			write mem4
-			mem1 = set ne
+		mem3 = set n
+		step n
+		step n
+		if mem3 == datacube:
+			mem1 = calc mem3 + c
 		else:
-			step e
-			write mem4
-			mem1 = set nw
-			mem2 = calc [blank] + [blank]
-			mem2 = calc [blank] + [blank]
-			mem2 = calc [blank] + [blank]
-			mem2 = calc [blank] + [blank]
-			mem2 = set myitem
-			mem2 = set myitem
-			mem2 = set myitem
-			mem2 = set myitem
-			mem2 = set myitem
-			mem2 = set myitem
-			mem2 = set myitem
-			mem2 = set myitem
-			mem2 = set myitem
-			tell everyone hi
-			mem2 = set myitem
-			jump b
+			mem1 = calc c + n
+			step n
 		endif
-	else:
-		write mem4
-		if w == nothing or
-		 e == nothing:
-			if w == nothing:
-				step w
-				mem1 = set n
-			else:
-				step e
-				mem1 = set n
-				listenfor hi
-				mem2 = set myitem
-				jump c
-			endif
+		mem1 = calc mem1 + n
+		step n
+		mem1 = calc mem1 + n
+		step n
+		mem1 = calc mem1 + n
+		step n
+		mem1 = calc mem1 + n
+		step n
+		pickup n
+		step n
+		mem1 = calc mem1 + myitem
+		write mem1
+		mem2 = set nw,n,ne
+		if mem2 == worker:
+			step e
+			mem1 = set mem2
 		else:
-			step w
-			mem1 = set nw
+			if mem3 == datacube:
+				step se
+				mem1 = calc [blank] + [blank]
+				mem1 = set n
+				step w
+				step w
+				step nw
+				mem2 = calc [blank] + [blank]
+				mem2 = calc [blank] + [blank]
+			else:
+				mem1 = calc [blank] + [blank]
+				step ne
+				mem1 = set se
+				step sw
+				mem2 = calc [blank] + [blank]
+				mem2 = calc [blank] + [blank]
+				mem2 = set c
+				mem2 = set c
+				tell everyone hi
+				jump b
+			endif
 		endif
 	endif
 endif
 listenfor hi
-c:
 b:
-mem2 = calc [blank] + [blank]
 a:
 write mem1
-mem1 = set myitem
-d:
+c:
 drop
 pickup s
 write mem1
 step s
-jump d
+jump c
