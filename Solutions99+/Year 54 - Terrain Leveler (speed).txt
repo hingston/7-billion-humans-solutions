@@ -85,8 +85,6 @@ else:
 				step w
 				step w
 				step nw
-				mem2 = calc [blank] + [blank]
-				mem2 = calc [blank] + [blank]
 			else:
 				mem1 = calc [blank] + [blank]
 				step ne
@@ -112,3 +110,4 @@ pickup s
 write mem1
 step s
 jump c
+
