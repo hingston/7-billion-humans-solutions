@@ -1,0 +1,148 @@
+-- 7 Billion Humans (2214M) --
+-- 34: Seek and Destroy 1 --
+
+mem4 = nearest shredder
+mem1 = nearest wall
+step n
+mem2 = nearest wall
+step n
+mem3 = nearest wall
+if mem1 == mem2:
+	if mem2 == mem3:
+		comment 3
+		mem2 = nearest datacube
+		step n
+		step n
+		mem1 = nearest datacube
+		if mem1 < mem2:
+			mem2 = nearest datacube
+		endif
+		step n
+		step n
+		mem1 = nearest datacube
+		if mem1 < mem2:
+			mem2 = nearest datacube
+		endif
+		step n
+		mem1 = nearest datacube
+		if mem1 < mem2:
+			mem2 = nearest datacube
+		endif
+		step n
+		mem1 = nearest datacube
+		if mem1 < mem2:
+			mem2 = nearest datacube
+		endif
+		step n
+		mem1 = nearest datacube
+		if mem1 <= mem2:
+			pickup n
+		else:
+			pickup mem2
+		endif
+	else:
+		comment 2
+		mem2 = nearest datacube
+		step n
+		step n
+		mem1 = nearest datacube
+		if mem1 < mem2:
+			mem2 = nearest datacube
+		endif
+		step n
+		mem1 = nearest datacube
+		if mem1 < mem2:
+			mem2 = nearest datacube
+		endif
+		step n
+		mem1 = nearest datacube
+		if mem1 < mem2:
+			mem2 = nearest datacube
+		endif
+		step n
+		mem1 = nearest datacube
+		if mem1 < mem2:
+			mem2 = nearest datacube
+		endif
+		step n
+		if n < mem2:
+			pickup n
+		else:
+			pickup mem2
+		endif
+	endif
+else:
+	if mem2 == mem3:
+		comment 0
+		mem2 = nearest datacube
+		step n
+		step n
+		mem1 = nearest datacube
+		if mem1 < mem2:
+			mem2 = nearest datacube
+		endif
+		step n
+		mem1 = nearest datacube
+		if mem1 < mem2:
+			mem2 = nearest datacube
+		endif
+		step n
+		step n
+		mem1 = nearest datacube
+		if mem1 < mem2:
+			mem2 = nearest datacube
+		endif
+		step n
+		step n
+		mem1 = nearest datacube
+		if mem1 < mem2:
+			pickup n
+		else:
+			pickup mem2
+		endif
+	else:
+		comment 1
+		mem2 = nearest datacube
+		step n
+		step n
+		mem1 = nearest datacube
+		if mem1 < mem2:
+			mem2 = nearest datacube
+		endif
+		step n
+		step n
+		mem1 = nearest datacube
+		if mem1 < mem2:
+			mem2 = nearest datacube
+		endif
+		step n
+		mem1 = nearest datacube
+		if mem1 < mem2:
+			mem2 = nearest datacube
+		endif
+		step n
+		mem1 = nearest datacube
+		if mem1 <= mem2:
+			pickup n
+		else:
+			pickup mem2
+		endif
+	endif
+endif
+giveto mem4
+
+
+DEFINE COMMENT 0
+eJzjZwCCbAa5hnQGrYZ4hhCGODDMAbKLGJIYyhgKGcoaSoFsEKhmsGCoYghrKGdoAeItDKNgFIyCIQ8A
+hVkNgw;
+
+DEFINE COMMENT 1
+eJzjYgCCJIaUhjSGiIZsBj+GAgYPhnIGk4ZyBgsgDmgoZegB4kMMo2AUjIJhCQCfHgpZ;
+
+DEFINE COMMENT 2
+eJwTYmBgaIhlCGCIY/BpSGGwY8hlMGEoZDBiqADiSgaThkoGj4YyhoiGXIa8hnSGpoYEhiVAvKMhiWEX
+QwrDPoY0hgMMpUA8CkbBKBiSAAD9ZxMv;
+
+DEFINE COMMENT 3
+eJwTYQACVwajBjcGE4ZYIM5gMGMoY7BjqGBwaihn8GgoYfBryGcIYUhnSGLIZchhyGcoashjaGrIYehp
+yGCYBdSzjiGYYQfQjAMMLgyHGEbBKBgFQwoAAMr4EvU;
