@@ -1,78 +1,163 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2214M) --
 -- 60: Understaffed Sorting --
 
-step sw
-step w
-if w == wall:
-	mem4 = set 1
-	step e
-	step e
-	step w
-	jump a
-endif
-step w
-if w == wall:
-	mem4 = set 1
-else:
-	step e
-	step e
-endif
-a:
-if e == worker:
-	mem3 = set 0
-else:
-	mem3 = set 1
-endif
+jump a
+mem1 = foreachdir e:
+	a:
+	if mem1 == worker:
+		step w
+	else:
+		step e
+	endif
+	jump b
+endfor
+c:
+d:
+e:
+step nw
+step nw
+f:
+jump g
+mem1 = foreachdir w:
+	g:
+	if mem1 != wall:
+		step w
+		step w
+		jump f
+	endif
+endfor
+step s
+step e
+step se
 b:
-if mem3 == 0:
-	if c > e:
+h:
+i:
+j:
+k:
+l:
+m:
+n:
+jump o
+mem1 = foreachdir e:
+	mem4 = foreachdir se:
+		mem3 = foreachdir s:
+			mem2 = foreachdir sw:
+				o:
+				if mem1 == worker or
+				 mem1 == datacube:
+					jump n
+				endif
+				jump p
+			endfor
+		endfor
+	endfor
+endfor
+p:
+if mem2 != datacube and
+ mem2 != wall or
+ mem3 != datacube:
+	jump c
+endif
+if mem4 == wall:
+	if mem2 > mem3:
+		pickup sw
+		drop
+		step sw
 		pickup e
 		drop
-	endif
-else:
-	if c < w:
-		pickup w
+		step e
+		pickup n
 		drop
+		step nw
 	endif
+	jump d
 endif
-if mem1 == 0:
+if mem4 != datacube and
+ mem4 != wall:
+	jump e
+endif
+if mem2 <= mem3 and
+ mem3 <= mem4:
 	step e
-else:
+	step e
+	jump m
+endif
+if mem2 <= mem4 and
+ mem4 < mem3:
+	pickup s
+	drop
+	step s
+	pickup e
+	drop
+	pickup n
+	step e
+	drop
+	step ne
+	jump l
+endif
+if mem3 < mem2 and
+ mem2 <= mem4:
+	pickup sw
+	drop
+	step sw
+	pickup e
+	drop
+	step e
+	pickup n
+	drop
+	step ne
+	step e
+	jump k
+endif
+if mem4 < mem3 and
+ mem3 <= mem2:
+	jump q
+endif
+if mem4 <= mem3 and
+ mem3 < mem2:
+	q:
+	pickup sw
+	drop
+	pickup se
+	step sw
+	drop
+	step e
+	step e
+	pickup nw
+	drop
+	step ne
+	jump j
+endif
+if mem3 < mem4 and
+ mem4 < mem2:
+	pickup sw
+	drop
+	step sw
+	pickup e
+	drop
+	step e
+	pickup e
+	drop
+	step e
+	pickup nw
+	drop
+	step ne
+	jump i
+endif
+if mem4 < mem2 and
+ mem2 < mem3:
+	pickup s
+	drop
+	step s
+	pickup w
+	drop
+	pickup e
 	step w
+	drop
+	step e
+	step e
+	pickup nw
+	drop
+	step ne
+	jump h
 endif
-if mem2 < 4:
-	if mem2 < 2:
-		if mem2 == 0:
-			mem2 = set 1
-		else:
-			mem2 = set 2
-		endif
-	else:
-		if mem2 == 2:
-			mem2 = set 3
-		else:
-			mem2 = set 4
-		endif
-	endif
-else:
-	if mem2 == 4:
-		if mem4 == 0:
-			mem2 = set 0
-			if mem1 == 0:
-				mem1 = set 1
-			else:
-				mem1 = set 0
-			endif
-		else:
-			mem2 = set 5
-		endif
-	else:
-		mem2 = set 0
-		if mem1 == 0:
-			mem1 = set 1
-		else:
-			mem1 = set 0
-		endif
-	endif
-endif
-jump b
