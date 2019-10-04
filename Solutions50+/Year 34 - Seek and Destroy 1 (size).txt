@@ -1,0 +1,13 @@
+a:
+step n,s
+if c < mem1 or
+ mem1 != datacube and
+ mem1 == something:
+	mem1 = nearest datacube
+endif
+if n == wall or
+ myitem == something:
+	pickup mem1
+	giveto s
+endif
+jump a
