@@ -1,12 +1,12 @@
 if w == hole:
 	takefrom s
 	a:
-	if myitem == nothing:
-		takefrom s
+	if myitem == something:
+		jump a
 	endif
-	jump a
+	b:
+	takefrom s
 endif
-takefrom nw
 if myitem == myitem:
 	if myitem == myitem:
 		if myitem == myitem:
@@ -14,10 +14,6 @@ if myitem == myitem:
 				if myitem == myitem:
 					if myitem == myitem:
 						if myitem == myitem:
-							if myitem == myitem:
-								if myitem == myitem:
-								endif
-							endif
 						endif
 					endif
 				endif
@@ -25,13 +21,20 @@ if myitem == myitem:
 		endif
 	endif
 endif
+if myitem == something:
+	if myitem == myitem:
+	endif
+	jump b
+endif
 if e == worker:
-	b:
-	takefrom w
+	c:
 	if myitem == something:
-		c:
+		d:
+		e:
+		if myitem == myitem:
+		endif
 		if myitem == something:
-			jump c
+			jump e
 		endif
 		if myitem == myitem:
 			if myitem == myitem:
@@ -39,22 +42,22 @@ if e == worker:
 					if myitem == myitem:
 						if myitem == myitem:
 							if myitem == myitem:
-								if myitem == myitem:
-								endif
 							endif
 						endif
 					endif
 				endif
 			endif
 		endif
-	else:
-		takefrom nw
+		takefrom w
+		jump d
 	endif
-	jump b
+	takefrom nw
+	takefrom w
+	jump c
 endif
-d:
-takefrom w
+f:
 if myitem == something:
+	g:
 	giveto s
 	if myitem == myitem:
 		if myitem == myitem:
@@ -70,7 +73,9 @@ if myitem == something:
 			endif
 		endif
 	endif
-else:
-	takefrom nw
+	takefrom w
+	jump g
 endif
-jump d
+takefrom nw
+takefrom w
+jump f
