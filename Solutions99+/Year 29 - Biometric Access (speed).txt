@@ -1,163 +1,199 @@
--- 7 Billion Humans (2199) --
+-- 7 Billion Humans (2214M) --
 -- 29: Biometric Access --
 
-mem3 = nearest shredder
 mem1 = nearest worker
+mem3 = nearest shredder
+mem4 = nearest wall
 step n
 step n
 step n
 step n
 mem2 = nearest worker
 if mem1 != mem2:
-	jump a
-endif
-mem1 = nearest datacube
-b:
-pickup mem1
-mem1 = nearest datacube
-if myitem == datacube:
-	giveto mem3
-	jump b
-endif
-step mem3
-end
-comment 0
-a:
-mem1 = nearest datacube
-step mem1
-mem4 = nearest worker
-if mem2 == mem4:
-	pickup c
+	comment 0
 	mem1 = nearest datacube
-	giveto mem3
 	step mem1
-	pickup n
-	giveto mem3
-	step mem1
-	pickup nw
-	giveto mem3
-	step n
-	step n
-	step n
-	step n
-	step nw
-	step nw
-	pickup nw
-	giveto mem3
-	step n
-	step n
-	step n
-	step n
-	step nw
-	step nw
-	step nw
-	pickup nw
-	giveto mem3
-	step n
-	step n
-	step n
-	step n
-	step nw
-	step nw
-	step nw
-	step nw
-	pickup n
-	giveto mem3
-	step n
-	step n
-	step n
-	step n
-	step n
-	step nw
-	step nw
-	step nw
-	step nw
-	pickup nw
-	giveto mem3
-	step n
-	step n
-	step n
-	step n
-	step nw
-	step nw
-	step nw
-	step n
-	step n
-	pickup nw
-	step se
-	step se
-	step se
-	step s
-	step s
-	step s
-	step s
-	step s
-	giveto mem3
+	mem4 = nearest worker
+	if mem2 == mem4:
+		pickup c
+		mem1 = nearest datacube
+		giveto mem3
+		step mem1
+		pickup n
+		giveto mem3
+		step mem1
+		pickup nw
+		giveto mem3
+		step n
+		step n
+		step n
+		step n
+		step nw
+		step nw
+		pickup nw
+		giveto mem3
+		step n
+		step n
+		step n
+		step n
+		step nw
+		step nw
+		step nw
+		pickup nw
+		giveto mem3
+		step n
+		step n
+		step n
+		step n
+		step nw
+		step nw
+		step nw
+		step nw
+		pickup n
+		giveto mem3
+		step n
+		step n
+		step n
+		step n
+		step n
+		step nw
+		step nw
+		step nw
+		step nw
+		pickup nw
+		giveto mem3
+		step n
+		step n
+		step n
+		step n
+		step nw
+		step nw
+		step nw
+		step n
+		step n
+		pickup nw
+		step se
+		step se
+		step se
+		step s
+		step s
+		step s
+		step s
+		step s
+		giveto mem3
+	else:
+		mem1 = nearest datacube
+		pickup c
+		giveto mem3
+		step n
+		step n
+		step nw
+		step n
+		step ne
+		step n
+		pickup ne
+		step sw
+		step s
+		step s
+		giveto mem3
+		step nw
+		step n
+		step n
+		step n
+		step n
+		pickup ne
+		giveto mem3
+		step nw
+		step n
+		step n
+		step n
+		step n
+		step n
+		step n
+		pickup nw
+		step s
+		step s
+		giveto mem3
+		step nw
+		step n
+		step n
+		step n
+		step n
+		step nw
+		step nw
+		step nw
+		pickup nw
+		giveto mem3
+		step nw
+		step n
+		step n
+		step n
+		step n
+		step nw
+		step nw
+		step nw
+		step nw
+		pickup n
+		giveto mem3
+		step nw
+		step n
+		step n
+		step n
+		step n
+		step n
+		step n
+		step n
+		step ne
+		pickup ne
+		giveto mem3
+		giveto mem3
+	endif
 else:
+	mem1 = nearest wall
+	if mem1 == mem4:
+		mem4 = nearest shredder
+	endif
 	mem1 = nearest datacube
-	pickup c
+	pickup mem1
+	mem1 = nearest datacube
 	giveto mem3
-	step n
-	step n
-	step nw
-	step n
-	step ne
-	step n
-	pickup ne
-	step sw
-	step s
-	step s
+	pickup mem1
+	mem1 = nearest datacube
 	giveto mem3
-	step nw
-	step n
-	step n
-	step n
-	step n
-	pickup ne
-	giveto mem3
-	step nw
-	step n
-	step n
-	step n
-	step n
-	step n
-	step n
-	pickup nw
-	step s
-	step s
-	giveto mem3
-	step nw
-	step n
-	step n
-	step n
-	step n
-	step nw
-	step nw
-	step nw
-	pickup nw
-	giveto mem3
-	step nw
-	step n
-	step n
-	step n
-	step n
-	step nw
-	step nw
-	step nw
-	step nw
-	pickup n
-	giveto mem3
-	step nw
-	step n
-	step n
-	step n
-	step n
-	step n
-	step n
-	step n
-	step ne
-	pickup ne
-	giveto mem3
+	pickup mem1
+	mem1 = nearest datacube
+	if mem4 == wall:
+		if mem2 >= 0:
+			jump a
+		endif
+		giveto mem3
+		pickup mem1
+		mem1 = nearest datacube
+		giveto mem3
+		step nw
+		step nw
+		step w
+		step w
+		step nw
+		step n
+		step n
+		mem1 = nearest worker
+		step n
+		step n
+		step ne
+		pickup ne
+		step sw
+		giveto mem1
+	else:
+		a:
+		b:
+		giveto mem3
+		pickup mem1
+		mem1 = nearest datacube
+		if myitem == datacube:
+			jump b
+		endif
+	endif
 endif
 
 
@@ -167,3 +203,4 @@ fArNc/vV+XfPOffOARpgUkPUzQu5BilrmHVGUfgFVmynGmEr/DHKphX2FLOM8xR20fEZ6pT+ctNkKtLQ
 BFnuatGRZRKf1HxFTcq8aYe9SlVrbFPhXJs8xp0dlsyhNznTLi3tufaADkd0dExTNfc+Yd9TqyaJPpck
 arjHBT3zEbErFtRkg2u/4ZZT7py/p60HniN/44rM5Op6z67nvlIz73pzj0//zbf5oUdfff0j/QJ3sEsy
 ;
+
