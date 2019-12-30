@@ -1,12 +1,12 @@
 -- 7 Billion Humans (2145) --
 -- 33: Data Backup Day --
 
-a:
-mem2 = nearest datacube
-drop
-mem1 = set c
-pickup mem2
-if myitem > mem1:
-	write mem1
+mem1=set w
+mem2=set e
+if mem1>mem2:
+  mem1=set e
+  mem2=set w
 endif
-jump a
+pickup mem2
+write mem1
+drop
