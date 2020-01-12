@@ -1,62 +1,36 @@
--- 7 Billion Humans (2059) --
--- 50: Cubical Communication --
-
-mem1 = nearest printer
+mem1 = nearest datacube
 mem2 = nearest shredder
-mem3 = nearest datacube
-takefrom mem1
-comment 0
-if mem3 == 1:
-	a:
+mem3 = nearest printer
+a:
+takefrom mem3
+step e
+if mem1 == 1:
 	giveto mem2
 	tell everyone hi
-	takefrom mem1
+	giveto nw
 	step mem2
-	listenfor ok
-	mem4 = set myitem
-	mem4 = set myitem
-	mem4 = set myitem
-	jump a
+	step mem2
+	step mem2
+	step nw
 endif
-step mem2
-if mem3 == 2:
-	b:
+if mem1 == 2:
 	listenfor hi
-	mem4 = set myitem
-	mem4 = set myitem
-	mem4 = set myitem
+	step mem2
+	step nw
 	giveto mem2
 	tell everyone morning
-	takefrom mem1
-	step mem2
-	jump b
 endif
-if mem3 == 3:
-	c:
+if mem1 == 3:
 	listenfor morning
-	mem4 = set myitem
-	mem4 = set myitem
-	mem4 = set myitem
+	step mem2
+	step nw
 	giveto mem2
 	tell everyone ready
-	takefrom mem1
-	step mem2
-	jump c
 endif
-if mem3 == 4:
-	d:
+if mem1 == 4:
 	listenfor ready
-	mem4 = set myitem
-	mem4 = set myitem
-	mem4 = set myitem
-	giveto mem2
-	tell everyone ok
-	takefrom mem1
 	step mem2
-	jump d
+	step nw
+	giveto mem2
 endif
-
-
-DEFINE COMMENT 0
-eJxjYBgFo2AUjGQAAAQEAAE;
-
+jump a
