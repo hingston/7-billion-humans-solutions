@@ -3,10 +3,10 @@
 
 pickup s
 a:
-if e < myitem:
+if myitem < e:
 	step e
 endif
-if w > myitem:
+if myitem > w:
 	step w
 endif
 jump a
