@@ -5,6 +5,13 @@ import re
 
 
 def get_files(directories, recursive=True):
+    """
+    Return a list of files recursively.
+
+    Args:
+        directories: (str): write your description
+        recursive: (str): write your description
+    """
     files = []
     for d in directories:
         files_fullname = glob.glob(d + os.sep + '**', recursive=recursive)
@@ -17,7 +24,20 @@ def get_files(directories, recursive=True):
 
 
 def check_year(min_year, max_year):
+    """
+    Check if the year is valid.
+
+    Args:
+        min_year: (int): write your description
+        max_year: (int): write your description
+    """
     def check(f):
+        """
+        Check if the year is valid year.
+
+        Args:
+            f: (todo): write your description
+        """
         regex_result = re.search('Year (.*) - ', f['file'])
         try:
             year = int(regex_result.group(1))
@@ -29,7 +49,19 @@ def check_year(min_year, max_year):
 
 
 def check_solution_type(guilty_solutions):
+    """
+    Check if the solution type of a solution type.
+
+    Args:
+        guilty_solutions: (todo): write your description
+    """
     def check(f):
+        """
+        Check if f isolution of a solution.
+
+        Args:
+            f: (todo): write your description
+        """
         try:
             solution_type = re.search(r'\((.*?)\)', f['file']).group(1)
             return solution_type not in guilty_solutions
@@ -40,6 +72,15 @@ def check_solution_type(guilty_solutions):
 
 
 def check_files(files, solution_types, min_year, max_year):
+    """
+    Check for files.
+
+    Args:
+        files: (list): write your description
+        solution_types: (str): write your description
+        min_year: (float): write your description
+        max_year: (int): write your description
+    """
     only_files = list(filter(lambda f: f['file'] != '', files))
     txt_files = list(filter(lambda f: f['file'].endswith('.txt'), only_files))
     return {
@@ -52,6 +93,12 @@ def check_files(files, solution_types, min_year, max_year):
 
 
 def print_results(results):
+    """
+    Print the results.
+
+    Args:
+        results: (dict): write your description
+    """
     results_with_issues = dict(filter(lambda result: len(result[1]) > 0, results.items()))
     if len(results_with_issues) == 0:
         print('Finished! There are no issues :)')
@@ -63,6 +110,11 @@ def print_results(results):
 
 
 def main():
+    """
+    Print results.
+
+    Args:
+    """
     print_results(
         check_files(get_files(['Solutions99+', 'Solutions50+']), ['speed', 'size', 'both'], 2, 68)
     )
