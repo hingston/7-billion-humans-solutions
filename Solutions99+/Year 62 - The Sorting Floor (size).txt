@@ -9,10 +9,9 @@ if n == hole:
 endif
 if e == hole:
 	step w
-	step nw,n
-else:
-	step ne
+	step w
 endif
+step n,ne
 if e > sw or
  c != datacube:
 	pickup e
