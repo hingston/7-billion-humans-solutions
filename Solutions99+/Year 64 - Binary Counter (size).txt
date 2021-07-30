@@ -4,16 +4,17 @@
 a:
 if w == worker and
  c != switch or
- se == worker:
-	if myitem != datacube:
-		pickup c
-		step s
-	else:
-		drop
-	endif
-	if n == switch or
-	 c == button:
-		step n
-	endif
+ se == worker and
+ myitem != datacube:
+	pickup c
+	step s
 endif
-jump a
+if se == worker and
+ myitem == datacube:
+	drop
+endif
+if n == switch or
+ c == button:
+	step n
+endif
+jump a	
