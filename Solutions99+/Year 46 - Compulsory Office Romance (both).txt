@@ -1,6 +1,17 @@
 -- 7 Billion Humans (2145) --
 -- 46: Compulsory Office Romance --
 
+#a:
+#tell [blank] mem1
+#jump a
+
+# Above situation doesn't work. You can't "tell [blank] mem1" on this puzzle.
+# my solution is
 a:
-tell [blank] mem1
+if e == worker
+  tell e Hi!
+  listen Hi!
+else
+  listen Hi!
+  tell w Hi!
 jump a
