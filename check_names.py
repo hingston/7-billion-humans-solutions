@@ -71,6 +71,7 @@ def print_results(results):
             print(r)
             for v in results_with_issues[r]:
                 print('- "{}{}{}"'.format(v["dir"], os.sep, v["file"]))
+        raise SyntaxError("One or more files are not formatted correctly. Please check stdout for details!")
 
 
 def main():
