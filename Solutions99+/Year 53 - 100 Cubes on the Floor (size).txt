@@ -1,19 +1,16 @@
--- 7 Billion Humans (2214M) --
+-- 7 Billion Humans (2231) --
 -- 53: 100 Cubes on the Floor --
 
 a:
-if nw != 0 and
- nw != worker or
- c != datacube or
- n == wall or
- e == datacube:
+mem1 = calc mem1 + 1
+mem2 = calc nw + 10
+if mem1 == mem2 and
+ nw != 0 or
+ w == nothing or
+ n == wall:
+	pickup w
 	step w
+	write mem1
+	drop
 endif
-if e == datacube:
-	mem1 = calc e + 1
-endif
-pickup c
-write mem1
-drop
-mem1 = calc n + 10
 jump a
