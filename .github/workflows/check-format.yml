@@ -1,4 +1,4 @@
-name: Lint
+name: Check Formatting
 on:
   pull_request:
 jobs:
