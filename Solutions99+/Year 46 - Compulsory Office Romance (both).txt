@@ -1,17 +1,14 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2231) --
 -- 46: Compulsory Office Romance --
 
-#a:
-#tell [blank] mem1
-#jump a
-
-# Above situation doesn't work. You can't "tell [blank] mem1" on this puzzle.
-# my solution is
 a:
-if e == worker
-  tell e Hi!
-  listen Hi!
-else
-  listen Hi!
-  tell w Hi!
+if e == worker:
+	tell e hi
+	listenfor hi
+else:
+	listenfor hi
+	tell w hi
+endif
 jump a
+
+
