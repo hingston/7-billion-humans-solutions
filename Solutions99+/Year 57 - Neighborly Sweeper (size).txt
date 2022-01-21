@@ -3,15 +3,17 @@
 
 a:
 step nw,w,sw,n,s,ne,e,se
+mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
+	if sw = 5 and
+	 nw = 4 or
+	 c = 0 or
+	 mem1 > 0 and
+	 mem2 >= 0: 
+		mem1 = calc mem1 + 1
+		pickup c
+		write mem1
+		drop
+	endif
+endfor
 mem1 = set 0
-if c == datacube:
-	mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
-		if mem2 >= 0:
-			mem1 = calc mem1 + 1
-		endif
-	endfor
-	pickup c
-	write mem1
-	drop
-endif
 jump a
