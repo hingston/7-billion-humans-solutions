@@ -1,135 +1,17 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2235) --
 -- 32: Creative Writhing --
 
-pickup s
-write 99
-drop
-step s
-if sw == datacube:
-	pickup w
-	if myitem == datacube:
-		write 99
-		drop
-		step w
-		pickup s
-		write 99
-		drop
-		step s
-		pickup s
-		write 99
-		drop
-		step e
-		pickup s
-		write 99
-		drop
-		step s
-		pickup s
-		write 99
-		drop
-		step s
-		pickup s
-		write 99
-		drop
-		step s
-		pickup s
-		write 99
-		drop
-		step w
-		pickup s
-		write 99
-		drop
-		step s
-		pickup s
-		write 99
-		drop
-		step s
-		pickup s
-		write 99
-		drop
-		step e
-	else:
-		pickup s
-		write 99
-		drop
-		step w
-		pickup s
-		write 99
-		drop
-		step s
-		pickup s
-		write 99
-		drop
-		step s
-		pickup s
-		write 99
-		drop
-		step e
-		pickup s
-		write 99
-		drop
-		step s
-		pickup s
-		write 99
-		drop
-		step s
-		pickup s
-		write 99
-		drop
-		step w
-	endif
+a:
+if s == datacube:
+	step s
 else:
-	pickup s
-	write 99
-	drop
-	step e
-	pickup s
-	write 99
-	drop
-	step s
-	pickup s
-	write 99
-	drop
-	step s
-	pickup s
-	write 99
-	drop
-	step w
-	pickup s
-	write 99
-	drop
-	step s
-	pickup s
-	write 99
-	drop
-	step s
-	pickup s
-	write 99
-	drop
-	pickup se
-	if myitem == datacube:
-		step e
-		write 99
-		drop
-		step s
-		pickup s
-		write 99
-		drop
-		step s
-		pickup s
-		write 99
-		drop
+	if w == datacube:
 		step w
 	else:
-		step s
-		pickup s
-		write 99
-		drop
 		step e
 	endif
 endif
-a:
-pickup s
+pickup c
 write 99
 drop
-step s
 jump a
