@@ -1,9 +1,9 @@
--- This game really sucks for having puzzles like these :p --
+-- step nw,sw,n,s,ne,se; pickup c,s is also interesting --
 -- 32: Creative Writhing --
 
 a:
-step nw,sw,n,s,ne,se
-pickup c
+pickup c,s,e,se
 write 99
 drop
+step nw,sw,ne,se
 jump a
