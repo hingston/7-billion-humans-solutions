@@ -1,13 +1,23 @@
--- My 7i is not the first, but I did discover it independently --
+-- 7 Billion Humans (2235) --
 -- 39: Printing Etiquette 1 --
 
-mem1 = nearest printer
 a:
-if myitem == nothing and
- mem2 < 5:
-	takefrom mem1
+drop
+if nw == printer or
+ ne == printer or
+ sw == printer or
+ se == printer and
+ mem2 < 5 and
+ myitem != datacube:
+	takefrom nw,sw,ne,se
 	mem2 = calc mem2 + 1
 endif
-step nw,w,sw,n,s,ne,e,se
-drop
+step w,sw,n,s,e,se
 jump a
+comment 0
+
+
+DEFINE COMMENT 0
+n,w,e and s on "takeform" may lead to stealing data cubes from other workers.
+Having more than 5 directions on "takefrom" may lead to game crashes;
+
