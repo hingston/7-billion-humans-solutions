@@ -188,4 +188,15 @@ else:
 endif
 drop
 
+alternative: (finishes average 89s, beats speed target)
 
+mem1 = nearest printer
+a:
+takefrom mem1
+step e,w
+b:
+if here == nothing:
+	step nw, sw, ne, se
+	jump b
+drop
+jump a
