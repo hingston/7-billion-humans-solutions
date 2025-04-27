@@ -1,4 +1,4 @@
--- 7 Billion Humans (2231) --
+-- 7 Billion Humans (2235) --
 -- 61: Lazy Pathways --
 
 a:
@@ -11,11 +11,11 @@ mem1 = foreachdir nw,w,sw,n,s,ne,e,se:
 	 c > 5 and
 	 c > mem1 and
 	 c > 2 and
-	 mem1 != worker: 
+	 mem1 != worker:
 		mem1 = calc mem1 + 1
 		pickup c
 		write mem1
 		drop
 	endif
 endfor
-jump a	
+jump a
