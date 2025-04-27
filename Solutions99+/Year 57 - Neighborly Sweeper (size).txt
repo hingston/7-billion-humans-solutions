@@ -1,17 +1,22 @@
--- 7 Billion Humans (2199) --
+-- 7 Billion Humans (2235) --
 -- 57: Neighborly Sweeper --
 
 a:
-step nw,w,sw,n,s,ne,e,se
+step nw,sw,s,ne,e
 mem1 = set 0
-if c == datacube:
-	mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
-		if mem2 >= 0:
-			mem1 = calc mem1 + 1
-		endif
-	endfor
-	pickup c
-	write mem1
-	drop
-endif
+mem2 = foreachdir nw,w,sw,n,s,ne,e,se:
+	if nw == 4 and
+	 e == 4 and
+	 sw == 5 and
+	 c != 4 or
+	 c > 8 or
+	 c == 0 or
+	 mem1 > 0 and
+	 mem2 >= 0:
+		pickup c
+		mem1 = calc mem1 + 1
+		write mem1
+		drop
+	endif
+endfor
 jump a
