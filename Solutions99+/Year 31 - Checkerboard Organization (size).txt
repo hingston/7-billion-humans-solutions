@@ -1,4 +1,7 @@
-mem1=nearest printer
+-- 7 Billion Humans (2235) --
+-- 31: Checkerboard Organization --
+
+mem1 = nearest printer
 a:
 if myitem == nothing:
 	takefrom mem1
