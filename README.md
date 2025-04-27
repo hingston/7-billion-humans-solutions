@@ -160,14 +160,6 @@ the [OCD+ challenge stat page](https://tomorrowcorporation.com/7billionhumansSta
 
 ###### +50% Solutions
 
-Okay, these Markdown tables seem mostly correct according to standard Markdown syntax. Perhaps you were encountering
-rendering issues due to subtle spacing or the specific Markdown processor being used.
-
-I've reformatted them slightly for cleaner syntax and added explicit left alignment markers in the separator row, which
-can sometimes improve compatibility across different renderers. The content remains the same.
-
-Here are the fixed tables:
-
 | Year    | Name                                                                                                                                                                                  | Creator                                                                      | Size    | Speed     |
 |:--------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------|:--------|:----------|
 | Year 21 | [Big Data](https://github.com/hingston/7-billion-humans-solutions/blob/master/Solutions50%2B/Year%2021%20-%20Big%20Data%20(speed).txt)                                                | [yifeixuer](https://steamcommunity.com/profiles/76561198831890282)           | 25      | **~17** ➕ |
