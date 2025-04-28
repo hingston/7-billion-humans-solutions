@@ -9,7 +9,7 @@ jobs:
         python-version: ["3.13"]
         lint-type: [black, flake8]
     steps:
-      - uses: actions/checkout@v4.1.1
+      - uses: actions/checkout@v4.2.2
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
         with:
