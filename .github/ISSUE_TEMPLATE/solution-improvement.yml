@@ -1,0 +1,56 @@
+name: Better solution
+description: Report a solution that beats one in the tables
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If you can open a pull request instead, please do — it is quicker and you keep the credit.
+  - type: input
+    id: level
+    attributes:
+      label: Level
+      description: The year number and puzzle name.
+      placeholder: Year 34 - Seek and Destroy 1
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: What does it improve?
+      options:
+        - Size
+        - Speed
+        - Both
+    validations:
+      required: true
+  - type: input
+    id: scores
+    attributes:
+      label: Size and speed
+      description: The numbers the game reports when the solution finishes.
+      placeholder: 7 commands, 890 steps
+    validations:
+      required: true
+  - type: input
+    id: reliability
+    attributes:
+      label: How often does it succeed?
+      description: 99%+, 50-99% or under 50%. Say how you worked it out if it is not obvious.
+      placeholder: 99%+
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: The solution
+      description: Paste the solution exactly as the game exports it.
+      render: text
+    validations:
+      required: true
+  - type: checkboxes
+    id: pasteable
+    attributes:
+      label: Entering it
+      options:
+        - label: This solution has to be pasted in, because the editor cannot build it at that level

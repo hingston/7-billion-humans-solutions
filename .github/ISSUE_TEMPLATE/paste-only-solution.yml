@@ -1,0 +1,31 @@
+name: Paste-only solution
+description: Flag a listed solution that cannot be typed into the game's editor
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Solutions that can only be entered by pasting the text in are marked 📋 in the tables.
+        The level a command becomes available at is easy to get wrong, so please say what you checked.
+  - type: input
+    id: level
+    attributes:
+      label: Level
+      description: The year number and puzzle name, and whether it is the size, speed or both row.
+      placeholder: Year 06 - Little Exterminator 1 (both)
+    validations:
+      required: true
+  - type: input
+    id: command
+    attributes:
+      label: Which command cannot be built?
+      placeholder: pickup c,s
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: How did you check?
+      description: For example which options the editor offers at that level, or where the command is first unlocked.
+    validations:
+      required: true

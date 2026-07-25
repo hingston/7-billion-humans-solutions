@@ -1,0 +1,36 @@
+name: Credit correction
+description: Claim or correct the credit for a solution
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The Contributor column records who provided a solution here, which is not always who found it first.
+        Earlier discovery can be credited if it was posted somewhere public and dated.
+  - type: input
+    id: level
+    attributes:
+      label: Level
+      description: The year number and puzzle name, and whether it is the size, speed or both row.
+      placeholder: Year 50 - Cubical Communication (size)
+    validations:
+      required: true
+  - type: input
+    id: credit
+    attributes:
+      label: Who should be credited?
+      description: A name, and a link to a GitHub or Steam profile if there is one.
+    validations:
+      required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: Link to the earlier posting
+      description: A dated public link — a Steam thread, forum post, video or similar.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: For example if the solution was found independently by several people.
