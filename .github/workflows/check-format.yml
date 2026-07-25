@@ -1,6 +1,13 @@
 name: Check Formatting
 on:
   pull_request:
+  push:
+    branches: [master]
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   Formatting:
     runs-on: ubuntu-latest
@@ -13,5 +20,7 @@ jobs:
         uses: actions/setup-python@v7
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Check formatting is correct
+      - name: Check file names are correct
         run: python check_names.py
+      - name: Check the README matches the solutions
+        run: python check_readme.py
