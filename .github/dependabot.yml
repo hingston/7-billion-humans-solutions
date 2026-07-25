@@ -6,4 +6,9 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
+    groups:
+      # One pull request for all action updates rather than one per action
+      github-actions:
+        patterns:
+          - "*"
