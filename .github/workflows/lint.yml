@@ -1,13 +1,20 @@
 name: Lint
 on:
   pull_request:
+  push:
+    branches: [master]
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   lint:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         python-version: ["3.13"]
-        lint-type: [black, flake8]
+        lint-type: [black, flake8, mypy]
     steps:
       - uses: actions/checkout@v7.0.1
       - name: Set up Python ${{ matrix.python-version }}
