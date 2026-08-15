@@ -1,0 +1,57 @@
+-- 7 Billion Humans (2235) --
+-- 21: Big Data by @commonnickname and @abfipes12 and @senegrom --
+-- works very rarely but is equally fast and smaller --
+
+step s
+takefrom s
+if myitem == datacube:
+	if myitem < 50:
+		step ne
+		drop
+		step s
+		jump a
+	endif
+else:
+	step sw
+	takefrom se
+	if myitem == datacube:
+		if myitem < 50:
+			step e
+			drop
+			a:
+			takefrom sw
+			jump b
+		endif
+	else:
+		step s
+		if se == printer:
+			takefrom se
+			if myitem < 50:
+				step nw
+				drop
+				step s
+				jump c
+			endif
+		else:
+			step s
+			takefrom se
+			if myitem < 50:
+				step w
+				drop
+				c:
+				takefrom se
+				b:
+				d:
+				if myitem < 50:
+					giveto sw;
+					takefrom s
+					jump d
+				endif
+			endif
+		endif
+	endif
+endif
+e:
+step n
+jump e
+
