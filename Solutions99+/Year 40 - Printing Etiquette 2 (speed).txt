@@ -1,5 +1,6 @@
 -- 7 Billion Humans (2145) --
 -- 40: Printing Etiquette 2 --
+-- 36s at size 176 --
 
 mem1 = nearest printer
 takefrom mem1
@@ -160,7 +161,6 @@ step w
 write 4
 drop
 takefrom mem1
-step w
 step n
 write 5
 drop
@@ -214,4 +214,3 @@ Qx9DMsM6ID7FMApGwSgYkgAARjcQGg;
 DEFINE COMMENT 4
 eJwTYwCCPAYDhhwGB4YMhhCGOIY6hniGJoYkhqaGVIa2hmKGCQ0lDFMaShnmAek1DEUMWxqyGXY1xDHs
 AmltKGIwYShlMGkoZ7BoqGWwYmgD4g4GO4ZRMApGwZAAAGp0FoU;
-
