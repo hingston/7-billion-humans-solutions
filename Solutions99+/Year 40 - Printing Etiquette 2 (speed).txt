@@ -160,7 +160,6 @@ step w
 write 4
 drop
 takefrom mem1
-step w
 step n
 write 5
 drop
