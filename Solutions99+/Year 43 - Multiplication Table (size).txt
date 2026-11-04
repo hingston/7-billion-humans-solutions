@@ -1,15 +1,12 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2214M) --
 -- 43: Multiplication Table --
 
 a:
 step n,s
-if n == datacube and
- c == nothing and
- s == datacube:
-	mem1 = set n
+if mem1 == 0:
+	mem1 = nearest datacube
 endif
-if c == 0 and
- mem1 != 0:
+if c == 0 and mem1 != 0:
 	pickup c
 	mem2 = calc mem1 + n
 	write mem2

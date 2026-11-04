@@ -1,95 +1,201 @@
--- 7 Billion Humans (2145) --
+-- 7 Billion Humans (2214M) --
 -- 43: Multiplication Table --
 
 mem1 = nearest wall
-mem3 = nearest worker
-if n == datacube:
-	pickup n
-	if mem3 == 0:
+mem2 = nearest worker
+step n
+mem4 = nearest worker
+mem3 = nearest wall
+if mem1 != mem3:
+	mem3 = nearest datacube
+	step mem3
+	if mem2 == 0:
+		pickup c
+		write 81
+		drop
+		pickup n
 		step n
-		mem2 = nearest wall
-		if mem1 == mem2:
-			write 63
-			mem1 = set 56
-			mem2 = set 49
-			mem3 = set 42
-			mem4 = set 35
-		else:
-			write 72
-			mem1 = set 64
-			mem2 = set 56
-			mem3 = set 48
-			mem4 = set 40
-		endif
+		write 72
+		drop
+		pickup n
+		step n
+		write 63
+		drop
+		pickup n
+		step n
+		write 54
+		drop
+		pickup n
+		step n
+		write 45
+		drop
+		mem1 = set 36
+		mem2 = set 27
+		mem3 = set 18
+		mem4 = set 9
+		jump d1
 	else:
-		mem4 = nearest worker
-		if mem3 == mem4:
-			step n
-			write 45
-			mem1 = set 40
-			mem2 = set 35
-			mem3 = set 30
-			mem4 = set 25
-		else:
-			step n
-			write 18
-			mem1 = set 16
-			mem2 = set 14
-			mem3 = set 12
-			mem4 = set 10
-		endif
+		mem3 = set 0
+		mem3 = set 0
+		mem3 = set 0
+		mem3 = set 0
+		pickup c
+		write 72
+		mem1 = set 64
+		mem2 = set 56
+		mem3 = set 48
+		mem4 = set 40
+		drop
+		jump b1
 	endif
 else:
-	step n
-	mem2 = nearest wall
-	if mem3 == 0:
-		if mem1 == mem2:
-			pickup n
-			step n
-			mem2 = nearest wall
-			if mem1 == mem2:
-				write 54
-				mem1 = set 48
-				mem2 = set 42
-				mem3 = set 36
-				mem4 = set 30
-			else:
-				write 9
-				mem1 = set 8
-				mem2 = set 7
-				mem3 = set 6
-				mem4 = set 5
-			endif
-		else:
-			pickup n
-			step n
-			write 81
-			mem1 = set 72
-			mem2 = set 63
-			mem3 = set 54
-			mem4 = set 45
-		endif
+	mem3 = nearest datacube
+	step mem3
+	if mem2 != mem4:
+		pickup c
+		write 18
+		mem1 = set 16
+		mem2 = set 14
+		mem3 = set 12
+		mem4 = set 10
+		drop
+		jump b2
 	else:
-		mem4 = nearest worker
-		step n
-		if mem3 == mem4:
+		mem3 = nearest wall
+		if mem1 != mem3:
 			pickup c
-			write 36
-			mem1 = set 32
-			mem2 = set 28
-			mem3 = set 24
-			mem4 = set 20
+			write 9
+			drop
+			pickup n
+			step n
+			write 8
+			drop
+			pickup n
+			step n
+			write 7
+			drop
+			pickup n
+			step n
+			write 6
+			drop
+			pickup n
+			step n
+			write 5
+			drop
+			mem1 = set 4
+			mem2 = set 3
+			mem3 = set 2
+			mem4 = set 1
+			jump d2
 		else:
-			pickup c
-			write 27
-			mem1 = set 24
-			mem2 = set 21
-			mem3 = set 18
-			mem4 = set 15
+			mem3 = nearest worker
+			if mem2 != mem3:
+				pickup c
+				write 36
+				drop
+				pickup n
+				step n
+				write 32
+				drop
+				pickup n
+				step n
+				write 28
+				drop
+				pickup n
+				step n
+				write 24
+				drop
+				pickup n
+				step n
+				write 20
+				drop
+				mem1 = set 16
+				mem2 = set 12
+				mem3 = set 8
+				mem4 = set 4
+				jump d3
+			else:
+				if mem2 == 0:
+					pickup c
+					write 54
+					drop
+					pickup n
+					step n
+					write 48
+					drop
+					pickup n
+					step n
+					write 42
+					drop
+					pickup n
+					step n
+					write 36
+					drop
+					pickup n
+					step n
+					write 30
+					drop
+					mem1 = set 24
+					mem2 = set 18
+					mem3 = set 12
+					mem4 = set 6
+					jump d4
+				else:
+					if mem2 == 0:
+						pickup c
+						write 27
+						drop
+						pickup n
+						step n
+						write 24
+						drop
+						pickup n
+						step n
+						write 21
+						drop
+						pickup n
+						step n
+						write 18
+						drop
+						pickup n
+						step n
+						write 15
+						drop
+						mem1 = set 12
+						mem2 = set 9
+						mem3 = set 6
+						mem4 = set 3
+						jump d5
+					else:
+						mem4 = set 0
+						mem4 = set 0
+						if mem2 == 0:
+							pickup c
+							write 63
+							mem1 = set 56
+							mem2 = set 49
+							mem3 = set 42
+							mem4 = set 35
+							drop
+							jump b3
+						else:
+							pickup c
+							write 45
+							mem1 = set 40
+							mem2 = set 35
+							mem3 = set 30
+							mem4 = set 25
+							drop
+						endif
+					endif
+				endif
+			endif
 		endif
 	endif
 endif
-drop
+b1:
+b2:
+b3:
 pickup n
 step n
 write mem1
@@ -106,69 +212,42 @@ pickup n
 step n
 write mem4
 drop
-pickup n
-step n
-if mem1 <= 40:
-	if mem1 <= 16:
-		if mem1 == 8:
-			write 4
-			mem1 = set 3
-			mem2 = set 2
-			mem3 = set 1
-		else:
-			write 8
-			mem1 = set 6
-			mem2 = set 4
-			mem3 = set 2
-		endif
+if mem4 < 30:
+	if mem4 < 20:
+		mem1 = set 8
+		mem2 = set 6
+		mem3 = set 4
+		mem4 = set 2
+		jump d6
 	else:
-		if mem1 == 24:
-			write 12
-			mem1 = set 9
-			mem2 = set 6
-			mem3 = set 3
-		else:
-			if mem1 == 32:
-				write 16
-				mem1 = set 12
-				mem2 = set 8
-				mem3 = set 4
-			else:
-				write 20
-				mem1 = set 15
-				mem2 = set 10
-				mem3 = set 5
-			endif
-		endif
+		mem1 = set 20
+		mem2 = set 15
+		mem3 = set 10
+		mem4 = set 5
+		jump d7
 	endif
 else:
-	if mem1 <= 56:
-		if mem1 == 48:
-			write 24
-			mem1 = set 18
-			mem2 = set 12
-			mem3 = set 6
-		else:
-			write 28
-			mem1 = set 21
-			mem2 = set 14
-			mem3 = set 7
-		endif
+	if mem4 < 38:
+		mem1 = set 28
+		mem2 = set 21
+		mem3 = set 14
+		mem4 = set 7
+		jump d8
 	else:
-		if mem1 == 64:
-			write 32
-			mem1 = set 24
-			mem2 = set 16
-			mem3 = set 8
-		else:
-			write 36
-			mem1 = set 27
-			mem2 = set 18
-			mem3 = set 9
-		endif
+		mem1 = set 32
+		mem2 = set 24
+		mem3 = set 16
+		mem4 = set 8
 	endif
 endif
-drop
+d1:
+d2:
+d3:
+d4:
+d5:
+d6:
+d7:
+d8:
 pickup n
 step n
 write mem1
@@ -180,4 +259,8 @@ drop
 pickup n
 step n
 write mem3
+drop
+pickup n
+step n
+write mem4
 drop

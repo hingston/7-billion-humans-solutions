@@ -1,27 +1,18 @@
 -- 7 Billion Humans (2214M) --
 -- 44: Unique Fashion Party --
 
-mem1 = set sw,n
-if mem1 != worker and
- mem1 == wall:
-	mem4 = set myitem
-	pickup s
-	end
-endif
-if mem1 >= 0:
+mem1 = set e,sw,se
+if mem1 != wall or mem1 != datacube or mem1 != worker:
 	mem2 = nearest worker
-	if mem2 >= 0:
-		mem1 = calc 0 / 0
+	if mem1 != worker and mem1 == wall:
+		pickup s
 	endif
 	if mem2 >= 0:
-		step s
-		pickup sw
-		end
+		if w == datacube:
+			pickup w
+		endif
+	else:
+		mem3 = calc 0 / 0
 	endif
 endif
-if mem1 >= 0 and
- mem2 >= 0:
-	pickup s
-	end
-endif
-mem1 = calc 0 / 0
+pickup n
